@@ -1,0 +1,43 @@
+# Jekyll configuration for GitHub Pages
+title: Claude Plugins
+description: Complete collection of 614 Claude plugins including agents, commands, workflows, MCPs, hooks, and sandbox environments
+baseurl: ""
+url: "https://github.com/lifangda/claude-plugins"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+
+# Include files in processing
+include:
+  - _pages
+
+# GitHub Pages specific settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Repository information
+repository: lifangda/claude-plugins
+
+# Social media and SEO
+twitter:
+  username: 
+  card: summary_large_image
+
+# Google Analytics (optional - can be added later)
+# google_analytics: 
+
+# Additional settings
+timezone: UTC
+encoding: utf-8

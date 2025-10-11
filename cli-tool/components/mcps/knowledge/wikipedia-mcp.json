@@ -1,0 +1,212 @@
+{
+  "name": "Wikipedia MCP Server",
+  "description": "维基百科知识库MCP服务器 - 提供实时维基百科数据访问和知识查询功能",
+  "version": "1.0.0",
+  "author": "Fonda",
+  "license": "MIT",
+  "repository": "https://github.com/lifangda/claude-plugins",
+  "homepage": "https://github.com/lifangda/claude-plugins",
+  "bugs": "https://github.com/lifangda/claude-plugins/issues",
+  "keywords": [
+    "wikipedia",
+    "knowledge-base",
+    "mcp-server",
+    "api",
+    "search",
+    "information"
+  ],
+  "mcpServer": {
+    "command": "python",
+    "args": ["-m", "wikipedia_mcp_server"],
+    "env": {
+      "WIKIPEDIA_LANG": "zh",
+      "WIKIPEDIA_API_URL": "https://zh.wikipedia.org/w/api.php",
+      "WIKIPEDIA_USER_AGENT": "Claude-Plugins-Wikipedia-MCP/1.0 (https://github.com/lifangda/claude-plugins)",
+      "CACHE_TTL": "3600",
+      "MAX_RESULTS": "10"
+    }
+  },
+  "capabilities": {
+    "search": {
+      "description": "搜索维基百科条目",
+      "parameters": {
+        "query": {
+          "type": "string",
+          "description": "搜索关键词",
+          "required": true
+        },
+        "limit": {
+          "type": "integer",
+          "description": "返回结果数量限制",
+          "default": 5
+        },
+        "language": {
+          "type": "string",
+          "description": "语言代码 (zh, en, etc.)",
+          "default": "zh"
+        }
+      }
+    },
+    "getPage": {
+      "description": "获取指定页面的完整内容",
+      "parameters": {
+        "title": {
+          "type": "string",
+          "description": "页面标题",
+          "required": true
+        },
+        "extract": {
+          "type": "boolean",
+          "description": "是否只返回摘要",
+          "default": false
+        },
+        "language": {
+          "type": "string",
+          "description": "语言代码",
+          "default": "zh"
+        }
+      }
+    },
+    "getSummary": {
+      "description": "获取页面摘要",
+      "parameters": {
+        "title": {
+          "type": "string",
+          "description": "页面标题",
+          "required": true
+        },
+        "language": {
+          "type": "string",
+          "description": "语言代码",
+          "default": "zh"
+        }
+      }
+    },
+    "getCategories": {
+      "description": "获取页面分类",
+      "parameters": {
+        "title": {
+          "type": "string",
+          "description": "页面标题",
+          "required": true
+        },
+        "language": {
+          "type": "string",
+          "description": "语言代码",
+          "default": "zh"
+        }
+      }
+    },
+    "getLinks": {
+      "description": "获取页面链接",
+      "parameters": {
+        "title": {
+          "type": "string",
+          "description": "页面标题",
+          "required": true
+        },
+        "linkType": {
+          "type": "string",
+          "description": "链接类型 (internal, external)",
+          "default": "internal"
+        },
+        "language": {
+          "type": "string",
+          "description": "语言代码",
+          "default": "zh"
+        }
+      }
+    },
+    "getRandomPage": {
+      "description": "获取随机页面",
+      "parameters": {
+        "language": {
+          "type": "string",
+          "description": "语言代码",
+          "default": "zh"
+        }
+      }
+    }
+  },
+  "features": [
+    "实时维基百科数据访问",
+    "多语言支持 (中文、英文等)",
+    "智能搜索和匹配",
+    "页面内容提取",
+    "分类和链接分析",
+    "缓存机制优化性能",
+    "错误处理和重试",
+    "结构化数据返回"
+  ],
+  "installation": {
+    "requirements": [
+      "requests>=2.31.0",
+      "wikipedia-api>=0.6.0",
+      "beautifulsoup4>=4.12.0",
+      "lxml>=4.9.0"
+    ],
+    "setup": [
+      "pip install requests wikipedia-api beautifulsoup4 lxml",
+      "配置环境变量 (可选)",
+      "启动MCP服务器"
+    ]
+  },
+  "usage": {
+    "examples": [
+      {
+        "description": "搜索人工智能相关条目",
+        "command": "wikipedia.search('人工智能', limit=5)"
+      },
+      {
+        "description": "获取特定页面摘要",
+        "command": "wikipedia.getSummary('机器学习')"
+      },
+      {
+        "description": "获取页面完整内容",
+        "command": "wikipedia.getPage('深度学习', extract=false)"
+      },
+      {
+        "description": "获取页面分类",
+        "command": "wikipedia.getCategories('神经网络')"
+      }
+    ]
+  },
+  "configuration": {
+    "environment_variables": {
+      "WIKIPEDIA_LANG": "默认语言 (zh, en, etc.)",
+      "WIKIPEDIA_API_URL": "维基百科API端点",
+      "WIKIPEDIA_USER_AGENT": "用户代理字符串 (重要：避免403错误)",
+      "CACHE_TTL": "缓存生存时间(秒)",
+      "MAX_RESULTS": "最大返回结果数"
+    },
+    "rate_limits": {
+      "requests_per_second": 2,
+      "burst_limit": 10,
+      "daily_limit": 10000
+    }
+  },
+  "troubleshooting": {
+    "common_issues": [
+      {
+        "issue": "API请求失败 (403错误)",
+        "solution": "设置正确的User-Agent头部，避免使用默认的Python-requests User-Agent"
+      },
+      {
+        "issue": "中文维基百科访问被拒绝",
+        "solution": "确保WIKIPEDIA_USER_AGENT环境变量设置为描述性字符串，如'Claude-Plugins-Wikipedia-MCP/1.0'"
+      },
+      {
+        "issue": "搜索结果为空",
+        "solution": "尝试不同的搜索关键词或检查语言设置"
+      },
+      {
+        "issue": "页面内容获取失败",
+        "solution": "验证页面标题是否正确，检查页面是否存在"
+      },
+      {
+        "issue": "网络连接超时",
+        "solution": "检查网络连接，考虑使用代理或增加超时时间"
+      }
+    ]
+  }
+}
