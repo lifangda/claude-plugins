@@ -1727,7 +1727,7 @@
     {
       "name": "agents-mlops-engineer",
       "source": "./cli-tool/components",
-      "description": "mlops-engineer专家",
+      "description": "MLOps工程专家",
       "version": "1.0.0",
       "author": {
         "name": "Fonda",
@@ -3213,7 +3213,7 @@
     {
       "name": "workflows-legacy-modernize",
       "source": "./cli-tool/components",
-      "description": "legacy-modernize专家",
+      "description": "遗留系统现代化专家",
       "version": "1.0.0",
       "author": {
         "name": "Fonda",
@@ -3232,7 +3232,7 @@
     {
       "name": "workflows-security-hardening",
       "source": "./cli-tool/components",
-      "description": "security-hardening专家",
+      "description": "安全加固专家",
       "version": "1.0.0",
       "author": {
         "name": "Fonda",
@@ -3270,7 +3270,7 @@
     {
       "name": "workflows-full-stack-feature",
       "source": "./cli-tool/components",
-      "description": "full-stack-feature专家",
+      "description": "全栈功能专家",
       "version": "1.0.0",
       "author": {
         "name": "Fonda",
@@ -3289,7 +3289,7 @@
     {
       "name": "workflows-workflow-automate",
       "source": "./cli-tool/components",
-      "description": "workflow-automate专家",
+      "description": "工作流自动化专家",
       "version": "1.0.0",
       "author": {
         "name": "Fonda",
@@ -3308,7 +3308,7 @@
     {
       "name": "workflows-incident-response",
       "source": "./cli-tool/components",
-      "description": "incident-response专家",
+      "description": "事件响应专家",
       "version": "1.0.0",
       "author": {
         "name": "Fonda",
@@ -3327,7 +3327,7 @@
     {
       "name": "workflows-performance-optimization",
       "source": "./cli-tool/components",
-      "description": "performance-optimization专家",
+      "description": "性能优化专家",
       "version": "1.0.0",
       "author": {
         "name": "Fonda",
@@ -3346,7 +3346,7 @@
     {
       "name": "workflows-multi-platform",
       "source": "./cli-tool/components",
-      "description": "multi-platform专家",
+      "description": "多平台专家",
       "version": "1.0.0",
       "author": {
         "name": "Fonda",
@@ -3365,7 +3365,7 @@
     {
       "name": "workflows-smart-fix",
       "source": "./cli-tool/components",
-      "description": "smart-fix专家",
+      "description": "智能修复专家",
       "version": "1.0.0",
       "author": {
         "name": "Fonda",
@@ -3384,7 +3384,7 @@
     {
       "name": "workflows-data-driven-feature",
       "source": "./cli-tool/components",
-      "description": "data-driven-feature专家",
+      "description": "数据驱动功能专家",
       "version": "1.0.0",
       "author": {
         "name": "Fonda",
@@ -3403,7 +3403,7 @@
     {
       "name": "workflows-ml-pipeline",
       "source": "./cli-tool/components",
-      "description": "ml-pipeline专家",
+      "description": "机器学习管道专家",
       "version": "1.0.0",
       "author": {
         "name": "Fonda",
@@ -3422,7 +3422,7 @@
     {
       "name": "workflows-tdd-cycle",
       "source": "./cli-tool/components",
-      "description": "tdd-cycle专家",
+      "description": "TDD循环专家",
       "version": "1.0.0",
       "author": {
         "name": "Fonda",
@@ -3441,7 +3441,7 @@
     {
       "name": "workflows-improve-agent",
       "source": "./cli-tool/components",
-      "description": "improve-agent专家",
+      "description": "代理改进专家",
       "version": "1.0.0",
       "author": {
         "name": "Fonda",
@@ -3460,7 +3460,7 @@
     {
       "name": "workflows-feature-development",
       "source": "./cli-tool/components",
-      "description": "feature-development专家",
+      "description": "功能开发专家",
       "version": "1.0.0",
       "author": {
         "name": "Fonda",
@@ -3479,7 +3479,7 @@
     {
       "name": "workflows-full-review",
       "source": "./cli-tool/components",
-      "description": "full-review专家",
+      "description": "完整审查专家",
       "version": "1.0.0",
       "author": {
         "name": "Fonda",
@@ -3734,7 +3734,7 @@
     {
       "name": "hooks-HOOK_PATTERNS_COMPRESSED",
       "source": "./cli-tool/components",
-      "description": "HOOK_PATTERNS_COMPRESSED专家",
+      "description": "钩子模式压缩专家",
       "version": "1.0.0",
       "author": {
         "name": "Fonda",
@@ -3753,7 +3753,7 @@
     {
       "name": "mcps-deepgraph",
       "source": "./cli-tool/components",
-      "description": "deepgraph专家",
+      "description": "DeepGraph专家",
       "version": "1.0.0",
       "author": {
         "name": "Fonda",
