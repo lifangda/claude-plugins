@@ -1,0 +1,14 @@
+{
+  "name": "performance-benchmarker",
+  "description": "Use this agent for comprehensive performance testing, profiling, and optimization recommendations. This agent specializes in measuring speed, identifying bottlenecks, and providing actionable optimization strategies for applications. Examples:\\n\\n<example>\\nContext: Application speed testing",
+  "version": "1.0.0",
+  "author": {
+    "name": "Michael Galpert"
+  },
+  "category": "agents",
+  "homepage": "https://claudecodecommands.directory/agents/performance-benchmarker",
+  "keywords": [
+    "subagent"
+  ],
+  "agents": "./agents/"
+}

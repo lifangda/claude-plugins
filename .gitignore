@@ -122,3 +122,6 @@ backup-*
 # Generated files
 generate_*.py
 *_generated.*
+
+# Spec workflow (MCP generated)
+.spec-workflow/

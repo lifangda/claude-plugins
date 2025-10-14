@@ -1,0 +1,14 @@
+{
+  "name": "test-results-analyzer",
+  "description": "Use this agent for analyzing test results, synthesizing test data, identifying trends, and generating quality metrics reports. This agent specializes in turning raw test data into actionable insights that drive quality improvements. Examples:\\n\\n<example>\\nContext: Analyzing test suite results",
+  "version": "1.0.0",
+  "author": {
+    "name": "Michael Galpert"
+  },
+  "category": "agents",
+  "homepage": "https://claudecodecommands.directory/agents/test-results-analyzer",
+  "keywords": [
+    "subagent"
+  ],
+  "agents": "./agents/"
+}

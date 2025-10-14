@@ -1,0 +1,12 @@
+{
+  "name": "2-commit-fast",
+  "description": "Automates git commit process by selecting the first suggested message, generating structured commits with consistent formatting while skipping manual confirmation and removing Claude co-Contributorship footer",
+  "version": "1.0.0",
+  "author": {
+    "name": "steadycursor",
+    "url": "https://github.com/steadycursor"
+  },
+  "category": "general",
+  "homepage": "https://claudecodecommands.directory/commands/2-commit-fast",
+  "commands": "./commands/"
+}

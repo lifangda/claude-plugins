@@ -1,0 +1,19 @@
+{
+  "name": "pr-issue-resolve",
+  "description": "this is to analyze the PRs and solve the requested changes in them\n",
+  "version": "1.0.0",
+  "author": {
+    "name": "safayavatsal"
+  },
+  "category": "code-review",
+  "homepage": "https://claudecodecommands.directory/commands/pr-issue-resolve",
+  "keywords": [
+    "code-review",
+    "testing",
+    "refactoring",
+    "debugging",
+    "security",
+    "performance"
+  ],
+  "commands": "./commands/"
+}

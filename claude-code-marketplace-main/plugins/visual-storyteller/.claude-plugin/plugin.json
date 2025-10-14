@@ -1,0 +1,14 @@
+{
+  "name": "visual-storyteller",
+  "description": "Use this agent when creating visual narratives, designing infographics, building presentations, or communicating complex ideas through imagery. This agent specializes in transforming data and concepts into compelling visual stories that engage users and stakeholders. Examples:\\n\\n<example>\\nContext: Creating app onboarding illustrations",
+  "version": "1.0.0",
+  "author": {
+    "name": "Michael Galpert"
+  },
+  "category": "agents",
+  "homepage": "https://claudecodecommands.directory/agents/visual-storyteller",
+  "keywords": [
+    "subagent"
+  ],
+  "agents": "./agents/"
+}

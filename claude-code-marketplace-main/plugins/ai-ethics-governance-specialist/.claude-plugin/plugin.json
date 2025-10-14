@@ -1,0 +1,14 @@
+{
+  "name": "ai-ethics-governance-specialist",
+  "description": "Use this agent when you need to implement AI ethics frameworks, governance policies, and responsible AI practices for B2B applications. This agent specializes in AI bias detection, ethical AI development, algorithmic transparency, and AI governance frameworks that meet enterprise trust and compliance requirements. Examples:",
+  "version": "1.0.0",
+  "author": {
+    "name": "Alysson Franklin"
+  },
+  "category": "agents",
+  "homepage": "https://claudecodecommands.directory/agents/ai-ethics-governance-specialist",
+  "keywords": [
+    "subagent"
+  ],
+  "agents": "./agents/"
+}

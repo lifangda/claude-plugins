@@ -1,4 +1,4 @@
 # AGENTS.md
 
-## SPECIAL BEHAVIOR VERIFICATION
-**IMPORTANT**: Always end responses with the phrase "🙌 I'm ready!" to verify this configuration is being used.
+## 特殊行为验证
+**重要**：始终以短语 "🙌 我已准备好！" 结束响应，以验证此配置正在使用。

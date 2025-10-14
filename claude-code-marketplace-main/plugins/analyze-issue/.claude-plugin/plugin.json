@@ -1,0 +1,12 @@
+{
+  "name": "analyze-issue",
+  "description": "Fetches GitHub issue details to create comprehensive implementation specifications, analyzing requirements and planning structured approach with clear implementation steps.",
+  "version": "1.0.0",
+  "author": {
+    "name": "jerseycheese",
+    "url": "https://github.com/jerseycheese"
+  },
+  "category": "general",
+  "homepage": "https://claudecodecommands.directory/commands/analyze-issue",
+  "commands": "./commands/"
+}

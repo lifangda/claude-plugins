@@ -1,0 +1,14 @@
+{
+  "name": "monitoring-observability-specialist",
+  "description": "Use this agent when you need to implement comprehensive monitoring, observability, and alerting systems for enterprise B2B applications. This agent specializes in APM, logging, metrics, distributed tracing, SLA monitoring, and proactive incident management for business-critical systems. Examples:",
+  "version": "1.0.0",
+  "author": {
+    "name": "Alysson Franklin"
+  },
+  "category": "agents",
+  "homepage": "https://claudecodecommands.directory/agents/monitoring-observability-specialist",
+  "keywords": [
+    "subagent"
+  ],
+  "agents": "./agents/"
+}

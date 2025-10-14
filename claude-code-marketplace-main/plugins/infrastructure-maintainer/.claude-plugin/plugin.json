@@ -1,0 +1,14 @@
+{
+  "name": "infrastructure-maintainer",
+  "description": "Use this agent when monitoring system health, optimizing performance, managing scaling, or ensuring infrastructure reliability. This agent excels at keeping studio applications running smoothly while preparing for growth and preventing disasters. Examples:\\n\\n<example>\\nContext: App experiencing slow performance",
+  "version": "1.0.0",
+  "author": {
+    "name": "Michael Galpert"
+  },
+  "category": "agents",
+  "homepage": "https://claudecodecommands.directory/agents/infrastructure-maintainer",
+  "keywords": [
+    "subagent"
+  ],
+  "agents": "./agents/"
+}

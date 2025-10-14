@@ -1,0 +1,14 @@
+{
+  "name": "desktop-app-dev",
+  "description": "Desktop App Dev subagent",
+  "version": "1.0.0",
+  "author": {
+    "name": "safayavatsal"
+  },
+  "category": "agents",
+  "homepage": "https://claudecodecommands.directory/agents/desktop-app-dev",
+  "keywords": [
+    "subagent"
+  ],
+  "agents": "./agents/"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "content-creator",
+  "description": "Content Creator subagent",
+  "version": "1.0.0",
+  "author": {
+    "name": "Michael Galpert"
+  },
+  "category": "agents",
+  "homepage": "https://claudecodecommands.directory/agents/content-creator",
+  "keywords": [
+    "subagent"
+  ],
+  "agents": "./agents/"
+}

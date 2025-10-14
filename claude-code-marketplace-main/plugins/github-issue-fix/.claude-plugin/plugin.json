@@ -1,0 +1,17 @@
+{
+  "name": "github-issue-fix",
+  "description": "This is a detailed way you can analyze the GitHub issues and let Claude handle them in best possible way.",
+  "version": "1.0.0",
+  "author": {
+    "name": "safayavatsal"
+  },
+  "category": "debugging",
+  "homepage": "https://claudecodecommands.directory/commands/github-issue-fix",
+  "keywords": [
+    "debugging",
+    "refactoring",
+    "testing",
+    "security"
+  ],
+  "commands": "./commands/"
+}

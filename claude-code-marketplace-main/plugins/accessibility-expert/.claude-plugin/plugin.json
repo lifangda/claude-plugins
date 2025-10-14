@@ -1,0 +1,14 @@
+{
+  "name": "accessibility-expert",
+  "description": "Examples:",
+  "version": "1.0.0",
+  "author": {
+    "name": "Alysson Franklin"
+  },
+  "category": "agents",
+  "homepage": "https://claudecodecommands.directory/agents/accessibility-expert",
+  "keywords": [
+    "subagent"
+  ],
+  "agents": "./agents/"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "instagram-curator",
+  "description": "Instagram Curator subagent",
+  "version": "1.0.0",
+  "author": {
+    "name": "Michael Galpert"
+  },
+  "category": "agents",
+  "homepage": "https://claudecodecommands.directory/agents/instagram-curator",
+  "keywords": [
+    "subagent"
+  ],
+  "agents": "./agents/"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "fix-pr",
+  "description": "Fetches and fixes unresolved PR comments by automatically retrieving feedback, addressing reviewer concerns, making targeted code improvements, and streamlining the review process.",
+  "version": "1.0.0",
+  "author": {
+    "name": "metabase",
+    "url": "https://github.com/metabase"
+  },
+  "category": "general",
+  "homepage": "https://claudecodecommands.directory/commands/fix-pr",
+  "commands": "./commands/"
+}

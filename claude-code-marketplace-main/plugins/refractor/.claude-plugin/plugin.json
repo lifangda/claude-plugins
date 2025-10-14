@@ -1,0 +1,15 @@
+{
+  "name": "refractor",
+  "description": "Refactor code following best practices and design patterns",
+  "version": "1.0.0",
+  "author": {
+    "name": " Anand Tyagi",
+    "url": "https://github.com/ananddtyagi"
+  },
+  "category": "refactoring",
+  "homepage": "https://claudecodecommands.directory/commands/refractor",
+  "keywords": [
+    "refactoring"
+  ],
+  "commands": "./commands/"
+}

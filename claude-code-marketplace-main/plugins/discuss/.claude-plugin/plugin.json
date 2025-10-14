@@ -1,0 +1,14 @@
+{
+  "name": "discuss",
+  "description": "Collaborative technical discussion with proactive requirements gathering",
+  "version": "1.0.0",
+  "author": {
+    "name": "Bohdan Triapitsyn"
+  },
+  "category": "plan",
+  "homepage": "https://claudecodecommands.directory/commands/discuss",
+  "keywords": [
+    "plan"
+  ],
+  "commands": "./commands/"
+}

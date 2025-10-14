@@ -1,0 +1,14 @@
+{
+  "name": "bug-detective",
+  "description": "Systematically debug issues with step-by-step troubleshooting approaches.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Anonymous"
+  },
+  "category": "debugging",
+  "homepage": "https://claudecodecommands.directory/commands/bug-detective",
+  "keywords": [
+    "debugging"
+  ],
+  "commands": "./commands/"
+}

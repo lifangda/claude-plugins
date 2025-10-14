@@ -1,0 +1,15 @@
+{
+  "name": "debug-session",
+  "description": "Ask Claude Code to help you debug an issue",
+  "version": "1.0.0",
+  "author": {
+    "name": " Anand Tyagi",
+    "url": "https://github.com/ananddtyagi"
+  },
+  "category": "debugging",
+  "homepage": "https://claudecodecommands.directory/commands/debug-session",
+  "keywords": [
+    "debugging"
+  ],
+  "commands": "./commands/"
+}

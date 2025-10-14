@@ -12,6 +12,7 @@
     "build": "echo 'Build complete'",
     "start": "vercel dev",
     "test": "echo 'No tests specified'",
+    "analytics:start": "node cli-tool/src/analytics.js",
     "agent:security-auditor": "security-auditor 'Security audit covering codebase, dependencies, and deployment configuration'"
   },
   "dependencies": {

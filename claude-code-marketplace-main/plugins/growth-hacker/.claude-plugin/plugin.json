@@ -1,0 +1,14 @@
+{
+  "name": "growth-hacker",
+  "description": "Growth Hacker subagent",
+  "version": "1.0.0",
+  "author": {
+    "name": "Michael Galpert"
+  },
+  "category": "agents",
+  "homepage": "https://claudecodecommands.directory/agents/growth-hacker",
+  "keywords": [
+    "subagent"
+  ],
+  "agents": "./agents/"
+}

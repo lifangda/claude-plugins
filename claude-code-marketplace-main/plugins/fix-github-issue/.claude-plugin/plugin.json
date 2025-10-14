@@ -1,0 +1,12 @@
+{
+  "name": "fix-github-issue",
+  "description": "Analyzes and fixes GitHub issues using a structured approach with GitHub CLI for issue details, implementing necessary code changes, running tests, and creating proper commit messages.",
+  "version": "1.0.0",
+  "author": {
+    "name": "jeremymailen",
+    "url": "https://github.com/jeremymailen"
+  },
+  "category": "general",
+  "homepage": "https://claudecodecommands.directory/commands/fix-github-issue",
+  "commands": "./commands/"
+}

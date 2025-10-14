@@ -1,0 +1,12 @@
+{
+  "name": "update-branch-name",
+  "description": "Updates branch names with proper prefixes and formats, enforcing naming conventions, supporting semantic prefixes, and managing remote branch updates.",
+  "version": "1.0.0",
+  "author": {
+    "name": "giselles-ai",
+    "url": "https://github.com/giselles-ai"
+  },
+  "category": "general",
+  "homepage": "https://claudecodecommands.directory/commands/update-branch-name",
+  "commands": "./commands/"
+}

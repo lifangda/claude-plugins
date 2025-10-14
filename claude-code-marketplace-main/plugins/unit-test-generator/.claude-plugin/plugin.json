@@ -1,0 +1,14 @@
+{
+  "name": "unit-test-generator",
+  "description": "Expert Flutter/Dart unit test specialist that systematically improves test coverage using automated workflows with strict validation, git management, and Aurigo corporate standards. Use for comprehensive test suite creation and coverage improvement.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Community"
+  },
+  "category": "agents",
+  "homepage": "https://claudecodecommands.directory/agents/unit-test-generator",
+  "keywords": [
+    "subagent"
+  ],
+  "agents": "./agents/"
+}

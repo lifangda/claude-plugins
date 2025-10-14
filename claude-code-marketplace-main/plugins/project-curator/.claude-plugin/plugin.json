@@ -1,0 +1,14 @@
+{
+  "name": "project-curator",
+  "description": "Reorganizes project structure by cleaning root clutter, creating logical folder hierarchies, and moving files to optimal locations. Tracks dependencies and fixes broken imports/paths. Use PROACTIVELY when project structure becomes unwieldy or needs architectural cleanup.",
+  "version": "1.0.0",
+  "author": {
+    "name": "alanKerrigan"
+  },
+  "category": "agents",
+  "homepage": "https://claudecodecommands.directory/agents/project-curator",
+  "keywords": [
+    "subagent"
+  ],
+  "agents": "./agents/"
+}

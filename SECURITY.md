@@ -1,65 +1,65 @@
-# Security Policy
+# 安全政策
 
-Thank you for helping us keep Claude Plugins and the systems they interact with secure.
+感谢您帮助我们保持 Claude Plugins 及其交互系统的安全。
 
-## Reporting Security Issues
+## 报告安全问题
 
-This project is maintained by Fonda.
+本项目由 Fonda 维护。
 
-The security of our CLI tool and the plugins it provides is our top priority. We appreciate the work of security researchers acting in good faith in identifying and reporting potential vulnerabilities.
+我们的 CLI 工具和它提供的插件的安全是我们的首要任务。我们感谢安全研究人员本着善意识别和报告潜在漏洞的工作。
 
-## How to Report a Vulnerability
+## 如何报告漏洞
 
-If you discover a security vulnerability in Claude Plugins, please report it to us in one of the following ways:
+如果您在 Claude Plugins 中发现安全漏洞，请通过以下方式之一向我们报告：
 
-### Email
-Send details of the vulnerability to [fondalee@qq.com](mailto:fondalee@qq.com) with the subject line "SECURITY: Claude Plugins Vulnerability Report"
+### 电子邮件
+将漏洞详情发送到 [fondalee@qq.com](mailto:fondalee@qq.com)，主题为"SECURITY: Claude Plugins 漏洞报告"
 
-### GitHub Security Advisories
-You can also report vulnerabilities through [GitHub Security Advisories](https://github.com/lifangda/claude-plugins/security/advisories/new) for this repository.
+### GitHub 安全公告
+您也可以通过本仓库的 [GitHub 安全公告](https://github.com/lifangda/claude-plugins/security/advisories/new)报告漏洞。
 
-## What to Include in Your Report
+## 报告中应包含的内容
 
-To help us understand and resolve the issue quickly, please include:
+为了帮助我们快速理解和解决问题，请包含：
 
-- **Description**: A clear description of the vulnerability
-- **Impact**: What an attacker could achieve by exploiting this vulnerability
-- **Steps to Reproduce**: Detailed steps to reproduce the vulnerability
-- **Affected Versions**: Which versions of the CLI tool are affected
-- **Environment**: Operating system, Node.js version, and any other relevant details
-- **Proof of Concept**: If possible, include a minimal example demonstrating the vulnerability
+- **描述**：漏洞的清晰描述
+- **影响**：攻击者通过利用此漏洞可以实现什么
+- **复现步骤**：重现漏洞的详细步骤
+- **受影响版本**：CLI 工具的哪些版本受到影响
+- **环境**：操作系统、Node.js 版本和其他相关详细信息
+- **概念验证**：如果可能，包括演示漏洞的最小示例
 
-## Security Best Practices
+## 安全最佳实践
 
-When using Claude Plugins:
+使用 Claude Plugins 时：
 
-### For Users
-- **Keep Updated**: Always use the latest version via `npx claude-plugins@latest`
-- **Review Plugins**: Check generated files before committing to your repository
-- **Audit Hooks**: Review automation hooks before enabling them
-- **Secure Environment**: Use the tool in a secure development environment
+### 对于用户
+- **保持更新**：始终通过 `npx claude-plugins@latest` 使用最新版本
+- **审查插件**：在提交到仓库之前检查生成的文件
+- **审计钩子**：在启用自动化钩子之前审查它们
+- **安全环境**：在安全的开发环境中使用该工具
 
-### For Contributors
-- **Dependency Scanning**: Run `npm audit` before submitting changes
-- **Input Validation**: Validate all user inputs and file paths
-- **Secure Defaults**: Choose secure defaults for all plugin configurations
-- **Code Review**: All changes undergo security-focused code review
+### 对于贡献者
+- **依赖扫描**：在提交更改之前运行 `npm audit`
+- **输入验证**：验证所有用户输入和文件路径
+- **安全默认值**：为所有插件配置选择安全的默认值
+- **代码审查**：所有更改都经过以安全为重点的代码审查
 
-## Contact Information
+## 联系信息
 
-- **Maintainer**: Fonda
-- **Website**: [https://github.com/lifangda](https://github.com/lifangda)
-- **Email**: [fondalee@qq.com](mailto:fondalee@qq.com)
-- **GitHub**: [@lifangda](https://github.com/lifangda)
+- **维护者**：Fonda
+- **网站**：[https://github.com/lifangda](https://github.com/lifangda)
+- **电子邮件**：[fondalee@qq.com](mailto:fondalee@qq.com)
+- **GitHub**：[@lifangda](https://github.com/lifangda)
 
-## Legal
+## 法律
 
-This security policy is designed to encourage responsible security research. We will not pursue legal action against researchers who:
+本安全政策旨在鼓励负责任的安全研究。我们不会对以下研究人员采取法律行动：
 
-- Act in good faith
-- Follow responsible disclosure practices
-- Do not access or modify user data
-- Do not perform testing on systems they do not own
-- Report vulnerabilities through the channels described above
+- 本着善意行事
+- 遵循负责任的披露实践
+- 不访问或修改用户数据
+- 不对他们不拥有的系统进行测试
+- 通过上述渠道报告漏洞
 
-Thank you for helping keep Claude Plugins secure!
+感谢您帮助保持 Claude Plugins 的安全！

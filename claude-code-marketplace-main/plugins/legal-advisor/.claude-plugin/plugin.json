@@ -1,0 +1,14 @@
+{
+  "name": "legal-advisor",
+  "description": "Use this agent when you need legal advisory, compliance documentation, RFP response creation, and enterprise contract support for B2B applications. This agent specializes in legal document creation, regulatory analysis, enterprise procurement compliance, and RFP winning strategies. Transforms complex legal requirements into competitive advantages. Examples:",
+  "version": "1.0.0",
+  "author": {
+    "name": "Alysson Franklin"
+  },
+  "category": "agents",
+  "homepage": "https://claudecodecommands.directory/agents/legal-advisor",
+  "keywords": [
+    "subagent"
+  ],
+  "agents": "./agents/"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "documentation-generator",
+  "description": "Create comprehensive documentation for code, APIs, and projects.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Anonymous"
+  },
+  "category": "documentation",
+  "homepage": "https://claudecodecommands.directory/commands/documentation-generator",
+  "keywords": [
+    "documentation"
+  ],
+  "commands": "./commands/"
+}

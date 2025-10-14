@@ -1,0 +1,12 @@
+{
+  "name": "husky",
+  "description": "Sets up and manages Husky Git hooks by configuring pre-commit hooks, establishing commit message standards, integrating with linting tools, and ensuring code quality on commits.",
+  "version": "1.0.0",
+  "author": {
+    "name": "evmts",
+    "url": "https://github.com/evmts"
+  },
+  "category": "general",
+  "homepage": "https://claudecodecommands.directory/commands/husky",
+  "commands": "./commands/"
+}

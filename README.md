@@ -8,14 +8,15 @@
 
 ## 📋 项目概述
 
-Claude Plugins 是一个完整的AI开发工具集，包含 **692个文件**，涵盖：
+Claude Plugins 是一个完整的AI开发工具集，包含 **763个文件**，涵盖：
 
-- **249个专业代理** - AI专家团队，覆盖各种开发领域
-- **252个实用命令** - 自动化工具和开发命令
+- **312个专业代理** - AI专家团队，覆盖各种开发领域
+- **274个实用命令** - 自动化工具和开发命令
 - **15个工作流** - 完整的开发流程自动化
 - **40个钩子** - 自动化触发器和事件处理
 - **55个MCP服务器** - 外部服务集成
 - **3个沙盒环境** - 安全的代码执行环境
+- **64个设置配置** - 项目配置和自定义设置
 
 ### 🏆 技术规范
 - ✅ **符合Claude Code官方插件市场规范**
@@ -44,12 +45,15 @@ Claude Plugins 是一个完整的AI开发工具集，包含 **692个文件**，�
 
 #### 方式一：完整安装（推荐新手）
 ```bash
-# 安装完整插件包（包含614个插件）
+# 安装完整插件包（包含699个插件）
 /plugin install claude-plugins-complete@lifangda
 ```
 
 #### 方式二：专业插件包（推荐专业用户）
 ```bash
+# 社区精选插件包（NEW! 85个高质量社区插件）
+/plugin install marketplace-community@lifangda  # Marketplace社区精选
+
 # 核心开发工具包
 /plugin install git-workflow@lifangda        # Git工作流自动化
 /plugin install supabase-toolkit@lifangda     # 数据库开发工具
@@ -127,9 +131,23 @@ Claude Plugins 是一个完整的AI开发工具集，包含 **692个文件**，�
 ### 🎯 完整插件包
 
 #### claude-plugins-complete
-**描述**: 完整的614个Claude插件集合，包括249个代理、252个命令、15个工作流、40个钩子、55个MCP服务器和3个沙盒环境
+**描述**: 完整的699个Claude插件集合，包括312个代理、274个命令、15个工作流、40个钩子、55个MCP服务器和3个沙盒环境
 **适用**: 新手用户，希望获得完整功能
 **安装**: `/plugin install claude-plugins-complete@lifangda`
+
+### 🌟 社区插件包（NEW!）
+
+#### marketplace-community
+**描述**: Claude Code Marketplace社区精选插件：85个高质量插件，包括63个专业代理和22个增强命令
+**特色**: 
+- ⭐ **AI增强工具**: Lyra提示词优化、Ultrathink协调器代理、双重检查系统
+- 📊 **代码分析**: 代码库分析、CLAUDE.md自动更新、代码架构师
+- 🚀 **产品管理**: PRD规划代理、冲刺优先级、产品专家
+- 💼 **企业工具**: 企业安全审查、集成架构师、AI伦理治理
+- 📱 **移动开发**: Flutter/React Native开发、移动UX优化
+- 📢 **增长营销**: 增长黑客、社交媒体策略专家
+**来源**: [Claude Code Marketplace](https://github.com/ananddtyagi/claude-code-marketplace) 社区贡献
+**安装**: `/plugin install marketplace-community@lifangda`
 
 ### 🛠️ 专业插件包
 

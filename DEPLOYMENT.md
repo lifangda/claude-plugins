@@ -1,60 +1,60 @@
-# 🚀 Deployment Guide
+# 🚀 部署指南
 
-This project is configured for automatic deployment to Vercel from the `main` branch.
+本项目配置为从 `main` 分支自动部署到 Vercel。
 
-## GitHub Actions Setup
+## GitHub Actions 设置
 
-### Required Secrets
+### 必需的密钥
 
-Add these secrets to your GitHub repository settings:
+在 GitHub 仓库设置中添加以下密钥：
 
-1. **VERCEL_TOKEN**: Your Vercel account token
-   - Go to [Vercel Account Settings](https://vercel.com/account/tokens)
-   - Create a new token with appropriate permissions
-   - Add as `VERCEL_TOKEN` in GitHub Secrets
+1. **VERCEL_TOKEN**: 您的 Vercel 账户令牌
+   - 访问 [Vercel 账户设置](https://vercel.com/account/tokens)
+   - 创建具有适当权限的新令牌
+   - 在 GitHub Secrets 中添加为 `VERCEL_TOKEN`
 
-2. **VERCEL_ORG_ID**: Your Vercel organization ID
-   - Run `vercel link` in your project
-   - Copy the `orgId` from `.vercel/project.json`
-   - Add as `VERCEL_ORG_ID` in GitHub Secrets
+2. **VERCEL_ORG_ID**: 您的 Vercel 组织 ID
+   - 在项目中运行 `vercel link`
+   - 从 `.vercel/project.json` 复制 `orgId`
+   - 在 GitHub Secrets 中添加为 `VERCEL_ORG_ID`
 
-3. **VERCEL_PROJECT_ID**: Your Vercel project ID
-   - Run `vercel link` in your project
-   - Copy the `projectId` from `.vercel/project.json`
-   - Add as `VERCEL_PROJECT_ID` in GitHub Secrets
+3. **VERCEL_PROJECT_ID**: 您的 Vercel 项目 ID
+   - 在项目中运行 `vercel link`
+   - 从 `.vercel/project.json` 复制 `projectId`
+   - 在 GitHub Secrets 中添加为 `VERCEL_PROJECT_ID`
 
-### Getting the IDs
+### 获取 ID
 
-Run these commands in your project root:
+在项目根目录运行以下命令：
 
 ```bash
-# Link to Vercel project
+# 链接到 Vercel 项目
 vercel link
 
-# Get your IDs from the generated file
+# 从生成的文件中获取您的 ID
 cat .vercel/project.json
 ```
 
-## Deployment Flow
+## 部署流程
 
-- ✅ **Push to main** → Automatic production deploy to GitHub Pages
-- ✅ **Other branches** → Manual deploy only (no auto-deploy)
-- ✅ **Pull Requests** → No deployment
+- ✅ **推送到 main** → 自动生产部署到 GitHub Pages
+- ✅ **其他分支** → 仅手动部署（无自动部署）
+- ✅ **Pull Requests** → 无部署
 
-## Manual Deployment
+## 手动部署
 
-For testing other branches:
+测试其他分支：
 
 ```bash
-# Deploy current branch to preview URL
+# 将当前分支部署到预览 URL
 vercel
 
-# Deploy current branch to production
+# 将当前分支部署到生产环境
 vercel --prod
 ```
 
-## Domain Configuration
+## 域名配置
 
-The main branch deploys to the custom domain: **claude-plugins.com**
+主分支部署到自定义域名：**claude-plugins.com**
 
-Configured in Vercel dashboard under Project Settings → Domains.
+在 Vercel 控制面板的项目设置 → 域名中配置。

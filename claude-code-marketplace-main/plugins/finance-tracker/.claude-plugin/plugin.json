@@ -1,0 +1,14 @@
+{
+  "name": "finance-tracker",
+  "description": "Use this agent when managing budgets, optimizing costs, forecasting revenue, or analyzing financial performance. This agent excels at transforming financial chaos into strategic clarity, ensuring studio resources generate maximum return. Examples:\\n\\n<example>\\nContext: Planning next quarter's development budget",
+  "version": "1.0.0",
+  "author": {
+    "name": "Michael Galpert"
+  },
+  "category": "agents",
+  "homepage": "https://claudecodecommands.directory/agents/finance-tracker",
+  "keywords": [
+    "subagent"
+  ],
+  "agents": "./agents/"
+}

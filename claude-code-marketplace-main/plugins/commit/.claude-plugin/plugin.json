@@ -1,0 +1,12 @@
+{
+  "name": "commit",
+  "description": "Creates git commits using conventional commit format with appropriate emojis, following project standards and creating descriptive messages that explain the purpose of changes.",
+  "version": "1.0.0",
+  "author": {
+    "name": "evmts",
+    "url": "https://github.com/evmts"
+  },
+  "category": "general",
+  "homepage": "https://claudecodecommands.directory/commands/commit",
+  "commands": "./commands/"
+}

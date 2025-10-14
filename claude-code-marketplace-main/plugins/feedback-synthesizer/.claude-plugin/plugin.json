@@ -1,0 +1,14 @@
+{
+  "name": "feedback-synthesizer",
+  "description": "Use this agent when you need to analyze user feedback from multiple sources, identify patterns in user complaints or requests, synthesize insights from reviews, or prioritize feature development based on user input. This agent excels at turning raw feedback into actionable product insights. Examples:\\n\\n<example>\\nContext: Weekly review of user feedback",
+  "version": "1.0.0",
+  "author": {
+    "name": "Michael Galpert"
+  },
+  "category": "agents",
+  "homepage": "https://claudecodecommands.directory/agents/feedback-synthesizer",
+  "keywords": [
+    "subagent"
+  ],
+  "agents": "./agents/"
+}

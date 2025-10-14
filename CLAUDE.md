@@ -4,479 +4,256 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Node.js CLI tool for setting up Claude Plugins configurations and providing real-time analytics. The project uses modern JavaScript/Node.js development practices and includes a comprehensive analytics dashboard with modular architecture.
+Claude Plugins 是一个 Node.js CLI 工具,用于管理和安装 Claude Code 配置组件。项目包含 600+ 个组件:249个AI代理、252个命令、15个工作流、40个钩子、55个MCP服务器和3个沙盒环境。
 
-## Development Commands
+**核心功能:**
+- 组件安装系统 (agents, commands, mcps, settings, hooks)
+- Claude Code 插件市场配置
+- 实时分析仪表板
+- E2B 沙盒执行环境
 
-### Package Management
-- `npm install` - Install all dependencies
-- `npm install --save <package>` - Install a production dependency
-- `npm install --save-dev <package>` - Install a development dependency
-- `npm update` - Update all dependencies
-- `npm audit` - Check for security vulnerabilities
-- `npm audit fix` - Fix security vulnerabilities
+## 常用命令
 
-### Application Commands
-- `npm start` - Run the CLI tool
-- `npm run analytics:start` - Start the analytics dashboard server
-- `npm run analytics:test` - Run analytics-specific tests
-- `node src/analytics.js` - Direct analytics server startup
-
-### Testing Commands
-- `npm test` - Run all tests with Jest
-- `npm run test:watch` - Run tests in watch mode
-- `npm run test:coverage` - Run tests with coverage report
-- `npm run test:unit` - Run unit tests only
-- `npm run test:integration` - Run integration tests only
-- `npm run test:e2e` - Run end-to-end tests
-- `npm run test:analytics` - Run analytics module tests
-- `npm run test:all` - Run comprehensive test suite
-
-### Code Quality Commands
-- `npm run lint` - Run ESLint (if configured)
-- `npm run format` - Format code (if configured)
-- `node --check src/analytics.js` - Check syntax
-
-### Development Tools
-- `npm run dev:link` - Link package for local development
-- `npm run dev:unlink` - Unlink package
-- `npm version patch|minor|major` - Bump version
-- `npm publish` - Publish to npm registry
-
-## Analytics Dashboard
-
-### Quick Start
+### 开发命令
 ```bash
-# Start the analytics dashboard
-npm run analytics:start
-
-# Open browser to http://localhost:3333
-# The dashboard provides real-time monitoring of Claude Code sessions
-```
-
-### Key Features
-- **Real-time Session Monitoring** - Live tracking of active Claude Code conversations
-- **Conversation State Detection** - "Claude working...", "User typing...", "Awaiting input..."
-- **Performance Analytics** - System health, memory usage, and performance metrics
-- **WebSocket Integration** - Real-time updates without polling
-- **Export Capabilities** - CSV/JSON export of conversation data
-- **Browser Notifications** - Desktop alerts for state changes
-
-### Architecture
-The analytics dashboard follows a modular architecture with:
-- **Backend Modules**: StateCalculator, ProcessDetector, ConversationAnalyzer, FileWatcher, DataCache
-- **Frontend Components**: Dashboard, ConversationTable, Charts, Services
-- **Real-time Communication**: WebSocket server with notification management
-- **Performance Monitoring**: Comprehensive metrics and health monitoring
-- **Testing Framework**: Unit, integration, and performance tests
-
-## Technology Stack
-
-### Core Technologies
-- **Node.js** - Runtime environment (v14.0.0+)
-- **Express.js** - Web server framework
-- **WebSocket** - Real-time communication (ws library)
-- **Chokidar** - File system watching
-- **Jest** - Testing framework
-
-### Frontend Technologies
-- **Vanilla JavaScript** - No framework dependencies for maximum compatibility
-- **Chart.js** - Data visualization
-- **WebSocket Client** - Real-time updates
-- **CSS3** - Modern styling with responsive design
-
-### Development Tools
-- **fs-extra** - Enhanced file system operations
-- **chalk** - Terminal string styling
-- **boxen** - Terminal boxes
-- **commander** - CLI argument parsing
-- **inquirer** - Interactive command line prompts
-
-### CLI Dependencies
-- **commander** - Command-line interface framework
-- **inquirer** - Interactive command line prompts
-- **ora** - Terminal spinners
-- **boxen** - Terminal boxes for notifications
-- **open** - Cross-platform file opener
-
-### Analytics Dependencies
-- **express** - Web server framework
-- **ws** - WebSocket library for real-time communication
-- **chokidar** - File system watcher
-- **fs-extra** - Enhanced file system operations
-- **chalk** - Terminal string styling
-
-### Testing Framework
-- **Jest** - JavaScript testing framework
-- **jest-watch-typeahead** - Interactive test watching
-- Comprehensive test coverage with unit, integration, and performance tests
-
-### Code Quality Tools
-- **ESLint** - JavaScript linting (if configured)
-- **Prettier** - Code formatting (if configured)
-- **Node.js built-in** - Syntax checking with `node --check`
-
-## Project Structure Guidelines
-
-### File Organization
-```
-src/
-├── index.js             # CLI entry point
-├── analytics.js         # Analytics dashboard server
-├── analytics/           # Analytics modules
-│   ├── core/           # Core business logic
-│   │   ├── StateCalculator.js
-│   │   ├── ProcessDetector.js
-│   │   ├── ConversationAnalyzer.js
-│   │   └── FileWatcher.js
-│   ├── data/           # Data management
-│   │   └── DataCache.js
-│   ├── notifications/   # Real-time communication
-│   │   ├── WebSocketServer.js
-│   │   └── NotificationManager.js
-│   └── utils/          # Utilities
-│       └── PerformanceMonitor.js
-├── analytics-web/       # Frontend components
-│   ├── index.html      # Main dashboard page
-│   ├── components/     # UI components
-│   ├── services/       # Frontend services
-│   └── assets/         # Static assets
-├── templates/           # Configuration templates
-└── utils/              # CLI utilities
-tests/
-├── unit/               # Unit tests
-├── integration/        # Integration tests
-├── e2e/               # End-to-end tests
-└── fixtures/          # Test data
-```
-
-### Naming Conventions
-- **Files/Modules**: Use PascalCase for classes (`StateCalculator.js`), camelCase for utilities
-- **Classes**: Use PascalCase (`StateCalculator`)
-- **Functions/Variables**: Use camelCase (`getUserData`)
-- **Constants**: Use UPPER_SNAKE_CASE (`API_BASE_URL`)
-- **Private methods**: Prefix with underscore (`_privateMethod`)
-
-## Node.js Guidelines
-
-### Module Organization
-- Use CommonJS modules (`module.exports`, `require()`)
-- Organize related functionality into classes
-- Keep modules focused and single-purpose
-- Use dependency injection for testability
-- Document public APIs with JSDoc comments
-
-### Code Style
-- Use meaningful variable and function names
-- Keep functions focused and single-purpose
-- Use async/await for asynchronous operations
-- Handle errors appropriately with try/catch blocks
-- Use console logging with appropriate levels (chalk for styling)
-
-### Best Practices
-- Use `fs-extra` for enhanced file operations
-- Prefer `path.join()` for cross-platform path handling
-- Use async/await instead of callbacks where possible
-- Handle process signals for graceful shutdown
-- Use environment variables for configuration
-
-## Testing Standards
-
-### Test Structure
-- Organize tests to mirror source code structure
-- Use descriptive test names that explain the behavior
-- Follow AAA pattern (Arrange, Act, Assert)
-- Use Jest fixtures and mocks for test data
-- Group related tests in `describe` blocks
-
-### Test Categories
-- **Unit Tests** - Test individual modules and functions in isolation
-- **Integration Tests** - Test module interactions and complete workflows
-- **Performance Tests** - Test system performance and memory usage
-- **E2E Tests** - Test complete user scenarios end-to-end
-
-### Jest Configuration
-```javascript
-// jest.config.js
-module.exports = {
-  testEnvironment: 'node',
-  collectCoverageFrom: [
-    'src/**/*.js',
-    '!src/**/*.test.js'
-  ],
-  coverageThreshold: {
-    global: {
-      branches: 70,
-      functions: 70,
-      lines: 70,
-      statements: 70
-    }
-  }
-};
-```
-
-### Coverage Goals
-- Aim for 70%+ overall test coverage (80%+ for core modules)
-- Write unit tests for business logic
-- Use integration tests for module interactions
-- Mock external dependencies and services
-- Test error conditions and edge cases
-
-### Test Examples
-```javascript
-// Unit test example
-describe('StateCalculator', () => {
-  let stateCalculator;
-  
-  beforeEach(() => {
-    stateCalculator = new StateCalculator();
-  });
-  
-  it('should detect active state for recent messages', () => {
-    const messages = [/* test data */];
-    const lastModified = new Date();
-    
-    const state = stateCalculator.determineConversationState(messages, lastModified);
-    
-    expect(state).toBe('active');
-  });
-});
-```
-
-## Dependency Management
-
-### Node.js Environment Setup
-```bash
-# Ensure Node.js 14+ is installed
-node --version
-
-# Install dependencies
+# 安装依赖
 npm install
 
-# Install development dependencies
-npm install --save-dev jest
+# 运行 CLI 工具
+npm start
+node cli-tool/bin/create-claude-config.js
 
-# Link for local development
-npm link
+# 启动分析仪表板
+npm run analytics:start
+# 浏览器访问 http://localhost:3333
 ```
 
-### Package Management Best Practices
-- Use `package.json` for dependency management
-- Pin major versions to avoid breaking changes
-- Use `npm audit` to check for security vulnerabilities
-- Keep dependencies up to date with `npm update`
-
-## Analytics Modular Architecture
-
-### Implementation Details
-The analytics dashboard has been refactored into a modular architecture in 4 phases:
-
-#### Phase 1: Backend Modularization
-- **StateCalculator** - Conversation state detection logic
-- **ProcessDetector** - Running process detection and correlation
-- **ConversationAnalyzer** - Message parsing and analysis
-- **FileWatcher** - Real-time file system monitoring
-- **DataCache** - Multi-level caching system
-
-#### Phase 2: Frontend Modularization  
-- **Dashboard** - Main component orchestration
-- **ConversationTable** - Interactive conversation display
-- **Charts** - Data visualization components
-- **StateService** - Reactive state management
-- **DataService** - API communication with caching
-- **WebSocketService** - Real-time communication
-
-#### Phase 3: Real-time Communication
-- **WebSocketServer** - Server-side WebSocket management
-- **NotificationManager** - Event-driven notifications
-- **Real-time Updates** - Live conversation state changes
-- **Fallback Mechanisms** - Polling when WebSocket unavailable
-
-#### Phase 4: Testing & Performance
-- **Comprehensive Test Suite** - Unit, integration, and performance tests
-- **PerformanceMonitor** - System health and metrics tracking
-- **Memory Management** - Automatic cleanup and optimization
-- **Production Readiness** - Performance monitoring and error tracking
-
-## Security Guidelines
-
-### Dependencies
-- Regularly update dependencies with `npm audit` and `npm update`
-- Use `npm audit` to check for known vulnerabilities
-- Pin major versions in package.json to avoid breaking changes
-- Use environment variables for sensitive configuration
-
-### Code Security
-- Validate input data appropriately
-- Use environment variables for API keys and configuration
-- Implement proper error handling without exposing sensitive information
-- Sanitize file paths and user inputs
-- Use HTTPS for production deployments
-
-## Development Workflow
-
-### Before Starting
-1. Check Node.js version compatibility (14.0.0+)
-2. Run `npm install` to install dependencies
-3. Check syntax with `node --check src/analytics.js`
-4. Run initial tests with `npm test`
-
-### During Development
-1. Use meaningful variable and function names
-2. Run tests frequently to catch issues early: `npm run test:watch`
-3. For frontend changes, let user handle analytics server startup - don't run `npm run analytics:start` automatically
-4. Use meaningful commit messages
-
-### Before Committing
-1. Run full test suite: `npm test`
-2. Check syntax: `node --check src/analytics.js`
-3. Test analytics functionality: `npm run analytics:test`
-4. Ensure no console errors in browser (if testing frontend)
-5. Run performance tests if available
-
-## Component System Architecture
-
-### Core Component Types
-
-This CLI tool manages a comprehensive component system for Claude Code configurations:
-
-#### 🤖 Agents (600+ specialists)
-AI specialists organized by domain expertise:
-- **Development**: `frontend-developer`, `fullstack-developer`, `devops-engineer`
-- **Security**: `security-auditor`, `penetration-tester`, `compliance-specialist`
-- **Data/AI**: `data-scientist`, `ml-engineer`, `nlp-engineer`
-- **Business**: `product-strategist`, `business-analyst`, `legal-advisor`
-
-#### ⚡ Commands (200+ automations)
-Custom slash commands for development workflows:
-- **Setup**: `/setup-ci-cd-pipeline`, `/setup-testing`, `/migrate-to-typescript`
-- **Performance**: `/optimize-bundle`, `/performance-audit`, `/add-caching`
-- **Testing**: `/generate-tests`, `/setup-e2e`, `/test-coverage`
-- **Documentation**: `/update-docs`, `/generate-api-docs`, `/create-guide`
-
-#### 🔌 MCPs (Model Context Protocol Integrations)
-External service connections:
-- **Databases**: `postgresql-integration`, `supabase`, `mysql-integration`
-- **Development**: `github-integration`, `context7`, `filesystem-access`
-- **Browser**: `playwright-mcp`, `browsermcp`, `browser-use-mcp-server`
-
-#### ⚙️ Settings
-Claude Code configuration files:
-- **Performance**: `performance-optimization`, `bash-timeouts`, `mcp-timeouts`
-- **Security**: `read-only-mode`, `deny-sensitive-files`, `allow-git-operations`
-- **Statuslines**: `context-monitor`, `git-branch-statusline`, `time-statusline`
-
-#### 🪝 Hooks
-Automation triggers for development workflows:
-- **Git**: `auto-git-add`, `smart-commit`, `pre-commit-validation`
-- **Notifications**: `discord-notifications`, `slack-notifications`, `telegram-notifications`
-- **Performance**: `performance-monitor`, `lint-on-save`, `test-runner`
-
-### Component Installation System
-
-#### CLI Installation Patterns
+### 测试命令
 ```bash
-# Install specific components
-npx claude-plugins@latest --agent <name>
-npx claude-plugins@latest --command <name>
-npx claude-plugins@latest --mcp <name>
-npx claude-plugins@latest --setting <name>
-npx claude-plugins@latest --hook <name>
-
-# Batch installation
-npx claude-plugins@latest --agent security-auditor --command security-audit --setting read-only-mode
-
-# Interactive mode
-npx claude-plugins@latest
+npm test                    # 运行所有测试
+npm run test:watch          # 监视模式
+npm run test:coverage       # 覆盖率报告
+npm run analytics:test      # 分析模块测试
 ```
 
-#### Special Component Features
-
-**Statusline System with Python Scripts**
-- Statuslines can reference external Python scripts
-- Files are downloaded automatically to `.claude/scripts/` relative to project
-- Example: `statusline/context-monitor` installs both JSON config and Python script
-- Implementation in `src/index.js:installIndividualSetting()`:
-
-```javascript
-if (settingName.includes('statusline/')) {
-  const pythonFileName = settingName.split('/')[1] + '.py';
-  const pythonUrl = githubUrl.replace('.json', '.py');
-  additionalFiles['.claude/scripts/' + pythonFileName] = {
-    content: pythonContent,
-    executable: true
-  };
-}
-```
-
-### Component Generation System
-
-The `generate_components_json.py` script creates the component catalog:
-- Scans all component directories recursively
-- Excludes `.py` files from public listings (they remain as background dependencies)
-- Generates `docs/components.json` for the web interface
-- Handles file content embedding and metadata extraction
-
-## Important Implementation Notes
-
-### Path Handling
-- **Relative Paths**: Always use relative paths like `.claude/scripts/` for project-local files
-- **Cross-platform**: Use `path.join()` for cross-platform compatibility
-- **No Hardcoding**: Never hardcode user home directories or absolute paths
-
-### Context Monitor Implementation
-The statusline context monitor system demonstrates key architectural patterns:
-- **Component Download**: Automatic download of related files (Python scripts)
-- **Relative Installation**: Files installed relative to project, not globally
-- **Background Dependencies**: Python files excluded from public component listings
-- **Dynamic Loading**: Components loaded and executed dynamically by Claude Code
-
-### Error Handling Patterns
-- Use try/catch blocks for async operations
-- Log errors with appropriate context using chalk for styling
-- Provide helpful error messages to users
-- Handle missing files or directories gracefully
-- Implement fallback mechanisms for network operations
-
-### Component Development Guidelines
-
-#### Adding New Components
-1. **Structure**: Follow existing directory patterns in `cli-tool/components/`
-2. **Naming**: Use descriptive, hyphenated names (`security-auditor.md`)
-3. **Documentation**: Include clear descriptions and usage examples
-4. **Testing**: Add tests for complex logic components
-5. **Generation**: Run `python generate_components_json.py` to update catalog
-
-#### Modifying Existing Components
-1. **Backward Compatibility**: Ensure changes don't break existing installations
-2. **Version Management**: Consider version bumping for breaking changes
-3. **Testing**: Test component installation with `--setting`, `--agent`, etc.
-4. **Documentation**: Update component descriptions if functionality changes
-
-### Publishing Workflow
-
-#### Version Management
+### 发布工作流
 ```bash
-# Bump version (automatically updates package.json)
-npm version patch   # 1.20.2 -> 1.20.3
-npm version minor   # 1.20.3 -> 1.21.0  
-npm version major   # 1.21.0 -> 2.0.0
-
-# Publish to npm
+npm version patch           # 1.0.0 -> 1.0.1
+npm version minor           # 1.0.1 -> 1.1.0
+npm version major           # 1.1.0 -> 2.0.0
 npm publish
 ```
 
-#### Pre-publish Checklist
-1. All tests passing (`npm test`)
-2. Component catalog updated (`python generate_components_json.py`)
-3. No hardcoded paths or sensitive information
-4. Version bumped appropriately
-5. Git commits include all relevant files
+### 组件测试
+```bash
+# 测试单个组件安装
+node cli-tool/bin/create-claude-config.js --agent python-pro
+node cli-tool/bin/create-claude-config.js --command generate-tests
+node cli-tool/bin/create-claude-config.js --mcp github-integration
+```
 
-### Component Security
-- Never include hardcoded credentials or API keys in components
-- Validate all user inputs in components
-- Use relative paths (`.claude/scripts/`) instead of absolute paths
-- Review components for potential security vulnerabilities before publishing
+## 核心架构
 
-This codebase represents a comprehensive Claude Code component ecosystem with real-time analytics, modular architecture, and extensive automation capabilities. The system is designed for scalability, maintainability, and ease of use while providing powerful development workflow enhancements.
+### 1. CLI 入口系统 (`cli-tool/bin/create-claude-config.js` 和 `cli-tool/src/index.js`)
+
+**主要功能流程:**
+- `showMainMenu()` - 交互式主菜单 (Analytics, Chats, Agents, Setup, Health Check)
+- `createClaudeConfig()` - 核心配置创建函数
+- 组件安装函数: `installIndividualAgent()`, `installIndividualCommand()`, `installIndividualMCP()`, `installIndividualSetting()`, `installIndividualHook()`
+- `installMultipleComponents()` - 批量组件安装,支持共享安装位置选择
+- `executeSandbox()` - E2B 沙盒执行环境
+
+**关键特性:**
+- 所有组件从 GitHub main 分支下载: `https://raw.githubusercontent.com/lifangda/claude-plugins/main/cli-tool/components/`
+- 支持分类路径 (如 `security/api-security-audit`) 和直接路径 (如 `python-pro`)
+- Settings 和 Hooks 支持多位置安装: user (~/.claude), project (.claude), local (.claude/settings.local.json), enterprise
+
+### 2. 组件系统
+
+**组件类型和安装位置:**
+```
+Agents   → .claude/agents/
+Commands → .claude/commands/
+MCPs     → .mcp.json (合并配置)
+Settings → .claude/settings.json 或 settings.local.json
+Hooks    → .claude/settings.json 或 settings.local.json
+Workflows → .claude/workflows/
+```
+
+**Statusline 特殊处理:**
+- Statusline 组件 (如 `statusline/context-monitor`) 会同时下载 JSON 配置和对应的 Python 脚本
+- Python 脚本安装到 `.claude/scripts/` 目录
+- 代码位置: `cli-tool/src/index.js:installIndividualSetting()` 行 603-654
+
+**MCP 配置合并:**
+- 自动移除 `description` 字段避免配置冗余
+- 深度合并 `mcpServers` 对象保留现有配置
+- 代码位置: `cli-tool/src/index.js:installIndividualMCP()` 行 517-601
+
+### 3. 插件市场系统 (`.claude-plugin/marketplace.json`)
+
+**结构:**
+- 定义 600+ 个插件包的元数据
+- 每个插件包含: name, source, description, version, agents[], commands[], workflows[], hooks[], mcps[]
+- 支持 Claude Code 插件市场规范
+
+**核心插件包:**
+- `claude-plugins-complete` - 完整 614 个组件
+- `git-workflow` - Git 工作流自动化
+- `supabase-toolkit` - 完整 Supabase 工作流
+- `nextjs-vercel-pro` - Next.js/Vercel 开发工具
+- `testing-suite` - 全面测试工具包
+- `security-pro` - 企业安全工具包
+- `knowledge-wikipedia` - 维基百科知识库集成
+
+### 4. 分析仪表板架构 (`cli-tool/src/analytics.js`)
+
+**模块化架构 (4阶段重构):**
+
+**后端模块** (`cli-tool/src/analytics/`):
+```
+core/
+  ├── StateCalculator.js        # 会话状态检测
+  ├── ProcessDetector.js        # 进程检测和关联
+  ├── ConversationAnalyzer.js   # 消息解析分析
+  ├── FileWatcher.js            # 实时文件监控
+  └── AgentAnalyzer.js          # Agent 分析
+data/
+  └── DataCache.js              # 多级缓存系统
+notifications/
+  ├── WebSocketServer.js        # WebSocket 管理
+  └── NotificationManager.js    # 事件驱动通知
+utils/
+  └── PerformanceMonitor.js     # 性能监控
+```
+
+**前端架构** (`cli-tool/src/analytics-web/`):
+```
+components/
+  ├── DashboardPage.js          # 主仪表板
+  ├── ConversationTable.js      # 会话列表
+  ├── Charts.js                 # 数据可视化
+  ├── AgentAnalytics.js         # Agent 分析视图
+  └── [其他组件]
+services/
+  ├── StateService.js           # 响应式状态管理
+  ├── DataService.js            # API 通信 + 缓存
+  └── WebSocketService.js       # 实时通信
+```
+
+**实时通信:**
+- WebSocket 服务器端口 3333
+- 支持会话状态变化通知
+- 回退到轮询机制
+- 浏览器通知集成
+
+### 5. E2B 沙盒系统
+
+**架构:**
+- Python launcher: `cli-tool/components/sandbox/e2b/e2b-launcher.py`
+- 支持本地和远程组件安装
+- 15分钟超时,支持 ESC 取消
+- 自动文件下载到用户目录
+
+**使用:**
+```bash
+node cli-tool/bin/create-claude-config.js --sandbox e2b --prompt "创建一个 web 应用" --agent python-pro
+```
+
+**环境要求:**
+- Python 3.11+ (推荐) 或 python3
+- E2B_API_KEY 环境变量
+- ANTHROPIC_API_KEY 环境变量
+
+## 重要实现细节
+
+### 路径处理规范
+- **始终使用相对路径**: `.claude/scripts/`, `.claude/agents/` 等
+- **使用 `path.join()`** 确保跨平台兼容性
+- **从不硬编码用户目录或绝对路径**
+
+### Hook 配置格式
+- 使用 Claude Code 数组格式
+- 每个 hook 类型包含 matcher 和 hooks 数组
+- 旧格式会自动转换为新格式
+- 代码位置: `cli-tool/src/index.js` 行 1127-1169
+
+### 组件分类系统
+- 组件按类别组织 (如 `agents/security/`, `commands/testing/`)
+- 安装时自动提取类别和文件名
+- 安装到扁平目录结构 (agents/, commands/ 等)
+
+### 错误处理模式
+- 所有异步操作使用 try/catch
+- 网络操作包含回退机制
+- 404 错误显示可用组件建议
+- 使用 chalk 进行彩色错误输出
+
+## 技术栈
+
+**核心依赖:**
+- Node.js 14+
+- Express.js (Web 服务器)
+- WebSocket (ws 库)
+- Chokidar (文件监控)
+- Commander (CLI 框架)
+- Inquirer (交互式提示)
+
+**前端:**
+- Vanilla JavaScript (无框架依赖)
+- Chart.js (数据可视化)
+- WebSocket Client
+
+**测试:**
+- Jest (测试框架)
+- 支持 unit, integration, e2e 测试
+
+## 模块系统规范
+
+- 使用 CommonJS: `module.exports`, `require()`
+- 类使用 PascalCase: `StateCalculator`
+- 函数/变量使用 camelCase: `getUserData`
+- 常量使用 UPPER_SNAKE_CASE: `API_BASE_URL`
+- 私有方法前缀下划线: `_privateMethod`
+
+## 组件生成
+
+**生成组件目录:**
+```bash
+python generate_components_json.py
+```
+- 扫描所有组件目录
+- 排除 `.py` 文件 (作为后台依赖)
+- 生成 `docs/components.json`
+
+## 发布前检查清单
+
+1. 所有测试通过: `npm test`
+2. 组件目录已更新: `python generate_components_json.py`
+3. 无硬编码路径或敏感信息
+4. 版本号已更新
+5. Git 提交包含所有相关文件
+
+## 调试技巧
+
+**测试组件安装:**
+```bash
+# 本地测试 CLI
+npm link
+claude-plugins --agent python-pro
+
+# 测试分析仪表板
+npm run analytics:start
+# 检查浏览器控制台错误
+```
+
+**检查语法:**
+```bash
+node --check cli-tool/src/analytics.js
+node --check cli-tool/src/index.js
+```
+
+**调试 E2B 沙盒:**
+- 查看 `cli-tool/components/sandbox/e2b/SANDBOX_DEBUGGING.md`
+- 检查 Python 环境: `python3 --version` 或 `python3.11 --version`
+- 验证 API keys: `echo $E2B_API_KEY`, `echo $ANTHROPIC_API_KEY`

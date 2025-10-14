@@ -1,0 +1,15 @@
+{
+  "name": "claude-desktop-extension",
+  "description": "This command provides the context necessary for Claude Code to create the Desktop Extension or .dxt file of an MCP.",
+  "version": "1.0.0",
+  "author": {
+    "name": " Anand Tyagi",
+    "url": "https://github.com/ananddtyagi"
+  },
+  "category": "workflow",
+  "homepage": "https://claudecodecommands.directory/commands/claude-desktop-extension",
+  "keywords": [
+    "workflow"
+  ],
+  "commands": "./commands/"
+}
