@@ -7,14 +7,14 @@
   },
   "metadata": {
     "description": "完整的Claude插件生态系统：269个专业代理、275个开发命令、16个工作流、39个钩子、56个MCP服务器，专业化分类，即装即用",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "claude-plugins-complete",
       "source": "./cli-tool/components",
       "description": "完整的Claude插件生态系统：269个AI代理、275个开发命令、16个工作流、39个自动化钩子、56个MCP服务器，一条命令即可安装使用",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -768,7 +768,7 @@
       "name": "agents-accessibility",
       "source": "./cli-tool/components",
       "description": "Accessibility 专业代理插件包 - 1个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -787,7 +787,7 @@
       "name": "agents-ai-optimization",
       "source": "./cli-tool/components",
       "description": "Ai Optimization 专业代理插件包 - 1个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -806,7 +806,7 @@
       "name": "agents-ai-specialists",
       "source": "./cli-tool/components",
       "description": "Ai Specialists 专业代理插件包 - 7个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -831,7 +831,7 @@
       "name": "agents-api-graphql",
       "source": "./cli-tool/components",
       "description": "Api Graphql 专业代理插件包 - 3个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -852,7 +852,7 @@
       "name": "agents-app-store",
       "source": "./cli-tool/components",
       "description": "App Store 专业代理插件包 - 1个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -871,7 +871,7 @@
       "name": "agents-architecture",
       "source": "./cli-tool/components",
       "description": "Architecture 专业代理插件包 - 2个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -891,7 +891,7 @@
       "name": "agents-blockchain-web3",
       "source": "./cli-tool/components",
       "description": "Blockchain Web3 专业代理插件包 - 4个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -913,7 +913,7 @@
       "name": "agents-business-marketing",
       "source": "./cli-tool/components",
       "description": "Business Marketing 专业代理插件包 - 11个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -942,7 +942,7 @@
       "name": "agents-business-sales",
       "source": "./cli-tool/components",
       "description": "Business Sales 专业代理插件包 - 2个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -962,7 +962,7 @@
       "name": "agents-code-analysis",
       "source": "./cli-tool/components",
       "description": "Code Analysis 专业代理插件包 - 2个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -982,7 +982,7 @@
       "name": "agents-customer-relations",
       "source": "./cli-tool/components",
       "description": "Customer Relations 专业代理插件包 - 3个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1003,7 +1003,7 @@
       "name": "agents-data-ai",
       "source": "./cli-tool/components",
       "description": "Data Ai 专业代理插件包 - 9个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1030,7 +1030,7 @@
       "name": "agents-data-analytics",
       "source": "./cli-tool/components",
       "description": "Data Analytics 专业代理插件包 - 4个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1052,7 +1052,7 @@
       "name": "agents-database",
       "source": "./cli-tool/components",
       "description": "Database 专业代理插件包 - 10个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1080,7 +1080,7 @@
       "name": "agents-deep-research-team",
       "source": "./cli-tool/components",
       "description": "Deep Research Team 专业代理插件包 - 12个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1110,7 +1110,7 @@
       "name": "agents-design-creative",
       "source": "./cli-tool/components",
       "description": "Design Creative 专业代理插件包 - 7个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1135,7 +1135,7 @@
       "name": "agents-development-team",
       "source": "./cli-tool/components",
       "description": "Development Team 专业代理插件包 - 9个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1162,7 +1162,7 @@
       "name": "agents-development-tools",
       "source": "./cli-tool/components",
       "description": "Development Tools 专业代理插件包 - 17个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1197,7 +1197,7 @@
       "name": "agents-devops-infrastructure",
       "source": "./cli-tool/components",
       "description": "Devops Infrastructure 专业代理插件包 - 15个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1230,7 +1230,7 @@
       "name": "agents-documentation",
       "source": "./cli-tool/components",
       "description": "Documentation 专业代理插件包 - 7个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1255,7 +1255,7 @@
       "name": "agents-enterprise",
       "source": "./cli-tool/components",
       "description": "Enterprise 专业代理插件包 - 4个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1277,7 +1277,7 @@
       "name": "agents-expert-advisors",
       "source": "./cli-tool/components",
       "description": "Expert Advisors 专业代理插件包 - 4个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1299,7 +1299,7 @@
       "name": "agents-ffmpeg-clip-team",
       "source": "./cli-tool/components",
       "description": "Ffmpeg Clip Team 专业代理插件包 - 8个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1325,7 +1325,7 @@
       "name": "agents-frameworks",
       "source": "./cli-tool/components",
       "description": "Frameworks 专业代理插件包 - 3个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1346,7 +1346,7 @@
       "name": "agents-game-development",
       "source": "./cli-tool/components",
       "description": "Game Development 专业代理插件包 - 6个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1370,7 +1370,7 @@
       "name": "agents-git",
       "source": "./cli-tool/components",
       "description": "Git 专业代理插件包 - 1个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1389,7 +1389,7 @@
       "name": "agents-integration-api",
       "source": "./cli-tool/components",
       "description": "Integration Api 专业代理插件包 - 4个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1411,7 +1411,7 @@
       "name": "agents-knowledge",
       "source": "./cli-tool/components",
       "description": "Knowledge 专业代理插件包 - 1个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1430,7 +1430,7 @@
       "name": "agents-marketing-growth",
       "source": "./cli-tool/components",
       "description": "Marketing Growth 专业代理插件包 - 7个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1455,7 +1455,7 @@
       "name": "agents-mcp-dev-team",
       "source": "./cli-tool/components",
       "description": "Mcp Dev Team 专业代理插件包 - 7个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1480,7 +1480,7 @@
       "name": "agents-mobile-development",
       "source": "./cli-tool/components",
       "description": "Mobile Development 专业代理插件包 - 5个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1503,7 +1503,7 @@
       "name": "agents-modernization",
       "source": "./cli-tool/components",
       "description": "Modernization 专业代理插件包 - 3个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1524,7 +1524,7 @@
       "name": "agents-obsidian-ops-team",
       "source": "./cli-tool/components",
       "description": "Obsidian Ops Team 专业代理插件包 - 7个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1549,7 +1549,7 @@
       "name": "agents-ocr-extraction-team",
       "source": "./cli-tool/components",
       "description": "Ocr Extraction Team 专业代理插件包 - 7个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1574,7 +1574,7 @@
       "name": "agents-performance-testing",
       "source": "./cli-tool/components",
       "description": "Performance Testing 专业代理插件包 - 5个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1597,7 +1597,7 @@
       "name": "agents-podcast-creator-team",
       "source": "./cli-tool/components",
       "description": "Podcast Creator Team 专业代理插件包 - 11个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1626,7 +1626,7 @@
       "name": "agents-product-management",
       "source": "./cli-tool/components",
       "description": "Product Management 专业代理插件包 - 5个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1649,7 +1649,7 @@
       "name": "agents-programming-languages",
       "source": "./cli-tool/components",
       "description": "Programming Languages 专业代理插件包 - 16个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1683,7 +1683,7 @@
       "name": "agents-project-management",
       "source": "./cli-tool/components",
       "description": "Project Management 专业代理插件包 - 3个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1704,7 +1704,7 @@
       "name": "agents-realtime",
       "source": "./cli-tool/components",
       "description": "Realtime 专业代理插件包 - 1个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1723,7 +1723,7 @@
       "name": "agents-security",
       "source": "./cli-tool/components",
       "description": "Security 专业代理插件包 - 8个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1749,7 +1749,7 @@
       "name": "agents-seo",
       "source": "./cli-tool/components",
       "description": "Seo 专业代理插件包 - 11个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1778,7 +1778,7 @@
       "name": "agents-special-purpose",
       "source": "./cli-tool/components",
       "description": "Special Purpose 专业代理插件包 - 2个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1798,7 +1798,7 @@
       "name": "agents-testing-quality",
       "source": "./cli-tool/components",
       "description": "Testing Quality 专业代理插件包 - 5个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1821,7 +1821,7 @@
       "name": "agents-web-tools",
       "source": "./cli-tool/components",
       "description": "Web Tools 专业代理插件包 - 6个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1845,7 +1845,7 @@
       "name": "agents-workflow-optimization",
       "source": "./cli-tool/components",
       "description": "Workflow Optimization 专业代理插件包 - 2个专业代理",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1865,7 +1865,7 @@
       "name": "commands-ai-optimization",
       "source": "./cli-tool/components",
       "description": "Ai Optimization 命令工具包 - 3个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1886,7 +1886,7 @@
       "name": "commands-automation",
       "source": "./cli-tool/components",
       "description": "Automation 命令工具包 - 4个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1908,7 +1908,7 @@
       "name": "commands-code-analysis",
       "source": "./cli-tool/components",
       "description": "Code Analysis 命令工具包 - 3个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1929,7 +1929,7 @@
       "name": "commands-database",
       "source": "./cli-tool/components",
       "description": "Database 命令工具包 - 8个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1955,7 +1955,7 @@
       "name": "commands-deployment",
       "source": "./cli-tool/components",
       "description": "Deployment 命令工具包 - 11个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -1984,7 +1984,7 @@
       "name": "commands-development-tools",
       "source": "./cli-tool/components",
       "description": "Development Tools 命令工具包 - 6个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2008,7 +2008,7 @@
       "name": "commands-documentation",
       "source": "./cli-tool/components",
       "description": "Documentation 命令工具包 - 13个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2039,7 +2039,7 @@
       "name": "commands-game-development",
       "source": "./cli-tool/components",
       "description": "Game Development 命令工具包 - 5个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2062,7 +2062,7 @@
       "name": "commands-git",
       "source": "./cli-tool/components",
       "description": "Git 命令工具包 - 5个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2085,7 +2085,7 @@
       "name": "commands-git-workflow",
       "source": "./cli-tool/components",
       "description": "Git Workflow 命令工具包 - 10个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2113,7 +2113,7 @@
       "name": "commands-integrated-tools",
       "source": "./cli-tool/components",
       "description": "Integrated Tools 命令工具包 - 42个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2173,7 +2173,7 @@
       "name": "commands-integration-api",
       "source": "./cli-tool/components",
       "description": "Integration Api 命令工具包 - 2个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2193,7 +2193,7 @@
       "name": "commands-knowledge",
       "source": "./cli-tool/components",
       "description": "Knowledge 命令工具包 - 1个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2212,7 +2212,7 @@
       "name": "commands-nextjs-vercel",
       "source": "./cli-tool/components",
       "description": "Nextjs Vercel 命令工具包 - 10个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2240,7 +2240,7 @@
       "name": "commands-orchestration",
       "source": "./cli-tool/components",
       "description": "Orchestration 命令工具包 - 12个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2270,7 +2270,7 @@
       "name": "commands-performance",
       "source": "./cli-tool/components",
       "description": "Performance 命令工具包 - 10个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2298,7 +2298,7 @@
       "name": "commands-product-management",
       "source": "./cli-tool/components",
       "description": "Product Management 命令工具包 - 1个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2317,7 +2317,7 @@
       "name": "commands-project-management",
       "source": "./cli-tool/components",
       "description": "Project Management 命令工具包 - 18个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2353,7 +2353,7 @@
       "name": "commands-security",
       "source": "./cli-tool/components",
       "description": "Security 命令工具包 - 6个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2377,7 +2377,7 @@
       "name": "commands-setup",
       "source": "./cli-tool/components",
       "description": "Setup 命令工具包 - 14个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2409,7 +2409,7 @@
       "name": "commands-simulation",
       "source": "./cli-tool/components",
       "description": "Simulation 命令工具包 - 10个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2437,7 +2437,7 @@
       "name": "commands-svelte",
       "source": "./cli-tool/components",
       "description": "Svelte 命令工具包 - 16个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2471,7 +2471,7 @@
       "name": "commands-sync",
       "source": "./cli-tool/components",
       "description": "Sync 命令工具包 - 14个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2503,7 +2503,7 @@
       "name": "commands-team",
       "source": "./cli-tool/components",
       "description": "Team 命令工具包 - 14个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2535,7 +2535,7 @@
       "name": "commands-testing",
       "source": "./cli-tool/components",
       "description": "Testing 命令工具包 - 14个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2567,7 +2567,7 @@
       "name": "commands-testing-quality",
       "source": "./cli-tool/components",
       "description": "Testing Quality 命令工具包 - 4个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2589,7 +2589,7 @@
       "name": "commands-utilities",
       "source": "./cli-tool/components",
       "description": "Utilities 命令工具包 - 19个专业命令",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2626,7 +2626,7 @@
       "name": "hooks-automation",
       "source": "./cli-tool/components",
       "description": "Automation 自动化钩子包 - 16个钩子",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2660,7 +2660,7 @@
       "name": "hooks-development-tools",
       "source": "./cli-tool/components",
       "description": "Development Tools 自动化钩子包 - 6个钩子",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2684,7 +2684,7 @@
       "name": "hooks-git",
       "source": "./cli-tool/components",
       "description": "Git 自动化钩子包 - 3个钩子",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2705,7 +2705,7 @@
       "name": "hooks-git-workflow",
       "source": "./cli-tool/components",
       "description": "Git Workflow 自动化钩子包 - 2个钩子",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2725,7 +2725,7 @@
       "name": "hooks-performance",
       "source": "./cli-tool/components",
       "description": "Performance 自动化钩子包 - 2个钩子",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2745,7 +2745,7 @@
       "name": "hooks-post-tool",
       "source": "./cli-tool/components",
       "description": "Post Tool 自动化钩子包 - 4个钩子",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2767,7 +2767,7 @@
       "name": "hooks-pre-tool",
       "source": "./cli-tool/components",
       "description": "Pre Tool 自动化钩子包 - 3个钩子",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2788,7 +2788,7 @@
       "name": "hooks-security",
       "source": "./cli-tool/components",
       "description": "Security 自动化钩子包 - 2个钩子",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2808,7 +2808,7 @@
       "name": "hooks-testing",
       "source": "./cli-tool/components",
       "description": "Testing 自动化钩子包 - 1个钩子",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2827,7 +2827,7 @@
       "name": "mcps-browser_automation",
       "source": "./cli-tool/components",
       "description": "Browser Automation MCP服务器包 - 6个MCP服务器",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2859,7 +2859,7 @@
       "name": "mcps-database",
       "source": "./cli-tool/components",
       "description": "Database MCP服务器包 - 4个MCP服务器",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2887,7 +2887,7 @@
       "name": "mcps-deepgraph",
       "source": "./cli-tool/components",
       "description": "Deepgraph MCP服务器包 - 4个MCP服务器",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -2915,7 +2915,7 @@
       "name": "mcps-devtools",
       "source": "./cli-tool/components",
       "description": "Devtools MCP服务器包 - 33个MCP服务器",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -3001,7 +3001,7 @@
       "name": "mcps-filesystem",
       "source": "./cli-tool/components",
       "description": "Filesystem MCP服务器包 - 1个MCP服务器",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -3023,7 +3023,7 @@
       "name": "mcps-integration",
       "source": "./cli-tool/components",
       "description": "Integration MCP服务器包 - 2个MCP服务器",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -3047,7 +3047,7 @@
       "name": "mcps-knowledge",
       "source": "./cli-tool/components",
       "description": "Knowledge MCP服务器包 - 1个MCP服务器",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -3069,7 +3069,7 @@
       "name": "mcps-marketing",
       "source": "./cli-tool/components",
       "description": "Marketing MCP服务器包 - 2个MCP服务器",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -3093,7 +3093,7 @@
       "name": "mcps-productivity",
       "source": "./cli-tool/components",
       "description": "Productivity MCP服务器包 - 2个MCP服务器",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -3117,7 +3117,7 @@
       "name": "mcps-web",
       "source": "./cli-tool/components",
       "description": "Web MCP服务器包 - 1个MCP服务器",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
@@ -3139,7 +3139,7 @@
       "name": "sandbox-e2b",
       "source": "./cli-tool/components",
       "description": "E2B 沙盒环境 - 2个配置",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Fonda",
         "url": "https://github.com/lifangda"
