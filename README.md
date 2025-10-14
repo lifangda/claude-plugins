@@ -49,10 +49,31 @@ Claude Plugins 是一个完整的AI开发工具集，包含 **763个文件**，�
 /plugin install claude-plugins-complete@lifangda
 ```
 
-#### 方式二：专业插件包（推荐专业用户）
+#### 方式二：功能分类插件包（推荐专业用户）
 ```bash
-# 社区精选插件包（NEW! 85个高质量社区插件）
-/plugin install marketplace-community@lifangda  # Marketplace社区精选
+# 🎯 AI增强工具
+/plugin install ai-optimization@lifangda      # Lyra、Ultrathink、Double-check
+
+# 📊 代码分析
+/plugin install code-analysis@lifangda        # 代码库分析、架构师、文档生成
+
+# 🚀 产品管理
+/plugin install product-management@lifangda   # PRD专家、冲刺规划、产品销售
+
+# 💼 企业工具
+/plugin install enterprise@lifangda           # 企业安全、集成架构、法律合规
+
+# 📱 移动开发
+/plugin install mobile-development@lifangda   # Flutter、React Native、移动UX
+
+# ✅ 测试质量
+/plugin install testing-quality@lifangda     # 测试分析、单元测试生成、Bug侦探
+
+# 📢 营销增长
+/plugin install marketing-growth@lifangda    # 增长黑客、社交媒体策略
+
+# 🔗 集成API
+/plugin install integration-api@lifangda     # MCP专家、n8n工作流、OpenAPI
 
 # 核心开发工具包
 /plugin install git-workflow@lifangda        # Git工作流自动化
