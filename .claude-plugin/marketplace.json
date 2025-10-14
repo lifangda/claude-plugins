@@ -39,7 +39,7 @@
       "category": "complete",
       "strict": false,
       "agents": [
-        "./agents/ai-engineer.md",
+        "./agents/data-ai/ai-engineer.md",
         "./agents/documentation/api-documenter.md",
         "./agents/architecture/architect-review.md",
         "./agents/security/backend-security-coder.md",
