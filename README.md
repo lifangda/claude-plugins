@@ -5,24 +5,27 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub](https://img.shields.io/github/stars/lifangda/claude-plugins?style=social)](https://github.com/lifangda/claude-plugins)
 [![Claude Plugins](https://img.shields.io/badge/Claude-Plugins-blue)](https://github.com/lifangda/claude-plugins)
+[![Version](https://img.shields.io/badge/version-1.1.0-green.svg)](https://github.com/lifangda/claude-plugins/releases)
 
 ## 📋 项目概述
 
 Claude Plugins 是一个完整的AI开发工具集，包含 **737个文件**，涵盖：
 
-- **269个专业代理** - AI专家团队，覆盖各种开发领域
-- **275个实用命令** - 自动化工具和开发命令
+- **269个专业代理** (46个分类) - AI专家团队，覆盖各种开发领域
+- **275个实用命令** (27个分类) - 自动化工具和开发命令
 - **16个工作流** - 完整的开发流程自动化
-- **39个钩子** - 自动化触发器和事件处理
-- **56个MCP服务器** - 外部服务集成
+- **39个钩子** (9个分类) - 自动化触发器和事件处理
+- **56个MCP服务器** (10个分类) - 外部服务集成
 - **2个沙盒环境** - 安全的代码执行环境
-- **64个设置配置** - 项目配置和自定义设置
+
+**总计: 657个组件，94个精细化插件包**
 
 ### 🏆 技术规范
 - ✅ **符合Claude Code官方插件市场规范**
 - ✅ **通过`claude plugin validate`验证**
 - ✅ **支持团队市场配置和自动安装**
-- ✅ **完整的组件路径配置**
+- ✅ **100%路径有效性** (从v1.0的18%提升至100%)
+- ✅ **精细化分类安装** (94个功能分类插件包)
 - ✅ **支持GitHub、GitLab等Git服务**
 - ✅ **支持本地开发和测试**
 
@@ -49,42 +52,48 @@ Claude Plugins 是一个完整的AI开发工具集，包含 **737个文件**，�
 /plugin install claude-plugins-complete@lifangda
 ```
 
-#### 方式二：功能分类插件包（推荐专业用户）
+#### 方式二：分类安装（推荐专业用户）
 ```bash
-# 🎯 AI增强工具
-/plugin install ai-optimization@lifangda      # Lyra、Ultrathink、Double-check
+# 🎯 按功能分类安装Agents
+/plugin install agents-data-ai@lifangda           # 数据与AI开发 (18个agents)
+/plugin install agents-backend@lifangda           # 后端开发 (35个agents)
+/plugin install agents-frontend@lifangda          # 前端开发 (22个agents)
+/plugin install agents-devops@lifangda            # DevOps工具 (15个agents)
+/plugin install agents-security@lifangda          # 安全审计 (12个agents)
+/plugin install agents-testing@lifangda           # 测试工具 (8个agents)
 
-# 📊 代码分析
-/plugin install code-analysis@lifangda        # 代码库分析、架构师、文档生成
+# 📦 按功能分类安装Commands
+/plugin install commands-git@lifangda             # Git工作流命令
+/plugin install commands-testing@lifangda         # 测试自动化命令
+/plugin install commands-deployment@lifangda      # 部署工具命令
+/plugin install commands-documentation@lifangda   # 文档生成命令
 
-# 🚀 产品管理
-/plugin install product-management@lifangda   # PRD专家、冲刺规划、产品销售
+# 🔗 按功能分类安装MCPs
+/plugin install mcps-database@lifangda            # 数据库集成
+/plugin install mcps-devtools@lifangda            # 开发工具集成
+/plugin install mcps-web@lifangda                 # Web服务集成
 
-# 💼 企业工具
-/plugin install enterprise@lifangda           # 企业安全、集成架构、法律合规
+# 🪝 按功能分类安装Hooks
+/plugin install hooks-git-workflow@lifangda       # Git工作流钩子
+/plugin install hooks-testing@lifangda            # 测试钩子
+/plugin install hooks-security@lifangda           # 安全钩子
+```
 
-# 📱 移动开发
-/plugin install mobile-development@lifangda   # Flutter、React Native、移动UX
-
-# ✅ 测试质量
-/plugin install testing-quality@lifangda     # 测试分析、单元测试生成、Bug侦探
-
-# 📢 营销增长
-/plugin install marketing-growth@lifangda    # 增长黑客、社交媒体策略
-
-# 🔗 集成API
-/plugin install integration-api@lifangda     # MCP专家、n8n工作流、OpenAPI
-
+#### 方式三：经典插件包（推荐高级用户）
+```bash
 # 核心开发工具包
-/plugin install git-workflow@lifangda        # Git工作流自动化
+/plugin install git-workflow@lifangda         # Git工作流自动化
 /plugin install supabase-toolkit@lifangda     # 数据库开发工具
 /plugin install nextjs-vercel-pro@lifangda   # 前端开发工具
 /plugin install testing-suite@lifangda       # 测试自动化
 /plugin install security-pro@lifangda        # 安全审计工具
 /plugin install knowledge-wikipedia@lifangda # 知识库工具
+
+# 社区精选插件包
+/plugin install marketplace-community@lifangda # 85个社区精选插件
 ```
 
-#### 方式三：精准安装（推荐高级用户）
+#### 方式四：精准安装（按需使用）
 ```bash
 # 编程语言专家
 /plugin install python-pro@lifangda
@@ -120,13 +129,29 @@ Claude Plugins 是一个完整的AI开发工具集，包含 **737个文件**，�
 ### 第3步：验证安装
 ```bash
 # 查看已安装插件
-/plugin
+/plugin list
 
 # 测试插件功能
 /python-pro  # 使用Python专家
 /git-workflow  # 使用Git工作流
 /supabase-toolkit  # 使用Supabase工具
 ```
+
+## 🆕 v1.1.0 新特性
+
+### 🎉 重大改进
+- **路径有效性提升**: 从18%提升到100% (修复837个无效路径)
+- **插件包优化**: 从167个集合式插件包优化为94个精细化分类插件包
+- **按需安装**: 支持按功能分类精准安装，避免安装不需要的组件
+- **目录重构**: 所有组件按实际功能分类组织，便于管理和维护
+
+### ✨ 新增功能
+- 📊 **诊断分析工具** - 自动检测配置完整性和路径有效性
+- 📋 **完整性验证机制** - 确保所有配置与物理文件同步
+- 🎯 **精细化分类** - 46个agents分类、27个commands分类、10个MCPs分类
+- 📖 **版本历史** - 新增CHANGELOG.md记录版本变更
+
+详见 [CHANGELOG.md](CHANGELOG.md)
 
 ## 🔧 团队市场配置
 
@@ -152,21 +177,30 @@ Claude Plugins 是一个完整的AI开发工具集，包含 **737个文件**，�
 ### 🎯 完整插件包
 
 #### claude-plugins-complete
-**描述**: 完整的699个Claude插件集合，包括312个代理、274个命令、16个工作流、39个钩子、56个MCP服务器和2个沙盒环境
+**描述**: 完整的657个Claude插件集合
+**包含**:
+- 269个专业代理 (46个分类)
+- 275个实用命令 (27个分类)
+- 16个工作流
+- 39个钩子 (9个分类)
+- 56个MCP服务器 (10个分类)
+- 2个沙盒环境
+
 **适用**: 新手用户，希望获得完整功能
 **安装**: `/plugin install claude-plugins-complete@lifangda`
 
-### 🌟 社区插件包（NEW!）
+### 🌟 社区插件包
 
 #### marketplace-community
 **描述**: Claude Code Marketplace社区精选插件：85个高质量插件，包括63个专业代理和22个增强命令
-**特色**: 
+**特色**:
 - ⭐ **AI增强工具**: Lyra提示词优化、Ultrathink协调器代理、双重检查系统
 - 📊 **代码分析**: 代码库分析、CLAUDE.md自动更新、代码架构师
 - 🚀 **产品管理**: PRD规划代理、冲刺优先级、产品专家
 - 💼 **企业工具**: 企业安全审查、集成架构师、AI伦理治理
 - 📱 **移动开发**: Flutter/React Native开发、移动UX优化
 - 📢 **增长营销**: 增长黑客、社交媒体策略专家
+
 **来源**: [Claude Code Marketplace](https://github.com/ananddtyagi/claude-code-marketplace) 社区贡献
 **安装**: `/plugin install marketplace-community@lifangda`
 
@@ -208,121 +242,59 @@ Claude Plugins 是一个完整的AI开发工具集，包含 **737个文件**，�
 **包含**: wikipedia-search命令 + wikipedia-expert代理 + wikipedia-mcp服务器
 **安装**: `/plugin install knowledge-wikipedia@lifangda`
 
-## 🤖 专业代理分类
+## 🤖 组件分类浏览
 
-### 编程语言专家
-- **python-pro**: Python开发专家
-- **javascript-pro**: JavaScript开发专家
-- **typescript-pro**: TypeScript开发专家
-- **golang-pro**: Go语言开发专家
-- **rust-pro**: Rust系统编程专家
-- **java-pro**: Java企业级开发专家
-- **cpp-pro**: C++高性能开发专家
-- **c-pro**: C语言系统编程专家
-- **csharp-pro**: C#企业级开发专家
-- **php-pro**: PHP Web开发专家
-- **ruby-pro**: Ruby开发专家
-- **scala-pro**: Scala函数式编程专家
-- **elixir-pro**: Elixir并发编程专家
-- **sql-pro**: SQL数据库专家
+### Agents分类 (269个，46个分类)
+完整的AI专家团队，覆盖各种开发领域：
+- **data-ai** - 数据与AI开发 (18个)
+- **backend** - 后端开发 (35个)
+- **frontend** - 前端开发 (22个)
+- **devops** - DevOps工具 (15个)
+- **security** - 安全审计 (12个)
+- **testing** - 测试工具 (8个)
+- **mobile** - 移动开发 (10个)
+- **business** - 业务领域 (18个)
+- **cloud** - 云服务 (8个)
+- **database** - 数据库 (12个)
+- **integration** - 系统集成 (15个)
+- 更多40+个专业分类...
 
-### 框架和工具专家
-- **react-expert**: React前端开发专家
-- **vue-expert**: Vue.js前端开发专家
-- **nodejs-pro**: Node.js后端开发专家
-- **django-pro**: Django Python Web框架专家
-- **fastapi-pro**: FastAPI高性能API框架专家
-- **flutter-expert**: Flutter跨平台移动开发专家
-- **unity-developer**: Unity游戏开发专家
-- **ios-developer**: iOS原生开发专家
-- **mobile-developer**: 移动端开发专家
+### Commands分类 (275个，27个分类)
+实用的自动化命令和开发工具：
+- **git** - Git工作流命令 (25个)
+- **testing** - 测试自动化 (32个)
+- **deployment** - 部署工具 (18个)
+- **documentation** - 文档生成 (15个)
+- **security** - 安全工具 (12个)
+- **performance** - 性能优化 (10个)
+- **automation** - 自动化脚本 (28个)
+- 更多20+个实用分类...
 
-### 专业领域专家
-- **ai-engineer**: AI工程专家
-- **ml-engineer**: 机器学习专家
-- **data-engineer**: 数据工程专家
-- **data-scientist**: 数据科学家
-- **blockchain-developer**: 区块链开发专家
-- **security-auditor**: 安全审计专家
-- **devops-engineer**: DevOps工程专家
-- **cloud-architect**: 云架构专家
-- **database-admin**: 数据库管理专家
-- **ui-ux-designer**: UI/UX设计专家
+### Workflows (16个)
+完整的开发流程自动化工作流
 
-### 业务领域专家
-- **business-analyst**: 商业分析师
-- **product-strategist**: 产品策略专家
-- **marketing-specialist**: 营销专家
-- **customer-support**: 客户支持专家
-- **legal-advisor**: 法律顾问
-- **hr-pro**: 人力资源专家
-- **sales-automator**: 销售自动化专家
-- **risk-manager**: 风险管理专家
-- **payment-integration**: 支付集成专家
+### Hooks分类 (39个，9个分类)
+自动化触发器和事件处理：
+- **git-workflow** - Git工作流钩子
+- **testing** - 测试钩子
+- **security** - 安全钩子
+- **automation** - 自动化钩子
+- **performance** - 性能钩子
+- 更多分类...
 
-## 🛠️ 命令工具分类
+### MCPs分类 (56个，10个分类)
+外部服务集成服务器：
+- **database** - 数据库集成 (8个)
+- **devtools** - 开发工具集成 (12个)
+- **web** - Web服务集成 (10个)
+- **browser_automation** - 浏览器自动化 (5个)
+- **integration** - 集成服务 (8个)
+- 更多分类...
 
-### 自动化工具
-- **automation**: 自动化工具插件包
-- **deployment**: 部署工具插件包
-- **git-workflow**: Git工作流插件包
-- **testing**: 测试工具插件包
-- **security**: 安全工具插件包
-- **performance**: 性能工具插件包
-- **utilities**: 实用工具插件包
+### Sandbox (2个)
+安全的代码执行环境
 
-### 开发工具
-- **nextjs-vercel**: Next.js和Vercel工具
-- **documentation**: 文档工具
-- **project-management**: 项目管理工具
-- **setup**: 设置工具
-
-## 🔄 工作流分类
-
-- **data-driven-feature**: 数据驱动功能工作流
-- **feature-development**: 功能开发工作流
-- **full-review**: 完整审查工作流
-- **full-stack-feature**: 全栈功能工作流
-- **git-workflow**: Git工作流
-- **improve-agent**: 代理改进工作流
-- **incident-response**: 事件响应工作流
-- **legacy-modernize**: 遗留系统现代化工作流
-- **ml-pipeline**: 机器学习管道工作流
-- **multi-platform**: 多平台工作流
-- **performance-optimization**: 性能优化工作流
-- **security-hardening**: 安全加固工作流
-- **smart-fix**: 智能修复工作流
-- **tdd-cycle**: TDD测试驱动开发循环工作流
-- **workflow-automate**: 工作流自动化
-
-## 🪝 钩子分类
-
-- **automation**: 自动化钩子
-- **development-tools**: 开发工具钩子
-- **git-workflow**: Git工作流钩子
-- **git**: Git钩子
-- **performance**: 性能钩子
-- **post-tool**: 后置工具钩子
-- **pre-tool**: 前置工具钩子
-- **security**: 安全钩子
-- **testing**: 测试钩子
-
-## 🔗 MCP服务器分类
-
-- **browser_automation**: 浏览器自动化MCP
-- **database**: 数据库MCP
-- **deepgraph**: DeepGraph MCP
-- **devtools**: 开发工具MCP
-- **filesystem**: 文件系统MCP
-- **integration**: 集成服务MCP
-- **marketing**: 营销工具MCP
-- **productivity**: 生产力工具MCP
-- **web**: Web服务MCP
-- **knowledge**: 知识库MCP（维基百科）
-
-## 🏖️ 沙盒环境
-
-- **e2b**: E2B沙盒环境，提供安全的代码执行环境
+> 📖 完整组件列表请查看 [marketplace.json](.claude-plugin/marketplace.json) 或访问 [Claude Code Marketplace](https://claude.com/marketplace)
 
 ## 🎯 使用场景
 
@@ -331,42 +303,46 @@ Claude Plugins 是一个完整的AI开发工具集，包含 **737个文件**，�
 # 安装完整工具包
 /plugin install claude-plugins-complete@lifangda
 
-# 开始开发
-/python-pro  # Python专家
-/react-expert  # React专家
-/git-workflow  # Git工作流
+# 或按需安装
+/plugin install agents-backend@lifangda      # 后端开发
+/plugin install agents-frontend@lifangda     # 前端开发
+/plugin install commands-git@lifangda        # Git工作流
 ```
 
 ### 🔧 专业开发
 ```bash
 # 前端开发
+/plugin install agents-frontend@lifangda
 /plugin install nextjs-vercel-pro@lifangda
-/plugin install react-expert@lifangda
 
 # 后端开发
-/plugin install python-pro@lifangda
+/plugin install agents-backend@lifangda
 /plugin install supabase-toolkit@lifangda
 
 # 全栈开发
-/plugin install claude-plugins-complete@lifangda
+/plugin install agents-fullstack@lifangda
 ```
 
 ### 🧪 测试和质量
 ```bash
 # 测试套件
 /plugin install testing-suite@lifangda
+/plugin install commands-testing@lifangda
 
 # 安全审计
 /plugin install security-pro@lifangda
+/plugin install agents-security@lifangda
 ```
 
 ### 🏢 企业级开发
 ```bash
 # 企业安全
 /plugin install security-pro@lifangda
+/plugin install agents-enterprise@lifangda
 
-# 合规检查
-/plugin install compliance-specialist@lifangda
+# DevOps工具
+/plugin install agents-devops@lifangda
+/plugin install commands-deployment@lifangda
 ```
 
 ## 🔧 插件管理
@@ -390,15 +366,26 @@ Claude Plugins 是一个完整的AI开发工具集，包含 **737个文件**，�
 ```
 claude-plugins/
 ├── .claude-plugin/
-│   └── marketplace.json          # 插件市场配置文件
+│   └── marketplace.json          # 插件市场配置文件 (94个插件包)
 ├── cli-tool/
-│   └── components/               # 692个文件
-│       ├── agents/               # 249个专业代理
-│       ├── commands/             # 252个实用命令
+│   └── components/               # 657个组件文件
+│       ├── agents/               # 269个专业代理 (46个分类)
+│       │   ├── data-ai/          # 数据与AI开发
+│       │   ├── backend/          # 后端开发
+│       │   ├── frontend/         # 前端开发
+│       │   ├── devops/           # DevOps工具
+│       │   ├── security/         # 安全审计
+│       │   └── ...               # 更多40+分类
+│       ├── commands/             # 275个实用命令 (27个分类)
+│       │   ├── git/              # Git工作流命令
+│       │   ├── testing/          # 测试自动化命令
+│       │   ├── deployment/       # 部署工具命令
+│       │   └── ...               # 更多20+分类
 │       ├── workflows/            # 16个工作流
-│       ├── hooks/                # 39个钩子
-│       ├── mcps/                 # 56个MCP服务器
+│       ├── hooks/                # 39个钩子 (9个分类)
+│       ├── mcps/                 # 56个MCP服务器 (10个分类)
 │       └── sandbox/              # 2个沙盒环境
+├── CHANGELOG.md                  # 版本历史记录
 ├── README.md                     # 项目说明文档
 └── LICENSE                       # MIT许可证
 ```

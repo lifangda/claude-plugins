@@ -4,11 +4,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Claude Plugins 是一个 Node.js CLI 工具,用于管理和安装 Claude Code 配置组件。项目包含 600+ 个组件:249个AI代理、252个命令、15个工作流、40个钩子、55个MCP服务器和3个沙盒环境。
+Claude Plugins 是一个 Node.js CLI 工具,用于管理和安装 Claude Code 配置组件。
+
+**当前版本**: v1.1.0
+
+**组件统计** (657个组件,737个文件):
+- 269个专业代理 (46个分类)
+- 275个实用命令 (27个分类)
+- 16个工作流
+- 39个钩子 (9个分类)
+- 56个MCP服务器 (10个分类)
+- 2个沙盒环境
 
 **核心功能:**
-- 组件安装系统 (agents, commands, mcps, settings, hooks)
-- Claude Code 插件市场配置
+- 组件安装系统 (agents, commands, mcps, workflows, hooks)
+- Claude Code 插件市场配置 (94个精细化插件包)
 - 实时分析仪表板
 - E2B 沙盒执行环境
 
@@ -92,19 +102,21 @@ Workflows → .claude/workflows/
 
 ### 3. 插件市场系统 (`.claude-plugin/marketplace.json`)
 
+**v1.1.0 重大改进:**
+- 从167个集合式插件包优化为94个精细化分类插件包
+- 路径有效性从18%提升到100% (修复837个无效路径)
+- 所有路径完全同步物理目录结构
+- 支持按功能分类精准安装
+
 **结构:**
-- 定义 600+ 个插件包的元数据
 - 每个插件包含: name, source, description, version, agents[], commands[], workflows[], hooks[], mcps[]
 - 支持 Claude Code 插件市场规范
 
-**核心插件包:**
-- `claude-plugins-complete` - 完整 614 个组件
-- `git-workflow` - Git 工作流自动化
-- `supabase-toolkit` - 完整 Supabase 工作流
-- `nextjs-vercel-pro` - Next.js/Vercel 开发工具
-- `testing-suite` - 全面测试工具包
-- `security-pro` - 企业安全工具包
-- `knowledge-wikipedia` - 维基百科知识库集成
+**插件包类型:**
+1. **完整插件包**: `claude-plugins-complete` (657个组件)
+2. **功能分类包**: `agents-backend`, `commands-git`, `mcps-database` 等 (46+27+9+10个分类)
+3. **经典插件包**: `git-workflow`, `supabase-toolkit`, `nextjs-vercel-pro`, `testing-suite`, `security-pro`, `knowledge-wikipedia`
+4. **社区精选包**: `marketplace-community` (85个社区精选插件)
 
 ### 4. 分析仪表板架构 (`cli-tool/src/analytics.js`)
 
@@ -179,9 +191,23 @@ node cli-tool/bin/create-claude-config.js --sandbox e2b --prompt "创建一个 w
 - 代码位置: `cli-tool/src/index.js` 行 1127-1169
 
 ### 组件分类系统
-- 组件按类别组织 (如 `agents/security/`, `commands/testing/`)
-- 安装时自动提取类别和文件名
-- 安装到扁平目录结构 (agents/, commands/ 等)
+
+**v1.1.0 目录结构重组:**
+- 所有组件按实际功能分类组织到子目录
+- Agents: 46个功能分类 (data-ai, backend, frontend, devops, security, testing, mobile, business, cloud, database, integration 等)
+- Commands: 27个功能分类 (git, testing, deployment, documentation, security, performance, automation 等)
+- Hooks: 9个功能分类 (git-workflow, testing, security, automation, performance 等)
+- MCPs: 10个功能分类 (database, devtools, web, browser_automation, integration 等)
+
+**路径格式:**
+- 组件物理路径: `cli-tool/components/agents/backend/python-pro.md`
+- marketplace.json路径: `agents/backend/python-pro.md` (相对于components目录)
+- 安装目标位置: `.claude/agents/python-pro.md` (扁平结构)
+
+**安装流程:**
+- 从分类路径读取: `agents/backend/python-pro.md`
+- 提取文件名: `python-pro.md`
+- 安装到扁平目录: `.claude/agents/python-pro.md`
 
 ### 错误处理模式
 - 所有异步操作使用 try/catch
@@ -216,9 +242,9 @@ node cli-tool/bin/create-claude-config.js --sandbox e2b --prompt "创建一个 w
 - 常量使用 UPPER_SNAKE_CASE: `API_BASE_URL`
 - 私有方法前缀下划线: `_privateMethod`
 
-## 组件生成
+## 组件生成和验证
 
-**生成组件目录:**
+### 生成组件目录
 ```bash
 python generate_components_json.py
 ```
@@ -226,13 +252,24 @@ python generate_components_json.py
 - 排除 `.py` 文件 (作为后台依赖)
 - 生成 `docs/components.json`
 
+### 路径验证诊断
+**v1.1.0 新增功能:**
+- 自动检测配置完整性和路径有效性
+- 验证所有marketplace.json路径与物理文件同步
+- 生成诊断报告: `DIAGNOSTIC_REPORT.md`
+- 确保100%路径有效性
+
 ## 发布前检查清单
 
-1. 所有测试通过: `npm test`
-2. 组件目录已更新: `python generate_components_json.py`
-3. 无硬编码路径或敏感信息
-4. 版本号已更新
-5. Git 提交包含所有相关文件
+1. 运行测试: `npm test`
+2. 生成组件目录: `python generate_components_json.py`
+3. 验证路径有效性: 运行诊断工具检查100%路径有效
+4. 更新版本号: `npm version patch|minor|major`
+5. 更新 CHANGELOG.md: 记录版本变更
+6. 更新 README.md: 同步统计数据和版本号
+7. 验证 marketplace.json: 确保与物理目录结构同步
+8. Git 提交: 包含所有相关文件
+9. 发布: `npm publish`
 
 ## 调试技巧
 
@@ -257,3 +294,13 @@ node --check cli-tool/src/index.js
 - 查看 `cli-tool/components/sandbox/e2b/SANDBOX_DEBUGGING.md`
 - 检查 Python 环境: `python3 --version` 或 `python3.11 --version`
 - 验证 API keys: `echo $E2B_API_KEY`, `echo $ANTHROPIC_API_KEY`
+
+## 版本历史
+
+详见 [CHANGELOG.md](CHANGELOG.md) 获取完整版本历史和更新日志。
+
+**当前版本**: v1.1.0
+- 路径有效性提升到100%
+- 94个精细化分类插件包
+- 按功能分类安装支持
+- 目录结构完全重组
