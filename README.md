@@ -9,16 +9,20 @@
 
 ## 📋 项目概述
 
-Claude Plugins 是一个完整的AI开发工具集，包含 **737个文件**，涵盖：
+Claude Plugins 是一个完整的AI开发工具集，包含 **755个文件**，涵盖：
 
-- **269个专业代理** (46个分类) - AI专家团队，覆盖各种开发领域
-- **275个实用命令** (27个分类) - 自动化工具和开发命令
+- **279个专业代理** (47个分类) - AI专家团队，覆盖各种开发领域
+- **281个实用命令** (28个分类) - 自动化工具和开发命令
 - **16个工作流** - 完整的开发流程自动化
-- **39个钩子** (9个分类) - 自动化触发器和事件处理
+- **40个钩子** (10个分类) - 自动化触发器和事件处理
 - **56个MCP服务器** (10个分类) - 外部服务集成
 - **2个沙盒环境** - 安全的代码执行环境
 
-**总计: 657个组件，94个精细化插件包**
+**总计: 675个组件，95个精细化插件包**
+
+### 🌟 特色：包含 Anthropic 官方插件
+- **claude-code-official** - Anthropic官方插件包，包含10个官方代理、6个官方命令和1个安全钩子
+- Agent SDK开发工具、PR审查、代码架构分析、安全防护等专业工具
 
 ### 🏆 技术规范
 - ✅ **符合Claude Code官方插件市场规范**
@@ -48,8 +52,11 @@ Claude Plugins 是一个完整的AI开发工具集，包含 **737个文件**，�
 
 #### 方式一：完整安装（推荐新手）
 ```bash
-# 安装完整插件包（包含657个组件）
+# 安装完整插件包（包含675个组件）
 /plugin install claude-plugins-complete@lifangda
+
+# 安装Anthropic官方插件包（推荐所有用户）
+/plugin install claude-code-official@lifangda
 ```
 
 #### 方式二：分类安装（推荐专业用户）
@@ -177,17 +184,36 @@ Claude Plugins 是一个完整的AI开发工具集，包含 **737个文件**，�
 ### 🎯 完整插件包
 
 #### claude-plugins-complete
-**描述**: 完整的657个Claude插件集合
+**描述**: 完整的675个Claude插件集合
 **包含**:
-- 269个专业代理 (46个分类)
-- 275个实用命令 (27个分类)
+- 279个专业代理 (47个分类)
+- 281个实用命令 (28个分类)
 - 16个工作流
-- 39个钩子 (9个分类)
+- 40个钩子 (10个分类)
 - 56个MCP服务器 (10个分类)
 - 2个沙盒环境
 
 **适用**: 新手用户，希望获得完整功能
 **安装**: `/plugin install claude-plugins-complete@lifangda`
+
+### 🏢 Anthropic 官方插件包
+
+#### claude-code-official
+**描述**: Anthropic官方提供的Claude Code插件包
+**特色**:
+- ✨ **Agent SDK开发工具** - Python和TypeScript SDK验证器
+- 🔍 **代码审查工具** - 专业的PR审查和代码架构分析
+- 🛡️ **安全防护** - 安全提醒钩子，自动检测潜在安全问题
+- 🚀 **Git工作流** - commit、PR创建和功能开发自动化
+
+**包含**:
+- 10个官方代理: agent-sdk-verifier-py, agent-sdk-verifier-ts, code-architect, code-explorer, code-reviewer, code-simplifier, comment-analyzer, pr-test-analyzer, silent-failure-hunter, type-design-analyzer
+- 6个官方命令: clean_gone, commit-push-pr, commit, feature-dev, new-sdk-app, review-pr
+- 1个安全钩子: security-guidance (包含9类安全检查模式)
+
+**来源**: [Anthropic Claude Code](https://github.com/anthropics/claude-code)
+**适用**: 所有用户推荐安装
+**安装**: `/plugin install claude-code-official@lifangda`
 
 ### 🌟 社区插件包
 
@@ -244,51 +270,52 @@ Claude Plugins 是一个完整的AI开发工具集，包含 **737个文件**，�
 
 ## 🤖 组件分类浏览
 
-### Agents分类 (269个，46个分类)
+### Agents分类 (279个，47个分类)
 完整的AI专家团队，覆盖各种开发领域：
-- **data-ai** - 数据与AI开发 (18个)
-- **backend** - 后端开发 (35个)
-- **frontend** - 前端开发 (22个)
-- **devops** - DevOps工具 (15个)
-- **security** - 安全审计 (12个)
-- **testing** - 测试工具 (8个)
-- **mobile** - 移动开发 (10个)
-- **business** - 业务领域 (18个)
-- **cloud** - 云服务 (8个)
-- **database** - 数据库 (12个)
-- **integration** - 系统集成 (15个)
-- 更多40+个专业分类...
+- **official** - Anthropic官方代理 (10个)
+- **data-ai** - 数据与AI开发 (9个)
+- **development-tools** - 开发工具 (17个)
+- **devops-infrastructure** - DevOps基础设施 (15个)
+- **security** - 安全审计 (8个)
+- **testing-quality** - 测试质量 (5个)
+- **mobile-development** - 移动开发 (5个)
+- **business-marketing** - 业务营销 (11个)
+- **database** - 数据库 (10个)
+- **documentation** - 文档 (7个)
+- 更多35+个专业分类...
 
-### Commands分类 (275个，27个分类)
+### Commands分类 (281个，28个分类)
 实用的自动化命令和开发工具：
-- **git** - Git工作流命令 (25个)
-- **testing** - 测试自动化 (32个)
-- **deployment** - 部署工具 (18个)
-- **documentation** - 文档生成 (15个)
-- **security** - 安全工具 (12个)
+- **official** - Anthropic官方命令 (6个)
+- **git-workflow** - Git工作流命令 (10个)
+- **testing** - 测试自动化 (14个)
+- **deployment** - 部署工具 (11个)
+- **documentation** - 文档生成 (13个)
+- **security** - 安全工具 (6个)
 - **performance** - 性能优化 (10个)
-- **automation** - 自动化脚本 (28个)
+- **automation** - 自动化脚本 (4个)
 - 更多20+个实用分类...
 
 ### Workflows (16个)
 完整的开发流程自动化工作流
 
-### Hooks分类 (39个，9个分类)
+### Hooks分类 (40个，10个分类)
 自动化触发器和事件处理：
-- **git-workflow** - Git工作流钩子
-- **testing** - 测试钩子
-- **security** - 安全钩子
-- **automation** - 自动化钩子
-- **performance** - 性能钩子
+- **official** - Anthropic官方钩子 (1个)
+- **git-workflow** - Git工作流钩子 (2个)
+- **testing** - 测试钩子 (1个)
+- **security** - 安全钩子 (2个)
+- **automation** - 自动化钩子 (16个)
+- **performance** - 性能钩子 (2个)
 - 更多分类...
 
 ### MCPs分类 (56个，10个分类)
 外部服务集成服务器：
-- **database** - 数据库集成 (8个)
-- **devtools** - 开发工具集成 (12个)
-- **web** - Web服务集成 (10个)
-- **browser_automation** - 浏览器自动化 (5个)
-- **integration** - 集成服务 (8个)
+- **database** - 数据库集成 (4个)
+- **devtools** - 开发工具集成 (33个)
+- **web** - Web服务集成 (1个)
+- **browser_automation** - 浏览器自动化 (6个)
+- **integration** - 集成服务 (2个)
 - 更多分类...
 
 ### Sandbox (2个)
@@ -366,18 +393,21 @@ Claude Plugins 是一个完整的AI开发工具集，包含 **737个文件**，�
 ```
 claude-plugins/
 ├── .claude-plugin/
-│   └── marketplace.json          # 插件市场配置文件 (94个插件包)
+│   └── marketplace.json          # 插件市场配置文件 (95个插件包)
 ├── cli-tool/
-│   └── components/               # 657个组件文件
+│   └── components/               # 675个组件文件
+│       ├── official/             # Anthropic官方插件 (18个文件)
+│       │   ├── agents/           # 10个官方代理
+│       │   ├── commands/         # 6个官方命令
+│       │   └── hooks/            # 1个安全钩子 + Python脚本
 │       ├── agents/               # 269个专业代理 (46个分类)
 │       │   ├── data-ai/          # 数据与AI开发
-│       │   ├── backend/          # 后端开发
-│       │   ├── frontend/         # 前端开发
-│       │   ├── devops/           # DevOps工具
+│       │   ├── development-tools/ # 开发工具
+│       │   ├── devops-infrastructure/ # DevOps基础设施
 │       │   ├── security/         # 安全审计
 │       │   └── ...               # 更多40+分类
 │       ├── commands/             # 275个实用命令 (27个分类)
-│       │   ├── git/              # Git工作流命令
+│       │   ├── git-workflow/     # Git工作流命令
 │       │   ├── testing/          # 测试自动化命令
 │       │   ├── deployment/       # 部署工具命令
 │       │   └── ...               # 更多20+分类

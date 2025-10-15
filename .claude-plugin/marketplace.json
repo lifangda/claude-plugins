@@ -3154,6 +3154,52 @@
         "./sandbox/e2b/SANDBOX_DEBUGGING.md",
         "./sandbox/e2b/claude-code-sandbox.md"
       ]
+    },
+    {
+      "name": "claude-code-official",
+      "source": "./cli-tool/components",
+      "description": "Claude Code 官方插件包 - Agent SDK开发、PR审查工具包、Git工作流、安全防护和特性开发工具",
+      "version": "1.1.0",
+      "author": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com",
+        "url": "https://github.com/anthropics/claude-code"
+      },
+      "license": "MIT",
+      "keywords": [
+        "official",
+        "agents",
+        "commands",
+        "hooks",
+        "sdk",
+        "pr-review",
+        "git",
+        "security"
+      ],
+      "strict": false,
+      "agents": [
+        "./official/agents/agent-sdk-verifier-py.md",
+        "./official/agents/agent-sdk-verifier-ts.md",
+        "./official/agents/code-architect.md",
+        "./official/agents/code-explorer.md",
+        "./official/agents/code-reviewer.md",
+        "./official/agents/code-simplifier.md",
+        "./official/agents/comment-analyzer.md",
+        "./official/agents/pr-test-analyzer.md",
+        "./official/agents/silent-failure-hunter.md",
+        "./official/agents/type-design-analyzer.md"
+      ],
+      "commands": [
+        "./official/commands/clean_gone.md",
+        "./official/commands/commit-push-pr.md",
+        "./official/commands/commit.md",
+        "./official/commands/feature-dev.md",
+        "./official/commands/new-sdk-app.md",
+        "./official/commands/review-pr.md"
+      ],
+      "hooks": [
+        "./official/hooks/security-guidance.json"
+      ]
     }
   ]
 }

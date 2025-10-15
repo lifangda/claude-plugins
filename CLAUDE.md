@@ -8,19 +8,23 @@ Claude Plugins 是一个 Node.js CLI 工具,用于管理和安装 Claude Code �
 
 **当前版本**: v1.1.0
 
-**组件统计** (657个组件,737个文件):
-- 269个专业代理 (46个分类)
-- 275个实用命令 (27个分类)
+**组件统计** (675个组件,755个文件):
+- 279个专业代理 (47个分类)
+  - 包含10个Anthropic官方代理
+- 281个实用命令 (28个分类)
+  - 包含6个Anthropic官方命令
 - 16个工作流
-- 39个钩子 (9个分类)
+- 40个钩子 (10个分类)
+  - 包含1个Anthropic官方安全钩子
 - 56个MCP服务器 (10个分类)
 - 2个沙盒环境
 
 **核心功能:**
 - 组件安装系统 (agents, commands, mcps, workflows, hooks)
-- Claude Code 插件市场配置 (94个精细化插件包)
+- Claude Code 插件市场配置 (95个精细化插件包)
 - 实时分析仪表板
 - E2B 沙盒执行环境
+- **Anthropic官方插件集成** (18个官方文件)
 
 ## 常用命令
 
@@ -103,20 +107,22 @@ Workflows → .claude/workflows/
 ### 3. 插件市场系统 (`.claude-plugin/marketplace.json`)
 
 **v1.1.0 重大改进:**
-- 从167个集合式插件包优化为94个精细化分类插件包
+- 从167个集合式插件包优化为95个精细化分类插件包 (新增official插件包)
 - 路径有效性从18%提升到100% (修复837个无效路径)
 - 所有路径完全同步物理目录结构
 - 支持按功能分类精准安装
+- **集成Anthropic官方插件** (claude-code-official包)
 
 **结构:**
 - 每个插件包含: name, source, description, version, agents[], commands[], workflows[], hooks[], mcps[]
 - 支持 Claude Code 插件市场规范
 
 **插件包类型:**
-1. **完整插件包**: `claude-plugins-complete` (657个组件)
-2. **功能分类包**: `agents-backend`, `commands-git`, `mcps-database` 等 (46+27+9+10个分类)
-3. **经典插件包**: `git-workflow`, `supabase-toolkit`, `nextjs-vercel-pro`, `testing-suite`, `security-pro`, `knowledge-wikipedia`
-4. **社区精选包**: `marketplace-community` (85个社区精选插件)
+1. **完整插件包**: `claude-plugins-complete` (675个组件)
+2. **官方插件包**: `claude-code-official` (18个Anthropic官方文件)
+3. **功能分类包**: `agents-backend`, `commands-git`, `mcps-database` 等 (47+28+10+10个分类)
+4. **经典插件包**: `git-workflow`, `supabase-toolkit`, `nextjs-vercel-pro`, `testing-suite`, `security-pro`, `knowledge-wikipedia`
+5. **社区精选包**: `marketplace-community` (85个社区精选插件)
 
 ### 4. 分析仪表板架构 (`cli-tool/src/analytics.js`)
 
@@ -194,20 +200,22 @@ node cli-tool/bin/create-claude-config.js --sandbox e2b --prompt "创建一个 w
 
 **v1.1.0 目录结构重组:**
 - 所有组件按实际功能分类组织到子目录
-- Agents: 46个功能分类 (data-ai, backend, frontend, devops, security, testing, mobile, business, cloud, database, integration 等)
-- Commands: 27个功能分类 (git, testing, deployment, documentation, security, performance, automation 等)
-- Hooks: 9个功能分类 (git-workflow, testing, security, automation, performance 等)
+- **新增official目录**: 存放Anthropic官方插件
+- Agents: 47个功能分类 (official, data-ai, development-tools, devops-infrastructure, security, testing-quality, mobile-development, business-marketing, database, documentation 等)
+- Commands: 28个功能分类 (official, git-workflow, testing, deployment, documentation, security, performance, automation 等)
+- Hooks: 10个功能分类 (official, git-workflow, testing, security, automation, performance 等)
 - MCPs: 10个功能分类 (database, devtools, web, browser_automation, integration 等)
 
 **路径格式:**
-- 组件物理路径: `cli-tool/components/agents/backend/python-pro.md`
-- marketplace.json路径: `agents/backend/python-pro.md` (相对于components目录)
-- 安装目标位置: `.claude/agents/python-pro.md` (扁平结构)
+- 官方组件物理路径: `cli-tool/components/official/agents/code-reviewer.md`
+- 用户组件物理路径: `cli-tool/components/agents/data-ai/ai-engineer.md`
+- marketplace.json路径: `official/agents/code-reviewer.md` 或 `agents/data-ai/ai-engineer.md` (相对于components目录)
+- 安装目标位置: `.claude/agents/code-reviewer.md` 或 `.claude/agents/ai-engineer.md` (扁平结构)
 
 **安装流程:**
-- 从分类路径读取: `agents/backend/python-pro.md`
-- 提取文件名: `python-pro.md`
-- 安装到扁平目录: `.claude/agents/python-pro.md`
+- 从分类路径读取: `official/agents/code-reviewer.md` 或 `agents/data-ai/ai-engineer.md`
+- 提取文件名: `code-reviewer.md` 或 `ai-engineer.md`
+- 安装到扁平目录: `.claude/agents/code-reviewer.md` 或 `.claude/agents/ai-engineer.md`
 
 ### 错误处理模式
 - 所有异步操作使用 try/catch
@@ -300,7 +308,8 @@ node --check cli-tool/src/index.js
 详见 [CHANGELOG.md](CHANGELOG.md) 获取完整版本历史和更新日志。
 
 **当前版本**: v1.1.0
-- 路径有效性提升到100%
-- 94个精细化分类插件包
+- 路径有效性提升到100% (1427个路径全部有效)
+- 95个精细化分类插件包 (新增claude-code-official官方插件包)
 - 按功能分类安装支持
 - 目录结构完全重组
+- 集成Anthropic官方插件 (18个官方文件)
