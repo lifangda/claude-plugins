@@ -9,16 +9,17 @@
 
 ## 📋 项目概述
 
-Claude Plugins 是一个完整的AI开发工具集,包含 **757个文件**,涵盖:
+Claude Plugins 是一个完整的AI开发工具集,包含 **802个文件**,涵盖:
 
-- **273个专业代理** (47个分类) - AI专家团队,覆盖各种开发领域
-- **277个实用命令** (28个分类) - 自动化工具和开发命令
+- **280个专业代理** (47个分类) - AI专家团队,覆盖各种开发领域
+- **306个实用命令** (28个分类) - 自动化工具和开发命令
 - **16个工作流** - 完整的开发流程自动化
-- **40个钩子** (10个分类) - 自动化触发器和事件处理
+- **39个钩子** (10个分类) - 自动化触发器和事件处理
 - **56个MCP服务器** (10个分类) - 外部服务集成
+- **18个输出样式** - 专业化Claude输出格式
 - **2个沙盒环境** - 安全的代码执行环境
 
-**总计: 677个组件,95个精细化插件包**
+**总计: 717个组件,96个精细化插件包**
 
 ### 🌟 特色：包含 Anthropic 官方插件
 - **claude-code-official** - Anthropic官方插件包，包含10个官方代理、6个官方命令和1个安全钩子
@@ -184,13 +185,14 @@ Claude Plugins 是一个完整的AI开发工具集,包含 **757个文件**,涵�
 ### 🎯 完整插件包
 
 #### claude-plugins-complete
-**描述**: 完整的677个Claude插件集合
+**描述**: 完整的717个Claude插件集合
 **包含**:
-- 273个专业代理 (47个分类)
-- 277个实用命令 (28个分类)
+- 280个专业代理 (47个分类)
+- 306个实用命令 (28个分类)
 - 16个工作流
-- 40个钩子 (10个分类)
+- 39个钩子 (10个分类)
 - 56个MCP服务器 (10个分类)
+- 18个输出样式
 - 2个沙盒环境
 
 **适用**: 新手用户，希望获得完整功能
@@ -270,36 +272,47 @@ Claude Plugins 是一个完整的AI开发工具集,包含 **757个文件**,涵�
 
 ## 🤖 组件分类浏览
 
-### Agents分类 (273个,47个分类)
+### Agents分类 (280个,47个分类)
 完整的AI专家团队,覆盖各种开发领域:
 - **official** - Anthropic官方代理 (10个)
 - **data-ai** - 数据与AI开发 (9个)
-- **development-tools** - 开发工具 (17个)
-- **devops-infrastructure** - DevOps基础设施 (15个)
-- **security** - 安全审计 (8个)
-- **testing-quality** - 测试质量 (5个)
+- **development-tools** - 开发工具 (18个)
+- **devops-infrastructure** - DevOps基础设施 (16个)
+- **security** - 安全审计 (9个)
+- **testing-quality** - 测试质量 (8个)
 - **mobile-development** - 移动开发 (5个)
 - **business-marketing** - 业务营销 (11个)
-- **database** - 数据库 (10个)
-- **documentation** - 文档 (7个)
+- **database** - 数据库 (11个)
+- **documentation** - 文档 (8个)
 - 更多35+个专业分类...
 
-### Commands分类 (277个,28个分类)
+### Commands分类 (306个,28个分类)
 实用的自动化命令和开发工具:
 - **official** - Anthropic官方命令 (6个)
-- **git-workflow** - Git工作流命令 (10个)
-- **testing** - 测试自动化 (14个)
+- **git-workflow** - Git工作流命令 (13个)
+- **testing-quality** - 测试质量命令 (13个)
 - **deployment** - 部署工具 (11个)
-- **documentation** - 文档生成 (13个)
-- **security** - 安全工具 (6个)
+- **documentation** - 文档生成 (15个)
+- **development-tools** - 开发工具 (10个)
+- **utilities** - 实用工具 (24个)
+- **security** - 安全工具 (7个)
 - **performance** - 性能优化 (10个)
 - **automation** - 自动化脚本 (4个)
-- 更多20+个实用分类...
+- 更多18+个实用分类...
+
+### Output Styles (18个)
+专业化Claude输出格式:
+- concise-engineer - 简洁工程师
+- accessibility-champion - 无障碍倡导者
+- api-designer - API设计师
+- security-auditor - 安全审计员
+- test-driven-developer - TDD开发者
+- 更多13个专业样式...
 
 ### Workflows (16个)
 完整的开发流程自动化工作流
 
-### Hooks分类 (40个，10个分类)
+### Hooks分类 (39个，10个分类)
 自动化触发器和事件处理：
 - **official** - Anthropic官方钩子 (1个)
 - **git-workflow** - Git工作流钩子 (2个)
@@ -393,27 +406,28 @@ Claude Plugins 是一个完整的AI开发工具集,包含 **757个文件**,涵�
 ```
 claude-plugins/
 ├── .claude-plugin/
-│   └── marketplace.json          # 插件市场配置文件 (95个插件包)
+│   └── marketplace.json          # 插件市场配置文件 (96个插件包)
 ├── cli-tool/
-│   └── components/               # 677个组件文件
+│   └── components/               # 717个组件文件
 │       ├── official/             # Anthropic官方插件 (18个文件)
 │       │   ├── agents/           # 10个官方代理
 │       │   ├── commands/         # 6个官方命令
 │       │   └── hooks/            # 1个安全钩子 + Python脚本
-│       ├── agents/               # 263个专业代理 (46个分类)
+│       ├── agents/               # 270个专业代理 (46个分类)
 │       │   ├── data-ai/          # 数据与AI开发
 │       │   ├── development-tools/ # 开发工具
 │       │   ├── devops-infrastructure/ # DevOps基础设施
 │       │   ├── security/         # 安全审计
 │       │   └── ...               # 更多40+分类
-│       ├── commands/             # 271个实用命令 (27个分类)
+│       ├── commands/             # 300个实用命令 (27个分类)
 │       │   ├── git-workflow/     # Git工作流命令
-│       │   ├── testing/          # 测试自动化命令
+│       │   ├── testing-quality/  # 测试质量命令
 │       │   ├── deployment/       # 部署工具命令
 │       │   └── ...               # 更多20+分类
 │       ├── workflows/            # 16个工作流
-│       ├── hooks/                # 39个钩子 (9个分类)
+│       ├── hooks/                # 38个钩子 (9个分类)
 │       ├── mcps/                 # 56个MCP服务器 (10个分类)
+│       ├── output-styles/        # 18个输出样式
 │       └── sandbox/              # 2个沙盒环境
 ├── CHANGELOG.md                  # 版本历史记录
 ├── README.md                     # 项目说明文档

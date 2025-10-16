@@ -8,23 +8,25 @@ Claude Plugins 是一个 Node.js CLI 工具,用于管理和安装 Claude Code �
 
 **当前版本**: v1.1.0
 
-**组件统计** (677个组件,757个文件):
-- 273个专业代理 (47个分类)
+**组件统计** (717个组件,802个文件):
+- 280个专业代理 (47个分类)
   - 包含10个Anthropic官方代理
-- 277个实用命令 (28个分类)
+- 306个实用命令 (28个分类)
   - 包含6个Anthropic官方命令
 - 16个工作流
-- 40个钩子 (10个分类)
+- 39个钩子 (10个分类)
   - 包含1个Anthropic官方安全钩子
 - 56个MCP服务器 (10个分类)
+- 18个输出样式
 - 2个沙盒环境
 
 **核心功能:**
-- 组件安装系统 (agents, commands, mcps, workflows, hooks)
-- Claude Code 插件市场配置 (95个精细化插件包)
+- 组件安装系统 (agents, commands, mcps, workflows, hooks, output-styles)
+- Claude Code 插件市场配置 (96个精细化插件包)
 - 实时分析仪表板
 - E2B 沙盒执行环境
 - **Anthropic官方插件集成** (18个官方文件)
+- **Output Styles系统** (18个专业输出样式)
 
 ## 常用命令
 
