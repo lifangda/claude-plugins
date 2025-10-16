@@ -6,14 +6,14 @@
     "url": "https://github.com/lifangda"
   },
   "metadata": {
-    "description": "完整的Claude插件生态系统:280个专业代理、301个开发命令、16个工作流、39个钩子、56个MCP服务器，专业化分类，即装即用",
+    "description": "完整的Claude插件生态系统:280个专业代理、301个开发命令、16个工作流、39个钩子、56个MCP服务器、18个输出样式，专业化分类，即装即用",
     "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "claude-plugins-complete",
       "source": "./cli-tool/components",
-      "description": "完整的Claude插件生态系统:280个AI代理、301个开发命令、16个工作流、39个自动化钩子、56个MCP服务器,一条命令即可安装使用",
+      "description": "完整的Claude插件生态系统:280个AI代理、301个开发命令、16个工作流、39个自动化钩子、56个MCP服务器、18个输出样式,一条命令即可安装使用",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -799,6 +799,26 @@
       "sandbox": [
         "./sandbox/e2b/SANDBOX_DEBUGGING.md",
         "./sandbox/e2b/claude-code-sandbox.md"
+      ],
+      "outputStyles": [
+        "./output-styles/accessibility-champion.md",
+        "./output-styles/api-designer.md",
+        "./output-styles/concise-engineer.md",
+        "./output-styles/critical-code-reviewer.md",
+        "./output-styles/data-engineer.md",
+        "./output-styles/defensive-programmer.md",
+        "./output-styles/devil-advocate.md",
+        "./output-styles/devops-automator.md",
+        "./output-styles/distributed-systems-architect.md",
+        "./output-styles/documentation-writer.md",
+        "./output-styles/evan-king-system-design-reviewer.md",
+        "./output-styles/functional-purist.md",
+        "./output-styles/legacy-system-maintainer.md",
+        "./output-styles/performance-optimizer.md",
+        "./output-styles/refactoring-expert.md",
+        "./output-styles/security-auditor.md",
+        "./output-styles/startup-pragmatist.md",
+        "./output-styles/test-driven-developer.md"
       ]
     },
     {
@@ -3275,6 +3295,42 @@
       ],
       "hooks": [
         "./official/hooks/security-guidance.json"
+      ]
+    },
+    {
+      "name": "output-styles-collection",
+      "source": "./cli-tool/components",
+      "description": "Output Styles 输出样式集合 - 18个专业样式",
+      "version": "1.1.0",
+      "author": {
+        "name": "Fonda",
+        "url": "https://github.com/lifangda"
+      },
+      "license": "MIT",
+      "keywords": [
+        "output-styles",
+        "styles"
+      ],
+      "strict": false,
+      "outputStyles": [
+        "./output-styles/accessibility-champion.md",
+        "./output-styles/api-designer.md",
+        "./output-styles/concise-engineer.md",
+        "./output-styles/critical-code-reviewer.md",
+        "./output-styles/data-engineer.md",
+        "./output-styles/defensive-programmer.md",
+        "./output-styles/devil-advocate.md",
+        "./output-styles/devops-automator.md",
+        "./output-styles/distributed-systems-architect.md",
+        "./output-styles/documentation-writer.md",
+        "./output-styles/evan-king-system-design-reviewer.md",
+        "./output-styles/functional-purist.md",
+        "./output-styles/legacy-system-maintainer.md",
+        "./output-styles/performance-optimizer.md",
+        "./output-styles/refactoring-expert.md",
+        "./output-styles/security-auditor.md",
+        "./output-styles/startup-pragmatist.md",
+        "./output-styles/test-driven-developer.md"
       ]
     }
   ]
