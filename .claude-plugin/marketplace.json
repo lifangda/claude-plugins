@@ -6,14 +6,14 @@
     "url": "https://github.com/lifangda"
   },
   "metadata": {
-    "description": "完整的Claude插件生态系统：273个专业代理、277个开发命令、16个工作流、39个钩子、56个MCP服务器，专业化分类，即装即用",
+    "description": "完整的Claude插件生态系统:280个专业代理、301个开发命令、16个工作流、39个钩子、56个MCP服务器，专业化分类，即装即用",
     "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "claude-plugins-complete",
       "source": "./cli-tool/components",
-      "description": "完整的Claude插件生态系统:273个AI代理、277个开发命令、16个工作流、39个自动化钩子、56个MCP服务器,一条命令即可安装使用",
+      "description": "完整的Claude插件生态系统:280个AI代理、301个开发命令、16个工作流、39个自动化钩子、56个MCP服务器,一条命令即可安装使用",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -309,7 +309,14 @@
         "./agents/devops-infrastructure/monitoring-observability-specialist.md",
         "./agents/testing-quality/api-tester.md",
         "./agents/enterprise/compliance-automation-specialist.md",
-        "./agents/enterprise/data-privacy-engineer.md"
+        "./agents/enterprise/data-privacy-engineer.md",
+        "./agents/architecture/api-architect.md",
+        "./agents/testing-quality/code-quality-reviewer.md",
+        "./agents/documentation/documentation-writer.md",
+        "./agents/security/security-specialist.md",
+        "./agents/development-tools/tech-lead.md",
+        "./agents/testing-quality/testing-specialist.md",
+        "./agents/design-creative/ux-ui-designer.md"
       ],
       "commands": [
         "./commands/ai-optimization/double-check.md",
@@ -588,7 +595,31 @@
         "./commands/utilities/refactor-code.md",
         "./commands/utilities/ultra-think.md",
         "./commands/git-workflow/code-review-assistant.md",
-        "./commands/git-workflow/github-issue-fix.md"
+        "./commands/git-workflow/github-issue-fix.md",
+        "./commands/utilities/update-claude.md",
+        "./commands/code-analysis/understand.md",
+        "./commands/code-analysis/explain-like-senior.md",
+        "./commands/code-analysis/contributing.md",
+        "./commands/code-analysis/scaffold.md",
+        "./commands/development-tools/cleanproject.md",
+        "./commands/development-tools/format.md",
+        "./commands/development-tools/implement.md",
+        "./commands/documentation/docs.md",
+        "./commands/git-workflow/undo.md",
+        "./commands/orchestration/session-start.md",
+        "./commands/orchestration/session-end.md",
+        "./commands/orchestration/todos-to-issues.md",
+        "./commands/security/security-scan.md",
+        "./commands/testing-quality/review.md",
+        "./commands/testing-quality/predict-issues.md",
+        "./commands/testing-quality/fix-imports.md",
+        "./commands/testing-quality/find-todos.md",
+        "./commands/testing-quality/create-todos.md",
+        "./commands/testing-quality/fix-todos.md",
+        "./commands/testing-quality/test.md",
+        "./commands/utilities/make-it-pretty.md",
+        "./commands/utilities/remove-comments.md",
+        "./commands/utilities/refactor.md"
       ],
       "workflows": [
         "./workflows/data-driven-feature.md",
@@ -876,7 +907,7 @@
     {
       "name": "agents-architecture",
       "source": "./cli-tool/components",
-      "description": "Architecture 专业代理插件包 - 2个专业代理",
+      "description": "Architecture 专业代理插件包 - 3个专业代理",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -890,7 +921,8 @@
       "strict": false,
       "agents": [
         "./agents/architecture/architect-review.md",
-        "./agents/architecture/graphql-architect.md"
+        "./agents/architecture/graphql-architect.md",
+        "./agents/architecture/api-architect.md"
       ]
     },
     {
@@ -1116,7 +1148,7 @@
     {
       "name": "agents-design-creative",
       "source": "./cli-tool/components",
-      "description": "Design Creative 专业代理插件包 - 8个专业代理",
+      "description": "Design Creative 专业代理插件包 - 9个专业代理",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -1136,7 +1168,8 @@
         "./agents/design-creative/ux-researcher.md",
         "./agents/design-creative/vision-specialist.md",
         "./agents/design-creative/visual-storyteller.md",
-        "./agents/design-creative/whimsy-injector.md"
+        "./agents/design-creative/whimsy-injector.md",
+        "./agents/design-creative/ux-ui-designer.md"
       ]
     },
     {
@@ -1169,7 +1202,7 @@
     {
       "name": "agents-development-tools",
       "source": "./cli-tool/components",
-      "description": "Development Tools 专业代理插件包 - 17个专业代理",
+      "description": "Development Tools 专业代理插件包 - 18个专业代理",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -1198,7 +1231,8 @@
         "./agents/development-tools/test-automator.md",
         "./agents/development-tools/test-engineer.md",
         "./agents/development-tools/unused-code-cleaner.md",
-        "./agents/development-tools/web-dev.md"
+        "./agents/development-tools/web-dev.md",
+        "./agents/development-tools/tech-lead.md"
       ]
     },
     {
@@ -1238,7 +1272,7 @@
     {
       "name": "agents-documentation",
       "source": "./cli-tool/components",
-      "description": "Documentation 专业代理插件包 - 7个专业代理",
+      "description": "Documentation 专业代理插件包 - 8个专业代理",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -1257,7 +1291,8 @@
         "./agents/documentation/docusaurus-expert.md",
         "./agents/documentation/reference-builder.md",
         "./agents/documentation/technical-writer.md",
-        "./agents/documentation/tutorial-engineer.md"
+        "./agents/documentation/tutorial-engineer.md",
+        "./agents/documentation/documentation-writer.md"
       ]
     },
     {
@@ -1733,7 +1768,7 @@
     {
       "name": "agents-security",
       "source": "./cli-tool/components",
-      "description": "Security 专业代理插件包 - 8个专业代理",
+      "description": "Security 专业代理插件包 - 9个专业代理",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -1753,7 +1788,8 @@
         "./agents/security/incident-responder.md",
         "./agents/security/mobile-security-coder.md",
         "./agents/security/penetration-tester.md",
-        "./agents/security/security-auditor.md"
+        "./agents/security/security-auditor.md",
+        "./agents/security/security-specialist.md"
       ]
     },
     {
@@ -1808,7 +1844,7 @@
     {
       "name": "agents-testing-quality",
       "source": "./cli-tool/components",
-      "description": "Testing Quality 专业代理插件包 - 6个专业代理",
+      "description": "Testing Quality 专业代理插件包 - 8个专业代理",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -1826,7 +1862,9 @@
         "./agents/testing-quality/test-results-analyzer.md",
         "./agents/testing-quality/test-writer-fixer.md",
         "./agents/testing-quality/unit-test-generator.md",
-        "./agents/testing-quality/api-tester.md"
+        "./agents/testing-quality/api-tester.md",
+        "./agents/testing-quality/code-quality-reviewer.md",
+        "./agents/testing-quality/testing-specialist.md"
       ]
     },
     {
@@ -1919,7 +1957,7 @@
     {
       "name": "commands-code-analysis",
       "source": "./cli-tool/components",
-      "description": "Code Analysis 命令工具包 - 3个专业命令",
+      "description": "Code Analysis 命令工具包 - 7个专业命令",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -1934,7 +1972,11 @@
       "commands": [
         "./commands/code-analysis/analyze-codebase.md",
         "./commands/code-analysis/analyze-issue.md",
-        "./commands/code-analysis/update-claudemd.md"
+        "./commands/code-analysis/update-claudemd.md",
+        "./commands/code-analysis/understand.md",
+        "./commands/code-analysis/explain-like-senior.md",
+        "./commands/code-analysis/contributing.md",
+        "./commands/code-analysis/scaffold.md"
       ]
     },
     {
@@ -1995,7 +2037,7 @@
     {
       "name": "commands-development-tools",
       "source": "./cli-tool/components",
-      "description": "Development Tools 命令工具包 - 6个专业命令",
+      "description": "Development Tools 命令工具包 - 9个专业命令",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -2013,13 +2055,16 @@
         "./commands/development-tools/claude-desktop-extension.md",
         "./commands/development-tools/fix-pr.md",
         "./commands/development-tools/pr-issue-resolve.md",
-        "./commands/development-tools/refractor.md"
+        "./commands/development-tools/refractor.md",
+        "./commands/development-tools/cleanproject.md",
+        "./commands/development-tools/format.md",
+        "./commands/development-tools/implement.md"
       ]
     },
     {
       "name": "commands-documentation",
       "source": "./cli-tool/components",
-      "description": "Documentation 命令工具包 - 13个专业命令",
+      "description": "Documentation 命令工具包 - 14个专业命令",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -2044,7 +2089,8 @@
         "./commands/documentation/load-llms-txt.md",
         "./commands/documentation/migration-guide.md",
         "./commands/documentation/troubleshooting-guide.md",
-        "./commands/documentation/update-docs.md"
+        "./commands/documentation/update-docs.md",
+        "./commands/documentation/docs.md"
       ]
     },
     {
@@ -2096,7 +2142,7 @@
     {
       "name": "commands-git-workflow",
       "source": "./cli-tool/components",
-      "description": "Git Workflow 命令工具包 - 12个专业命令",
+      "description": "Git Workflow 命令工具包 - 13个专业命令",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -2120,7 +2166,8 @@
         "./commands/git-workflow/pr-review.md",
         "./commands/git-workflow/update-branch-name.md",
         "./commands/git-workflow/code-review-assistant.md",
-        "./commands/git-workflow/github-issue-fix.md"
+        "./commands/git-workflow/github-issue-fix.md",
+        "./commands/git-workflow/undo.md"
       ]
     },
     {
@@ -2253,7 +2300,7 @@
     {
       "name": "commands-orchestration",
       "source": "./cli-tool/components",
-      "description": "Orchestration 命令工具包 - 12个专业命令",
+      "description": "Orchestration 命令工具包 - 15个专业命令",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -2277,7 +2324,10 @@
         "./commands/orchestration/resume.md",
         "./commands/orchestration/start.md",
         "./commands/orchestration/status.md",
-        "./commands/orchestration/sync.md"
+        "./commands/orchestration/sync.md",
+        "./commands/orchestration/session-start.md",
+        "./commands/orchestration/session-end.md",
+        "./commands/orchestration/todos-to-issues.md"
       ]
     },
     {
@@ -2366,7 +2416,7 @@
     {
       "name": "commands-security",
       "source": "./cli-tool/components",
-      "description": "Security 命令工具包 - 6个专业命令",
+      "description": "Security 命令工具包 - 7个专业命令",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -2384,7 +2434,8 @@
         "./commands/security/penetration-test.md",
         "./commands/security/secrets-scanner.md",
         "./commands/security/security-audit.md",
-        "./commands/security/security-hardening.md"
+        "./commands/security/security-hardening.md",
+        "./commands/security/security-scan.md"
       ]
     },
     {
@@ -2580,7 +2631,7 @@
     {
       "name": "commands-testing-quality",
       "source": "./cli-tool/components",
-      "description": "Testing Quality 命令工具包 - 4个专业命令",
+      "description": "Testing Quality 命令工具包 - 11个专业命令",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -2596,13 +2647,20 @@
         "./commands/testing-quality/bug-detective.md",
         "./commands/testing-quality/bug-fix.md",
         "./commands/testing-quality/debug-session.md",
-        "./commands/testing-quality/test-file.md"
+        "./commands/testing-quality/test-file.md",
+        "./commands/testing-quality/review.md",
+        "./commands/testing-quality/predict-issues.md",
+        "./commands/testing-quality/fix-imports.md",
+        "./commands/testing-quality/find-todos.md",
+        "./commands/testing-quality/create-todos.md",
+        "./commands/testing-quality/fix-todos.md",
+        "./commands/testing-quality/test.md"
       ]
     },
     {
       "name": "commands-utilities",
       "source": "./cli-tool/components",
-      "description": "Utilities 命令工具包 - 19个专业命令",
+      "description": "Utilities 命令工具包 - 23个专业命令",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -2633,7 +2691,11 @@
         "./commands/utilities/initref.md",
         "./commands/utilities/prime.md",
         "./commands/utilities/refactor-code.md",
-        "./commands/utilities/ultra-think.md"
+        "./commands/utilities/ultra-think.md",
+        "./commands/utilities/update-claude.md",
+        "./commands/utilities/make-it-pretty.md",
+        "./commands/utilities/remove-comments.md",
+        "./commands/utilities/refactor.md"
       ]
     },
     {
