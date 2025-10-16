@@ -6,14 +6,14 @@
     "url": "https://github.com/lifangda"
   },
   "metadata": {
-    "description": "完整的Claude插件生态系统:280个专业代理、301个开发命令、16个工作流、39个钩子、56个MCP服务器、18个输出样式，专业化分类，即装即用",
+    "description": "完整的Claude插件生态系统:280个专业代理、306个开发命令、16个工作流、39个钩子、56个MCP服务器、18个输出样式，专业化分类，即装即用",
     "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "claude-plugins-complete",
       "source": "./cli-tool/components",
-      "description": "完整的Claude插件生态系统:280个AI代理、301个开发命令、16个工作流、39个自动化钩子、56个MCP服务器、18个输出样式,一条命令即可安装使用",
+      "description": "完整的Claude插件生态系统:280个AI代理、306个开发命令、16个工作流、39个自动化钩子、56个MCP服务器、18个输出样式,一条命令即可安装使用",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -619,7 +619,12 @@
         "./commands/testing-quality/test.md",
         "./commands/utilities/make-it-pretty.md",
         "./commands/utilities/remove-comments.md",
-        "./commands/utilities/refactor.md"
+        "./commands/utilities/refactor.md",
+        "./commands/testing-quality/tdd.md",
+        "./commands/testing-quality/tdd-implement.md",
+        "./commands/documentation/create-docs.md",
+        "./commands/utilities/mermaid.md",
+        "./commands/development-tools/create-hook.md"
       ],
       "workflows": [
         "./workflows/data-driven-feature.md",
@@ -2057,7 +2062,7 @@
     {
       "name": "commands-development-tools",
       "source": "./cli-tool/components",
-      "description": "Development Tools 命令工具包 - 9个专业命令",
+      "description": "Development Tools 命令工具包 - 10个专业命令",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -2078,13 +2083,14 @@
         "./commands/development-tools/refractor.md",
         "./commands/development-tools/cleanproject.md",
         "./commands/development-tools/format.md",
-        "./commands/development-tools/implement.md"
+        "./commands/development-tools/implement.md",
+        "./commands/development-tools/create-hook.md"
       ]
     },
     {
       "name": "commands-documentation",
       "source": "./cli-tool/components",
-      "description": "Documentation 命令工具包 - 14个专业命令",
+      "description": "Documentation 命令工具包 - 15个专业命令",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -2110,7 +2116,8 @@
         "./commands/documentation/migration-guide.md",
         "./commands/documentation/troubleshooting-guide.md",
         "./commands/documentation/update-docs.md",
-        "./commands/documentation/docs.md"
+        "./commands/documentation/docs.md",
+        "./commands/documentation/create-docs.md"
       ]
     },
     {
@@ -2651,7 +2658,7 @@
     {
       "name": "commands-testing-quality",
       "source": "./cli-tool/components",
-      "description": "Testing Quality 命令工具包 - 11个专业命令",
+      "description": "Testing Quality 命令工具包 - 13个专业命令",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -2674,13 +2681,15 @@
         "./commands/testing-quality/find-todos.md",
         "./commands/testing-quality/create-todos.md",
         "./commands/testing-quality/fix-todos.md",
-        "./commands/testing-quality/test.md"
+        "./commands/testing-quality/test.md",
+        "./commands/testing-quality/tdd.md",
+        "./commands/testing-quality/tdd-implement.md"
       ]
     },
     {
       "name": "commands-utilities",
       "source": "./cli-tool/components",
-      "description": "Utilities 命令工具包 - 23个专业命令",
+      "description": "Utilities 命令工具包 - 24个专业命令",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -2715,7 +2724,8 @@
         "./commands/utilities/update-claude.md",
         "./commands/utilities/make-it-pretty.md",
         "./commands/utilities/remove-comments.md",
-        "./commands/utilities/refactor.md"
+        "./commands/utilities/refactor.md",
+        "./commands/utilities/mermaid.md"
       ]
     },
     {
