@@ -6,14 +6,14 @@
     "url": "https://github.com/lifangda"
   },
   "metadata": {
-    "description": "完整的Claude插件生态系统：269个专业代理、275个开发命令、16个工作流、39个钩子、56个MCP服务器，专业化分类，即装即用",
+    "description": "完整的Claude插件生态系统：273个专业代理、277个开发命令、16个工作流、39个钩子、56个MCP服务器，专业化分类，即装即用",
     "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "claude-plugins-complete",
       "source": "./cli-tool/components",
-      "description": "完整的Claude插件生态系统：269个AI代理、275个开发命令、16个工作流、39个自动化钩子、56个MCP服务器，一条命令即可安装使用",
+      "description": "完整的Claude插件生态系统:273个AI代理、277个开发命令、16个工作流、39个自动化钩子、56个MCP服务器,一条命令即可安装使用",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -305,7 +305,11 @@
         "./agents/web-tools/url-link-extractor.md",
         "./agents/web-tools/web-accessibility-checker.md",
         "./agents/workflow-optimization/tool-evaluator.md",
-        "./agents/workflow-optimization/workflow-optimizer.md"
+        "./agents/workflow-optimization/workflow-optimizer.md",
+        "./agents/devops-infrastructure/monitoring-observability-specialist.md",
+        "./agents/testing-quality/api-tester.md",
+        "./agents/enterprise/compliance-automation-specialist.md",
+        "./agents/enterprise/data-privacy-engineer.md"
       ],
       "commands": [
         "./commands/ai-optimization/double-check.md",
@@ -582,7 +586,9 @@
         "./commands/utilities/initref.md",
         "./commands/utilities/prime.md",
         "./commands/utilities/refactor-code.md",
-        "./commands/utilities/ultra-think.md"
+        "./commands/utilities/ultra-think.md",
+        "./commands/git-workflow/code-review-assistant.md",
+        "./commands/git-workflow/github-issue-fix.md"
       ],
       "workflows": [
         "./workflows/data-driven-feature.md",
@@ -1051,7 +1057,7 @@
     {
       "name": "agents-database",
       "source": "./cli-tool/components",
-      "description": "Database 专业代理插件包 - 10个专业代理",
+      "description": "Database 专业代理插件包 - 11个专业代理",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -1068,6 +1074,7 @@
         "./agents/database/database-architect.md",
         "./agents/database/database-optimization.md",
         "./agents/database/database-optimizer.md",
+        "./agents/database/database-performance-optimizer.md",
         "./agents/database/neon-auth-specialist.md",
         "./agents/database/neon-database-architect.md",
         "./agents/database/neon-expert.md",
@@ -1109,7 +1116,7 @@
     {
       "name": "agents-design-creative",
       "source": "./cli-tool/components",
-      "description": "Design Creative 专业代理插件包 - 7个专业代理",
+      "description": "Design Creative 专业代理插件包 - 8个专业代理",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -1125,6 +1132,7 @@
         "./agents/design-creative/joker.md",
         "./agents/design-creative/studio-coach.md",
         "./agents/design-creative/studio-producer.md",
+        "./agents/design-creative/ui-designer.md",
         "./agents/design-creative/ux-researcher.md",
         "./agents/design-creative/vision-specialist.md",
         "./agents/design-creative/visual-storyteller.md",
@@ -1196,7 +1204,7 @@
     {
       "name": "agents-devops-infrastructure",
       "source": "./cli-tool/components",
-      "description": "Devops Infrastructure 专业代理插件包 - 15个专业代理",
+      "description": "Devops Infrastructure 专业代理插件包 - 16个专业代理",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -1223,7 +1231,8 @@
         "./agents/devops-infrastructure/performance-benchmarker.md",
         "./agents/devops-infrastructure/security-engineer.md",
         "./agents/devops-infrastructure/terraform-specialist.md",
-        "./agents/devops-infrastructure/vercel-deployment-specialist.md"
+        "./agents/devops-infrastructure/vercel-deployment-specialist.md",
+        "./agents/devops-infrastructure/monitoring-observability-specialist.md"
       ]
     },
     {
@@ -1254,7 +1263,7 @@
     {
       "name": "agents-enterprise",
       "source": "./cli-tool/components",
-      "description": "Enterprise 专业代理插件包 - 4个专业代理",
+      "description": "Enterprise 专业代理插件包 - 6个专业代理",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -1270,7 +1279,9 @@
         "./agents/enterprise/enterprise-integrator-architect.md",
         "./agents/enterprise/enterprise-onboarding-specialist.md",
         "./agents/enterprise/enterprise-security-reviewer.md",
-        "./agents/enterprise/legal-compliance-checker.md"
+        "./agents/enterprise/legal-compliance-checker.md",
+        "./agents/enterprise/compliance-automation-specialist.md",
+        "./agents/enterprise/data-privacy-engineer.md"
       ]
     },
     {
@@ -1797,7 +1808,7 @@
     {
       "name": "agents-testing-quality",
       "source": "./cli-tool/components",
-      "description": "Testing Quality 专业代理插件包 - 5个专业代理",
+      "description": "Testing Quality 专业代理插件包 - 6个专业代理",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -1814,7 +1825,8 @@
         "./agents/testing-quality/problem-solver-specialist.md",
         "./agents/testing-quality/test-results-analyzer.md",
         "./agents/testing-quality/test-writer-fixer.md",
-        "./agents/testing-quality/unit-test-generator.md"
+        "./agents/testing-quality/unit-test-generator.md",
+        "./agents/testing-quality/api-tester.md"
       ]
     },
     {
@@ -2084,7 +2096,7 @@
     {
       "name": "commands-git-workflow",
       "source": "./cli-tool/components",
-      "description": "Git Workflow 命令工具包 - 10个专业命令",
+      "description": "Git Workflow 命令工具包 - 12个专业命令",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -2106,7 +2118,9 @@
         "./commands/git-workflow/gemini-review.md",
         "./commands/git-workflow/git-bisect-helper.md",
         "./commands/git-workflow/pr-review.md",
-        "./commands/git-workflow/update-branch-name.md"
+        "./commands/git-workflow/update-branch-name.md",
+        "./commands/git-workflow/code-review-assistant.md",
+        "./commands/git-workflow/github-issue-fix.md"
       ]
     },
     {
@@ -3182,7 +3196,7 @@
         "./official/agents/agent-sdk-verifier-ts.md",
         "./official/agents/code-architect.md",
         "./official/agents/code-explorer.md",
-        "./official/agents/code-reviewer.md",
+        "./official/agents/code-reviewer-claude.md",
         "./official/agents/code-simplifier.md",
         "./official/agents/comment-analyzer.md",
         "./official/agents/pr-test-analyzer.md",
@@ -3192,7 +3206,7 @@
       "commands": [
         "./official/commands/clean_gone.md",
         "./official/commands/commit-push-pr.md",
-        "./official/commands/commit.md",
+        "./official/commands/commit-claude.md",
         "./official/commands/feature-dev.md",
         "./official/commands/new-sdk-app.md",
         "./official/commands/review-pr.md"
