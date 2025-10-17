@@ -8,7 +8,7 @@ Claude Plugins 是一个 Node.js CLI 工具,用于管理和安装 Claude Code �
 
 **当前版本**: v1.1.0
 
-**组件统计** (717个组件,802个文件):
+**组件统计** (748个组件,833个文件):
 - 280个专业代理 (47个分类)
   - 包含10个Anthropic官方代理
 - 306个实用命令 (28个分类)
@@ -18,15 +18,17 @@ Claude Plugins 是一个 Node.js CLI 工具,用于管理和安装 Claude Code �
   - 包含1个Anthropic官方安全钩子
 - 56个MCP服务器 (10个分类)
 - 18个输出样式
+- 31个Agent Skills (9个分类) ✨新增
 - 2个沙盒环境
 
 **核心功能:**
-- 组件安装系统 (agents, commands, mcps, workflows, hooks, output-styles)
-- Claude Code 插件市场配置 (96个精细化插件包)
+- 组件安装系统 (agents, commands, mcps, workflows, hooks, output-styles, skills)
+- Claude Code 插件市场配置 (97个精细化插件包)
 - 实时分析仪表板
 - E2B 沙盒执行环境
 - **Anthropic官方插件集成** (18个官方文件)
 - **Output Styles系统** (18个专业输出样式)
+- **Agent Skills知识库** (31个模块化领域知识包) ✨新增
 
 ## 常用命令
 
@@ -94,6 +96,7 @@ MCPs     → .mcp.json (合并配置)
 Settings → .claude/settings.json 或 settings.local.json
 Hooks    → .claude/settings.json 或 settings.local.json
 Workflows → .claude/workflows/
+Skills   → .claude/skills/ ✨新增
 ```
 
 **Statusline 特殊处理:**
@@ -109,22 +112,24 @@ Workflows → .claude/workflows/
 ### 3. 插件市场系统 (`.claude-plugin/marketplace.json`)
 
 **v1.1.0 重大改进:**
-- 从167个集合式插件包优化为95个精细化分类插件包 (新增official插件包)
+- 从167个集合式插件包优化为97个精细化分类插件包 (新增official插件包和skills-collection插件包)
 - 路径有效性从18%提升到100% (修复837个无效路径)
 - 所有路径完全同步物理目录结构
 - 支持按功能分类精准安装
 - **集成Anthropic官方插件** (claude-code-official包)
+- **新增Agent Skills知识库** (skills-collection包,31个专业技能包) ✨
 
 **结构:**
-- 每个插件包含: name, source, description, version, agents[], commands[], workflows[], hooks[], mcps[]
+- 每个插件包含: name, source, description, version, agents[], commands[], workflows[], hooks[], mcps[], skills[]
 - 支持 Claude Code 插件市场规范
 
 **插件包类型:**
-1. **完整插件包**: `claude-plugins-complete` (677个组件)
+1. **完整插件包**: `claude-plugins-complete` (748个组件)
 2. **官方插件包**: `claude-code-official` (18个Anthropic官方文件)
 3. **功能分类包**: `agents-backend`, `commands-git`, `mcps-database` 等 (47+28+10+10个分类)
 4. **经典插件包**: `git-workflow`, `supabase-toolkit`, `nextjs-vercel-pro`, `testing-suite`, `security-pro`, `knowledge-wikipedia`
 5. **社区精选包**: `marketplace-community` (85个社区精选插件)
+6. **技能知识包**: `skills-collection` (31个Agent Skills,9个技术领域) ✨新增
 
 ### 4. 分析仪表板架构 (`cli-tool/src/analytics.js`)
 
@@ -203,10 +208,12 @@ node cli-tool/bin/create-claude-config.js --sandbox e2b --prompt "创建一个 w
 **v1.1.0 目录结构重组:**
 - 所有组件按实际功能分类组织到子目录
 - **新增official目录**: 存放Anthropic官方插件
+- **新增skills目录**: 存放Agent Skills知识包 ✨
 - Agents: 47个功能分类 (official, data-ai, development-tools, devops-infrastructure, security, testing-quality, mobile-development, business-marketing, database, documentation 等)
 - Commands: 28个功能分类 (official, git-workflow, testing, deployment, documentation, security, performance, automation 等)
 - Hooks: 10个功能分类 (official, git-workflow, testing, security, automation, performance 等)
 - MCPs: 10个功能分类 (database, devtools, web, browser_automation, integration 等)
+- Skills: 9个功能分类 (backend-development, blockchain-web3, cicd-automation, cloud-infrastructure, framework-migration, javascript-typescript, kubernetes-operations, payment-processing, python-development) ✨新增
 
 **路径格式:**
 - 官方组件物理路径: `cli-tool/components/official/agents/code-reviewer.md`
@@ -310,8 +317,10 @@ node --check cli-tool/src/index.js
 详见 [CHANGELOG.md](CHANGELOG.md) 获取完整版本历史和更新日志。
 
 **当前版本**: v1.1.0
-- 路径有效性提升到100% (1427个路径全部有效)
-- 95个精细化分类插件包 (新增claude-code-official官方插件包)
+- 路径有效性提升到100% (1458个路径全部有效,新增31个Skills路径)
+- 97个精细化分类插件包 (新增claude-code-official官方插件包和skills-collection技能包)
 - 按功能分类安装支持
 - 目录结构完全重组
 - 集成Anthropic官方插件 (18个官方文件)
+- **新增Agent Skills知识库** (31个模块化领域知识包) ✨
+- wshobson/agents仓库查漏补缺整合完成
