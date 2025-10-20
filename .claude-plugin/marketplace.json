@@ -6,14 +6,14 @@
     "url": "https://github.com/lifangda"
   },
   "metadata": {
-    "description": "完整的Claude插件生态系统:280个专业代理、306个开发命令、16个工作流、39个钩子、56个MCP服务器、18个输出样式、31个Agent Skills，专业化分类，即装即用",
+    "description": "完整的Claude插件生态系统:280个专业代理、313个开发命令、16个工作流、39个钩子、56个MCP服务器、18个输出样式、31个Agent Skills，专业化分类，即装即用",
     "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "claude-plugins-complete",
       "source": "./cli-tool/components",
-      "description": "完整的Claude插件生态系统:280个AI代理、306个开发命令、16个工作流、39个自动化钩子、56个MCP服务器、18个输出样式、31个Agent Skills,一条命令即可安装使用",
+      "description": "完整的Claude插件生态系统:280个AI代理、313个开发命令、16个工作流、39个自动化钩子、56个MCP服务器、18个输出样式、31个Agent Skills,一条命令即可安装使用",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -324,6 +324,7 @@
         "./commands/ai-optimization/ultrathink.md",
         "./commands/automation/act.md",
         "./commands/automation/ci-pipeline.md",
+        "./commands/automation/create-command.md",
         "./commands/automation/husky.md",
         "./commands/automation/workflow-orchestrator.md",
         "./commands/code-analysis/analyze-codebase.md",
@@ -379,10 +380,13 @@
         "./commands/git/release.md",
         "./commands/git-workflow/branch-cleanup.md",
         "./commands/git-workflow/commit.md",
+        "./commands/git-workflow/commit-with-emoji.md",
         "./commands/git-workflow/create-pr.md",
         "./commands/git-workflow/create-pull-request.md",
         "./commands/git-workflow/create-worktrees.md",
         "./commands/git-workflow/fix-github-issue.md",
+        "./commands/git-workflow/fix-issue.md",
+        "./commands/git-workflow/fix-pr.md",
         "./commands/git-workflow/gemini-review.md",
         "./commands/git-workflow/git-bisect-helper.md",
         "./commands/git-workflow/pr-review.md",
@@ -560,8 +564,10 @@
         "./commands/testing/add-mutation-testing.md",
         "./commands/testing/add-property-based-testing.md",
         "./commands/testing/e2e-setup.md",
+        "./commands/testing/fix-flakey-test.md",
         "./commands/testing/generate-test-cases.md",
         "./commands/testing/generate-tests.md",
+        "./commands/testing/repro-issue.md",
         "./commands/testing/setup-comprehensive-testing.md",
         "./commands/testing/setup-load-testing.md",
         "./commands/testing/setup-visual-testing.md",
@@ -570,6 +576,7 @@
         "./commands/testing/test-coverage.md",
         "./commands/testing/test-quality-analyzer.md",
         "./commands/testing/testing_plan_integration.md",
+        "./commands/testing/tdd-workflow.md",
         "./commands/testing/write-tests.md",
         "./commands/testing-quality/bug-detective.md",
         "./commands/testing-quality/bug-fix.md",
@@ -1993,7 +2000,7 @@
     {
       "name": "commands-automation",
       "source": "./cli-tool/components",
-      "description": "Automation 命令工具包 - 4个专业命令",
+      "description": "Automation 命令工具包 - 5个专业命令",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -2202,7 +2209,7 @@
     {
       "name": "commands-git-workflow",
       "source": "./cli-tool/components",
-      "description": "Git Workflow 命令工具包 - 13个专业命令",
+      "description": "Git Workflow 命令工具包 - 16个专业命令",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -2217,10 +2224,13 @@
       "commands": [
         "./commands/git-workflow/branch-cleanup.md",
         "./commands/git-workflow/commit.md",
+        "./commands/git-workflow/commit-with-emoji.md",
         "./commands/git-workflow/create-pr.md",
         "./commands/git-workflow/create-pull-request.md",
         "./commands/git-workflow/create-worktrees.md",
         "./commands/git-workflow/fix-github-issue.md",
+        "./commands/git-workflow/fix-issue.md",
+        "./commands/git-workflow/fix-pr.md",
         "./commands/git-workflow/gemini-review.md",
         "./commands/git-workflow/git-bisect-helper.md",
         "./commands/git-workflow/pr-review.md",
@@ -2659,7 +2669,7 @@
     {
       "name": "commands-testing",
       "source": "./cli-tool/components",
-      "description": "Testing 命令工具包 - 14个专业命令",
+      "description": "Testing 命令工具包 - 18个专业命令",
       "version": "1.1.0",
       "author": {
         "name": "Fonda",
@@ -2675,8 +2685,10 @@
         "./commands/testing/add-mutation-testing.md",
         "./commands/testing/add-property-based-testing.md",
         "./commands/testing/e2e-setup.md",
+        "./commands/testing/fix-flakey-test.md",
         "./commands/testing/generate-test-cases.md",
         "./commands/testing/generate-tests.md",
+        "./commands/testing/repro-issue.md",
         "./commands/testing/setup-comprehensive-testing.md",
         "./commands/testing/setup-load-testing.md",
         "./commands/testing/setup-visual-testing.md",
