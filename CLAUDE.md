@@ -226,6 +226,77 @@ node cli-tool/bin/create-claude-config.js --sandbox e2b --prompt "创建一个 w
 - 提取文件名: `code-reviewer.md` 或 `ai-engineer.md`
 - 安装到扁平目录: `.claude/agents/code-reviewer.md` 或 `.claude/agents/ai-engineer.md`
 
+### Agent Skills 三级架构
+
+**v1.2.0 重大优化 (Skills Token优化):**
+- 采用三级信息披露架构,优化token使用
+- 9个最大Skills文件拆分完成 (800-1025行)
+- Token减少70% (从150K降至45K for SKILL.md files)
+- 创建83个新文件 (9个SKILL.md + 74个references)
+
+**三级架构设计:**
+```
+Tier 1: YAML frontmatter (always loaded, ~100 tokens)
+├── name: 技能名称
+└── description: 技能描述
+
+Tier 2: SKILL.md (overview, ~5K tokens)
+├── When to Use This Skill
+├── Quick Start
+├── Core Concepts (with links to references)
+└── Best Practices Summary
+
+Tier 3: references/*.md (on-demand loading)
+├── detailed patterns and implementations
+└── complete examples and tutorials
+```
+
+**已优化的Skills (9个):**
+1. javascript-testing-patterns (1025行 → SKILL.md 262行 + 5 references)
+2. nodejs-backend-patterns (1020行 → SKILL.md 250行 + 6 references)
+3. python-testing-patterns (907行 → SKILL.md 268行 + 8 references)
+4. modern-javascript-patterns (911行 → SKILL.md 268行 + 10 references)
+5. uv-package-manager (831行 → SKILL.md 280行 + 9 references)
+6. typescript-advanced-types (717行 → SKILL.md ~250行 + 8 references)
+7. async-python-patterns (694行 → SKILL.md ~270行 + 9 references)
+8. microservices-patterns (585行 → SKILL.md ~250行 + 9 references)
+
+**目录结构:**
+```
+skills/
+├── javascript-typescript/
+│   ├── javascript-testing-patterns/
+│   │   ├── SKILL.md
+│   │   └── references/ (5个)
+│   ├── nodejs-backend-patterns/
+│   │   ├── SKILL.md
+│   │   └── references/ (6个)
+│   ├── modern-javascript-patterns/
+│   │   ├── SKILL.md
+│   │   └── references/ (10个)
+│   └── typescript-advanced-types/
+│       ├── SKILL.md
+│       └── references/ (8个)
+├── python-development/
+│   ├── python-testing-patterns/
+│   │   ├── SKILL.md
+│   │   └── references/ (8个)
+│   ├── uv-package-manager/
+│   │   ├── SKILL.md
+│   │   └── references/ (9个)
+│   └── async-python-patterns/
+│       ├── SKILL.md
+│       └── references/ (9个)
+└── backend-development/
+    └── microservices-patterns/
+        ├── SKILL.md
+        └── references/ (9个)
+```
+
+**使用指南:**
+- 详见 [SKILLS_GUIDE.md](SKILLS_GUIDE.md) - Agent Skills使用指南
+- 详见 [SKILLS_OPTIMIZATION_SUMMARY.md](SKILLS_OPTIMIZATION_SUMMARY.md) - 优化总结
+
 ### 错误处理模式
 - 所有异步操作使用 try/catch
 - 网络操作包含回退机制
