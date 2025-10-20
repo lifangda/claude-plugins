@@ -8,8 +8,8 @@
 2. **三级架构实现**: YAML + SKILL.md + references ✓
 3. **Token优化**: 70% reduction (150K → 45K) ✓
 4. **文档完善**: 使用指南和总结文档已创建 ✓
-5. **版本更新**: package.json更新为v1.2.0 ✓
-6. **CHANGELOG**: v1.2.0条目已添加 ✓
+5. **版本更新**: package.json更新为v1.1 ✓
+6. **CHANGELOG**: v1.1条目已添加 ✓
 
 ## 📊 优化成果
 
@@ -109,7 +109,7 @@ description: Brief description for skill selection
    - 效果评估
    - 后续建议
 
-3. **CHANGELOG.md v1.2.0**
+3. **CHANGELOG.md v1.1**
    - 详细的版本更新说明
    - 所有优化文件清单
    - 性能改进数据
@@ -118,10 +118,10 @@ description: Brief description for skill selection
 1. **CLAUDE.md**
    - 新增"Agent Skills三级架构"章节
    - 更新组件系统说明
-   - 更新版本信息为v1.2.0
+   - 更新版本信息为v1.1
 
 2. **package.json**
-   - 版本号: 1.1.0 → 1.2.0
+   - 版本号: 1.1
 
 ## 🎯 性能提升
 

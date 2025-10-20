@@ -5,7 +5,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub](https://img.shields.io/github/stars/lifangda/claude-plugins?style=social)](https://github.com/lifangda/claude-plugins)
 [![Claude Plugins](https://img.shields.io/badge/Claude-Plugins-blue)](https://github.com/lifangda/claude-plugins)
-[![Version](https://img.shields.io/badge/version-1.1.0-green.svg)](https://github.com/lifangda/claude-plugins/releases)
 
 ## 📋 项目概述
 
@@ -149,7 +148,7 @@ Claude Plugins 是一个完整的AI开发工具集,包含 **833个文件**,涵�
 /supabase-toolkit  # 使用Supabase工具
 ```
 
-## 🆕 v1.1.0 新特性
+## 🆕 最新特性
 
 ### 🎉 重大改进
 - **路径有效性提升**: 从18%提升到100% (修复837个无效路径)

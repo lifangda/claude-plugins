@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Claude Plugins 是一个 Node.js CLI 工具,用于管理和安装 Claude Code 配置组件。
 
-**当前版本**: v1.1.0
+**当前版本**: v1.1
 
 **组件统计** (748个组件,833个文件):
 - 280个专业代理 (47个分类)
@@ -111,7 +111,7 @@ Skills   → .claude/skills/ ✨新增
 
 ### 3. 插件市场系统 (`.claude-plugin/marketplace.json`)
 
-**v1.1.0 重大改进:**
+**v1.1 重大改进:**
 - 从167个集合式插件包优化为97个精细化分类插件包 (新增official插件包和skills-collection插件包)
 - 路径有效性从18%提升到100% (修复837个无效路径)
 - 所有路径完全同步物理目录结构
@@ -205,7 +205,7 @@ node cli-tool/bin/create-claude-config.js --sandbox e2b --prompt "创建一个 w
 
 ### 组件分类系统
 
-**v1.1.0 目录结构重组:**
+**v1.1 目录结构重组:**
 - 所有组件按实际功能分类组织到子目录
 - **新增official目录**: 存放Anthropic官方插件
 - **新增skills目录**: 存放Agent Skills知识包 ✨
@@ -228,7 +228,7 @@ node cli-tool/bin/create-claude-config.js --sandbox e2b --prompt "创建一个 w
 
 ### Agent Skills 三级架构
 
-**v1.2.0 重大优化 (Skills Token优化):**
+**v1.1 Skills Token优化:**
 - 采用三级信息披露架构,优化token使用
 - 9个最大Skills文件拆分完成 (800-1025行)
 - Token减少70% (从150K降至45K for SKILL.md files)
@@ -341,7 +341,7 @@ python generate_components_json.py
 - 生成 `docs/components.json`
 
 ### 路径验证诊断
-**v1.1.0 新增功能:**
+**v1.1 新增功能:**
 - 自动检测配置完整性和路径有效性
 - 验证所有marketplace.json路径与物理文件同步
 - 生成诊断报告: `DIAGNOSTIC_REPORT.md`
@@ -387,7 +387,7 @@ node --check cli-tool/src/index.js
 
 详见 [CHANGELOG.md](CHANGELOG.md) 获取完整版本历史和更新日志。
 
-**当前版本**: v1.1.0
+**当前版本**: v1.1
 - 路径有效性提升到100% (1458个路径全部有效,新增31个Skills路径)
 - 97个精细化分类插件包 (新增claude-code-official官方插件包和skills-collection技能包)
 - 按功能分类安装支持

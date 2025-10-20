@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.2.0] - 2025-10-17
+## [1.1] - 2025-10-19
 
 ### 🎉 Major Changes
 - 🚀 **Agent Skills三级架构优化** - 采用渐进式信息披露架构,优化token使用
