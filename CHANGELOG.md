@@ -2,6 +2,82 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2025-10-21
+
+### 🚀 Skills架构重构 - 重大更新
+
+**核心变更**:
+- ✨ **Skills独立管理**: Skills从 `components/skills/` 迁移到独立的 `cli-tool/skills-library/` 目录
+- 🎯 **三级渐进式架构**: 采用Anthropic官方Skills规范 (Tier 1: Metadata ~100 tokens, Tier 2: SKILL.md <5K tokens, Tier 3: Resources unlimited)
+- 🔧 **Skills管理模块**: 新增 `cli-tool/src/skills-manager.js` 模块,实现 listAllSkills(), searchSkills(), installSkill()
+- 📦 **完整迁移**: 39个Skills,174个文件,11个技术领域
+
+### ✨ Added
+- **Skills Library目录** (`cli-tool/skills-library/`):
+  - 11个技术领域分类
+  - 39个Skills (SKILL.md + references/ + scripts/ + assets/)
+  - README.md使用指南
+- **Skills管理模块** (`cli-tool/src/skills-manager.js`):
+  - listAllSkills() - 列出所有可用Skills
+  - searchSkills(keyword) - 按关键词搜索
+  - getSkillInfo(skillName, category) - 获取详细信息
+  - installSkill(skillName, location, category) - 安装到项目/全局
+  - listSkillsByCategory() - 按分类列出
+
+### 🔧 Changed
+- **Skills目录结构**:
+  - 从: `cli-tool/components/skills/<category>/<skill>.md`
+  - 到: `cli-tool/skills-library/<category>/<skill>/SKILL.md`
+- **marketplace.json**:
+  - 插件包数量: 97个 → 96个 (移除skills-collection)
+  - Skills不再包含在marketplace.json,独立管理
+- **package.json**:
+  - 版本: 1.1 → 1.2.0
+  - 描述更新,强调独立Skills系统
+- **文档更新**:
+  - CLAUDE.md: 新增完整Skills架构章节
+  - README.md: 新增Agent Skills知识库章节,更新统计数据
+  - PROJECT_REFACTOR_PROGRESS.md: 完整重构进度跟踪
+
+### 📊 Statistics - v1.2.0
+- **Components**: 748个 (Agents 280, Commands 306, Workflows 16, Hooks 39, MCPs 56, Output Styles 18, Sandbox 2)
+- **Skills**: 39个 (11个技术领域,独立管理)
+- **Total Files**: 833 + 174 = 1007个
+- **Plugin Packages**: 96个
+
+### 🏗️ Skills Domains (11个技术领域)
+- backend-development (4个): api-design-principles, architecture-patterns, microservices-patterns, mcp-builder
+- blockchain-web3 (4个): defi-protocol-templates, nft-standards, solidity-security, web3-testing
+- cicd-automation (4个): deployment-pipeline-design, github-actions-templates, gitlab-ci-patterns, secrets-management
+- cloud-infrastructure (4个): cost-optimization, hybrid-cloud-networking, multi-cloud-architecture, terraform-module-library
+- framework-migration (4个): angular-migration, database-migration, dependency-upgrade, react-modernization
+- javascript-typescript (4个): javascript-testing-patterns, modern-javascript-patterns, nodejs-backend-patterns, typescript-advanced-types
+- kubernetes-operations (4个): gitops-workflow, helm-chart-scaffolding, k8s-manifest-generator, k8s-security-policies
+- llm-application-dev (4个): langchain-architecture, llm-evaluation, prompt-engineering-patterns, rag-implementation
+- payment-processing (4个): billing-automation, paypal-integration, pci-compliance, stripe-integration
+- python-development (3个): async-python-patterns, python-packaging, python-testing-patterns, uv-package-manager
+- security (1个): security-best-practices
+
+### 💡 Usage
+```bash
+# 列出所有Skills
+node cli-tool/src/skills-manager.js list
+
+# 搜索Skills
+node cli-tool/src/skills-manager.js search testing
+
+# 安装到项目
+node cli-tool/src/skills-manager.js install javascript-testing-patterns --project
+
+# 安装到全局
+node cli-tool/src/skills-manager.js install nodejs-backend-patterns --global
+```
+
+### 🔗 Breaking Changes
+- ⚠️  skills-collection 插件包已移除 (Skills独立管理,不再通过marketplace.json)
+- ⚠️  Skills不再从GitHub下载,直接从本地skills-library复制
+- ⚠️  Skills安装位置: `.claude/skills/` (project) 或 `~/.claude/skills/` (global)
+
 ## [1.2] - 2025-10-20
 
 ### 🎉 重大更新
