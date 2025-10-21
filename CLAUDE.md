@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Claude Plugins 是一个 Node.js CLI 工具,用于管理和安装 Claude Code 配置组件。
 
-**当前版本**: v1.1
+**当前版本**: v1.2
 
 **组件统计** (748个组件,833个文件):
 - 280个专业代理 (47个分类)
@@ -18,17 +18,22 @@ Claude Plugins 是一个 Node.js CLI 工具,用于管理和安装 Claude Code �
   - 包含1个Anthropic官方安全钩子
 - 56个MCP服务器 (10个分类)
 - 18个输出样式
-- 31个Agent Skills (9个分类) ✨新增
 - 2个沙盒环境
 
+**Agent Skills知识库** (独立管理,39个技能包):
+- 位于 `cli-tool/skills-library/` 目录
+- 采用官方三级渐进式架构 (Tier 1: Metadata ~100 tokens, Tier 2: SKILL.md <5K tokens, Tier 3: Resources unlimited)
+- 11个技术领域分类
+- 174个文件 (SKILL.md + references + scripts + assets)
+
 **核心功能:**
-- 组件安装系统 (agents, commands, mcps, workflows, hooks, output-styles, skills)
-- Claude Code 插件市场配置 (97个精细化插件包)
+- 组件安装系统 (agents, commands, mcps, workflows, hooks, output-styles)
+- **Agent Skills管理系统** (list, search, install) ✨独立系统
+- Claude Code 插件市场配置 (96个精细化插件包)
 - 实时分析仪表板
 - E2B 沙盒执行环境
 - **Anthropic官方插件集成** (18个官方文件)
 - **Output Styles系统** (18个专业输出样式)
-- **Agent Skills知识库** (31个模块化领域知识包) ✨新增
 
 ## 常用命令
 
@@ -70,6 +75,21 @@ node cli-tool/bin/create-claude-config.js --command generate-tests
 node cli-tool/bin/create-claude-config.js --mcp github-integration
 ```
 
+### Skills管理
+```bash
+# 列出所有Skills
+node cli-tool/src/skills-manager.js list
+
+# 搜索Skills
+node cli-tool/src/skills-manager.js search <keyword>
+
+# 安装Skill到项目
+node cli-tool/src/skills-manager.js install <skill-name> --project
+
+# 安装Skill到全局
+node cli-tool/src/skills-manager.js install <skill-name> --global
+```
+
 ## 核心架构
 
 ### 1. CLI 入口系统 (`cli-tool/bin/create-claude-config.js` 和 `cli-tool/src/index.js`)
@@ -81,10 +101,18 @@ node cli-tool/bin/create-claude-config.js --mcp github-integration
 - `installMultipleComponents()` - 批量组件安装,支持共享安装位置选择
 - `executeSandbox()` - E2B 沙盒执行环境
 
+**Skills管理模块** (`cli-tool/src/skills-manager.js`):
+- `listAllSkills()` - 列出所有可用Skills
+- `searchSkills(keyword)` - 按关键词搜索Skills
+- `getSkillInfo(skillName, category)` - 获取Skill详细信息
+- `installSkill(skillName, location, category)` - 安装Skill到项目或全局
+- `listSkillsByCategory()` - 按分类列出Skills
+
 **关键特性:**
 - 所有组件从 GitHub main 分支下载: `https://raw.githubusercontent.com/lifangda/claude-plugins/main/cli-tool/components/`
 - 支持分类路径 (如 `security/api-security-audit`) 和直接路径 (如 `python-pro`)
 - Settings 和 Hooks 支持多位置安装: user (~/.claude), project (.claude), local (.claude/settings.local.json), enterprise
+- **Skills独立管理**: Skills不从GitHub下载,直接从本地 `cli-tool/skills-library/` 复制到安装位置
 
 ### 2. 组件系统
 
@@ -96,8 +124,16 @@ MCPs     → .mcp.json (合并配置)
 Settings → .claude/settings.json 或 settings.local.json
 Hooks    → .claude/settings.json 或 settings.local.json
 Workflows → .claude/workflows/
-Skills   → .claude/skills/ ✨新增
 ```
+
+**Skills安装位置** (独立管理):
+```
+Skills (Project) → .claude/skills/
+Skills (Global)  → ~/.claude/skills/
+```
+- Skills从 `cli-tool/skills-library/` 本地复制
+- 保持完整目录结构: SKILL.md + references/ + scripts/ + assets/
+- 支持项目级和全局级安装
 
 **Statusline 特殊处理:**
 - Statusline 组件 (如 `statusline/context-monitor`) 会同时下载 JSON 配置和对应的 Python 脚本
@@ -111,16 +147,16 @@ Skills   → .claude/skills/ ✨新增
 
 ### 3. 插件市场系统 (`.claude-plugin/marketplace.json`)
 
-**v1.1 重大改进:**
-- 从167个集合式插件包优化为97个精细化分类插件包 (新增official插件包和skills-collection插件包)
-- 路径有效性从18%提升到100% (修复837个无效路径)
-- 所有路径完全同步物理目录结构
-- 支持按功能分类精准安装
+**v1.2 重大改进:**
+- **Skills架构重构**: Skills从components目录迁移到独立的 `skills-library/` 目录
+- 采用官方三级渐进式架构 (Tier 1: Metadata, Tier 2: SKILL.md, Tier 3: Resources)
+- 从97个插件包优化为96个 (移除skills-collection,Skills独立管理)
+- 路径有效性保持100%
 - **集成Anthropic官方插件** (claude-code-official包)
-- **新增Agent Skills知识库** (skills-collection包,31个专业技能包) ✨
 
 **结构:**
-- 每个插件包含: name, source, description, version, agents[], commands[], workflows[], hooks[], mcps[], skills[]
+- 每个插件包含: name, source, description, version, agents[], commands[], workflows[], hooks[], mcps[]
+- Skills不再包含在marketplace.json中,通过skills-manager.js独立管理
 - 支持 Claude Code 插件市场规范
 
 **插件包类型:**
@@ -129,7 +165,6 @@ Skills   → .claude/skills/ ✨新增
 3. **功能分类包**: `agents-backend`, `commands-git`, `mcps-database` 等 (47+28+10+10个分类)
 4. **经典插件包**: `git-workflow`, `supabase-toolkit`, `nextjs-vercel-pro`, `testing-suite`, `security-pro`, `knowledge-wikipedia`
 5. **社区精选包**: `marketplace-community` (85个社区精选插件)
-6. **技能知识包**: `skills-collection` (31个Agent Skills,9个技术领域) ✨新增
 
 ### 4. 分析仪表板架构 (`cli-tool/src/analytics.js`)
 
@@ -205,15 +240,14 @@ node cli-tool/bin/create-claude-config.js --sandbox e2b --prompt "创建一个 w
 
 ### 组件分类系统
 
-**v1.1 目录结构重组:**
+**v1.2 目录结构重组:**
 - 所有组件按实际功能分类组织到子目录
 - **新增official目录**: 存放Anthropic官方插件
-- **新增skills目录**: 存放Agent Skills知识包 ✨
+- **独立skills-library目录**: Agent Skills知识库 (不在components内) ✨
 - Agents: 47个功能分类 (official, data-ai, development-tools, devops-infrastructure, security, testing-quality, mobile-development, business-marketing, database, documentation 等)
 - Commands: 28个功能分类 (official, git-workflow, testing, deployment, documentation, security, performance, automation 等)
 - Hooks: 10个功能分类 (official, git-workflow, testing, security, automation, performance 等)
 - MCPs: 10个功能分类 (database, devtools, web, browser_automation, integration 等)
-- Skills: 9个功能分类 (backend-development, blockchain-web3, cicd-automation, cloud-infrastructure, framework-migration, javascript-typescript, kubernetes-operations, payment-processing, python-development) ✨新增
 
 **路径格式:**
 - 官方组件物理路径: `cli-tool/components/official/agents/code-reviewer.md`
@@ -226,76 +260,83 @@ node cli-tool/bin/create-claude-config.js --sandbox e2b --prompt "创建一个 w
 - 提取文件名: `code-reviewer.md` 或 `ai-engineer.md`
 - 安装到扁平目录: `.claude/agents/code-reviewer.md` 或 `.claude/agents/ai-engineer.md`
 
-### Agent Skills 三级架构
+### Agent Skills 架构 (`cli-tool/skills-library/`)
 
-**v1.1 Skills Token优化:**
-- 采用三级信息披露架构,优化token使用
-- 9个最大Skills文件拆分完成 (800-1025行)
-- Token减少70% (从150K降至45K for SKILL.md files)
-- 创建83个新文件 (9个SKILL.md + 74个references)
+**v1.2 Skills独立管理系统:**
+- **独立目录**: Skills从 `components/skills/` 迁移到 `cli-tool/skills-library/`
+- **官方架构**: 采用三级渐进式架构 (Anthropic官方规范)
+- **独立管理**: 通过 `skills-manager.js` 模块管理,不依赖marketplace.json
+- **完整迁移**: 39个Skills,174个文件 (SKILL.md + references + scripts + assets)
+- **11个技术领域**: backend-development, blockchain-web3, cicd-automation, cloud-infrastructure, framework-migration, javascript-typescript, kubernetes-operations, llm-application-dev, payment-processing, python-development, security
 
-**三级架构设计:**
+**三级渐进式架构:**
 ```
 Tier 1: YAML frontmatter (always loaded, ~100 tokens)
-├── name: 技能名称
-└── description: 技能描述
+├── name: Skill名称
+├── description: 简要描述
+├── version: 版本号
+└── tags: 标签分类
 
-Tier 2: SKILL.md (overview, ~5K tokens)
+Tier 2: SKILL.md body (loaded when triggered, <5K tokens)
 ├── When to Use This Skill
 ├── Quick Start
-├── Core Concepts (with links to references)
+├── Core Concepts (with links to Tier 3)
 └── Best Practices Summary
 
-Tier 3: references/*.md (on-demand loading)
-├── detailed patterns and implementations
-└── complete examples and tutorials
+Tier 3: Bundled Resources (loaded as needed, unlimited)
+├── references/*.md - 详细文档和实现模式
+├── scripts/*.sh - 可执行脚本
+└── assets/* - 模板和资源文件
 ```
 
-**已优化的Skills (9个):**
-1. javascript-testing-patterns (1025行 → SKILL.md 262行 + 5 references)
-2. nodejs-backend-patterns (1020行 → SKILL.md 250行 + 6 references)
-3. python-testing-patterns (907行 → SKILL.md 268行 + 8 references)
-4. modern-javascript-patterns (911行 → SKILL.md 268行 + 10 references)
-5. uv-package-manager (831行 → SKILL.md 280行 + 9 references)
-6. typescript-advanced-types (717行 → SKILL.md ~250行 + 8 references)
-7. async-python-patterns (694行 → SKILL.md ~270行 + 9 references)
-8. microservices-patterns (585行 → SKILL.md ~250行 + 9 references)
-
-**目录结构:**
+**Skills Library目录结构:**
 ```
-skills/
+cli-tool/skills-library/
+├── README.md (使用指南)
+├── backend-development/
+│   ├── api-design-principles/
+│   ├── architecture-patterns/
+│   └── microservices-patterns/
+├── blockchain-web3/
+│   ├── defi-protocol-templates/
+│   └── solidity-security/
 ├── javascript-typescript/
 │   ├── javascript-testing-patterns/
 │   │   ├── SKILL.md
-│   │   └── references/ (5个)
+│   │   └── references/ (5个详细文档)
 │   ├── nodejs-backend-patterns/
 │   │   ├── SKILL.md
-│   │   └── references/ (6个)
-│   ├── modern-javascript-patterns/
-│   │   ├── SKILL.md
-│   │   └── references/ (10个)
-│   └── typescript-advanced-types/
-│       ├── SKILL.md
-│       └── references/ (8个)
+│   │   └── references/ (6个详细文档)
+│   └── modern-javascript-patterns/
 ├── python-development/
+│   ├── async-python-patterns/
 │   ├── python-testing-patterns/
-│   │   ├── SKILL.md
-│   │   └── references/ (8个)
-│   ├── uv-package-manager/
-│   │   ├── SKILL.md
-│   │   └── references/ (9个)
-│   └── async-python-patterns/
-│       ├── SKILL.md
-│       └── references/ (9个)
-└── backend-development/
-    └── microservices-patterns/
-        ├── SKILL.md
-        └── references/ (9个)
+│   └── uv-package-manager/
+└── [其他7个领域分类]
+```
+
+**Skills管理API:**
+```javascript
+const skillsManager = require('./cli-tool/src/skills-manager.js');
+
+// 列出所有Skills
+const allSkills = skillsManager.listAllSkills();
+
+// 搜索Skills
+const searchResults = skillsManager.searchSkills('testing');
+
+// 获取详细信息
+const skillInfo = skillsManager.getSkillInfo('javascript-testing-patterns');
+
+// 安装到项目
+skillsManager.installSkill('javascript-testing-patterns', 'project');
+
+// 安装到全局
+skillsManager.installSkill('nodejs-backend-patterns', 'global');
 ```
 
 **使用指南:**
-- 详见 [SKILLS_GUIDE.md](SKILLS_GUIDE.md) - Agent Skills使用指南
-- 详见 [SKILLS_OPTIMIZATION_SUMMARY.md](SKILLS_OPTIMIZATION_SUMMARY.md) - 优化总结
+- 详见 [cli-tool/skills-library/README.md](cli-tool/skills-library/README.md) - Skills Library使用说明
 
 ### 错误处理模式
 - 所有异步操作使用 try/catch
@@ -387,11 +428,11 @@ node --check cli-tool/src/index.js
 
 详见 [CHANGELOG.md](CHANGELOG.md) 获取完整版本历史和更新日志。
 
-**当前版本**: v1.1
-- 路径有效性提升到100% (1458个路径全部有效,新增31个Skills路径)
-- 97个精细化分类插件包 (新增claude-code-official官方插件包和skills-collection技能包)
-- 按功能分类安装支持
-- 目录结构完全重组
+**当前版本**: v1.2
+- **Skills架构重构**: Skills迁移到独立的 `skills-library/` 目录
+- **三级渐进式架构**: 采用Anthropic官方Skills规范 (Tier 1/2/3)
+- **独立管理系统**: 新增 `skills-manager.js` 模块
+- 39个Skills完整迁移 (174个文件,11个技术领域)
+- 96个精细化分类插件包 (移除skills-collection)
+- 路径有效性保持100%
 - 集成Anthropic官方插件 (18个官方文件)
-- **新增Agent Skills知识库** (31个模块化领域知识包) ✨
-- wshobson/agents仓库查漏补缺整合完成
