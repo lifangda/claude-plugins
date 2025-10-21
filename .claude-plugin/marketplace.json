@@ -6,7 +6,7 @@
     "url": "https://github.com/lifangda"
   },
   "metadata": {
-    "description": "完整的Claude插件生态系统:280个专业代理、313个开发命令、16个工作流、39个钩子、56个MCP服务器、18个输出样式、31个Agent Skills，专业化分类，即装即用",
+    "description": "完整的Claude插件生态系统:280个专业代理、313个开发命令、16个工作流、39个钩子、56个MCP服务器、18个输出样式，专业化分类，即装即用",
     "version": "1.1.0"
   },
   "plugins": [
@@ -831,39 +831,6 @@
         "./output-styles/security-auditor.md",
         "./output-styles/startup-pragmatist.md",
         "./output-styles/test-driven-developer.md"
-      ],
-      "skills": [
-        "./skills/backend-development/api-design-principles.md",
-        "./skills/backend-development/architecture-patterns.md",
-        "./skills/backend-development/microservices-patterns.md",
-        "./skills/blockchain-web3/defi-protocol-templates.md",
-        "./skills/blockchain-web3/nft-standards.md",
-        "./skills/blockchain-web3/solidity-security.md",
-        "./skills/blockchain-web3/web3-testing.md",
-        "./skills/cicd-automation/deployment-pipeline-design.md",
-        "./skills/cicd-automation/github-actions-templates.md",
-        "./skills/cicd-automation/gitlab-ci-patterns.md",
-        "./skills/cicd-automation/secrets-management.md",
-        "./skills/cloud-infrastructure/cost-optimization.md",
-        "./skills/cloud-infrastructure/hybrid-cloud-networking.md",
-        "./skills/cloud-infrastructure/multi-cloud-architecture.md",
-        "./skills/cloud-infrastructure/terraform-module-library.md",
-        "./skills/framework-migration/angular-migration.md",
-        "./skills/framework-migration/database-migration.md",
-        "./skills/framework-migration/dependency-upgrade.md",
-        "./skills/framework-migration/react-modernization.md",
-        "./skills/javascript-typescript/javascript-testing-patterns.md",
-        "./skills/javascript-typescript/modern-javascript-patterns.md",
-        "./skills/javascript-typescript/nodejs-backend-patterns.md",
-        "./skills/javascript-typescript/typescript-advanced-types.md",
-        "./skills/kubernetes-operations/gitops-workflow.md",
-        "./skills/kubernetes-operations/helm-chart-scaffolding.md",
-        "./skills/kubernetes-operations/k8s-manifest-generator.md",
-        "./skills/kubernetes-operations/k8s-security-policies.md",
-        "./skills/python-development/async-python-patterns.md",
-        "./skills/python-development/python-testing-patterns.md",
-        "./skills/python-development/uv-package-manager.md",
-        "./skills/payment-processing/stripe-integration.md"
       ]
     },
     {
@@ -3386,62 +3353,6 @@
         "./output-styles/security-auditor.md",
         "./output-styles/startup-pragmatist.md",
         "./output-styles/test-driven-developer.md"
-      ]
-    },
-    {
-      "name": "skills-collection",
-      "source": "./cli-tool/components",
-      "description": "Agent Skills 技能集合 - 31个专业技能包,覆盖16个技术领域",
-      "version": "1.1.0",
-      "author": {
-        "name": "wshobson + Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "skills",
-        "agent-skills",
-        "backend",
-        "blockchain",
-        "kubernetes",
-        "cloud",
-        "cicd",
-        "python",
-        "javascript"
-      ],
-      "strict": false,
-      "skills": [
-        "./skills/backend-development/api-design-principles.md",
-        "./skills/backend-development/architecture-patterns.md",
-        "./skills/backend-development/microservices-patterns.md",
-        "./skills/blockchain-web3/defi-protocol-templates.md",
-        "./skills/blockchain-web3/nft-standards.md",
-        "./skills/blockchain-web3/solidity-security.md",
-        "./skills/blockchain-web3/web3-testing.md",
-        "./skills/cicd-automation/deployment-pipeline-design.md",
-        "./skills/cicd-automation/github-actions-templates.md",
-        "./skills/cicd-automation/gitlab-ci-patterns.md",
-        "./skills/cicd-automation/secrets-management.md",
-        "./skills/cloud-infrastructure/cost-optimization.md",
-        "./skills/cloud-infrastructure/hybrid-cloud-networking.md",
-        "./skills/cloud-infrastructure/multi-cloud-architecture.md",
-        "./skills/cloud-infrastructure/terraform-module-library.md",
-        "./skills/framework-migration/angular-migration.md",
-        "./skills/framework-migration/database-migration.md",
-        "./skills/framework-migration/dependency-upgrade.md",
-        "./skills/framework-migration/react-modernization.md",
-        "./skills/javascript-typescript/javascript-testing-patterns.md",
-        "./skills/javascript-typescript/modern-javascript-patterns.md",
-        "./skills/javascript-typescript/nodejs-backend-patterns.md",
-        "./skills/javascript-typescript/typescript-advanced-types.md",
-        "./skills/kubernetes-operations/gitops-workflow.md",
-        "./skills/kubernetes-operations/helm-chart-scaffolding.md",
-        "./skills/kubernetes-operations/k8s-manifest-generator.md",
-        "./skills/kubernetes-operations/k8s-security-policies.md",
-        "./skills/python-development/async-python-patterns.md",
-        "./skills/python-development/python-testing-patterns.md",
-        "./skills/python-development/uv-package-manager.md",
-        "./skills/payment-processing/stripe-integration.md"
       ]
     }
   ]
