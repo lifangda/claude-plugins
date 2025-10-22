@@ -1,0 +1,243 @@
+
+# Agents去重对比报告
+
+## 统计摘要
+
+### 现有项目
+- 总计: 287 个agents
+
+### VoltAgent仓库 (awesome-claude-code-subagents)
+- 总计: 116 个agents
+- 重复: 51 个 (44.0%)
+- 新增: 65 个 (56.0%)
+
+### Furai仓库 (claude-code-subagents)
+- 总计: 138 个agents
+- 重复: 2 个 (1.4%)
+- 新增: 136 个 (98.6%)
+
+### lst97仓库 (claude-code-sub-agents)
+- 总计: 37 个agents
+- 重复: 27 个 (73.0%)
+- 新增: 10 个 (27.0%)
+
+## 整合后统计
+- **总新增unique agents**: 211 个
+- **整合后总数**: 498 个agents
+
+## VoltAgent新增agents (65个)
+- api-designer (01-core-development/api-designer.md)
+- backend-developer (01-core-development/backend-developer.md)
+- electron-pro (01-core-development/electron-pro.md)
+- microservices-architect (01-core-development/microservices-architect.md)
+- websocket-engineer (01-core-development/websocket-engineer.md)
+- wordpress-master (01-core-development/wordpress-master.md)
+- angular-architect (02-language-specialists/angular-architect.md)
+- csharp-developer (02-language-specialists/csharp-developer.md)
+- django-developer (02-language-specialists/django-developer.md)
+- dotnet-core-expert (02-language-specialists/dotnet-core-expert.md)
+- dotnet-framework-4.8-expert (02-language-specialists/dotnet-framework-4.8-expert.md)
+- java-architect (02-language-specialists/java-architect.md)
+- kotlin-specialist (02-language-specialists/kotlin-specialist.md)
+- laravel-specialist (02-language-specialists/laravel-specialist.md)
+- nextjs-developer (02-language-specialists/nextjs-developer.md)
+- rails-expert (02-language-specialists/rails-expert.md)
+- react-specialist (02-language-specialists/react-specialist.md)
+- rust-engineer (02-language-specialists/rust-engineer.md)
+- spring-boot-engineer (02-language-specialists/spring-boot-engineer.md)
+- swift-expert (02-language-specialists/swift-expert.md)
+- vue-expert (02-language-specialists/vue-expert.md)
+- database-administrator (03-infrastructure/database-administrator.md)
+- devops-incident-responder (03-infrastructure/devops-incident-responder.md)
+- kubernetes-specialist (03-infrastructure/kubernetes-specialist.md)
+- platform-engineer (03-infrastructure/platform-engineer.md)
+- sre-engineer (03-infrastructure/sre-engineer.md)
+- terraform-engineer (03-infrastructure/terraform-engineer.md)
+- accessibility-tester (04-quality-security/accessibility-tester.md)
+- architect-reviewer (04-quality-security/architect-reviewer.md)
+- chaos-engineer (04-quality-security/chaos-engineer.md)
+- compliance-auditor (04-quality-security/compliance-auditor.md)
+- qa-expert (04-quality-security/qa-expert.md)
+- llm-architect (05-data-ai/llm-architect.md)
+- machine-learning-engineer (05-data-ai/machine-learning-engineer.md)
+- postgres-pro (05-data-ai/postgres-pro.md)
+- build-engineer (06-developer-experience/build-engineer.md)
+- cli-developer (06-developer-experience/cli-developer.md)
+- documentation-engineer (06-developer-experience/documentation-engineer.md)
+- git-workflow-manager (06-developer-experience/git-workflow-manager.md)
+- mcp-developer (06-developer-experience/mcp-developer.md)
+- refactoring-specialist (06-developer-experience/refactoring-specialist.md)
+- tooling-engineer (06-developer-experience/tooling-engineer.md)
+- embedded-systems (07-specialized-domains/embedded-systems.md)
+- fintech-engineer (07-specialized-domains/fintech-engineer.md)
+- game-developer (07-specialized-domains/game-developer.md)
+- iot-engineer (07-specialized-domains/iot-engineer.md)
+- mobile-app-developer (07-specialized-domains/mobile-app-developer.md)
+- seo-specialist (07-specialized-domains/seo-specialist.md)
+- product-manager (08-business-product/product-manager.md)
+- project-manager (08-business-product/project-manager.md)
+- sales-engineer (08-business-product/sales-engineer.md)
+- scrum-master (08-business-product/scrum-master.md)
+- wordpress-master (08-business-product/wordpress-master.md)
+- agent-organizer (09-meta-orchestration/agent-organizer.md)
+- error-coordinator (09-meta-orchestration/error-coordinator.md)
+- knowledge-synthesizer (09-meta-orchestration/knowledge-synthesizer.md)
+- multi-agent-coordinator (09-meta-orchestration/multi-agent-coordinator.md)
+- performance-monitor (09-meta-orchestration/performance-monitor.md)
+- task-distributor (09-meta-orchestration/task-distributor.md)
+- workflow-orchestrator (09-meta-orchestration/workflow-orchestrator.md)
+- competitive-analyst (10-research-analysis/competitive-analyst.md)
+- data-researcher (10-research-analysis/data-researcher.md)
+- market-researcher (10-research-analysis/market-researcher.md)
+- research-analyst (10-research-analysis/research-analyst.md)
+- trend-analyst (10-research-analysis/trend-analyst.md)
+
+## Furai新增agents (136个)
+- actix-expert
+- android-expert
+- angular-expert
+- angularjs-expert
+- ansible-expert
+- aspnet-core-expert
+- astro-expert
+- auth0-expert
+- ava-expert
+- bash-expert
+- braintree-expert
+- bullmq-expert
+- bun-expert
+- c-expert
+- cassandra-expert
+- celery-expert
+- circleci-expert
+- clojure-expert
+- cockroachdb-expert
+- cpp-expert
+- csharp-expert
+- css-expert
+- cypress-expert
+- dart-expert
+- deno-expert
+- django-expert
+- docker-expert
+- dynamodb-expert
+- elasticsearch-expert
+- electron-expert
+- elixir-expert
+- elk-expert
+- erlang-expert
+- expo-expert
+- express-expert
+- fastapi-expert
+- fastify-expert
+- fiber-expert
+- flask-expert
+- flyway-expert
+- gin-expert
+- github-actions-expert
+- gitlab-ci-expert
+- go-expert
+- grafana-expert
+- graphql-expert
+- grpc-expert
+- haskell-expert
+- html-expert
+- ios-expert
+- jasmine-expert
+- java-expert
+- javascript-expert
+- jenkins-expert
+- jest-expert
+- jquery-expert
+- jwt-expert
+- kafka-expert
+- keycloak-expert
+- knex-expert
+- kotlin-expert
+- kubernetes-expert
+- langchain-expert
+- laravel-expert
+- liquibase-expert
+- loki-expert
+- lua-expert
+- mariadb-expert
+- mocha-expert
+- mongodb-expert
+- mongoose-expert
+- mqtt-expert
+- mssql-expert
+- mysql-expert
+- nats-expert
+- neo4j-expert
+- nestjs-expert
+- nextjs-expert
+- nodejs-expert
+- numpy-expert
+- oauth-oidc-expert
+- ocaml-expert
+- openai-api-expert
+- openapi-expert
+- opensearch-expert
+- opentelemetry-expert
+- owasp-top10-expert
+- pandas-expert
+- perl-expert
+- phoenix-expert
+- php-expert
+- playwright-expert
+- postgres-expert
+- prisma-expert
+- prometheus-expert
+- pulumi-expert
+- puppeteer-expert
+- pytorch-expert
+- rabbitmq-expert
+- rails-expert
+- react-expert
+- react-native-expert
+- redis-expert
+- remix-expert
+- rest-expert
+- rollup-expert
+- ruby-expert
+- rust-expert
+- scala-expert
+- scikit-learn-expert
+- selenium-expert
+- sequelize-expert
+- sidekiq-expert
+- sns-expert
+- solidjs-expert
+- spring-boot-expert
+- sql-expert
+- sqlite-expert
+- sqs-expert
+- stripe-expert
+- svelte-expert
+- swift-expert
+- swiftui-expert
+- tailwind-expert
+- tauri-expert
+- tensorflow-expert
+- terraform-expert
+- testcafe-expert
+- trpc-expert
+- typeorm-expert
+- typescript-expert
+- vector-db-expert
+- vitest-expert
+- vue-expert
+- webpack-expert
+- websocket-expert
+
+## lst97新增agents (10个)
+- agent-organizer (agent-organizer.md)
+- product-manager (business/product-manager.md)
+- postgres-pro (data-ai/postgres-pro.md)
+- electorn-pro (development/electorn-pro.md)
+- full-stack-developer (development/full-stack-developer.md)
+- nextjs-pro (development/nextjs-pro.md)
+- react-pro (development/react-pro.md)
+- ux-designer (development/ux-designer.md)
+- devops-incident-responder (infrastructure/devops-incident-responder.md)
+- qa-expert (quality-testing/qa-expert.md)

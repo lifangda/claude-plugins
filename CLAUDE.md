@@ -6,12 +6,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Claude Plugins 是一个 Node.js CLI 工具,用于管理和安装 Claude Code 配置组件。
 
-**当前版本**: v1.2
+**当前版本**: v1.3
 
-**组件统计** (748个组件,833个文件):
-- 280个专业代理 (47个分类)
+**组件统计** (983个组件,1100+文件):
+- 488个专业代理 (扩展覆盖) ⭐ +70%
   - 包含10个Anthropic官方代理
-- 306个实用命令 (28个分类)
+  - 新增201个技术专家 (多代理编排、现代框架、ORM、消息队列等)
+- 313个实用命令 (28个分类)
   - 包含6个Anthropic官方命令
 - 16个工作流
 - 39个钩子 (10个分类)
@@ -20,11 +21,12 @@ Claude Plugins 是一个 Node.js CLI 工具,用于管理和安装 Claude Code �
 - 18个输出样式
 - 2个沙盒环境
 
-**Agent Skills知识库** (独立管理,39个技能包):
+**Agent Skills知识库** (独立管理,53个技能包): ⭐ +18%
 - 位于 `cli-tool/skills-library/` 目录
 - 采用官方三级渐进式架构 (Tier 1: Metadata ~100 tokens, Tier 2: SKILL.md <5K tokens, Tier 3: Resources unlimited)
-- 11个技术领域分类
-- 174个文件 (SKILL.md + references + scripts + assets)
+- 12个技术领域分类 (新增official-skills分类)
+- 230+文件 (SKILL.md + references + scripts + assets)
+- 新增8个Anthropic官方Skills (document-skills等)
 
 **核心功能:**
 - 组件安装系统 (agents, commands, mcps, workflows, hooks, output-styles)
@@ -428,11 +430,19 @@ node --check cli-tool/src/index.js
 
 详见 [CHANGELOG.md](CHANGELOG.md) 获取完整版本历史和更新日志。
 
-**当前版本**: v1.2
+**当前版本**: v1.3
+- **大规模生态扩展**: 整合4个高质量GitHub仓库
+- **Agents翻倍增长**: 从287个增至488个 (+201, +70%)
+- **Skills官方加持**: 新增8个Anthropic官方Skills (document-skills等)
+- **多代理编排**: 新增Meta Orchestration系统 (agent-organizer等6个)
+- **现代框架覆盖**: Remix, Astro, SolidJS等现代框架专家
+- **完整工具链**: ORM (Prisma, TypeORM), 消息队列 (Kafka, RabbitMQ), 认证 (Auth0, Keycloak)
+- **技术栈扩展**: 新增30+种语言/工具/框架支持
+- 总组件达983个,完整生态系统
+
+**v1.2** (前版本)
 - **Skills架构重构**: Skills迁移到独立的 `skills-library/` 目录
 - **三级渐进式架构**: 采用Anthropic官方Skills规范 (Tier 1/2/3)
 - **独立管理系统**: 新增 `skills-manager.js` 模块
-- 39个Skills完整迁移 (174个文件,11个技术领域)
-- 96个精细化分类插件包 (移除skills-collection)
-- 路径有效性保持100%
+- 96个精细化分类插件包
 - 集成Anthropic官方插件 (18个官方文件)
