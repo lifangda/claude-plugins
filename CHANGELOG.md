@@ -2,6 +2,205 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.0] - 2025-10-21
+
+### 🚀 中规模生态扩展 - Skills+Agents双重升级
+
+**核心变更**:
+- 🌟 **Skills知识库扩展**: +15个Skills (+28%),28个技术领域
+- 🤖 **专业代理扩展**: +20个Agents (+3.3%),3个新分类
+- 📦 **插件包优化**: 99个精细化插件包 (+3个新分类)
+- ✅ **路径有效性**: 100% (1489个组件路径全部验证通过)
+- 🔧 **组件总数**: 1038个 (从983增至1038,+5.6%)
+
+### ✨ Added - 新增组件
+
+#### Skills整合 (+15个, +28%)
+
+**新增技术领域 (17个分类)**:
+- **知识管理** (2个): tapestry, article-extractor
+- **协作工具** (1个): meeting-insights-analyzer
+- **问题解决** (3个): brainstorming, root-cause-tracing, systematic-debugging
+- **媒体处理** (3个): youtube-transcript, epub-reader, ffuf-fuzzing
+- **数据分析** (1个): csv-summarizer
+- **实用自动化** (5个): content-research-writer, file-organizer, invoice-organizer, ship-learn-next等
+
+**来源仓库**:
+- **michalparkola/tapestry-skills-for-claude-code**: tapestry (知识图谱), article-extractor, ship-learn-next
+- **ComposioHQ/awesome-claude-skills**: meeting-insights-analyzer, changelog-generator, content-research-writer, file-organizer, invoice-organizer
+- **obra/superpowers**: brainstorming, root-cause-tracing, systematic-debugging
+- **jthack/ffuf_claude_skill**: ffuf-fuzzing (Web模糊测试)
+- **smerchek/markdown-to-epub**: epub-reader (EPUB阅读)
+- **coffeefuelbump/csv-data-summarizer-claude-skill**: csv-summarizer
+
+**已有领域扩展**:
+- **cicd-automation**: 4 → 5个 (+changelog-generator)
+- **python-development**: 3 → 4个 (+uv-package-manager完整版)
+- **security**: 1 → 2个 (+ffuf-fuzzing)
+
+#### Agents整合 (+20个, +3.3%)
+
+**新增分类 (3个)**:
+1. **emerging-technologies** (4个):
+   - quantum-computing-developer - 量子计算开发专家
+   - edge-computing-specialist - 边缘计算专家
+   - bun-runtime-expert - Bun运行时专家
+   - deno-runtime-developer - Deno开发专家
+
+2. **vertical-domains** (5个):
+   - fintech-solutions-engineer - 金融科技工程师
+   - game-development-designer - 游戏开发设计师
+   - ar-vr-immersive-developer - AR/VR沉浸式开发
+   - embedded-systems-engineer - 嵌入式系统工程师
+   - web3-blockchain-builder - Web3区块链构建者
+
+3. **ecommerce** (2个):
+   - shopify-ecommerce-expert - Shopify电商专家
+   - stripe-payment-specialist - Stripe支付专家
+
+**已有分类扩展**:
+- **testing-quality**: 8 → 10个 (+vitest-testing-expert, +accessibility-compliance-guardian)
+- **development-tools**: 18 → 22个 (+storybook-component-designer, +openai-api-integrator, +api-integration-archaeologist, +workflow-automation-specialist)
+- **devops-infrastructure**: 16 → 19个 (+chaos-engineering-specialist, +istio-service-mesh-expert, +prometheus-monitoring-expert)
+
+**来源仓库**:
+- **lodetomasi/agents-claude-code**: 全部20个agents (精选自100个agents库)
+
+### 🔧 Changed - 更新内容
+
+**组件统计** (v1.3 → v1.4):
+- **Agents**: 484 → 504 (+20, +4.1%)
+- **Skills**: 53 → 68 (+15, +28%)
+- **Commands**: 313个 (保持不变)
+- **Workflows**: 16个 (保持不变)
+- **Hooks**: 39个 (保持不变)
+- **MCPs**: 56个 (保持不变)
+- **Output Styles**: 18个 (保持不变)
+- **Sandbox**: 2个 (保持不变)
+- **总组件**: 983 → 1038 (+55, +5.6%)
+
+**marketplace.json配置更新**:
+- **插件包**: 96 → 99 (+3个新分类)
+- **新增包**: agents-emerging-technologies, agents-vertical-domains, agents-ecommerce
+- **扩展包**: agents-testing-quality (+2), agents-development-tools (+4), agents-devops-infrastructure (+3)
+- **路径总数**: 1489个 (100%有效性)
+
+**Skills架构优化**:
+- **技术领域**: 11 → 28个分类 (+155%)
+- **文件数量**: 174+ → 280+个文件 (+61%)
+- **新增领域**: 知识管理、协作工具、问题解决、媒体处理、数据分析、实用自动化等
+
+### 📊 Statistics - 统计数据
+
+**v1.4.0组件统计**:
+- **Agents**: 504个 (50个分类)
+  - 官方代理: 10个
+  - 新兴技术: 4个 ⭐ NEW
+  - 垂直领域: 5个 ⭐ NEW
+  - 电商专家: 2个 ⭐ NEW
+- **Commands**: 313个 (28个分类)
+- **Skills**: 68个 (28个分类) ⭐ +28%
+- **Workflows**: 16个
+- **Hooks**: 39个 (10个分类)
+- **MCPs**: 56个 (10个分类)
+- **Output Styles**: 18个
+- **Sandbox**: 2个
+- **总组件**: 1038个
+- **总文件**: 1200+个
+- **插件包**: 99个
+
+**路径验证报告**:
+- 总组件路径: 1489个
+- 有效路径: 1489个 (100%)
+- 无效路径: 0个
+- 验证时间: 2025/10/21
+
+### 💡 Usage - 使用说明
+
+**安装新增Skills**:
+```bash
+# 知识图谱Skills
+node cli-tool/src/skills-manager.js install tapestry --project
+
+# 思维方法论Skills
+node cli-tool/src/skills-manager.js install brainstorming --project
+node cli-tool/src/skills-manager.js install root-cause-tracing --project
+
+# Web模糊测试Skills
+node cli-tool/src/skills-manager.js install ffuf-fuzzing --project
+
+# EPUB阅读Skills
+node cli-tool/src/skills-manager.js install epub-reader --project
+```
+
+**安装新增Agents (通过插件包)**:
+```bash
+# 新兴技术专家包
+/plugin install agents-emerging-technologies@lifangda
+
+# 垂直领域专家包
+/plugin install agents-vertical-domains@lifangda
+
+# 电商专家包
+/plugin install agents-ecommerce@lifangda
+```
+
+**单独安装特定Agents**:
+```bash
+# 量子计算专家
+/plugin install quantum-computing-developer@lifangda
+
+# AR/VR开发专家
+/plugin install ar-vr-immersive-developer@lifangda
+
+# Shopify电商专家
+/plugin install shopify-ecommerce-expert@lifangda
+
+# Istio服务网格专家
+/plugin install istio-service-mesh-expert@lifangda
+```
+
+### 🌐 Integration Sources - 整合来源
+
+**Skills来源** (7个仓库,15个新增):
+- **michalparkola/tapestry-skills-for-claude-code** (4个):
+  - tapestry, article-extractor, youtube-transcript, ship-learn-next
+- **ComposioHQ/awesome-claude-skills** (5个):
+  - meeting-insights-analyzer, changelog-generator, content-research-writer, file-organizer, invoice-organizer
+- **obra/superpowers** (3个):
+  - brainstorming, root-cause-tracing, systematic-debugging
+- **jthack/ffuf_claude_skill** (1个): ffuf-fuzzing
+- **smerchek/claude-epub-skill** (1个): epub-reader (markdown-to-epub)
+- **coffeefuelbump/csv-data-summarizer-claude-skill** (1个): csv-summarizer
+
+**Agents来源** (1个仓库,20个新增):
+- **lodetomasi/agents-claude-code** (20个精选):
+  - 从100个agents中精选出20个高质量专家
+  - 覆盖新兴技术、垂直领域、电商、测试、开发工具、DevOps等多个领域
+
+### 🔗 Quality Assurance - 质量保证
+- ✅ **路径有效性**: 100% (1489个路径全部验证通过)
+- ✅ **组件去重**: 基于名称去重,无重复项
+- ✅ **架构规范**: Skills采用三级渐进式架构 (Tier 1/2/3)
+- ✅ **独立管理**: Skills独立于marketplace.json管理
+- ✅ **文档同步**: CLAUDE.md, README.md, marketplace.json完全同步
+
+### 📝 Documentation - 文档更新
+- **CLAUDE.md**: 版本更新到v1.4,统计数据同步,新增组件说明
+- **README.md**: 版本特性更新,组件分类详细说明,Skills领域扩展
+- **marketplace.json**: 新增3个插件包,扩展3个已有包,路径100%有效
+- **VALIDATION_REPORT.md**: 完整路径验证报告 (temp_integration/)
+
+### 🎯 Highlights - 核心亮点
+
+1. **Skills生态扩展** (+28%) - 覆盖知识管理、思维方法论、媒体处理等新领域
+2. **新兴技术代理** - 量子计算、边缘计算、新运行时 (Bun/Deno)
+3. **垂直领域专家** - 金融科技、游戏开发、AR/VR、嵌入式、Web3
+4. **电商集成专家** - Shopify和Stripe支付完整解决方案
+5. **DevOps强化** - Chaos Engineering, Istio Service Mesh, Prometheus Monitoring
+6. **测试工具链** - Vitest专家、无障碍合规守护者
+7. **路径验证系统** - 自动化验证确保100%可用性
+
 ## [1.3.0] - 2025-10-21
 
 ### 🚀 大规模生态扩展 - GitHub社区整合

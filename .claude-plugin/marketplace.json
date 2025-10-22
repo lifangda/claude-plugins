@@ -316,7 +316,27 @@
         "./agents/security/security-specialist.md",
         "./agents/development-tools/tech-lead.md",
         "./agents/testing-quality/testing-specialist.md",
-        "./agents/design-creative/ux-ui-designer.md"
+        "./agents/design-creative/ux-ui-designer.md",
+        "agents/emerging-technologies/quantum-computing-developer.md",
+        "agents/emerging-technologies/edge-computing-specialist.md",
+        "agents/emerging-technologies/bun-runtime-expert.md",
+        "agents/emerging-technologies/deno-runtime-developer.md",
+        "agents/vertical-domains/fintech-solutions-engineer.md",
+        "agents/vertical-domains/game-development-designer.md",
+        "agents/vertical-domains/ar-vr-immersive-developer.md",
+        "agents/vertical-domains/embedded-systems-engineer.md",
+        "agents/vertical-domains/web3-blockchain-builder.md",
+        "agents/ecommerce/shopify-ecommerce-expert.md",
+        "agents/ecommerce/stripe-payment-specialist.md",
+        "agents/testing-quality/vitest-testing-expert.md",
+        "agents/testing-quality/accessibility-compliance-guardian.md",
+        "agents/development-tools/storybook-component-designer.md",
+        "agents/development-tools/openai-api-integrator.md",
+        "agents/development-tools/api-integration-archaeologist.md",
+        "agents/development-tools/workflow-automation-specialist.md",
+        "agents/devops-infrastructure/chaos-engineering-specialist.md",
+        "agents/devops-infrastructure/istio-service-mesh-expert.md",
+        "agents/devops-infrastructure/prometheus-monitoring-expert.md"
       ],
       "commands": [
         "./commands/ai-optimization/double-check.md",
@@ -1264,7 +1284,11 @@
         "./agents/development-tools/test-engineer.md",
         "./agents/development-tools/unused-code-cleaner.md",
         "./agents/development-tools/web-dev.md",
-        "./agents/development-tools/tech-lead.md"
+        "./agents/development-tools/tech-lead.md",
+        "agents/development-tools/storybook-component-designer.md",
+        "agents/development-tools/openai-api-integrator.md",
+        "agents/development-tools/api-integration-archaeologist.md",
+        "agents/development-tools/workflow-automation-specialist.md"
       ]
     },
     {
@@ -1298,7 +1322,10 @@
         "./agents/devops-infrastructure/security-engineer.md",
         "./agents/devops-infrastructure/terraform-specialist.md",
         "./agents/devops-infrastructure/vercel-deployment-specialist.md",
-        "./agents/devops-infrastructure/monitoring-observability-specialist.md"
+        "./agents/devops-infrastructure/monitoring-observability-specialist.md",
+        "agents/devops-infrastructure/chaos-engineering-specialist.md",
+        "agents/devops-infrastructure/istio-service-mesh-expert.md",
+        "agents/devops-infrastructure/prometheus-monitoring-expert.md"
       ]
     },
     {
@@ -1896,7 +1923,9 @@
         "./agents/testing-quality/unit-test-generator.md",
         "./agents/testing-quality/api-tester.md",
         "./agents/testing-quality/code-quality-reviewer.md",
-        "./agents/testing-quality/testing-specialist.md"
+        "./agents/testing-quality/testing-specialist.md",
+        "agents/testing-quality/vitest-testing-expert.md",
+        "agents/testing-quality/accessibility-compliance-guardian.md"
       ]
     },
     {
@@ -3354,6 +3383,53 @@
         "./output-styles/startup-pragmatist.md",
         "./output-styles/test-driven-developer.md"
       ]
+    },
+    {
+      "name": "agents-emerging-technologies",
+      "source": "claude-plugins/v1.4",
+      "description": "Emerging technology specialists: quantum computing, edge computing, Bun, and Deno runtime experts",
+      "version": "1.4.0",
+      "agents": [
+        "agents/emerging-technologies/quantum-computing-developer.md",
+        "agents/emerging-technologies/edge-computing-specialist.md",
+        "agents/emerging-technologies/bun-runtime-expert.md",
+        "agents/emerging-technologies/deno-runtime-developer.md"
+      ],
+      "commands": [],
+      "workflows": [],
+      "hooks": [],
+      "mcps": []
+    },
+    {
+      "name": "agents-vertical-domains",
+      "source": "claude-plugins/v1.4",
+      "description": "Vertical domain experts: fintech, game development, AR/VR, embedded systems, and Web3",
+      "version": "1.4.0",
+      "agents": [
+        "agents/vertical-domains/fintech-solutions-engineer.md",
+        "agents/vertical-domains/game-development-designer.md",
+        "agents/vertical-domains/ar-vr-immersive-developer.md",
+        "agents/vertical-domains/embedded-systems-engineer.md",
+        "agents/vertical-domains/web3-blockchain-builder.md"
+      ],
+      "commands": [],
+      "workflows": [],
+      "hooks": [],
+      "mcps": []
+    },
+    {
+      "name": "agents-ecommerce",
+      "source": "claude-plugins/v1.4",
+      "description": "E-commerce specialists: Shopify and Stripe payment integration experts",
+      "version": "1.4.0",
+      "agents": [
+        "agents/ecommerce/shopify-ecommerce-expert.md",
+        "agents/ecommerce/stripe-payment-specialist.md"
+      ],
+      "commands": [],
+      "workflows": [],
+      "hooks": [],
+      "mcps": []
     }
   ]
 }

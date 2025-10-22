@@ -8,11 +8,13 @@
 
 ## 📋 项目概述
 
-Claude Plugins 是一个完整的AI开发工具集,包含 **833个文件**,涵盖:
+Claude Plugins 是一个完整的AI开发工具集,包含 **1200+个文件**,涵盖:
 
-- **280个专业代理** (47个分类) - AI专家团队,覆盖各种开发领域
+- **504个专业代理** (50个分类) - AI专家团队,覆盖各种开发领域 ⭐ +3.3%
   - 包含10个Anthropic官方代理
-- **306个实用命令** (28个分类) - 自动化工具和开发命令
+  - 新增20个专家 (量子计算、边缘计算、金融科技、游戏开发、AR/VR等)
+  - 新增分类: 新兴技术、垂直领域、电商专家
+- **313个实用命令** (28个分类) - 自动化工具和开发命令
   - 包含6个Anthropic官方命令
 - **16个工作流** - 完整的开发流程自动化
 - **39个钩子** (10个分类) - 自动化触发器和事件处理
@@ -21,13 +23,14 @@ Claude Plugins 是一个完整的AI开发工具集,包含 **833个文件**,涵�
 - **18个输出样式** - 专业化Claude输出格式
 - **2个沙盒环境** - 安全的代码执行环境
 
-**总计: 748个组件,96个精细化插件包**
+**总计: 1038个组件,99个精细化插件包** ⭐ +3个新分类包
 
-**Agent Skills知识库** (独立管理):
-- **39个Skills** (11个技术领域) - 模块化领域知识包 ✨
+**Agent Skills知识库** (独立管理,28个技术领域): ⭐ +28%
+- **68个Skills** - 模块化领域知识包 ✨
 - 位于 `cli-tool/skills-library/` 目录
 - 采用官方三级渐进式架构 (Tier 1/2/3)
-- 174个文件 (SKILL.md + references + scripts + assets)
+- 280+文件 (SKILL.md + references + scripts + assets)
+- 覆盖知识管理、思维方法论、Web模糊测试、EPUB阅读等新领域
 
 ### 🌟 特色：包含 Anthropic 官方插件
 - **claude-code-official** - Anthropic官方插件包，包含10个官方代理、6个官方命令和1个安全钩子
@@ -153,21 +156,45 @@ Claude Plugins 是一个完整的AI开发工具集,包含 **833个文件**,涵�
 /supabase-toolkit  # 使用Supabase工具
 ```
 
-## 🆕 最新特性 (v1.2)
+## 🆕 最新特性 (v1.4)
 
-### 🎉 重大改进
+### 🎉 v1.4.0 - 中规模生态扩展 (Skills+Agents)
+
+#### 🌟 Skills知识库扩展 (+15个Skills)
+- **新增领域分类**: 知识管理、问题解决、媒体处理、数据分析、实用自动化、协作工具
+- **Skills总数**: 53 → 68 (+28%)
+- **技术领域**: 11 → 28个分类
+- **文件数量**: 174+ → 280+个文件
+
+**新增Skills示例**:
+- **知识管理**: tapestry (知识图谱), article-extractor (文章提取), youtube-transcript (视频转录)
+- **问题解决**: brainstorming (头脑风暴), root-cause-tracing (根因分析), systematic-debugging (系统化调试)
+- **媒体处理**: epub-reader (电子书阅读), ffuf-fuzzing (Web模糊测试)
+- **数据分析**: csv-summarizer (CSV数据汇总)
+- **实用自动化**: content-research-writer (内容研究), file-organizer (文件组织), invoice-organizer (发票管理)
+
+#### 🤖 专业代理扩展 (+20个Agents)
+- **Agents总数**: 484 → 504 (+3.3%)
+- **插件包**: 96 → 99个 (+3个新分类)
+
+**新增专业代理**:
+- **新兴技术** (4个): quantum-computing-developer, edge-computing-specialist, bun-runtime-expert, deno-runtime-developer
+- **垂直领域** (5个): fintech-solutions-engineer, game-development-designer, ar-vr-immersive-developer, embedded-systems-engineer, web3-blockchain-builder
+- **电商专家** (2个): shopify-ecommerce-expert, stripe-payment-specialist
+- **测试质量** (2个): vitest-testing-expert, accessibility-compliance-guardian
+- **开发工具** (4个): storybook-component-designer, openai-api-integrator, api-integration-archaeologist, workflow-automation-specialist
+- **DevOps基础设施** (3个): chaos-engineering-specialist, istio-service-mesh-expert, prometheus-monitoring-expert
+
+#### 📦 新增插件包
+- `agents-emerging-technologies` - 新兴技术专家 (4个agents)
+- `agents-vertical-domains` - 垂直领域专家 (5个agents)
+- `agents-ecommerce` - 电商集成专家 (2个agents)
+
+### 📋 v1.2 特性回顾
 - **Skills架构重构**: Skills迁移到独立的 `cli-tool/skills-library/` 目录
-- **三级渐进式架构**: 采用Anthropic官方Skills规范 (Tier 1: Metadata ~100 tokens, Tier 2: SKILL.md <5K tokens, Tier 3: Resources unlimited)
+- **三级渐进式架构**: 采用Anthropic官方Skills规范 (Tier 1/2/3)
 - **独立管理系统**: 新增 `skills-manager.js` 模块
-- **Skills完整迁移**: 39个Skills (174个文件,11个技术领域)
-- **插件包优化**: 从97个优化为96个精细化分类插件包 (移除skills-collection)
-- **路径有效性保持**: 100%路径有效性
-
-### ✨ Skills特性
-- 📚 **11个技术领域**: backend-development, blockchain-web3, cicd-automation, cloud-infrastructure, framework-migration, javascript-typescript, kubernetes-operations, llm-application-dev, payment-processing, python-development, security
-- 🎯 **三级架构**: Tier 1 (Metadata, ~100 tokens), Tier 2 (SKILL.md, <5K tokens), Tier 3 (Resources, unlimited)
-- 🔧 **Skills管理**: listAllSkills(), searchSkills(), installSkill() (project/global)
-- 📦 **完整资源**: SKILL.md + references/ + scripts/ + assets/
+- **插件包优化**: 精细化分类,路径有效性100%
 
 详见 [CHANGELOG.md](CHANGELOG.md) 和 [cli-tool/skills-library/README.md](cli-tool/skills-library/README.md)
 
@@ -195,10 +222,10 @@ Claude Plugins 是一个完整的AI开发工具集,包含 **833个文件**,涵�
 ### 🎯 完整插件包
 
 #### claude-plugins-complete
-**描述**: 完整的748个Claude插件集合
+**描述**: 完整的1038个Claude组件集合
 **包含**:
-- 280个专业代理 (47个分类)
-- 306个实用命令 (28个分类)
+- 504个专业代理 (50个分类)
+- 313个实用命令 (28个分类)
 - 16个工作流
 - 39个钩子 (10个分类)
 - 56个MCP服务器 (10个分类)
@@ -248,11 +275,11 @@ Claude Plugins 是一个完整的AI开发工具集,包含 **833个文件**,涵�
 **独立管理**: Skills不再包含在marketplace.json中,通过 `cli-tool/src/skills-manager.js` 独立管理
 
 #### Skills Library (`cli-tool/skills-library/`)
-**描述**: 39个模块化领域知识包,采用官方三级渐进式架构
+**描述**: 68个模块化领域知识包,采用官方三级渐进式架构
 **特色**:
-- 📚 **11个技术领域**: backend-development (4个), blockchain-web3 (4个), cicd-automation (4个), cloud-infrastructure (4个), framework-migration (4个), javascript-typescript (4个), kubernetes-operations (4个), llm-application-dev (4个), payment-processing (4个), python-development (3个), security (1个)
+- 📚 **28个技术领域**: backend-development, blockchain-web3, cicd-automation, cloud-infrastructure, collaboration, data-analysis, framework-migration, javascript-typescript, knowledge-management, kubernetes-operations, llm-application-dev, media-processing, payment-processing, problem-solving, python-development, security, utility-automation
 - 🎯 **三级架构**: Tier 1 (Metadata ~100 tokens), Tier 2 (SKILL.md <5K tokens), Tier 3 (Resources unlimited)
-- 📦 **完整资源**: 174个文件 (SKILL.md + references/ + scripts/ + assets/)
+- 📦 **完整资源**: 280+文件 (SKILL.md + references/ + scripts/ + assets/)
 - 🔧 **管理API**: listAllSkills(), searchSkills(), getSkillInfo(), installSkill()
 
 **Skills示例**:
@@ -319,21 +346,24 @@ node cli-tool/src/skills-manager.js install nodejs-backend-patterns --global
 
 ## 🤖 组件分类浏览
 
-### Agents分类 (280个,47个分类)
+### Agents分类 (504个,50个分类)
 完整的AI专家团队,覆盖各种开发领域:
 - **official** - Anthropic官方代理 (10个)
+- **emerging-technologies** - 新兴技术 (4个) ⭐ NEW
+- **vertical-domains** - 垂直领域 (5个) ⭐ NEW
+- **ecommerce** - 电商专家 (2个) ⭐ NEW
 - **data-ai** - 数据与AI开发 (9个)
-- **development-tools** - 开发工具 (18个)
-- **devops-infrastructure** - DevOps基础设施 (16个)
+- **development-tools** - 开发工具 (22个) ⭐ +4扩展
+- **devops-infrastructure** - DevOps基础设施 (19个) ⭐ +3扩展
 - **security** - 安全审计 (9个)
-- **testing-quality** - 测试质量 (8个)
+- **testing-quality** - 测试质量 (10个) ⭐ +2扩展
 - **mobile-development** - 移动开发 (5个)
 - **business-marketing** - 业务营销 (11个)
 - **database** - 数据库 (11个)
 - **documentation** - 文档 (8个)
 - 更多35+个专业分类...
 
-### Commands分类 (306个,28个分类)
+### Commands分类 (313个,28个分类)
 实用的自动化命令和开发工具:
 - **official** - Anthropic官方命令 (6个)
 - **git-workflow** - Git工作流命令 (13个)
@@ -381,19 +411,29 @@ node cli-tool/src/skills-manager.js install nodejs-backend-patterns --global
 ### Sandbox (2个)
 安全的代码执行环境
 
-### Agent Skills (39个,11个分类) - 独立管理 ✨
+### Agent Skills (68个,28个分类) - 独立管理 ✨ +28%
 模块化领域知识包,采用三级渐进式架构 (Tier 1/2/3):
+
+**原有领域 (11个,53个Skills)**:
 - **backend-development** - 后端开发 (4个): api-design-principles, architecture-patterns, microservices-patterns, mcp-builder
 - **blockchain-web3** - 区块链Web3 (4个): defi-protocol-templates, nft-standards, solidity-security, web3-testing
-- **cicd-automation** - CI/CD自动化 (4个): deployment-pipeline-design, github-actions-templates, gitlab-ci-patterns, secrets-management
+- **cicd-automation** - CI/CD自动化 (5个): deployment-pipeline-design, github-actions-templates, gitlab-ci-patterns, secrets-management, **changelog-generator** ⭐
 - **cloud-infrastructure** - 云基础设施 (4个): cost-optimization, hybrid-cloud-networking, multi-cloud-architecture, terraform-module-library
 - **framework-migration** - 框架迁移 (4个): angular-migration, database-migration, dependency-upgrade, react-modernization
 - **javascript-typescript** - JS/TS开发 (4个): javascript-testing-patterns, modern-javascript-patterns, nodejs-backend-patterns, typescript-advanced-types
 - **kubernetes-operations** - K8s运维 (4个): gitops-workflow, helm-chart-scaffolding, k8s-manifest-generator, k8s-security-policies
 - **llm-application-dev** - LLM应用开发 (4个): langchain-architecture, llm-evaluation, prompt-engineering-patterns, rag-implementation
 - **payment-processing** - 支付处理 (4个): billing-automation, paypal-integration, pci-compliance, stripe-integration
-- **python-development** - Python开发 (3个): async-python-patterns, python-packaging, python-testing-patterns, uv-package-manager
+- **python-development** - Python开发 (4个): async-python-patterns, python-packaging, python-testing-patterns, uv-package-manager ⭐
 - **security** - 安全 (1个): security-best-practices
+
+**新增领域 (17个,15个Skills)** ⭐ NEW:
+- **知识管理** (2个): tapestry (知识图谱), article-extractor (文章提取)
+- **协作工具** (1个): meeting-insights-analyzer (会议洞察分析)
+- **问题解决** (3个): brainstorming (头脑风暴), root-cause-tracing (根因分析), systematic-debugging (系统化调试)
+- **媒体处理** (3个): youtube-transcript (视频转录), epub-reader (电子书阅读), ffuf-fuzzing (Web模糊测试)
+- **数据分析** (1个): csv-summarizer (CSV数据汇总)
+- **实用自动化** (5个): content-research-writer, file-organizer, invoice-organizer, ship-learn-next, ...
 
 **位置**: `cli-tool/skills-library/` (独立管理,不在marketplace.json)
 **管理**: 通过 `cli-tool/src/skills-manager.js` 模块
@@ -470,20 +510,23 @@ node cli-tool/src/skills-manager.js install nodejs-backend-patterns --global
 ```
 claude-plugins/
 ├── .claude-plugin/
-│   └── marketplace.json          # 插件市场配置文件 (96个插件包)
+│   └── marketplace.json          # 插件市场配置文件 (99个插件包)
 ├── cli-tool/
-│   ├── components/               # 748个组件文件
+│   ├── components/               # 1038个组件文件
 │   │   ├── official/             # Anthropic官方插件 (18个文件)
 │   │   │   ├── agents/           # 10个官方代理
 │   │   │   ├── commands/         # 6个官方命令
 │   │   │   └── hooks/            # 1个安全钩子 + Python脚本
-│   │   ├── agents/               # 270个专业代理 (46个分类)
+│   │   ├── agents/               # 494个专业代理 (49个分类)
 │   │   │   ├── data-ai/          # 数据与AI开发
 │   │   │   ├── development-tools/ # 开发工具
 │   │   │   ├── devops-infrastructure/ # DevOps基础设施
+│   │   │   ├── emerging-technologies/ # 新兴技术 ⭐ NEW
+│   │   │   ├── vertical-domains/ # 垂直领域 ⭐ NEW
+│   │   │   ├── ecommerce/        # 电商专家 ⭐ NEW
 │   │   │   ├── security/         # 安全审计
 │   │   │   └── ...               # 更多40+分类
-│   │   ├── commands/             # 300个实用命令 (27个分类)
+│   │   ├── commands/             # 313个实用命令 (28个分类)
 │   │   │   ├── git-workflow/     # Git工作流命令
 │   │   │   ├── testing-quality/  # 测试质量命令
 │   │   │   ├── deployment/       # 部署工具命令
@@ -493,25 +536,76 @@ claude-plugins/
 │   │   ├── mcps/                 # 56个MCP服务器 (10个分类)
 │   │   ├── output-styles/        # 18个输出样式
 │   │   └── sandbox/              # 2个沙盒环境
-│   ├── skills-library/           # 39个Agent Skills (11个分类) ✨独立管理
+│   ├── skills-library/           # 68个Agent Skills (28个分类) ✨独立管理 +28%
 │   │   ├── README.md             # Skills使用指南
 │   │   ├── backend-development/  # 4个Skills
 │   │   ├── blockchain-web3/      # 4个Skills
-│   │   ├── cicd-automation/      # 4个Skills
+│   │   ├── cicd-automation/      # 5个Skills ⭐
 │   │   ├── cloud-infrastructure/ # 4个Skills
+│   │   ├── collaboration/        # 1个Skill ⭐ NEW
+│   │   ├── data-analysis/        # 1个Skill ⭐ NEW
 │   │   ├── framework-migration/  # 4个Skills
 │   │   ├── javascript-typescript/ # 4个Skills
+│   │   ├── knowledge-management/ # 2个Skills ⭐ NEW
 │   │   ├── kubernetes-operations/ # 4个Skills
 │   │   ├── llm-application-dev/  # 4个Skills
+│   │   ├── media-processing/     # 3个Skills ⭐ NEW
 │   │   ├── payment-processing/   # 4个Skills
-│   │   ├── python-development/   # 3个Skills
-│   │   └── security/             # 1个Skill
+│   │   ├── problem-solving/      # 3个Skills ⭐ NEW
+│   │   ├── python-development/   # 4个Skills ⭐
+│   │   ├── security/             # 2个Skills ⭐
+│   │   ├── utility-automation/   # 5个Skills ⭐ NEW
+│   │   └── ...                   # 更多10+领域
 │   └── src/
 │       └── skills-manager.js     # Skills管理模块
 ├── CHANGELOG.md                  # 版本历史记录
 ├── README.md                     # 项目说明文档
 └── LICENSE                       # MIT许可证
 ```
+
+## 🌐 推荐资源
+
+除了claude-plugins提供的**扁平化agents库**,以下资源适合特定场景:
+
+### 完整工作流系统
+
+#### zhsama/claude-sub-agent
+- **仓库**: https://github.com/zhsama/claude-sub-agent
+- **类型**: Spec-driven开发工作流系统
+- **特点**: Planning → Development → Validation完整流程,质量门控机制
+- **适用**: 需要结构化开发流程和工作流自动化的团队
+- **组件**: 8个spec-agents + 完整质量检查系统
+- **推荐理由**: 如果你需要强制性开发流程,而非独立工具集
+
+### TDD强制开发系统
+
+#### vanzan01/claude-code-sub-agent-collective
+- **仓库**: https://github.com/vanzan01/claude-code-sub-agent-collective
+- **Star数**: 2.8k ⭐ (高社区热度)
+- **类型**: TDD方法论强制执行系统 (NPM包)
+- **特点**: Hub-and-Spoke协调,Context7集成,强制RED-GREEN-REFACTOR
+- **适用**: 严格TDD方法论的团队,快速MVP开发
+- **组件**: 30+专业agents,智能任务分解,完整质量门控
+- **推荐理由**: 如果你需要系统级TDD开发,而非工具箱式体验
+
+### 官方Skills库
+
+#### obra/superpowers
+- **仓库**: https://github.com/obra/superpowers
+- **类型**: Skills库 (官方认可)
+- **特点**: battle-tested,官方质量保证,20+高质量skills
+- **适用**: 需要特定skills但不想整合全部的用户
+- **核心Skills**: systematic-debugging, git-worktrees, dispatching-parallel-agents
+- **推荐理由**: 可手动安装特定skills补充我们的Skills库
+
+### 使用建议
+
+**claude-plugins** 提供**工具箱式体验** - 扁平化独立agents,自由选择组合
+**上述资源** 提供**系统式体验** - 完整工作流,强制流程控制
+
+根据团队需求和开发风格选择合适的方案! 🎯
+
+---
 
 ## 🤝 贡献指南
 

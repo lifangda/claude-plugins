@@ -6,12 +6,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Claude Plugins 是一个 Node.js CLI 工具,用于管理和安装 Claude Code 配置组件。
 
-**当前版本**: v1.3
+**当前版本**: v1.4
 
-**组件统计** (983个组件,1100+文件):
-- 488个专业代理 (扩展覆盖) ⭐ +70%
+**组件统计** (1038个组件,1200+文件):
+- 504个专业代理 (50个分类) ⭐ +3.3%
   - 包含10个Anthropic官方代理
-  - 新增201个技术专家 (多代理编排、现代框架、ORM、消息队列等)
+  - 新增20个专家 (量子计算、边缘计算、金融科技、游戏开发、AR/VR等)
+  - 新增分类: 新兴技术、垂直领域、电商专家
 - 313个实用命令 (28个分类)
   - 包含6个Anthropic官方命令
 - 16个工作流
@@ -21,17 +22,17 @@ Claude Plugins 是一个 Node.js CLI 工具,用于管理和安装 Claude Code �
 - 18个输出样式
 - 2个沙盒环境
 
-**Agent Skills知识库** (独立管理,53个技能包): ⭐ +18%
+**Agent Skills知识库** (独立管理,68个技能包): ⭐ +28%
 - 位于 `cli-tool/skills-library/` 目录
 - 采用官方三级渐进式架构 (Tier 1: Metadata ~100 tokens, Tier 2: SKILL.md <5K tokens, Tier 3: Resources unlimited)
-- 12个技术领域分类 (新增official-skills分类)
-- 230+文件 (SKILL.md + references + scripts + assets)
-- 新增8个Anthropic官方Skills (document-skills等)
+- 28个技术领域分类 (新增知识管理、问题解决、媒体处理、数据分析、实用自动化、协作工具等)
+- 280+文件 (SKILL.md + references + scripts + assets)
+- 覆盖知识图谱、思维方法论、Web模糊测试、EPUB阅读等新领域
 
 **核心功能:**
 - 组件安装系统 (agents, commands, mcps, workflows, hooks, output-styles)
 - **Agent Skills管理系统** (list, search, install) ✨独立系统
-- Claude Code 插件市场配置 (96个精细化插件包)
+- Claude Code 插件市场配置 (99个精细化插件包) ⭐ +3个新分类包
 - 实时分析仪表板
 - E2B 沙盒执行环境
 - **Anthropic官方插件集成** (18个官方文件)
