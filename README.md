@@ -26,7 +26,7 @@ Claude Plugins 是一个完整的AI开发工具集,包含 **1200+个文件**,涵
 **总计: 1038个组件,99个精细化插件包** ⭐ +3个新分类包
 
 **Agent Skills知识库** (独立管理,28个技术领域): ⭐ +28%
-- **68个Skills** - 模块化领域知识包 ✨
+- **61个Skills** - 模块化领域知识包 ✨
 - 位于 `cli-tool/skills-library/` 目录
 - 采用官方三级渐进式架构 (Tier 1/2/3)
 - 280+文件 (SKILL.md + references + scripts + assets)
@@ -162,7 +162,7 @@ Claude Plugins 是一个完整的AI开发工具集,包含 **1200+个文件**,涵
 
 #### 🌟 Skills知识库扩展 (+15个Skills)
 - **新增领域分类**: 知识管理、问题解决、媒体处理、数据分析、实用自动化、协作工具
-- **Skills总数**: 53 → 68 (+28%)
+- **Skills总数**: 53 → 61 (+15%)
 - **技术领域**: 11 → 28个分类
 - **文件数量**: 174+ → 280+个文件
 
@@ -275,7 +275,7 @@ Claude Plugins 是一个完整的AI开发工具集,包含 **1200+个文件**,涵
 **独立管理**: Skills不再包含在marketplace.json中,通过 `cli-tool/src/skills-manager.js` 独立管理
 
 #### Skills Library (`cli-tool/skills-library/`)
-**描述**: 68个模块化领域知识包,采用官方三级渐进式架构
+**描述**: 61个模块化领域知识包,采用官方三级渐进式架构
 **特色**:
 - 📚 **28个技术领域**: backend-development, blockchain-web3, cicd-automation, cloud-infrastructure, collaboration, data-analysis, framework-migration, javascript-typescript, knowledge-management, kubernetes-operations, llm-application-dev, media-processing, payment-processing, problem-solving, python-development, security, utility-automation
 - 🎯 **三级架构**: Tier 1 (Metadata ~100 tokens), Tier 2 (SKILL.md <5K tokens), Tier 3 (Resources unlimited)
@@ -411,7 +411,7 @@ node cli-tool/src/skills-manager.js install nodejs-backend-patterns --global
 ### Sandbox (2个)
 安全的代码执行环境
 
-### Agent Skills (68个,28个分类) - 独立管理 ✨ +28%
+### Agent Skills (61个,28个分类) - 独立管理 ✨ +15%
 模块化领域知识包,采用三级渐进式架构 (Tier 1/2/3):
 
 **原有领域 (11个,53个Skills)**:
@@ -536,7 +536,7 @@ claude-plugins/
 │   │   ├── mcps/                 # 56个MCP服务器 (10个分类)
 │   │   ├── output-styles/        # 18个输出样式
 │   │   └── sandbox/              # 2个沙盒环境
-│   ├── skills-library/           # 68个Agent Skills (28个分类) ✨独立管理 +28%
+│   ├── skills-library/           # 61个Agent Skills (28个分类) ✨独立管理 +15%
 │   │   ├── README.md             # Skills使用指南
 │   │   ├── backend-development/  # 4个Skills
 │   │   ├── blockchain-web3/      # 4个Skills

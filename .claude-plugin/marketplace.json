@@ -7,3429 +7,1737 @@
   },
   "metadata": {
     "description": "完整的Claude插件生态系统:280个专业代理、313个开发命令、16个工作流、39个钩子、56个MCP服务器、18个输出样式，专业化分类，即装即用",
-    "version": "1.1.0"
+    "version": "1.4.0"
   },
   "plugins": [
     {
-      "name": "claude-plugins-complete",
-      "source": "./cli-tool/components",
-      "description": "完整的Claude插件生态系统:280个AI代理、313个开发命令、16个工作流、39个自动化钩子、56个MCP服务器、18个输出样式、31个Agent Skills,一条命令即可安装使用",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "homepage": "https://github.com/lifangda/claude-plugins",
-      "repository": "https://github.com/lifangda/claude-plugins",
+      "name": "accessibility-suite",
+      "source": "cli-tool/components",
+      "description": "无障碍体验：提升产品易用性的审查与改进能力；一次安装获得端到端能力（2个代理）",
+      "version": "1.2.0",
       "license": "MIT",
       "keywords": [
-        "claude",
-        "plugins",
-        "agents",
-        "commands",
-        "workflows",
-        "hooks",
-        "mcps",
-        "ai",
-        "automation",
-        "development"
+        "bundle"
       ],
-      "category": "complete",
       "strict": false,
       "agents": [
-        "./agents/accessibility/accessibility-expert.md",
-        "./agents/ai-optimization/ai-ethics-governance-specialist.md",
-        "./agents/ai-specialists/ai-ethics-advisor.md",
-        "./agents/ai-specialists/hackathon-ai-strategist.md",
-        "./agents/ai-specialists/llms-maintainer.md",
-        "./agents/ai-specialists/model-evaluator.md",
-        "./agents/ai-specialists/prompt-engineer.md",
-        "./agents/ai-specialists/search-specialist.md",
-        "./agents/ai-specialists/task-decomposition-expert.md",
-        "./agents/api-graphql/graphql-architect.md",
-        "./agents/api-graphql/graphql-performance-optimizer.md",
-        "./agents/api-graphql/graphql-security-specialist.md",
-        "./agents/app-store/app-store-optimizer.md",
-        "./agents/architecture/architect-review.md",
-        "./agents/architecture/graphql-architect.md",
-        "./agents/blockchain-web3/blockchain-developer.md",
-        "./agents/blockchain-web3/smart-contract-auditor.md",
-        "./agents/blockchain-web3/smart-contract-specialist.md",
-        "./agents/blockchain-web3/web3-integration-specialist.md",
-        "./agents/business-marketing/business-analyst.md",
-        "./agents/business-marketing/content-marketer.md",
-        "./agents/business-marketing/customer-support.md",
-        "./agents/business-marketing/hr-pro.md",
-        "./agents/business-marketing/legal-advisor.md",
-        "./agents/business-marketing/marketing-attribution-analyst.md",
-        "./agents/business-marketing/payment-integration.md",
-        "./agents/business-marketing/product-strategist.md",
-        "./agents/business-marketing/quant-analyst.md",
-        "./agents/business-marketing/risk-manager.md",
-        "./agents/business-marketing/sales-automator.md",
-        "./agents/business-sales/b2b-project-shipper.md",
-        "./agents/business-sales/technical-sales-engineer.md",
-        "./agents/code-analysis/code-architect.md",
-        "./agents/code-analysis/codebase-documenter.md",
-        "./agents/customer-relations/customer-success-manager.md",
-        "./agents/customer-relations/feedback-synthesizer.md",
-        "./agents/customer-relations/support-responder.md",
-        "./agents/data-ai/ai-engineer.md",
-        "./agents/data-ai/computer-vision-engineer.md",
-        "./agents/data-ai/data-engineer.md",
-        "./agents/data-ai/data-scientist.md",
-        "./agents/data-ai/ml-engineer.md",
-        "./agents/data-ai/mlops-engineer.md",
-        "./agents/data-ai/nlp-engineer.md",
-        "./agents/data-ai/prompt-engineer.md",
-        "./agents/data-ai/quant-analyst.md",
-        "./agents/data-analytics/analytics-reporter.md",
-        "./agents/data-analytics/experiment-tracker.md",
-        "./agents/data-analytics/finance-tracker.md",
-        "./agents/data-analytics/trend-researcher.md",
-        "./agents/database/database-admin.md",
-        "./agents/database/database-architect.md",
-        "./agents/database/database-optimization.md",
-        "./agents/database/database-optimizer.md",
-        "./agents/database/neon-auth-specialist.md",
-        "./agents/database/neon-database-architect.md",
-        "./agents/database/neon-expert.md",
-        "./agents/database/nosql-specialist.md",
-        "./agents/database/sql-pro.md",
-        "./agents/database/supabase-schema-architect.md",
-        "./agents/deep-research-team/academic-researcher.md",
-        "./agents/deep-research-team/agent-overview.md",
-        "./agents/deep-research-team/competitive-intelligence-analyst.md",
-        "./agents/deep-research-team/data-analyst.md",
-        "./agents/deep-research-team/fact-checker.md",
-        "./agents/deep-research-team/query-clarifier.md",
-        "./agents/deep-research-team/report-generator.md",
-        "./agents/deep-research-team/research-brief-generator.md",
-        "./agents/deep-research-team/research-coordinator.md",
-        "./agents/deep-research-team/research-orchestrator.md",
-        "./agents/deep-research-team/research-synthesizer.md",
-        "./agents/deep-research-team/technical-researcher.md",
-        "./agents/design-creative/joker.md",
-        "./agents/design-creative/studio-coach.md",
-        "./agents/design-creative/studio-producer.md",
-        "./agents/design-creative/ux-researcher.md",
-        "./agents/design-creative/vision-specialist.md",
-        "./agents/design-creative/visual-storyteller.md",
-        "./agents/design-creative/whimsy-injector.md",
-        "./agents/development-team/backend-architect.md",
-        "./agents/development-team/cli-ui-designer.md",
-        "./agents/development-team/devops-engineer.md",
-        "./agents/development-team/frontend-developer.md",
-        "./agents/development-team/fullstack-developer.md",
-        "./agents/development-team/ios-developer.md",
-        "./agents/development-team/mobile-developer.md",
-        "./agents/development-team/ui-ux-designer.md",
-        "./agents/development-team/ui-visual-validator.md",
-        "./agents/development-tools/code-reviewer.md",
-        "./agents/development-tools/command-expert.md",
-        "./agents/development-tools/context-manager.md",
-        "./agents/development-tools/debugger.md",
-        "./agents/development-tools/dx-optimizer.md",
-        "./agents/development-tools/error-detective.md",
-        "./agents/development-tools/legacy-modernizer.md",
-        "./agents/development-tools/mcp-expert.md",
-        "./agents/development-tools/mermaid-expert.md",
-        "./agents/development-tools/performance-engineer.md",
-        "./agents/development-tools/performance-profiler.md",
-        "./agents/development-tools/python-expert.md",
-        "./agents/development-tools/tdd-orchestrator.md",
-        "./agents/development-tools/test-automator.md",
-        "./agents/development-tools/test-engineer.md",
-        "./agents/development-tools/unused-code-cleaner.md",
-        "./agents/development-tools/web-dev.md",
-        "./agents/devops-infrastructure/cloud-architect.md",
-        "./agents/devops-infrastructure/deployment-engineer.md",
-        "./agents/devops-infrastructure/devops-automator.md",
-        "./agents/devops-infrastructure/devops-troubleshooter.md",
-        "./agents/devops-infrastructure/hybrid-cloud-architect.md",
-        "./agents/devops-infrastructure/incident-responder.md",
-        "./agents/devops-infrastructure/infrastructure-maintainer.md",
-        "./agents/devops-infrastructure/kubernetes-architect.md",
-        "./agents/devops-infrastructure/monitoring-specialist.md",
-        "./agents/devops-infrastructure/network-engineer.md",
-        "./agents/devops-infrastructure/observability-engineer.md",
-        "./agents/devops-infrastructure/performance-benchmarker.md",
-        "./agents/devops-infrastructure/security-engineer.md",
-        "./agents/devops-infrastructure/terraform-specialist.md",
-        "./agents/devops-infrastructure/vercel-deployment-specialist.md",
-        "./agents/documentation/api-documenter.md",
-        "./agents/documentation/changelog-generator.md",
-        "./agents/documentation/docs-architect.md",
-        "./agents/documentation/docusaurus-expert.md",
-        "./agents/documentation/reference-builder.md",
-        "./agents/documentation/technical-writer.md",
-        "./agents/documentation/tutorial-engineer.md",
-        "./agents/enterprise/enterprise-integrator-architect.md",
-        "./agents/enterprise/enterprise-onboarding-specialist.md",
-        "./agents/enterprise/enterprise-security-reviewer.md",
-        "./agents/enterprise/legal-compliance-checker.md",
-        "./agents/expert-advisors/agent-expert.md",
-        "./agents/expert-advisors/architect-review.md",
-        "./agents/expert-advisors/dependency-manager.md",
-        "./agents/expert-advisors/documentation-expert.md",
-        "./agents/ffmpeg-clip-team/audio-mixer.md",
-        "./agents/ffmpeg-clip-team/audio-quality-controller.md",
-        "./agents/ffmpeg-clip-team/podcast-content-analyzer.md",
-        "./agents/ffmpeg-clip-team/podcast-metadata-specialist.md",
-        "./agents/ffmpeg-clip-team/podcast-transcriber.md",
-        "./agents/ffmpeg-clip-team/social-media-clip-creator.md",
-        "./agents/ffmpeg-clip-team/timestamp-precision-specialist.md",
-        "./agents/ffmpeg-clip-team/video-editor.md",
-        "./agents/frameworks/django-pro.md",
-        "./agents/frameworks/fastapi-pro.md",
-        "./agents/frameworks/flutter-expert.md",
-        "./agents/game-development/3d-artist.md",
-        "./agents/game-development/game-designer.md",
-        "./agents/game-development/minecraft-bukkit-pro.md",
-        "./agents/game-development/unity-developer.md",
-        "./agents/game-development/unity-game-developer.md",
-        "./agents/game-development/unreal-engine-developer.md",
-        "./agents/git/git-flow-manager.md",
-        "./agents/integration-api/api-integration-specialist.md",
-        "./agents/integration-api/context7-docs-fetcher.md",
-        "./agents/integration-api/model-context-protocol-mcp-expert.md",
-        "./agents/integration-api/n8n-workflow-builder.md",
-        "./agents/knowledge/wikipedia-expert.md",
-        "./agents/marketing-growth/brand-guardian.md",
-        "./agents/marketing-growth/content-creator.md",
-        "./agents/marketing-growth/growth-hacker.md",
-        "./agents/marketing-growth/instagram-curator.md",
-        "./agents/marketing-growth/reddit-community-builder.md",
-        "./agents/marketing-growth/tiktok-strategist.md",
-        "./agents/marketing-growth/twitter-engager.md",
-        "./agents/mcp-dev-team/mcp-deployment-orchestrator.md",
-        "./agents/mcp-dev-team/mcp-integration-engineer.md",
-        "./agents/mcp-dev-team/mcp-protocol-specialist.md",
-        "./agents/mcp-dev-team/mcp-registry-navigator.md",
-        "./agents/mcp-dev-team/mcp-security-auditor.md",
-        "./agents/mcp-dev-team/mcp-server-architect.md",
-        "./agents/mcp-dev-team/mcp-testing-engineer.md",
-        "./agents/mobile-development/desktop-app-dev.md",
-        "./agents/mobile-development/flutter-mobile-app-dev.md",
-        "./agents/mobile-development/mobile-app-builder.md",
-        "./agents/mobile-development/mobile-ux-optimizer.md",
-        "./agents/mobile-development/react-native-dev.md",
-        "./agents/modernization/architecture-modernizer.md",
-        "./agents/modernization/cloud-migration-specialist.md",
-        "./agents/modernization/legacy-modernizer.md",
-        "./agents/obsidian-ops-team/connection-agent.md",
-        "./agents/obsidian-ops-team/content-curator.md",
-        "./agents/obsidian-ops-team/metadata-agent.md",
-        "./agents/obsidian-ops-team/moc-agent.md",
-        "./agents/obsidian-ops-team/review-agent.md",
-        "./agents/obsidian-ops-team/tag-agent.md",
-        "./agents/obsidian-ops-team/vault-optimizer.md",
-        "./agents/ocr-extraction-team/document-structure-analyzer.md",
-        "./agents/ocr-extraction-team/markdown-syntax-formatter.md",
-        "./agents/ocr-extraction-team/ocr-grammar-fixer.md",
-        "./agents/ocr-extraction-team/ocr-preprocessing-optimizer.md",
-        "./agents/ocr-extraction-team/ocr-quality-assurance.md",
-        "./agents/ocr-extraction-team/text-comparison-validator.md",
-        "./agents/ocr-extraction-team/visual-analysis-ocr.md",
-        "./agents/performance-testing/load-testing-specialist.md",
-        "./agents/performance-testing/performance-engineer.md",
-        "./agents/performance-testing/react-performance-optimization.md",
-        "./agents/performance-testing/test-automator.md",
-        "./agents/performance-testing/web-vitals-optimizer.md",
-        "./agents/podcast-creator-team/academic-research-synthesizer.md",
-        "./agents/podcast-creator-team/comprehensive-researcher.md",
-        "./agents/podcast-creator-team/episode-orchestrator.md",
-        "./agents/podcast-creator-team/guest-outreach-coordinator.md",
-        "./agents/podcast-creator-team/market-research-analyst.md",
-        "./agents/podcast-creator-team/podcast-editor.md",
-        "./agents/podcast-creator-team/podcast-trend-scout.md",
-        "./agents/podcast-creator-team/project-supervisor-orchestrator.md",
-        "./agents/podcast-creator-team/seo-podcast-optimizer.md",
-        "./agents/podcast-creator-team/social-media-copywriter.md",
-        "./agents/podcast-creator-team/twitter-ai-influencer-manager.md",
-        "./agents/product-management/planning-prd-agent.md",
-        "./agents/product-management/prd-specialist.md",
-        "./agents/product-management/pricing-packaging-specialist.md",
-        "./agents/product-management/product-sales-specialist.md",
-        "./agents/product-management/sprint-prioritizer.md",
-        "./agents/programming-languages/c-pro.md",
-        "./agents/programming-languages/c-sharp-pro.md",
-        "./agents/programming-languages/cpp-pro.md",
-        "./agents/programming-languages/csharp-pro.md",
-        "./agents/programming-languages/elixir-pro.md",
-        "./agents/programming-languages/golang-pro.md",
-        "./agents/programming-languages/java-pro.md",
-        "./agents/programming-languages/javascript-pro.md",
-        "./agents/programming-languages/php-pro.md",
-        "./agents/programming-languages/python-pro.md",
-        "./agents/programming-languages/ruby-pro.md",
-        "./agents/programming-languages/rust-pro.md",
-        "./agents/programming-languages/scala-pro.md",
-        "./agents/programming-languages/shell-scripting-pro.md",
-        "./agents/programming-languages/sql-pro.md",
-        "./agents/programming-languages/typescript-pro.md",
-        "./agents/project-management/project-curator.md",
-        "./agents/project-management/project-shipper.md",
-        "./agents/project-management/rapid-prototyper.md",
-        "./agents/realtime/supabase-realtime-optimizer.md",
-        "./agents/security/api-security-audit.md",
-        "./agents/security/backend-security-coder.md",
-        "./agents/security/compliance-specialist.md",
-        "./agents/security/frontend-security-coder.md",
-        "./agents/security/incident-responder.md",
-        "./agents/security/mobile-security-coder.md",
-        "./agents/security/penetration-tester.md",
-        "./agents/security/security-auditor.md",
-        "./agents/seo/search-specialist.md",
-        "./agents/seo/seo-authority-builder.md",
-        "./agents/seo/seo-cannibalization-detector.md",
-        "./agents/seo/seo-content-auditor.md",
-        "./agents/seo/seo-content-planner.md",
-        "./agents/seo/seo-content-refresher.md",
-        "./agents/seo/seo-content-writer.md",
-        "./agents/seo/seo-keyword-strategist.md",
-        "./agents/seo/seo-meta-optimizer.md",
-        "./agents/seo/seo-snippet-hunter.md",
-        "./agents/seo/seo-structure-architect.md",
-        "./agents/special-purpose/angelos-symbo.md",
-        "./agents/special-purpose/onomastophes.md",
-        "./agents/testing-quality/ceo-quality-controller-agent.md",
-        "./agents/testing-quality/problem-solver-specialist.md",
-        "./agents/testing-quality/test-results-analyzer.md",
-        "./agents/testing-quality/test-writer-fixer.md",
-        "./agents/testing-quality/unit-test-generator.md",
-        "./agents/web-tools/nextjs-architecture-expert.md",
-        "./agents/web-tools/react-performance-optimizer.md",
-        "./agents/web-tools/seo-analyzer.md",
-        "./agents/web-tools/url-context-validator.md",
-        "./agents/web-tools/url-link-extractor.md",
-        "./agents/web-tools/web-accessibility-checker.md",
-        "./agents/workflow-optimization/tool-evaluator.md",
-        "./agents/workflow-optimization/workflow-optimizer.md",
-        "./agents/devops-infrastructure/monitoring-observability-specialist.md",
-        "./agents/testing-quality/api-tester.md",
-        "./agents/enterprise/compliance-automation-specialist.md",
-        "./agents/enterprise/data-privacy-engineer.md",
-        "./agents/architecture/api-architect.md",
-        "./agents/testing-quality/code-quality-reviewer.md",
-        "./agents/documentation/documentation-writer.md",
-        "./agents/security/security-specialist.md",
-        "./agents/development-tools/tech-lead.md",
-        "./agents/testing-quality/testing-specialist.md",
-        "./agents/design-creative/ux-ui-designer.md",
-        "agents/emerging-technologies/quantum-computing-developer.md",
-        "agents/emerging-technologies/edge-computing-specialist.md",
-        "agents/emerging-technologies/bun-runtime-expert.md",
-        "agents/emerging-technologies/deno-runtime-developer.md",
-        "agents/vertical-domains/fintech-solutions-engineer.md",
-        "agents/vertical-domains/game-development-designer.md",
-        "agents/vertical-domains/ar-vr-immersive-developer.md",
-        "agents/vertical-domains/embedded-systems-engineer.md",
-        "agents/vertical-domains/web3-blockchain-builder.md",
-        "agents/ecommerce/shopify-ecommerce-expert.md",
-        "agents/ecommerce/stripe-payment-specialist.md",
-        "agents/testing-quality/vitest-testing-expert.md",
-        "agents/testing-quality/accessibility-compliance-guardian.md",
-        "agents/development-tools/storybook-component-designer.md",
-        "agents/development-tools/openai-api-integrator.md",
-        "agents/development-tools/api-integration-archaeologist.md",
-        "agents/development-tools/workflow-automation-specialist.md",
-        "agents/devops-infrastructure/chaos-engineering-specialist.md",
-        "agents/devops-infrastructure/istio-service-mesh-expert.md",
-        "agents/devops-infrastructure/prometheus-monitoring-expert.md"
+        "agents/accessibility/accessibility-expert.md",
+        "agents/accessibility/accessibility-tester.md"
+      ]
+    },
+    {
+      "name": "ai-optimization-suite",
+      "source": "cli-tool/components",
+      "description": "AI优化套件：提示工程与智能助手整合，助力稳态高质输出与决策增强",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/ai-optimization/ai-ethics-governance-specialist.md"
       ],
       "commands": [
-        "./commands/ai-optimization/double-check.md",
-        "./commands/ai-optimization/lyra.md",
-        "./commands/ai-optimization/ultrathink.md",
-        "./commands/automation/act.md",
-        "./commands/automation/ci-pipeline.md",
-        "./commands/automation/create-command.md",
-        "./commands/automation/husky.md",
-        "./commands/automation/workflow-orchestrator.md",
-        "./commands/code-analysis/analyze-codebase.md",
-        "./commands/code-analysis/analyze-issue.md",
-        "./commands/code-analysis/update-claudemd.md",
-        "./commands/database/supabase-backup-manager.md",
-        "./commands/database/supabase-data-explorer.md",
-        "./commands/database/supabase-migration-assistant.md",
-        "./commands/database/supabase-performance-optimizer.md",
-        "./commands/database/supabase-realtime-monitor.md",
-        "./commands/database/supabase-schema-sync.md",
-        "./commands/database/supabase-security-audit.md",
-        "./commands/database/supabase-type-generator.md",
-        "./commands/deployment/add-changelog.md",
-        "./commands/deployment/blue-green-deployment.md",
-        "./commands/deployment/changelog-demo-command.md",
-        "./commands/deployment/ci-setup.md",
-        "./commands/deployment/containerize-application.md",
-        "./commands/deployment/deployment-monitoring.md",
-        "./commands/deployment/hotfix-deploy.md",
-        "./commands/deployment/prepare-release.md",
-        "./commands/deployment/rollback-deploy.md",
-        "./commands/deployment/setup-automated-releases.md",
-        "./commands/deployment/setup-kubernetes-deployment.md",
-        "./commands/development-tools/2-commit-fast.md",
-        "./commands/development-tools/audit.md",
-        "./commands/development-tools/claude-desktop-extension.md",
-        "./commands/development-tools/fix-pr.md",
-        "./commands/development-tools/pr-issue-resolve.md",
-        "./commands/development-tools/refractor.md",
-        "./commands/documentation/create-architecture-documentation.md",
-        "./commands/documentation/create-onboarding-guide.md",
-        "./commands/documentation/discuss.md",
-        "./commands/documentation/doc-api.md",
-        "./commands/documentation/docs-maintenance.md",
-        "./commands/documentation/documentation-generator.md",
-        "./commands/documentation/explore.md",
-        "./commands/documentation/generate-api-documentation.md",
-        "./commands/documentation/interactive-documentation.md",
-        "./commands/documentation/load-llms-txt.md",
-        "./commands/documentation/migration-guide.md",
-        "./commands/documentation/troubleshooting-guide.md",
-        "./commands/documentation/update-docs.md",
-        "./commands/game-development/game-analytics-integration.md",
-        "./commands/game-development/game-asset-pipeline.md",
-        "./commands/game-development/game-performance-profiler.md",
-        "./commands/game-development/game-testing-framework.md",
-        "./commands/game-development/unity-project-setup.md",
-        "./commands/git/feature.md",
-        "./commands/git/finish.md",
-        "./commands/git/flow-status.md",
-        "./commands/git/hotfix.md",
-        "./commands/git/release.md",
-        "./commands/git-workflow/branch-cleanup.md",
-        "./commands/git-workflow/commit.md",
-        "./commands/git-workflow/commit-with-emoji.md",
-        "./commands/git-workflow/create-pr.md",
-        "./commands/git-workflow/create-pull-request.md",
-        "./commands/git-workflow/create-worktrees.md",
-        "./commands/git-workflow/fix-github-issue.md",
-        "./commands/git-workflow/fix-issue.md",
-        "./commands/git-workflow/fix-pr.md",
-        "./commands/git-workflow/gemini-review.md",
-        "./commands/git-workflow/git-bisect-helper.md",
-        "./commands/git-workflow/pr-review.md",
-        "./commands/git-workflow/update-branch-name.md",
-        "./commands/integrated-tools/accessibility-audit.md",
-        "./commands/integrated-tools/ai-assistant.md",
-        "./commands/integrated-tools/ai-review.md",
-        "./commands/integrated-tools/api-mock.md",
-        "./commands/integrated-tools/api-scaffold.md",
-        "./commands/integrated-tools/code-explain.md",
-        "./commands/integrated-tools/code-migrate.md",
-        "./commands/integrated-tools/compliance-check.md",
-        "./commands/integrated-tools/config-validate.md",
-        "./commands/integrated-tools/context-restore.md",
-        "./commands/integrated-tools/context-save.md",
-        "./commands/integrated-tools/cost-optimize.md",
-        "./commands/integrated-tools/data-pipeline.md",
-        "./commands/integrated-tools/data-validation.md",
-        "./commands/integrated-tools/db-migrate.md",
-        "./commands/integrated-tools/debug-trace.md",
-        "./commands/integrated-tools/deploy-checklist.md",
-        "./commands/integrated-tools/deps-audit.md",
-        "./commands/integrated-tools/deps-upgrade.md",
-        "./commands/integrated-tools/doc-generate.md",
-        "./commands/integrated-tools/docker-optimize.md",
-        "./commands/integrated-tools/error-analysis.md",
-        "./commands/integrated-tools/error-trace.md",
-        "./commands/integrated-tools/issue.md",
-        "./commands/integrated-tools/k8s-manifest.md",
-        "./commands/integrated-tools/langchain-agent.md",
-        "./commands/integrated-tools/monitor-setup.md",
-        "./commands/integrated-tools/multi-agent-optimize.md",
-        "./commands/integrated-tools/multi-agent-review.md",
-        "./commands/integrated-tools/onboard.md",
-        "./commands/integrated-tools/pr-enhance.md",
-        "./commands/integrated-tools/prompt-optimize.md",
-        "./commands/integrated-tools/refactor-clean.md",
-        "./commands/integrated-tools/security-scan.md",
-        "./commands/integrated-tools/slo-implement.md",
-        "./commands/integrated-tools/smart-debug.md",
-        "./commands/integrated-tools/standup-notes.md",
-        "./commands/integrated-tools/tdd-green.md",
-        "./commands/integrated-tools/tdd-red.md",
-        "./commands/integrated-tools/tdd-refactor.md",
-        "./commands/integrated-tools/tech-debt.md",
-        "./commands/integrated-tools/test-harness.md",
-        "./commands/integration-api/generate-api-docs.md",
-        "./commands/integration-api/openapi-expert.md",
-        "./commands/knowledge/wikipedia-search.md",
-        "./commands/nextjs-vercel/nextjs-api-tester.md",
-        "./commands/nextjs-vercel/nextjs-bundle-analyzer.md",
-        "./commands/nextjs-vercel/nextjs-component-generator.md",
-        "./commands/nextjs-vercel/nextjs-middleware-creator.md",
-        "./commands/nextjs-vercel/nextjs-migration-helper.md",
-        "./commands/nextjs-vercel/nextjs-performance-audit.md",
-        "./commands/nextjs-vercel/nextjs-scaffold.md",
-        "./commands/nextjs-vercel/vercel-deploy-optimize.md",
-        "./commands/nextjs-vercel/vercel-edge-function.md",
-        "./commands/nextjs-vercel/vercel-env-sync.md",
-        "./commands/orchestration/archive.md",
-        "./commands/orchestration/commit.md",
-        "./commands/orchestration/find.md",
-        "./commands/orchestration/log.md",
-        "./commands/orchestration/move.md",
-        "./commands/orchestration/optimize.md",
-        "./commands/orchestration/remove.md",
-        "./commands/orchestration/report.md",
-        "./commands/orchestration/resume.md",
-        "./commands/orchestration/start.md",
-        "./commands/orchestration/status.md",
-        "./commands/orchestration/sync.md",
-        "./commands/performance/add-performance-monitoring.md",
-        "./commands/performance/implement-caching-strategy.md",
-        "./commands/performance/optimize-api-performance.md",
-        "./commands/performance/optimize-build.md",
-        "./commands/performance/optimize-bundle-size.md",
-        "./commands/performance/optimize-database-performance.md",
-        "./commands/performance/optimize-memory-usage.md",
-        "./commands/performance/performance-audit.md",
-        "./commands/performance/setup-cdn-optimization.md",
-        "./commands/performance/system-behavior-simulator.md",
-        "./commands/product-management/plan.md",
-        "./commands/project-management/add-package.md",
-        "./commands/project-management/add-to-changelog.md",
-        "./commands/project-management/create-feature.md",
-        "./commands/project-management/create-jtbd.md",
-        "./commands/project-management/create-prd.md",
-        "./commands/project-management/create-prp.md",
-        "./commands/project-management/init-project.md",
-        "./commands/project-management/milestone-tracker.md",
-        "./commands/project-management/pac-configure.md",
-        "./commands/project-management/pac-create-epic.md",
-        "./commands/project-management/pac-create-ticket.md",
-        "./commands/project-management/pac-update-status.md",
-        "./commands/project-management/pac-validate.md",
-        "./commands/project-management/project-health-check.md",
-        "./commands/project-management/project-timeline-simulator.md",
-        "./commands/project-management/project-to-linear.md",
-        "./commands/project-management/release.md",
-        "./commands/project-management/todo.md",
-        "./commands/security/add-authentication-system.md",
-        "./commands/security/dependency-audit.md",
-        "./commands/security/penetration-test.md",
-        "./commands/security/secrets-scanner.md",
-        "./commands/security/security-audit.md",
-        "./commands/security/security-hardening.md",
-        "./commands/setup/create-database-migrations.md",
-        "./commands/setup/design-database-schema.md",
-        "./commands/setup/design-rest-api.md",
-        "./commands/setup/implement-graphql-api.md",
-        "./commands/setup/migrate-to-typescript.md",
-        "./commands/setup/setup-ci-cd-pipeline.md",
-        "./commands/setup/setup-development-environment.md",
-        "./commands/setup/setup-docker-containers.md",
-        "./commands/setup/setup-formatting.md",
-        "./commands/setup/setup-linting.md",
-        "./commands/setup/setup-monitoring-observability.md",
-        "./commands/setup/setup-monorepo.md",
-        "./commands/setup/setup-rate-limiting.md",
-        "./commands/setup/update-dependencies.md",
-        "./commands/simulation/business-scenario-explorer.md",
-        "./commands/simulation/constraint-modeler.md",
-        "./commands/simulation/decision-tree-explorer.md",
-        "./commands/simulation/digital-twin-creator.md",
-        "./commands/simulation/future-scenario-generator.md",
-        "./commands/simulation/market-response-modeler.md",
-        "./commands/simulation/monte-carlo-simulator.md",
-        "./commands/simulation/simulation-calibrator.md",
-        "./commands/simulation/system-dynamics-modeler.md",
-        "./commands/simulation/timeline-compressor.md",
-        "./commands/svelte/svelte:a11y.md",
-        "./commands/svelte/svelte:component.md",
-        "./commands/svelte/svelte:debug.md",
-        "./commands/svelte/svelte:migrate.md",
-        "./commands/svelte/svelte:optimize.md",
-        "./commands/svelte/svelte:scaffold.md",
-        "./commands/svelte/svelte:storybook-migrate.md",
-        "./commands/svelte/svelte:storybook-mock.md",
-        "./commands/svelte/svelte:storybook-setup.md",
-        "./commands/svelte/svelte:storybook-story.md",
-        "./commands/svelte/svelte:storybook-troubleshoot.md",
-        "./commands/svelte/svelte:storybook.md",
-        "./commands/svelte/svelte:test-coverage.md",
-        "./commands/svelte/svelte:test-fix.md",
-        "./commands/svelte/svelte:test-setup.md",
-        "./commands/svelte/svelte:test.md",
-        "./commands/sync/bidirectional-sync.md",
-        "./commands/sync/bulk-import-issues.md",
-        "./commands/sync/cross-reference-manager.md",
-        "./commands/sync/issue-to-linear-task.md",
-        "./commands/sync/linear-task-to-issue.md",
-        "./commands/sync/sync-automation-setup.md",
-        "./commands/sync/sync-conflict-resolver.md",
-        "./commands/sync/sync-health-monitor.md",
-        "./commands/sync/sync-issues-to-linear.md",
-        "./commands/sync/sync-linear-to-issues.md",
-        "./commands/sync/sync-migration-assistant.md",
-        "./commands/sync/sync-pr-to-task.md",
-        "./commands/sync/sync-status.md",
-        "./commands/sync/task-from-pr.md",
-        "./commands/team/architecture-review.md",
-        "./commands/team/decision-quality-analyzer.md",
-        "./commands/team/dependency-mapper.md",
-        "./commands/team/estimate-assistant.md",
-        "./commands/team/issue-triage.md",
-        "./commands/team/memory-spring-cleaning.md",
-        "./commands/team/migration-assistant.md",
-        "./commands/team/retrospective-analyzer.md",
-        "./commands/team/session-learning-capture.md",
-        "./commands/team/sprint-planning.md",
-        "./commands/team/standup-report.md",
-        "./commands/team/team-knowledge-mapper.md",
-        "./commands/team/team-velocity-tracker.md",
-        "./commands/team/team-workload-balancer.md",
-        "./commands/testing/add-mutation-testing.md",
-        "./commands/testing/add-property-based-testing.md",
-        "./commands/testing/e2e-setup.md",
-        "./commands/testing/fix-flakey-test.md",
-        "./commands/testing/generate-test-cases.md",
-        "./commands/testing/generate-tests.md",
-        "./commands/testing/repro-issue.md",
-        "./commands/testing/setup-comprehensive-testing.md",
-        "./commands/testing/setup-load-testing.md",
-        "./commands/testing/setup-visual-testing.md",
-        "./commands/testing/test-automation-orchestrator.md",
-        "./commands/testing/test-changelog-automation.md",
-        "./commands/testing/test-coverage.md",
-        "./commands/testing/test-quality-analyzer.md",
-        "./commands/testing/testing_plan_integration.md",
-        "./commands/testing/tdd-workflow.md",
-        "./commands/testing/write-tests.md",
-        "./commands/testing-quality/bug-detective.md",
-        "./commands/testing-quality/bug-fix.md",
-        "./commands/testing-quality/debug-session.md",
-        "./commands/testing-quality/test-file.md",
-        "./commands/utilities/all-tools.md",
-        "./commands/utilities/architecture-scenario-explorer.md",
-        "./commands/utilities/check-file.md",
-        "./commands/utilities/clean-branches.md",
-        "./commands/utilities/clean.md",
-        "./commands/utilities/code-permutation-tester.md",
-        "./commands/utilities/code-review.md",
-        "./commands/utilities/code-to-task.md",
-        "./commands/utilities/context-prime.md",
-        "./commands/utilities/debug-error.md",
-        "./commands/utilities/directory-deep-dive.md",
-        "./commands/utilities/explain-code.md",
-        "./commands/utilities/fix-issue.md",
-        "./commands/utilities/generate-linear-worklog.md",
-        "./commands/utilities/git-status.md",
-        "./commands/utilities/initref.md",
-        "./commands/utilities/prime.md",
-        "./commands/utilities/refactor-code.md",
-        "./commands/utilities/ultra-think.md",
-        "./commands/git-workflow/code-review-assistant.md",
-        "./commands/git-workflow/github-issue-fix.md",
-        "./commands/utilities/update-claude.md",
-        "./commands/code-analysis/understand.md",
-        "./commands/code-analysis/explain-like-senior.md",
-        "./commands/code-analysis/contributing.md",
-        "./commands/code-analysis/scaffold.md",
-        "./commands/development-tools/cleanproject.md",
-        "./commands/development-tools/format.md",
-        "./commands/development-tools/implement.md",
-        "./commands/documentation/docs.md",
-        "./commands/git-workflow/undo.md",
-        "./commands/orchestration/session-start.md",
-        "./commands/orchestration/session-end.md",
-        "./commands/orchestration/todos-to-issues.md",
-        "./commands/security/security-scan.md",
-        "./commands/testing-quality/review.md",
-        "./commands/testing-quality/predict-issues.md",
-        "./commands/testing-quality/fix-imports.md",
-        "./commands/testing-quality/find-todos.md",
-        "./commands/testing-quality/create-todos.md",
-        "./commands/testing-quality/fix-todos.md",
-        "./commands/testing-quality/test.md",
-        "./commands/utilities/make-it-pretty.md",
-        "./commands/utilities/remove-comments.md",
-        "./commands/utilities/refactor.md",
-        "./commands/testing-quality/tdd.md",
-        "./commands/testing-quality/tdd-implement.md",
-        "./commands/documentation/create-docs.md",
-        "./commands/utilities/mermaid.md",
-        "./commands/development-tools/create-hook.md"
+        "commands/ai-optimization/double-check.md",
+        "commands/ai-optimization/lyra.md",
+        "commands/ai-optimization/ultrathink.md"
+      ]
+    },
+    {
+      "name": "ai-specialists-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：ai-specialists；一次安装获得端到端能力（10个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/ai-specialists/agent-organizer.md",
+        "agents/ai-specialists/ai-ethics-advisor.md",
+        "agents/ai-specialists/hackathon-ai-strategist.md",
+        "agents/ai-specialists/langchain-expert.md",
+        "agents/ai-specialists/llms-maintainer.md",
+        "agents/ai-specialists/model-evaluator.md",
+        "agents/ai-specialists/multi-agent-coordinator.md",
+        "agents/ai-specialists/prompt-engineer.md",
+        "agents/ai-specialists/search-specialist.md",
+        "agents/ai-specialists/task-decomposition-expert.md"
+      ]
+    },
+    {
+      "name": "api-graphql-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：api-graphql；一次安装获得端到端能力（3个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/api-graphql/graphql-architect.md",
+        "agents/api-graphql/graphql-performance-optimizer.md",
+        "agents/api-graphql/graphql-security-specialist.md"
+      ]
+    },
+    {
+      "name": "app-store-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：app-store；一次安装获得端到端能力（1个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/app-store/app-store-optimizer.md"
+      ]
+    },
+    {
+      "name": "architecture-suite",
+      "source": "cli-tool/components",
+      "description": "架构与系统设计：策略评审与演进路径，强化可维护性与扩展弹性",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/architecture/api-architect.md",
+        "agents/architecture/architect-review.md",
+        "agents/architecture/graphql-architect.md"
+      ]
+    },
+    {
+      "name": "blockchain-web3-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：blockchain-web3；一次安装获得端到端能力（4个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/blockchain-web3/blockchain-developer.md",
+        "agents/blockchain-web3/smart-contract-auditor.md",
+        "agents/blockchain-web3/smart-contract-specialist.md",
+        "agents/blockchain-web3/web3-integration-specialist.md"
+      ]
+    },
+    {
+      "name": "business-marketing-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：business-marketing；一次安装获得端到端能力（11个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/business-marketing/business-analyst.md",
+        "agents/business-marketing/content-marketer.md",
+        "agents/business-marketing/customer-support.md",
+        "agents/business-marketing/hr-pro.md",
+        "agents/business-marketing/legal-advisor.md",
+        "agents/business-marketing/marketing-attribution-analyst.md",
+        "agents/business-marketing/payment-integration.md",
+        "agents/business-marketing/product-strategist.md",
+        "agents/business-marketing/quant-analyst.md",
+        "agents/business-marketing/risk-manager.md",
+        "agents/business-marketing/sales-automator.md"
+      ]
+    },
+    {
+      "name": "business-sales-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：business-sales；一次安装获得端到端能力（2个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/business-sales/b2b-project-shipper.md",
+        "agents/business-sales/technical-sales-engineer.md"
+      ]
+    },
+    {
+      "name": "code-analysis-suite",
+      "source": "cli-tool/components",
+      "description": "代码分析套件：静态/动态审查与全量评估，聚焦真实问题而非表面修饰",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/code-analysis/architect-reviewer.md",
+        "agents/code-analysis/code-architect.md",
+        "agents/code-analysis/codebase-documenter.md",
+        "agents/code-analysis/java-architect.md",
+        "agents/code-analysis/llm-architect.md",
+        "agents/code-analysis/microservices-architect.md",
+        "agents/code-analysis/refactoring-specialist.md"
+      ],
+      "commands": [
+        "commands/code-analysis/analyze-codebase.md",
+        "commands/code-analysis/analyze-issue.md",
+        "commands/code-analysis/contributing.md",
+        "commands/code-analysis/explain-like-senior.md",
+        "commands/code-analysis/scaffold.md",
+        "commands/code-analysis/understand.md",
+        "commands/code-analysis/update-claudemd.md"
       ],
       "workflows": [
-        "./workflows/data-driven-feature.md",
-        "./workflows/feature-development.md",
-        "./workflows/full-review.md",
-        "./workflows/full-stack-feature.md",
-        "./workflows/git-workflow.md",
-        "./workflows/improve-agent.md",
-        "./workflows/incident-response.md",
-        "./workflows/legacy-modernize.md",
-        "./workflows/ml-pipeline.md",
-        "./workflows/multi-platform.md",
-        "./workflows/performance-optimization.md",
-        "./workflows/security-hardening.md",
-        "./workflows/smart-fix.md",
-        "./workflows/tdd-cycle.md",
-        "./workflows/wikipedia-research.md",
-        "./workflows/workflow-automate.md"
-      ],
-      "hooks": [
-        "./hooks/automation/agents-md-loader.json",
-        "./hooks/automation/build-on-change.json",
-        "./hooks/automation/dependency-checker.json",
-        "./hooks/automation/deployment-health-monitor.json",
-        "./hooks/automation/discord-detailed-notifications.json",
-        "./hooks/automation/discord-error-notifications.json",
-        "./hooks/automation/discord-notifications.json",
-        "./hooks/automation/simple-notifications.json",
-        "./hooks/automation/slack-detailed-notifications.json",
-        "./hooks/automation/slack-error-notifications.json",
-        "./hooks/automation/slack-notifications.json",
-        "./hooks/automation/telegram-detailed-notifications.json",
-        "./hooks/automation/telegram-error-notifications.json",
-        "./hooks/automation/telegram-notifications.json",
-        "./hooks/automation/vercel-auto-deploy.json",
-        "./hooks/automation/vercel-environment-sync.json",
-        "./hooks/development-tools/change-tracker.json",
-        "./hooks/development-tools/command-logger.json",
-        "./hooks/development-tools/file-backup.json",
-        "./hooks/development-tools/lint-on-save.json",
-        "./hooks/development-tools/nextjs-code-quality-enforcer.json",
-        "./hooks/development-tools/smart-formatting.json",
-        "./hooks/git/conventional-commits.json",
-        "./hooks/git/prevent-direct-push.json",
-        "./hooks/git/validate-branch-name.json",
-        "./hooks/git-workflow/auto-git-add.json",
-        "./hooks/git-workflow/smart-commit.json",
-        "./hooks/performance/performance-budget-guard.json",
-        "./hooks/performance/performance-monitor.json",
-        "./hooks/post-tool/format-javascript-files.json",
-        "./hooks/post-tool/format-python-files.json",
-        "./hooks/post-tool/git-add-changes.json",
-        "./hooks/post-tool/run-tests-after-changes.json",
-        "./hooks/pre-tool/backup-before-edit.json",
-        "./hooks/pre-tool/notify-before-bash.json",
-        "./hooks/pre-tool/update-search-year.json",
-        "./hooks/security/file-protection.json",
-        "./hooks/security/security-scanner.json",
-        "./hooks/testing/test-runner.json"
-      ],
-      "mcps": [
-        "./mcps/browser_automation/browser-use-mcp-server.json",
-        "./mcps/browser_automation/browsermcp.json",
-        "./mcps/browser_automation/mcp-server-browserbase.json",
-        "./mcps/browser_automation/mcp-server-playwright.json",
-        "./mcps/browser_automation/playwright-mcp-server.json",
-        "./mcps/browser_automation/playwright-mcp.json",
-        "./mcps/database/mysql-integration.json",
-        "./mcps/database/neon.json",
-        "./mcps/database/postgresql-integration.json",
-        "./mcps/database/supabase.json",
-        "./mcps/deepgraph/deepgraph-nextjs.json",
-        "./mcps/deepgraph/deepgraph-react.json",
-        "./mcps/deepgraph/deepgraph-typescript.json",
-        "./mcps/deepgraph/deepgraph-vue.json",
-        "./mcps/devtools/azure-kubernetes-service.json",
-        "./mcps/devtools/box.json",
-        "./mcps/devtools/chrome-devtools.json",
-        "./mcps/devtools/circleci.json",
-        "./mcps/devtools/codacy.json",
-        "./mcps/devtools/context7.json",
-        "./mcps/devtools/dynatrace.json",
-        "./mcps/devtools/elasticsearch.json",
-        "./mcps/devtools/figma-dev-mode.json",
-        "./mcps/devtools/firecrawl.json",
-        "./mcps/devtools/firefly-mcp.json",
-        "./mcps/devtools/grafana.json",
-        "./mcps/devtools/huggingface.json",
-        "./mcps/devtools/imagesorcery.json",
-        "./mcps/devtools/ios-simulator-mcp.json",
-        "./mcps/devtools/jfrog.json",
-        "./mcps/devtools/just-mcp.json",
-        "./mcps/devtools/launchdarkly.json",
-        "./mcps/devtools/leetcode.json",
-        "./mcps/devtools/logfire.json",
-        "./mcps/devtools/markitdown.json",
-        "./mcps/devtools/mcp-server-atlassian-bitbucket.json",
-        "./mcps/devtools/mcp-server-trello.json",
-        "./mcps/devtools/microsoft-clarity.json",
-        "./mcps/devtools/microsoft-dev-box.json",
-        "./mcps/devtools/mongodb.json",
-        "./mcps/devtools/postman.json",
-        "./mcps/devtools/pulumi.json",
-        "./mcps/devtools/sentry.json",
-        "./mcps/devtools/serena.json",
-        "./mcps/devtools/stripe.json",
-        "./mcps/devtools/terraform.json",
-        "./mcps/devtools/webflow.json",
-        "./mcps/filesystem/filesystem-access.json",
-        "./mcps/integration/github-integration.json",
-        "./mcps/integration/memory-integration.json",
-        "./mcps/knowledge/wikipedia-mcp.json",
-        "./mcps/marketing/facebook-ads-mcp-server.json",
-        "./mcps/marketing/google-ads-mcp-server.json",
-        "./mcps/productivity/monday.json",
-        "./mcps/productivity/notion.json",
-        "./mcps/web/web-fetch.json"
-      ],
-      "mcpServers": [
-        "./mcps/browser_automation/browser-use-mcp-server.json",
-        "./mcps/browser_automation/browsermcp.json",
-        "./mcps/browser_automation/mcp-server-browserbase.json",
-        "./mcps/browser_automation/mcp-server-playwright.json",
-        "./mcps/browser_automation/playwright-mcp-server.json",
-        "./mcps/browser_automation/playwright-mcp.json",
-        "./mcps/database/mysql-integration.json",
-        "./mcps/database/neon.json",
-        "./mcps/database/postgresql-integration.json",
-        "./mcps/database/supabase.json",
-        "./mcps/deepgraph/deepgraph-nextjs.json",
-        "./mcps/deepgraph/deepgraph-react.json",
-        "./mcps/deepgraph/deepgraph-typescript.json",
-        "./mcps/deepgraph/deepgraph-vue.json",
-        "./mcps/devtools/azure-kubernetes-service.json",
-        "./mcps/devtools/box.json",
-        "./mcps/devtools/chrome-devtools.json",
-        "./mcps/devtools/circleci.json",
-        "./mcps/devtools/codacy.json",
-        "./mcps/devtools/context7.json",
-        "./mcps/devtools/dynatrace.json",
-        "./mcps/devtools/elasticsearch.json",
-        "./mcps/devtools/figma-dev-mode.json",
-        "./mcps/devtools/firecrawl.json",
-        "./mcps/devtools/firefly-mcp.json",
-        "./mcps/devtools/grafana.json",
-        "./mcps/devtools/huggingface.json",
-        "./mcps/devtools/imagesorcery.json",
-        "./mcps/devtools/ios-simulator-mcp.json",
-        "./mcps/devtools/jfrog.json",
-        "./mcps/devtools/just-mcp.json",
-        "./mcps/devtools/launchdarkly.json",
-        "./mcps/devtools/leetcode.json",
-        "./mcps/devtools/logfire.json",
-        "./mcps/devtools/markitdown.json",
-        "./mcps/devtools/mcp-server-atlassian-bitbucket.json",
-        "./mcps/devtools/mcp-server-trello.json",
-        "./mcps/devtools/microsoft-clarity.json",
-        "./mcps/devtools/microsoft-dev-box.json",
-        "./mcps/devtools/mongodb.json",
-        "./mcps/devtools/postman.json",
-        "./mcps/devtools/pulumi.json",
-        "./mcps/devtools/sentry.json",
-        "./mcps/devtools/serena.json",
-        "./mcps/devtools/stripe.json",
-        "./mcps/devtools/terraform.json",
-        "./mcps/devtools/webflow.json",
-        "./mcps/filesystem/filesystem-access.json",
-        "./mcps/integration/github-integration.json",
-        "./mcps/integration/memory-integration.json",
-        "./mcps/knowledge/wikipedia-mcp.json",
-        "./mcps/marketing/facebook-ads-mcp-server.json",
-        "./mcps/marketing/google-ads-mcp-server.json",
-        "./mcps/productivity/monday.json",
-        "./mcps/productivity/notion.json",
-        "./mcps/web/web-fetch.json"
-      ],
-      "sandbox": [
-        "./sandbox/e2b/SANDBOX_DEBUGGING.md",
-        "./sandbox/e2b/claude-code-sandbox.md"
-      ],
-      "outputStyles": [
-        "./output-styles/accessibility-champion.md",
-        "./output-styles/api-designer.md",
-        "./output-styles/concise-engineer.md",
-        "./output-styles/critical-code-reviewer.md",
-        "./output-styles/data-engineer.md",
-        "./output-styles/defensive-programmer.md",
-        "./output-styles/devil-advocate.md",
-        "./output-styles/devops-automator.md",
-        "./output-styles/distributed-systems-architect.md",
-        "./output-styles/documentation-writer.md",
-        "./output-styles/evan-king-system-design-reviewer.md",
-        "./output-styles/functional-purist.md",
-        "./output-styles/legacy-system-maintainer.md",
-        "./output-styles/performance-optimizer.md",
-        "./output-styles/refactoring-expert.md",
-        "./output-styles/security-auditor.md",
-        "./output-styles/startup-pragmatist.md",
-        "./output-styles/test-driven-developer.md"
+        "workflows/full-review.md"
       ]
     },
     {
-      "name": "agents-accessibility",
-      "source": "./cli-tool/components",
-      "description": "Accessibility 专业代理插件包 - 1个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
+      "name": "customer-relations-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：customer-relations；一次安装获得端到端能力（3个代理）",
+      "version": "1.2.0",
       "license": "MIT",
       "keywords": [
-        "agents",
-        "accessibility"
+        "bundle"
       ],
       "strict": false,
       "agents": [
-        "./agents/accessibility/accessibility-expert.md"
+        "agents/customer-relations/customer-success-manager.md",
+        "agents/customer-relations/feedback-synthesizer.md",
+        "agents/customer-relations/support-responder.md"
       ]
     },
     {
-      "name": "agents-ai-optimization",
-      "source": "./cli-tool/components",
-      "description": "Ai Optimization 专业代理插件包 - 1个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
+      "name": "data-ai-suite",
+      "source": "cli-tool/components",
+      "description": "数据与AI开发套件：面向生产的建模、特征工程、分析管线与部署运维，一次安装即可拥有端到端能力",
+      "version": "1.2.0",
       "license": "MIT",
       "keywords": [
-        "agents",
-        "ai-optimization"
+        "bundle"
       ],
       "strict": false,
       "agents": [
-        "./agents/ai-optimization/ai-ethics-governance-specialist.md"
+        "agents/data-ai/ai-engineer.md",
+        "agents/data-ai/computer-vision-engineer.md",
+        "agents/data-ai/data-engineer.md",
+        "agents/data-ai/data-scientist.md",
+        "agents/data-ai/ml-engineer.md",
+        "agents/data-ai/mlops-engineer.md",
+        "agents/data-ai/nlp-engineer.md",
+        "agents/data-ai/numpy-expert.md",
+        "agents/data-ai/pandas-expert.md",
+        "agents/data-ai/prompt-engineer.md",
+        "agents/data-ai/python-pro.md",
+        "agents/data-ai/pytorch-expert.md",
+        "agents/data-ai/quant-analyst.md",
+        "agents/data-ai/scikit-learn-expert.md",
+        "agents/data-ai/tensorflow-expert.md",
+        "agents/data-ai/typescript-pro.md",
+        "agents/data-analytics/analytics-reporter.md",
+        "agents/data-analytics/experiment-tracker.md",
+        "agents/data-analytics/finance-tracker.md",
+        "agents/data-analytics/trend-researcher.md"
+      ],
+      "commands": [
+        "commands/database/supabase-backup-manager.md",
+        "commands/database/supabase-data-explorer.md",
+        "commands/database/supabase-migration-assistant.md",
+        "commands/database/supabase-performance-optimizer.md",
+        "commands/database/supabase-realtime-monitor.md",
+        "commands/database/supabase-schema-sync.md",
+        "commands/database/supabase-security-audit.md",
+        "commands/database/supabase-type-generator.md"
+      ],
+      "workflows": [
+        "workflows/ml-pipeline.md"
       ]
     },
     {
-      "name": "agents-ai-specialists",
-      "source": "./cli-tool/components",
-      "description": "Ai Specialists 专业代理插件包 - 7个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
+      "name": "data-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：data；一次安装获得端到端能力（1个工作流）",
+      "version": "1.2.0",
       "license": "MIT",
       "keywords": [
-        "agents",
-        "ai-specialists"
+        "bundle"
       ],
       "strict": false,
-      "agents": [
-        "./agents/ai-specialists/ai-ethics-advisor.md",
-        "./agents/ai-specialists/hackathon-ai-strategist.md",
-        "./agents/ai-specialists/llms-maintainer.md",
-        "./agents/ai-specialists/model-evaluator.md",
-        "./agents/ai-specialists/prompt-engineer.md",
-        "./agents/ai-specialists/search-specialist.md",
-        "./agents/ai-specialists/task-decomposition-expert.md"
+      "workflows": [
+        "workflows/data-driven-feature.md"
       ]
     },
     {
-      "name": "agents-api-graphql",
-      "source": "./cli-tool/components",
-      "description": "Api Graphql 专业代理插件包 - 3个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
+      "name": "database-suite",
+      "source": "cli-tool/components",
+      "description": "数据库工程套件：涵盖 DBA 日常、模式设计、迁移与备份策略，提供稳健的数据生命周期管理",
+      "version": "1.2.0",
       "license": "MIT",
       "keywords": [
-        "agents",
-        "api-graphql"
+        "bundle"
       ],
       "strict": false,
       "agents": [
-        "./agents/api-graphql/graphql-architect.md",
-        "./agents/api-graphql/graphql-performance-optimizer.md",
-        "./agents/api-graphql/graphql-security-specialist.md"
+        "agents/database/cassandra-expert.md",
+        "agents/database/cockroachdb-expert.md",
+        "agents/database/database-admin.md",
+        "agents/database/database-administrator.md",
+        "agents/database/database-architect.md",
+        "agents/database/database-optimization.md",
+        "agents/database/database-optimizer.md",
+        "agents/database/database-performance-optimizer.md",
+        "agents/database/dynamodb-expert.md",
+        "agents/database/flyway-expert.md",
+        "agents/database/knex-expert.md",
+        "agents/database/liquibase-expert.md",
+        "agents/database/mariadb-expert.md",
+        "agents/database/mongodb-expert.md",
+        "agents/database/mongoose-expert.md",
+        "agents/database/mssql-expert.md",
+        "agents/database/mysql-expert.md",
+        "agents/database/neo4j-expert.md",
+        "agents/database/neon-auth-specialist.md",
+        "agents/database/neon-database-architect.md",
+        "agents/database/neon-expert.md",
+        "agents/database/nosql-specialist.md",
+        "agents/database/postgres-expert.md",
+        "agents/database/postgres-pro.md",
+        "agents/database/prisma-expert.md",
+        "agents/database/redis-expert.md",
+        "agents/database/sequelize-expert.md",
+        "agents/database/sql-expert.md",
+        "agents/database/sql-pro.md",
+        "agents/database/sqlite-expert.md",
+        "agents/database/supabase-schema-architect.md",
+        "agents/database/typeorm-expert.md",
+        "agents/database/vector-db-expert.md"
+      ],
+      "commands": [
+        "commands/database/supabase-backup-manager.md",
+        "commands/database/supabase-data-explorer.md",
+        "commands/database/supabase-migration-assistant.md",
+        "commands/database/supabase-performance-optimizer.md",
+        "commands/database/supabase-realtime-monitor.md",
+        "commands/database/supabase-schema-sync.md",
+        "commands/database/supabase-security-audit.md",
+        "commands/database/supabase-type-generator.md"
       ]
     },
     {
-      "name": "agents-app-store",
-      "source": "./cli-tool/components",
-      "description": "App Store 专业代理插件包 - 1个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
+      "name": "deep-research-suite",
+      "source": "cli-tool/components",
+      "description": "深度研究套件：研究型代理与信息工作流整合，面向事实核验与结构化洞察",
+      "version": "1.2.0",
       "license": "MIT",
       "keywords": [
-        "agents",
-        "app-store"
+        "bundle"
       ],
       "strict": false,
       "agents": [
-        "./agents/app-store/app-store-optimizer.md"
+        "agents/deep-research-team/academic-researcher.md",
+        "agents/deep-research-team/agent-overview.md",
+        "agents/deep-research-team/competitive-intelligence-analyst.md",
+        "agents/deep-research-team/data-analyst.md",
+        "agents/deep-research-team/data-researcher.md",
+        "agents/deep-research-team/fact-checker.md",
+        "agents/deep-research-team/query-clarifier.md",
+        "agents/deep-research-team/report-generator.md",
+        "agents/deep-research-team/research-analyst.md",
+        "agents/deep-research-team/research-brief-generator.md",
+        "agents/deep-research-team/research-coordinator.md",
+        "agents/deep-research-team/research-orchestrator.md",
+        "agents/deep-research-team/research-synthesizer.md",
+        "agents/deep-research-team/technical-researcher.md"
+      ],
+      "workflows": [
+        "workflows/wikipedia-research.md"
       ]
     },
     {
-      "name": "agents-architecture",
-      "source": "./cli-tool/components",
-      "description": "Architecture 专业代理插件包 - 3个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
+      "name": "design-creative-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：design-creative；一次安装获得端到端能力（9个代理）",
+      "version": "1.2.0",
       "license": "MIT",
       "keywords": [
-        "agents",
-        "architecture"
+        "bundle"
       ],
       "strict": false,
       "agents": [
-        "./agents/architecture/architect-review.md",
-        "./agents/architecture/graphql-architect.md",
-        "./agents/architecture/api-architect.md"
+        "agents/design-creative/joker.md",
+        "agents/design-creative/studio-coach.md",
+        "agents/design-creative/studio-producer.md",
+        "agents/design-creative/ui-designer.md",
+        "agents/design-creative/ux-researcher.md",
+        "agents/design-creative/ux-ui-designer.md",
+        "agents/design-creative/vision-specialist.md",
+        "agents/design-creative/visual-storyteller.md",
+        "agents/design-creative/whimsy-injector.md"
       ]
     },
     {
-      "name": "agents-blockchain-web3",
-      "source": "./cli-tool/components",
-      "description": "Blockchain Web3 专业代理插件包 - 4个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
+      "name": "development-team-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：development-team；一次安装获得端到端能力（10个代理）",
+      "version": "1.2.0",
       "license": "MIT",
       "keywords": [
-        "agents",
-        "blockchain-web3"
+        "bundle"
       ],
       "strict": false,
       "agents": [
-        "./agents/blockchain-web3/blockchain-developer.md",
-        "./agents/blockchain-web3/smart-contract-auditor.md",
-        "./agents/blockchain-web3/smart-contract-specialist.md",
-        "./agents/blockchain-web3/web3-integration-specialist.md"
+        "agents/development-team/backend-architect.md",
+        "agents/development-team/backend-developer.md",
+        "agents/development-team/cli-ui-designer.md",
+        "agents/development-team/devops-engineer.md",
+        "agents/development-team/frontend-developer.md",
+        "agents/development-team/fullstack-developer.md",
+        "agents/development-team/ios-developer.md",
+        "agents/development-team/mobile-developer.md",
+        "agents/development-team/ui-ux-designer.md",
+        "agents/development-team/ui-visual-validator.md"
       ]
     },
     {
-      "name": "agents-business-marketing",
-      "source": "./cli-tool/components",
-      "description": "Business Marketing 专业代理插件包 - 11个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
+      "name": "development-tools-suite",
+      "source": "cli-tool/components",
+      "description": "开发者效率套件：常用生产力工具与自动化脚本整合，强调工程产能提升与重复劳动消除",
+      "version": "1.2.0",
       "license": "MIT",
       "keywords": [
-        "agents",
-        "business-marketing"
+        "bundle"
       ],
       "strict": false,
       "agents": [
-        "./agents/business-marketing/business-analyst.md",
-        "./agents/business-marketing/content-marketer.md",
-        "./agents/business-marketing/customer-support.md",
-        "./agents/business-marketing/hr-pro.md",
-        "./agents/business-marketing/legal-advisor.md",
-        "./agents/business-marketing/marketing-attribution-analyst.md",
-        "./agents/business-marketing/payment-integration.md",
-        "./agents/business-marketing/product-strategist.md",
-        "./agents/business-marketing/quant-analyst.md",
-        "./agents/business-marketing/risk-manager.md",
-        "./agents/business-marketing/sales-automator.md"
-      ]
-    },
-    {
-      "name": "agents-business-sales",
-      "source": "./cli-tool/components",
-      "description": "Business Sales 专业代理插件包 - 2个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "business-sales"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/business-sales/b2b-project-shipper.md",
-        "./agents/business-sales/technical-sales-engineer.md"
-      ]
-    },
-    {
-      "name": "agents-code-analysis",
-      "source": "./cli-tool/components",
-      "description": "Code Analysis 专业代理插件包 - 2个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "code-analysis"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/code-analysis/code-architect.md",
-        "./agents/code-analysis/codebase-documenter.md"
-      ]
-    },
-    {
-      "name": "agents-customer-relations",
-      "source": "./cli-tool/components",
-      "description": "Customer Relations 专业代理插件包 - 3个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "customer-relations"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/customer-relations/customer-success-manager.md",
-        "./agents/customer-relations/feedback-synthesizer.md",
-        "./agents/customer-relations/support-responder.md"
-      ]
-    },
-    {
-      "name": "agents-data-ai",
-      "source": "./cli-tool/components",
-      "description": "Data Ai 专业代理插件包 - 9个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "data-ai"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/data-ai/ai-engineer.md",
-        "./agents/data-ai/computer-vision-engineer.md",
-        "./agents/data-ai/data-engineer.md",
-        "./agents/data-ai/data-scientist.md",
-        "./agents/data-ai/ml-engineer.md",
-        "./agents/data-ai/mlops-engineer.md",
-        "./agents/data-ai/nlp-engineer.md",
-        "./agents/data-ai/prompt-engineer.md",
-        "./agents/data-ai/quant-analyst.md"
-      ]
-    },
-    {
-      "name": "agents-data-analytics",
-      "source": "./cli-tool/components",
-      "description": "Data Analytics 专业代理插件包 - 4个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "data-analytics"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/data-analytics/analytics-reporter.md",
-        "./agents/data-analytics/experiment-tracker.md",
-        "./agents/data-analytics/finance-tracker.md",
-        "./agents/data-analytics/trend-researcher.md"
-      ]
-    },
-    {
-      "name": "agents-database",
-      "source": "./cli-tool/components",
-      "description": "Database 专业代理插件包 - 11个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "database"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/database/database-admin.md",
-        "./agents/database/database-architect.md",
-        "./agents/database/database-optimization.md",
-        "./agents/database/database-optimizer.md",
-        "./agents/database/database-performance-optimizer.md",
-        "./agents/database/neon-auth-specialist.md",
-        "./agents/database/neon-database-architect.md",
-        "./agents/database/neon-expert.md",
-        "./agents/database/nosql-specialist.md",
-        "./agents/database/sql-pro.md",
-        "./agents/database/supabase-schema-architect.md"
-      ]
-    },
-    {
-      "name": "agents-deep-research-team",
-      "source": "./cli-tool/components",
-      "description": "Deep Research Team 专业代理插件包 - 12个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "deep-research-team"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/deep-research-team/academic-researcher.md",
-        "./agents/deep-research-team/agent-overview.md",
-        "./agents/deep-research-team/competitive-intelligence-analyst.md",
-        "./agents/deep-research-team/data-analyst.md",
-        "./agents/deep-research-team/fact-checker.md",
-        "./agents/deep-research-team/query-clarifier.md",
-        "./agents/deep-research-team/report-generator.md",
-        "./agents/deep-research-team/research-brief-generator.md",
-        "./agents/deep-research-team/research-coordinator.md",
-        "./agents/deep-research-team/research-orchestrator.md",
-        "./agents/deep-research-team/research-synthesizer.md",
-        "./agents/deep-research-team/technical-researcher.md"
-      ]
-    },
-    {
-      "name": "agents-design-creative",
-      "source": "./cli-tool/components",
-      "description": "Design Creative 专业代理插件包 - 9个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "design-creative"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/design-creative/joker.md",
-        "./agents/design-creative/studio-coach.md",
-        "./agents/design-creative/studio-producer.md",
-        "./agents/design-creative/ui-designer.md",
-        "./agents/design-creative/ux-researcher.md",
-        "./agents/design-creative/vision-specialist.md",
-        "./agents/design-creative/visual-storyteller.md",
-        "./agents/design-creative/whimsy-injector.md",
-        "./agents/design-creative/ux-ui-designer.md"
-      ]
-    },
-    {
-      "name": "agents-development-team",
-      "source": "./cli-tool/components",
-      "description": "Development Team 专业代理插件包 - 9个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "development-team"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/development-team/backend-architect.md",
-        "./agents/development-team/cli-ui-designer.md",
-        "./agents/development-team/devops-engineer.md",
-        "./agents/development-team/frontend-developer.md",
-        "./agents/development-team/fullstack-developer.md",
-        "./agents/development-team/ios-developer.md",
-        "./agents/development-team/mobile-developer.md",
-        "./agents/development-team/ui-ux-designer.md",
-        "./agents/development-team/ui-visual-validator.md"
-      ]
-    },
-    {
-      "name": "agents-development-tools",
-      "source": "./cli-tool/components",
-      "description": "Development Tools 专业代理插件包 - 18个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "development-tools"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/development-tools/code-reviewer.md",
-        "./agents/development-tools/command-expert.md",
-        "./agents/development-tools/context-manager.md",
-        "./agents/development-tools/debugger.md",
-        "./agents/development-tools/dx-optimizer.md",
-        "./agents/development-tools/error-detective.md",
-        "./agents/development-tools/legacy-modernizer.md",
-        "./agents/development-tools/mcp-expert.md",
-        "./agents/development-tools/mermaid-expert.md",
-        "./agents/development-tools/performance-engineer.md",
-        "./agents/development-tools/performance-profiler.md",
-        "./agents/development-tools/python-expert.md",
-        "./agents/development-tools/tdd-orchestrator.md",
-        "./agents/development-tools/test-automator.md",
-        "./agents/development-tools/test-engineer.md",
-        "./agents/development-tools/unused-code-cleaner.md",
-        "./agents/development-tools/web-dev.md",
-        "./agents/development-tools/tech-lead.md",
-        "agents/development-tools/storybook-component-designer.md",
-        "agents/development-tools/openai-api-integrator.md",
         "agents/development-tools/api-integration-archaeologist.md",
+        "agents/development-tools/backend-architect.md",
+        "agents/development-tools/bash-expert.md",
+        "agents/development-tools/cli-developer.md",
+        "agents/development-tools/code-reviewer.md",
+        "agents/development-tools/command-expert.md",
+        "agents/development-tools/context-manager.md",
+        "agents/development-tools/cypress-expert.md",
+        "agents/development-tools/debugger.md",
+        "agents/development-tools/dx-optimizer.md",
+        "agents/development-tools/error-detective.md",
+        "agents/development-tools/jest-expert.md",
+        "agents/development-tools/legacy-modernizer.md",
+        "agents/development-tools/mcp-expert.md",
+        "agents/development-tools/mermaid-expert.md",
+        "agents/development-tools/openai-api-integrator.md",
+        "agents/development-tools/performance-engineer.md",
+        "agents/development-tools/performance-profiler.md",
+        "agents/development-tools/python-expert.md",
+        "agents/development-tools/storybook-component-designer.md",
+        "agents/development-tools/tdd-orchestrator.md",
+        "agents/development-tools/tech-lead.md",
+        "agents/development-tools/test-automator.md",
+        "agents/development-tools/test-engineer.md",
+        "agents/development-tools/unused-code-cleaner.md",
+        "agents/development-tools/vitest-expert.md",
+        "agents/development-tools/web-dev.md",
         "agents/development-tools/workflow-automation-specialist.md"
+      ],
+      "commands": [
+        "commands/automation/act.md",
+        "commands/automation/ci-pipeline.md",
+        "commands/automation/create-command.md",
+        "commands/automation/husky.md",
+        "commands/automation/workflow-orchestrator.md",
+        "commands/development-tools/2-commit-fast.md",
+        "commands/development-tools/audit.md",
+        "commands/development-tools/claude-desktop-extension.md",
+        "commands/development-tools/cleanproject.md",
+        "commands/development-tools/create-hook.md",
+        "commands/development-tools/fix-pr.md",
+        "commands/development-tools/format.md",
+        "commands/development-tools/implement.md",
+        "commands/development-tools/pr-issue-resolve.md",
+        "commands/development-tools/refractor.md"
       ]
     },
     {
-      "name": "agents-devops-infrastructure",
-      "source": "./cli-tool/components",
-      "description": "Devops Infrastructure 专业代理插件包 - 16个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
+      "name": "devops-infrastructure-suite",
+      "source": "cli-tool/components",
+      "description": "DevOps与基础设施套件：部署编排、监控观测与可靠性工程，聚焦上线质量与可持续运维",
+      "version": "1.2.0",
       "license": "MIT",
       "keywords": [
-        "agents",
-        "devops-infrastructure"
+        "bundle"
       ],
       "strict": false,
       "agents": [
-        "./agents/devops-infrastructure/cloud-architect.md",
-        "./agents/devops-infrastructure/deployment-engineer.md",
-        "./agents/devops-infrastructure/devops-automator.md",
-        "./agents/devops-infrastructure/devops-troubleshooter.md",
-        "./agents/devops-infrastructure/hybrid-cloud-architect.md",
-        "./agents/devops-infrastructure/incident-responder.md",
-        "./agents/devops-infrastructure/infrastructure-maintainer.md",
-        "./agents/devops-infrastructure/kubernetes-architect.md",
-        "./agents/devops-infrastructure/monitoring-specialist.md",
-        "./agents/devops-infrastructure/network-engineer.md",
-        "./agents/devops-infrastructure/observability-engineer.md",
-        "./agents/devops-infrastructure/performance-benchmarker.md",
-        "./agents/devops-infrastructure/security-engineer.md",
-        "./agents/devops-infrastructure/terraform-specialist.md",
-        "./agents/devops-infrastructure/vercel-deployment-specialist.md",
-        "./agents/devops-infrastructure/monitoring-observability-specialist.md",
+        "agents/devops-infrastructure/ansible-expert.md",
+        "agents/devops-infrastructure/bullmq-expert.md",
+        "agents/devops-infrastructure/celery-expert.md",
         "agents/devops-infrastructure/chaos-engineering-specialist.md",
+        "agents/devops-infrastructure/cloud-architect.md",
+        "agents/devops-infrastructure/deployment-engineer.md",
+        "agents/devops-infrastructure/devops-automator.md",
+        "agents/devops-infrastructure/devops-incident-responder.md",
+        "agents/devops-infrastructure/devops-troubleshooter.md",
+        "agents/devops-infrastructure/docker-expert.md",
+        "agents/devops-infrastructure/elasticsearch-expert.md",
+        "agents/devops-infrastructure/elk-expert.md",
+        "agents/devops-infrastructure/grafana-expert.md",
+        "agents/devops-infrastructure/hybrid-cloud-architect.md",
+        "agents/devops-infrastructure/incident-responder.md",
+        "agents/devops-infrastructure/infrastructure-maintainer.md",
         "agents/devops-infrastructure/istio-service-mesh-expert.md",
-        "agents/devops-infrastructure/prometheus-monitoring-expert.md"
+        "agents/devops-infrastructure/kafka-expert.md",
+        "agents/devops-infrastructure/kubernetes-architect.md",
+        "agents/devops-infrastructure/kubernetes-expert.md",
+        "agents/devops-infrastructure/kubernetes-specialist.md",
+        "agents/devops-infrastructure/loki-expert.md",
+        "agents/devops-infrastructure/monitoring-observability-specialist.md",
+        "agents/devops-infrastructure/monitoring-specialist.md",
+        "agents/devops-infrastructure/mqtt-expert.md",
+        "agents/devops-infrastructure/nats-expert.md",
+        "agents/devops-infrastructure/network-engineer.md",
+        "agents/devops-infrastructure/observability-engineer.md",
+        "agents/devops-infrastructure/opensearch-expert.md",
+        "agents/devops-infrastructure/opentelemetry-expert.md",
+        "agents/devops-infrastructure/performance-benchmarker.md",
+        "agents/devops-infrastructure/prometheus-expert.md",
+        "agents/devops-infrastructure/prometheus-monitoring-expert.md",
+        "agents/devops-infrastructure/pulumi-expert.md",
+        "agents/devops-infrastructure/rabbitmq-expert.md",
+        "agents/devops-infrastructure/security-engineer.md",
+        "agents/devops-infrastructure/sidekiq-expert.md",
+        "agents/devops-infrastructure/sns-expert.md",
+        "agents/devops-infrastructure/sqs-expert.md",
+        "agents/devops-infrastructure/terraform-engineer.md",
+        "agents/devops-infrastructure/terraform-expert.md",
+        "agents/devops-infrastructure/terraform-specialist.md",
+        "agents/devops-infrastructure/vercel-deployment-specialist.md"
+      ],
+      "commands": [
+        "commands/deployment/add-changelog.md",
+        "commands/deployment/blue-green-deployment.md",
+        "commands/deployment/changelog-demo-command.md",
+        "commands/deployment/ci-setup.md",
+        "commands/deployment/containerize-application.md",
+        "commands/deployment/deployment-monitoring.md",
+        "commands/deployment/hotfix-deploy.md",
+        "commands/deployment/prepare-release.md",
+        "commands/deployment/rollback-deploy.md",
+        "commands/deployment/setup-automated-releases.md",
+        "commands/deployment/setup-kubernetes-deployment.md",
+        "commands/performance/add-performance-monitoring.md",
+        "commands/performance/implement-caching-strategy.md",
+        "commands/performance/optimize-api-performance.md",
+        "commands/performance/optimize-build.md",
+        "commands/performance/optimize-bundle-size.md",
+        "commands/performance/optimize-database-performance.md",
+        "commands/performance/optimize-memory-usage.md",
+        "commands/performance/performance-audit.md",
+        "commands/performance/setup-cdn-optimization.md",
+        "commands/performance/system-behavior-simulator.md"
+      ],
+      "workflows": [
+        "workflows/incident-response.md",
+        "workflows/performance-optimization.md"
       ]
     },
     {
-      "name": "agents-documentation",
-      "source": "./cli-tool/components",
-      "description": "Documentation 专业代理插件包 - 8个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
+      "name": "documentation-suite",
+      "source": "cli-tool/components",
+      "description": "文档与知识套件：技术写作、变更日志与知识结构化，提升协作透明度与团队记忆力",
+      "version": "1.2.0",
       "license": "MIT",
       "keywords": [
-        "agents",
-        "documentation"
+        "bundle"
       ],
       "strict": false,
       "agents": [
-        "./agents/documentation/api-documenter.md",
-        "./agents/documentation/changelog-generator.md",
-        "./agents/documentation/docs-architect.md",
-        "./agents/documentation/docusaurus-expert.md",
-        "./agents/documentation/reference-builder.md",
-        "./agents/documentation/technical-writer.md",
-        "./agents/documentation/tutorial-engineer.md",
-        "./agents/documentation/documentation-writer.md"
-      ]
-    },
-    {
-      "name": "agents-enterprise",
-      "source": "./cli-tool/components",
-      "description": "Enterprise 专业代理插件包 - 6个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "enterprise"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/enterprise/enterprise-integrator-architect.md",
-        "./agents/enterprise/enterprise-onboarding-specialist.md",
-        "./agents/enterprise/enterprise-security-reviewer.md",
-        "./agents/enterprise/legal-compliance-checker.md",
-        "./agents/enterprise/compliance-automation-specialist.md",
-        "./agents/enterprise/data-privacy-engineer.md"
-      ]
-    },
-    {
-      "name": "agents-expert-advisors",
-      "source": "./cli-tool/components",
-      "description": "Expert Advisors 专业代理插件包 - 4个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "expert-advisors"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/expert-advisors/agent-expert.md",
-        "./agents/expert-advisors/architect-review.md",
-        "./agents/expert-advisors/dependency-manager.md",
-        "./agents/expert-advisors/documentation-expert.md"
-      ]
-    },
-    {
-      "name": "agents-ffmpeg-clip-team",
-      "source": "./cli-tool/components",
-      "description": "Ffmpeg Clip Team 专业代理插件包 - 8个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "ffmpeg-clip-team"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/ffmpeg-clip-team/audio-mixer.md",
-        "./agents/ffmpeg-clip-team/audio-quality-controller.md",
-        "./agents/ffmpeg-clip-team/podcast-content-analyzer.md",
-        "./agents/ffmpeg-clip-team/podcast-metadata-specialist.md",
-        "./agents/ffmpeg-clip-team/podcast-transcriber.md",
-        "./agents/ffmpeg-clip-team/social-media-clip-creator.md",
-        "./agents/ffmpeg-clip-team/timestamp-precision-specialist.md",
-        "./agents/ffmpeg-clip-team/video-editor.md"
-      ]
-    },
-    {
-      "name": "agents-frameworks",
-      "source": "./cli-tool/components",
-      "description": "Frameworks 专业代理插件包 - 3个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "frameworks"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/frameworks/django-pro.md",
-        "./agents/frameworks/fastapi-pro.md",
-        "./agents/frameworks/flutter-expert.md"
-      ]
-    },
-    {
-      "name": "agents-game-development",
-      "source": "./cli-tool/components",
-      "description": "Game Development 专业代理插件包 - 6个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "game-development"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/game-development/3d-artist.md",
-        "./agents/game-development/game-designer.md",
-        "./agents/game-development/minecraft-bukkit-pro.md",
-        "./agents/game-development/unity-developer.md",
-        "./agents/game-development/unity-game-developer.md",
-        "./agents/game-development/unreal-engine-developer.md"
-      ]
-    },
-    {
-      "name": "agents-git",
-      "source": "./cli-tool/components",
-      "description": "Git 专业代理插件包 - 1个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "git"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/git/git-flow-manager.md"
-      ]
-    },
-    {
-      "name": "agents-integration-api",
-      "source": "./cli-tool/components",
-      "description": "Integration Api 专业代理插件包 - 4个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "integration-api"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/integration-api/api-integration-specialist.md",
-        "./agents/integration-api/context7-docs-fetcher.md",
-        "./agents/integration-api/model-context-protocol-mcp-expert.md",
-        "./agents/integration-api/n8n-workflow-builder.md"
-      ]
-    },
-    {
-      "name": "agents-knowledge",
-      "source": "./cli-tool/components",
-      "description": "Knowledge 专业代理插件包 - 1个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "knowledge"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/knowledge/wikipedia-expert.md"
-      ]
-    },
-    {
-      "name": "agents-marketing-growth",
-      "source": "./cli-tool/components",
-      "description": "Marketing Growth 专业代理插件包 - 7个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "marketing-growth"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/marketing-growth/brand-guardian.md",
-        "./agents/marketing-growth/content-creator.md",
-        "./agents/marketing-growth/growth-hacker.md",
-        "./agents/marketing-growth/instagram-curator.md",
-        "./agents/marketing-growth/reddit-community-builder.md",
-        "./agents/marketing-growth/tiktok-strategist.md",
-        "./agents/marketing-growth/twitter-engager.md"
-      ]
-    },
-    {
-      "name": "agents-mcp-dev-team",
-      "source": "./cli-tool/components",
-      "description": "Mcp Dev Team 专业代理插件包 - 7个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "mcp-dev-team"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/mcp-dev-team/mcp-deployment-orchestrator.md",
-        "./agents/mcp-dev-team/mcp-integration-engineer.md",
-        "./agents/mcp-dev-team/mcp-protocol-specialist.md",
-        "./agents/mcp-dev-team/mcp-registry-navigator.md",
-        "./agents/mcp-dev-team/mcp-security-auditor.md",
-        "./agents/mcp-dev-team/mcp-server-architect.md",
-        "./agents/mcp-dev-team/mcp-testing-engineer.md"
-      ]
-    },
-    {
-      "name": "agents-mobile-development",
-      "source": "./cli-tool/components",
-      "description": "Mobile Development 专业代理插件包 - 5个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "mobile-development"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/mobile-development/desktop-app-dev.md",
-        "./agents/mobile-development/flutter-mobile-app-dev.md",
-        "./agents/mobile-development/mobile-app-builder.md",
-        "./agents/mobile-development/mobile-ux-optimizer.md",
-        "./agents/mobile-development/react-native-dev.md"
-      ]
-    },
-    {
-      "name": "agents-modernization",
-      "source": "./cli-tool/components",
-      "description": "Modernization 专业代理插件包 - 3个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "modernization"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/modernization/architecture-modernizer.md",
-        "./agents/modernization/cloud-migration-specialist.md",
-        "./agents/modernization/legacy-modernizer.md"
-      ]
-    },
-    {
-      "name": "agents-obsidian-ops-team",
-      "source": "./cli-tool/components",
-      "description": "Obsidian Ops Team 专业代理插件包 - 7个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "obsidian-ops-team"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/obsidian-ops-team/connection-agent.md",
-        "./agents/obsidian-ops-team/content-curator.md",
-        "./agents/obsidian-ops-team/metadata-agent.md",
-        "./agents/obsidian-ops-team/moc-agent.md",
-        "./agents/obsidian-ops-team/review-agent.md",
-        "./agents/obsidian-ops-team/tag-agent.md",
-        "./agents/obsidian-ops-team/vault-optimizer.md"
-      ]
-    },
-    {
-      "name": "agents-ocr-extraction-team",
-      "source": "./cli-tool/components",
-      "description": "Ocr Extraction Team 专业代理插件包 - 7个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "ocr-extraction-team"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/ocr-extraction-team/document-structure-analyzer.md",
-        "./agents/ocr-extraction-team/markdown-syntax-formatter.md",
-        "./agents/ocr-extraction-team/ocr-grammar-fixer.md",
-        "./agents/ocr-extraction-team/ocr-preprocessing-optimizer.md",
-        "./agents/ocr-extraction-team/ocr-quality-assurance.md",
-        "./agents/ocr-extraction-team/text-comparison-validator.md",
-        "./agents/ocr-extraction-team/visual-analysis-ocr.md"
-      ]
-    },
-    {
-      "name": "agents-performance-testing",
-      "source": "./cli-tool/components",
-      "description": "Performance Testing 专业代理插件包 - 5个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "performance-testing"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/performance-testing/load-testing-specialist.md",
-        "./agents/performance-testing/performance-engineer.md",
-        "./agents/performance-testing/react-performance-optimization.md",
-        "./agents/performance-testing/test-automator.md",
-        "./agents/performance-testing/web-vitals-optimizer.md"
-      ]
-    },
-    {
-      "name": "agents-podcast-creator-team",
-      "source": "./cli-tool/components",
-      "description": "Podcast Creator Team 专业代理插件包 - 11个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "podcast-creator-team"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/podcast-creator-team/academic-research-synthesizer.md",
-        "./agents/podcast-creator-team/comprehensive-researcher.md",
-        "./agents/podcast-creator-team/episode-orchestrator.md",
-        "./agents/podcast-creator-team/guest-outreach-coordinator.md",
-        "./agents/podcast-creator-team/market-research-analyst.md",
-        "./agents/podcast-creator-team/podcast-editor.md",
-        "./agents/podcast-creator-team/podcast-trend-scout.md",
-        "./agents/podcast-creator-team/project-supervisor-orchestrator.md",
-        "./agents/podcast-creator-team/seo-podcast-optimizer.md",
-        "./agents/podcast-creator-team/social-media-copywriter.md",
-        "./agents/podcast-creator-team/twitter-ai-influencer-manager.md"
-      ]
-    },
-    {
-      "name": "agents-product-management",
-      "source": "./cli-tool/components",
-      "description": "Product Management 专业代理插件包 - 5个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "product-management"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/product-management/planning-prd-agent.md",
-        "./agents/product-management/prd-specialist.md",
-        "./agents/product-management/pricing-packaging-specialist.md",
-        "./agents/product-management/product-sales-specialist.md",
-        "./agents/product-management/sprint-prioritizer.md"
-      ]
-    },
-    {
-      "name": "agents-programming-languages",
-      "source": "./cli-tool/components",
-      "description": "Programming Languages 专业代理插件包 - 16个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "programming-languages"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/programming-languages/c-pro.md",
-        "./agents/programming-languages/c-sharp-pro.md",
-        "./agents/programming-languages/cpp-pro.md",
-        "./agents/programming-languages/csharp-pro.md",
-        "./agents/programming-languages/elixir-pro.md",
-        "./agents/programming-languages/golang-pro.md",
-        "./agents/programming-languages/java-pro.md",
-        "./agents/programming-languages/javascript-pro.md",
-        "./agents/programming-languages/php-pro.md",
-        "./agents/programming-languages/python-pro.md",
-        "./agents/programming-languages/ruby-pro.md",
-        "./agents/programming-languages/rust-pro.md",
-        "./agents/programming-languages/scala-pro.md",
-        "./agents/programming-languages/shell-scripting-pro.md",
-        "./agents/programming-languages/sql-pro.md",
-        "./agents/programming-languages/typescript-pro.md"
-      ]
-    },
-    {
-      "name": "agents-project-management",
-      "source": "./cli-tool/components",
-      "description": "Project Management 专业代理插件包 - 3个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "project-management"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/project-management/project-curator.md",
-        "./agents/project-management/project-shipper.md",
-        "./agents/project-management/rapid-prototyper.md"
-      ]
-    },
-    {
-      "name": "agents-realtime",
-      "source": "./cli-tool/components",
-      "description": "Realtime 专业代理插件包 - 1个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "realtime"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/realtime/supabase-realtime-optimizer.md"
-      ]
-    },
-    {
-      "name": "agents-security",
-      "source": "./cli-tool/components",
-      "description": "Security 专业代理插件包 - 9个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "security"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/security/api-security-audit.md",
-        "./agents/security/backend-security-coder.md",
-        "./agents/security/compliance-specialist.md",
-        "./agents/security/frontend-security-coder.md",
-        "./agents/security/incident-responder.md",
-        "./agents/security/mobile-security-coder.md",
-        "./agents/security/penetration-tester.md",
-        "./agents/security/security-auditor.md",
-        "./agents/security/security-specialist.md"
-      ]
-    },
-    {
-      "name": "agents-seo",
-      "source": "./cli-tool/components",
-      "description": "Seo 专业代理插件包 - 11个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "seo"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/seo/search-specialist.md",
-        "./agents/seo/seo-authority-builder.md",
-        "./agents/seo/seo-cannibalization-detector.md",
-        "./agents/seo/seo-content-auditor.md",
-        "./agents/seo/seo-content-planner.md",
-        "./agents/seo/seo-content-refresher.md",
-        "./agents/seo/seo-content-writer.md",
-        "./agents/seo/seo-keyword-strategist.md",
-        "./agents/seo/seo-meta-optimizer.md",
-        "./agents/seo/seo-snippet-hunter.md",
-        "./agents/seo/seo-structure-architect.md"
-      ]
-    },
-    {
-      "name": "agents-special-purpose",
-      "source": "./cli-tool/components",
-      "description": "Special Purpose 专业代理插件包 - 2个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "special-purpose"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/special-purpose/angelos-symbo.md",
-        "./agents/special-purpose/onomastophes.md"
-      ]
-    },
-    {
-      "name": "agents-testing-quality",
-      "source": "./cli-tool/components",
-      "description": "Testing Quality 专业代理插件包 - 8个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "testing-quality"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/testing-quality/ceo-quality-controller-agent.md",
-        "./agents/testing-quality/problem-solver-specialist.md",
-        "./agents/testing-quality/test-results-analyzer.md",
-        "./agents/testing-quality/test-writer-fixer.md",
-        "./agents/testing-quality/unit-test-generator.md",
-        "./agents/testing-quality/api-tester.md",
-        "./agents/testing-quality/code-quality-reviewer.md",
-        "./agents/testing-quality/testing-specialist.md",
-        "agents/testing-quality/vitest-testing-expert.md",
-        "agents/testing-quality/accessibility-compliance-guardian.md"
-      ]
-    },
-    {
-      "name": "agents-web-tools",
-      "source": "./cli-tool/components",
-      "description": "Web Tools 专业代理插件包 - 6个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "web-tools"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/web-tools/nextjs-architecture-expert.md",
-        "./agents/web-tools/react-performance-optimizer.md",
-        "./agents/web-tools/seo-analyzer.md",
-        "./agents/web-tools/url-context-validator.md",
-        "./agents/web-tools/url-link-extractor.md",
-        "./agents/web-tools/web-accessibility-checker.md"
-      ]
-    },
-    {
-      "name": "agents-workflow-optimization",
-      "source": "./cli-tool/components",
-      "description": "Workflow Optimization 专业代理插件包 - 2个专业代理",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "workflow-optimization"
-      ],
-      "strict": false,
-      "agents": [
-        "./agents/workflow-optimization/tool-evaluator.md",
-        "./agents/workflow-optimization/workflow-optimizer.md"
-      ]
-    },
-    {
-      "name": "commands-ai-optimization",
-      "source": "./cli-tool/components",
-      "description": "Ai Optimization 命令工具包 - 3个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "ai-optimization"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/ai-optimization/double-check.md",
-        "./commands/ai-optimization/lyra.md",
-        "./commands/ai-optimization/ultrathink.md"
-      ]
-    },
-    {
-      "name": "commands-automation",
-      "source": "./cli-tool/components",
-      "description": "Automation 命令工具包 - 5个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "automation"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/automation/act.md",
-        "./commands/automation/ci-pipeline.md",
-        "./commands/automation/husky.md",
-        "./commands/automation/workflow-orchestrator.md"
-      ]
-    },
-    {
-      "name": "commands-code-analysis",
-      "source": "./cli-tool/components",
-      "description": "Code Analysis 命令工具包 - 7个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "code-analysis"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/code-analysis/analyze-codebase.md",
-        "./commands/code-analysis/analyze-issue.md",
-        "./commands/code-analysis/update-claudemd.md",
-        "./commands/code-analysis/understand.md",
-        "./commands/code-analysis/explain-like-senior.md",
-        "./commands/code-analysis/contributing.md",
-        "./commands/code-analysis/scaffold.md"
-      ]
-    },
-    {
-      "name": "commands-database",
-      "source": "./cli-tool/components",
-      "description": "Database 命令工具包 - 8个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "database"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/database/supabase-backup-manager.md",
-        "./commands/database/supabase-data-explorer.md",
-        "./commands/database/supabase-migration-assistant.md",
-        "./commands/database/supabase-performance-optimizer.md",
-        "./commands/database/supabase-realtime-monitor.md",
-        "./commands/database/supabase-schema-sync.md",
-        "./commands/database/supabase-security-audit.md",
-        "./commands/database/supabase-type-generator.md"
-      ]
-    },
-    {
-      "name": "commands-deployment",
-      "source": "./cli-tool/components",
-      "description": "Deployment 命令工具包 - 11个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "deployment"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/deployment/add-changelog.md",
-        "./commands/deployment/blue-green-deployment.md",
-        "./commands/deployment/changelog-demo-command.md",
-        "./commands/deployment/ci-setup.md",
-        "./commands/deployment/containerize-application.md",
-        "./commands/deployment/deployment-monitoring.md",
-        "./commands/deployment/hotfix-deploy.md",
-        "./commands/deployment/prepare-release.md",
-        "./commands/deployment/rollback-deploy.md",
-        "./commands/deployment/setup-automated-releases.md",
-        "./commands/deployment/setup-kubernetes-deployment.md"
-      ]
-    },
-    {
-      "name": "commands-development-tools",
-      "source": "./cli-tool/components",
-      "description": "Development Tools 命令工具包 - 10个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "development-tools"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/development-tools/2-commit-fast.md",
-        "./commands/development-tools/audit.md",
-        "./commands/development-tools/claude-desktop-extension.md",
-        "./commands/development-tools/fix-pr.md",
-        "./commands/development-tools/pr-issue-resolve.md",
-        "./commands/development-tools/refractor.md",
-        "./commands/development-tools/cleanproject.md",
-        "./commands/development-tools/format.md",
-        "./commands/development-tools/implement.md",
-        "./commands/development-tools/create-hook.md"
-      ]
-    },
-    {
-      "name": "commands-documentation",
-      "source": "./cli-tool/components",
-      "description": "Documentation 命令工具包 - 15个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "documentation"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/documentation/create-architecture-documentation.md",
-        "./commands/documentation/create-onboarding-guide.md",
-        "./commands/documentation/discuss.md",
-        "./commands/documentation/doc-api.md",
-        "./commands/documentation/docs-maintenance.md",
-        "./commands/documentation/documentation-generator.md",
-        "./commands/documentation/explore.md",
-        "./commands/documentation/generate-api-documentation.md",
-        "./commands/documentation/interactive-documentation.md",
-        "./commands/documentation/load-llms-txt.md",
-        "./commands/documentation/migration-guide.md",
-        "./commands/documentation/troubleshooting-guide.md",
-        "./commands/documentation/update-docs.md",
-        "./commands/documentation/docs.md",
-        "./commands/documentation/create-docs.md"
-      ]
-    },
-    {
-      "name": "commands-game-development",
-      "source": "./cli-tool/components",
-      "description": "Game Development 命令工具包 - 5个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "game-development"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/game-development/game-analytics-integration.md",
-        "./commands/game-development/game-asset-pipeline.md",
-        "./commands/game-development/game-performance-profiler.md",
-        "./commands/game-development/game-testing-framework.md",
-        "./commands/game-development/unity-project-setup.md"
-      ]
-    },
-    {
-      "name": "commands-git",
-      "source": "./cli-tool/components",
-      "description": "Git 命令工具包 - 5个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "git"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/git/feature.md",
-        "./commands/git/finish.md",
-        "./commands/git/flow-status.md",
-        "./commands/git/hotfix.md",
-        "./commands/git/release.md"
-      ]
-    },
-    {
-      "name": "commands-git-workflow",
-      "source": "./cli-tool/components",
-      "description": "Git Workflow 命令工具包 - 16个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "git-workflow"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/git-workflow/branch-cleanup.md",
-        "./commands/git-workflow/commit.md",
-        "./commands/git-workflow/commit-with-emoji.md",
-        "./commands/git-workflow/create-pr.md",
-        "./commands/git-workflow/create-pull-request.md",
-        "./commands/git-workflow/create-worktrees.md",
-        "./commands/git-workflow/fix-github-issue.md",
-        "./commands/git-workflow/fix-issue.md",
-        "./commands/git-workflow/fix-pr.md",
-        "./commands/git-workflow/gemini-review.md",
-        "./commands/git-workflow/git-bisect-helper.md",
-        "./commands/git-workflow/pr-review.md",
-        "./commands/git-workflow/update-branch-name.md",
-        "./commands/git-workflow/code-review-assistant.md",
-        "./commands/git-workflow/github-issue-fix.md",
-        "./commands/git-workflow/undo.md"
-      ]
-    },
-    {
-      "name": "commands-integrated-tools",
-      "source": "./cli-tool/components",
-      "description": "Integrated Tools 命令工具包 - 42个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "integrated-tools"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/integrated-tools/accessibility-audit.md",
-        "./commands/integrated-tools/ai-assistant.md",
-        "./commands/integrated-tools/ai-review.md",
-        "./commands/integrated-tools/api-mock.md",
-        "./commands/integrated-tools/api-scaffold.md",
-        "./commands/integrated-tools/code-explain.md",
-        "./commands/integrated-tools/code-migrate.md",
-        "./commands/integrated-tools/compliance-check.md",
-        "./commands/integrated-tools/config-validate.md",
-        "./commands/integrated-tools/context-restore.md",
-        "./commands/integrated-tools/context-save.md",
-        "./commands/integrated-tools/cost-optimize.md",
-        "./commands/integrated-tools/data-pipeline.md",
-        "./commands/integrated-tools/data-validation.md",
-        "./commands/integrated-tools/db-migrate.md",
-        "./commands/integrated-tools/debug-trace.md",
-        "./commands/integrated-tools/deploy-checklist.md",
-        "./commands/integrated-tools/deps-audit.md",
-        "./commands/integrated-tools/deps-upgrade.md",
-        "./commands/integrated-tools/doc-generate.md",
-        "./commands/integrated-tools/docker-optimize.md",
-        "./commands/integrated-tools/error-analysis.md",
-        "./commands/integrated-tools/error-trace.md",
-        "./commands/integrated-tools/issue.md",
-        "./commands/integrated-tools/k8s-manifest.md",
-        "./commands/integrated-tools/langchain-agent.md",
-        "./commands/integrated-tools/monitor-setup.md",
-        "./commands/integrated-tools/multi-agent-optimize.md",
-        "./commands/integrated-tools/multi-agent-review.md",
-        "./commands/integrated-tools/onboard.md",
-        "./commands/integrated-tools/pr-enhance.md",
-        "./commands/integrated-tools/prompt-optimize.md",
-        "./commands/integrated-tools/refactor-clean.md",
-        "./commands/integrated-tools/security-scan.md",
-        "./commands/integrated-tools/slo-implement.md",
-        "./commands/integrated-tools/smart-debug.md",
-        "./commands/integrated-tools/standup-notes.md",
-        "./commands/integrated-tools/tdd-green.md",
-        "./commands/integrated-tools/tdd-red.md",
-        "./commands/integrated-tools/tdd-refactor.md",
-        "./commands/integrated-tools/tech-debt.md",
-        "./commands/integrated-tools/test-harness.md"
-      ]
-    },
-    {
-      "name": "commands-integration-api",
-      "source": "./cli-tool/components",
-      "description": "Integration Api 命令工具包 - 2个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "integration-api"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/integration-api/generate-api-docs.md",
-        "./commands/integration-api/openapi-expert.md"
-      ]
-    },
-    {
-      "name": "commands-knowledge",
-      "source": "./cli-tool/components",
-      "description": "Knowledge 命令工具包 - 1个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "knowledge"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/knowledge/wikipedia-search.md"
-      ]
-    },
-    {
-      "name": "commands-nextjs-vercel",
-      "source": "./cli-tool/components",
-      "description": "Nextjs Vercel 命令工具包 - 10个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "nextjs-vercel"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/nextjs-vercel/nextjs-api-tester.md",
-        "./commands/nextjs-vercel/nextjs-bundle-analyzer.md",
-        "./commands/nextjs-vercel/nextjs-component-generator.md",
-        "./commands/nextjs-vercel/nextjs-middleware-creator.md",
-        "./commands/nextjs-vercel/nextjs-migration-helper.md",
-        "./commands/nextjs-vercel/nextjs-performance-audit.md",
-        "./commands/nextjs-vercel/nextjs-scaffold.md",
-        "./commands/nextjs-vercel/vercel-deploy-optimize.md",
-        "./commands/nextjs-vercel/vercel-edge-function.md",
-        "./commands/nextjs-vercel/vercel-env-sync.md"
-      ]
-    },
-    {
-      "name": "commands-orchestration",
-      "source": "./cli-tool/components",
-      "description": "Orchestration 命令工具包 - 15个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "orchestration"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/orchestration/archive.md",
-        "./commands/orchestration/commit.md",
-        "./commands/orchestration/find.md",
-        "./commands/orchestration/log.md",
-        "./commands/orchestration/move.md",
-        "./commands/orchestration/optimize.md",
-        "./commands/orchestration/remove.md",
-        "./commands/orchestration/report.md",
-        "./commands/orchestration/resume.md",
-        "./commands/orchestration/start.md",
-        "./commands/orchestration/status.md",
-        "./commands/orchestration/sync.md",
-        "./commands/orchestration/session-start.md",
-        "./commands/orchestration/session-end.md",
-        "./commands/orchestration/todos-to-issues.md"
-      ]
-    },
-    {
-      "name": "commands-performance",
-      "source": "./cli-tool/components",
-      "description": "Performance 命令工具包 - 10个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "performance"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/performance/add-performance-monitoring.md",
-        "./commands/performance/implement-caching-strategy.md",
-        "./commands/performance/optimize-api-performance.md",
-        "./commands/performance/optimize-build.md",
-        "./commands/performance/optimize-bundle-size.md",
-        "./commands/performance/optimize-database-performance.md",
-        "./commands/performance/optimize-memory-usage.md",
-        "./commands/performance/performance-audit.md",
-        "./commands/performance/setup-cdn-optimization.md",
-        "./commands/performance/system-behavior-simulator.md"
-      ]
-    },
-    {
-      "name": "commands-product-management",
-      "source": "./cli-tool/components",
-      "description": "Product Management 命令工具包 - 1个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "product-management"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/product-management/plan.md"
-      ]
-    },
-    {
-      "name": "commands-project-management",
-      "source": "./cli-tool/components",
-      "description": "Project Management 命令工具包 - 18个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "project-management"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/project-management/add-package.md",
-        "./commands/project-management/add-to-changelog.md",
-        "./commands/project-management/create-feature.md",
-        "./commands/project-management/create-jtbd.md",
-        "./commands/project-management/create-prd.md",
-        "./commands/project-management/create-prp.md",
-        "./commands/project-management/init-project.md",
-        "./commands/project-management/milestone-tracker.md",
-        "./commands/project-management/pac-configure.md",
-        "./commands/project-management/pac-create-epic.md",
-        "./commands/project-management/pac-create-ticket.md",
-        "./commands/project-management/pac-update-status.md",
-        "./commands/project-management/pac-validate.md",
-        "./commands/project-management/project-health-check.md",
-        "./commands/project-management/project-timeline-simulator.md",
-        "./commands/project-management/project-to-linear.md",
-        "./commands/project-management/release.md",
-        "./commands/project-management/todo.md"
-      ]
-    },
-    {
-      "name": "commands-security",
-      "source": "./cli-tool/components",
-      "description": "Security 命令工具包 - 7个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "security"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/security/add-authentication-system.md",
-        "./commands/security/dependency-audit.md",
-        "./commands/security/penetration-test.md",
-        "./commands/security/secrets-scanner.md",
-        "./commands/security/security-audit.md",
-        "./commands/security/security-hardening.md",
-        "./commands/security/security-scan.md"
-      ]
-    },
-    {
-      "name": "commands-setup",
-      "source": "./cli-tool/components",
-      "description": "Setup 命令工具包 - 14个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "setup"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/setup/create-database-migrations.md",
-        "./commands/setup/design-database-schema.md",
-        "./commands/setup/design-rest-api.md",
-        "./commands/setup/implement-graphql-api.md",
-        "./commands/setup/migrate-to-typescript.md",
-        "./commands/setup/setup-ci-cd-pipeline.md",
-        "./commands/setup/setup-development-environment.md",
-        "./commands/setup/setup-docker-containers.md",
-        "./commands/setup/setup-formatting.md",
-        "./commands/setup/setup-linting.md",
-        "./commands/setup/setup-monitoring-observability.md",
-        "./commands/setup/setup-monorepo.md",
-        "./commands/setup/setup-rate-limiting.md",
-        "./commands/setup/update-dependencies.md"
-      ]
-    },
-    {
-      "name": "commands-simulation",
-      "source": "./cli-tool/components",
-      "description": "Simulation 命令工具包 - 10个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "simulation"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/simulation/business-scenario-explorer.md",
-        "./commands/simulation/constraint-modeler.md",
-        "./commands/simulation/decision-tree-explorer.md",
-        "./commands/simulation/digital-twin-creator.md",
-        "./commands/simulation/future-scenario-generator.md",
-        "./commands/simulation/market-response-modeler.md",
-        "./commands/simulation/monte-carlo-simulator.md",
-        "./commands/simulation/simulation-calibrator.md",
-        "./commands/simulation/system-dynamics-modeler.md",
-        "./commands/simulation/timeline-compressor.md"
-      ]
-    },
-    {
-      "name": "commands-svelte",
-      "source": "./cli-tool/components",
-      "description": "Svelte 命令工具包 - 16个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "svelte"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/svelte/svelte:a11y.md",
-        "./commands/svelte/svelte:component.md",
-        "./commands/svelte/svelte:debug.md",
-        "./commands/svelte/svelte:migrate.md",
-        "./commands/svelte/svelte:optimize.md",
-        "./commands/svelte/svelte:scaffold.md",
-        "./commands/svelte/svelte:storybook-migrate.md",
-        "./commands/svelte/svelte:storybook-mock.md",
-        "./commands/svelte/svelte:storybook-setup.md",
-        "./commands/svelte/svelte:storybook-story.md",
-        "./commands/svelte/svelte:storybook-troubleshoot.md",
-        "./commands/svelte/svelte:storybook.md",
-        "./commands/svelte/svelte:test-coverage.md",
-        "./commands/svelte/svelte:test-fix.md",
-        "./commands/svelte/svelte:test-setup.md",
-        "./commands/svelte/svelte:test.md"
-      ]
-    },
-    {
-      "name": "commands-sync",
-      "source": "./cli-tool/components",
-      "description": "Sync 命令工具包 - 14个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "sync"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/sync/bidirectional-sync.md",
-        "./commands/sync/bulk-import-issues.md",
-        "./commands/sync/cross-reference-manager.md",
-        "./commands/sync/issue-to-linear-task.md",
-        "./commands/sync/linear-task-to-issue.md",
-        "./commands/sync/sync-automation-setup.md",
-        "./commands/sync/sync-conflict-resolver.md",
-        "./commands/sync/sync-health-monitor.md",
-        "./commands/sync/sync-issues-to-linear.md",
-        "./commands/sync/sync-linear-to-issues.md",
-        "./commands/sync/sync-migration-assistant.md",
-        "./commands/sync/sync-pr-to-task.md",
-        "./commands/sync/sync-status.md",
-        "./commands/sync/task-from-pr.md"
-      ]
-    },
-    {
-      "name": "commands-team",
-      "source": "./cli-tool/components",
-      "description": "Team 命令工具包 - 14个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "team"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/team/architecture-review.md",
-        "./commands/team/decision-quality-analyzer.md",
-        "./commands/team/dependency-mapper.md",
-        "./commands/team/estimate-assistant.md",
-        "./commands/team/issue-triage.md",
-        "./commands/team/memory-spring-cleaning.md",
-        "./commands/team/migration-assistant.md",
-        "./commands/team/retrospective-analyzer.md",
-        "./commands/team/session-learning-capture.md",
-        "./commands/team/sprint-planning.md",
-        "./commands/team/standup-report.md",
-        "./commands/team/team-knowledge-mapper.md",
-        "./commands/team/team-velocity-tracker.md",
-        "./commands/team/team-workload-balancer.md"
-      ]
-    },
-    {
-      "name": "commands-testing",
-      "source": "./cli-tool/components",
-      "description": "Testing 命令工具包 - 18个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "testing"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/testing/add-mutation-testing.md",
-        "./commands/testing/add-property-based-testing.md",
-        "./commands/testing/e2e-setup.md",
-        "./commands/testing/fix-flakey-test.md",
-        "./commands/testing/generate-test-cases.md",
-        "./commands/testing/generate-tests.md",
-        "./commands/testing/repro-issue.md",
-        "./commands/testing/setup-comprehensive-testing.md",
-        "./commands/testing/setup-load-testing.md",
-        "./commands/testing/setup-visual-testing.md",
-        "./commands/testing/test-automation-orchestrator.md",
-        "./commands/testing/test-changelog-automation.md",
-        "./commands/testing/test-coverage.md",
-        "./commands/testing/test-quality-analyzer.md",
-        "./commands/testing/testing_plan_integration.md",
-        "./commands/testing/write-tests.md"
-      ]
-    },
-    {
-      "name": "commands-testing-quality",
-      "source": "./cli-tool/components",
-      "description": "Testing Quality 命令工具包 - 13个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "testing-quality"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/testing-quality/bug-detective.md",
-        "./commands/testing-quality/bug-fix.md",
-        "./commands/testing-quality/debug-session.md",
-        "./commands/testing-quality/test-file.md",
-        "./commands/testing-quality/review.md",
-        "./commands/testing-quality/predict-issues.md",
-        "./commands/testing-quality/fix-imports.md",
-        "./commands/testing-quality/find-todos.md",
-        "./commands/testing-quality/create-todos.md",
-        "./commands/testing-quality/fix-todos.md",
-        "./commands/testing-quality/test.md",
-        "./commands/testing-quality/tdd.md",
-        "./commands/testing-quality/tdd-implement.md"
-      ]
-    },
-    {
-      "name": "commands-utilities",
-      "source": "./cli-tool/components",
-      "description": "Utilities 命令工具包 - 24个专业命令",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "commands",
-        "utilities"
-      ],
-      "strict": false,
-      "commands": [
-        "./commands/utilities/all-tools.md",
-        "./commands/utilities/architecture-scenario-explorer.md",
-        "./commands/utilities/check-file.md",
-        "./commands/utilities/clean-branches.md",
-        "./commands/utilities/clean.md",
-        "./commands/utilities/code-permutation-tester.md",
-        "./commands/utilities/code-review.md",
-        "./commands/utilities/code-to-task.md",
-        "./commands/utilities/context-prime.md",
-        "./commands/utilities/debug-error.md",
-        "./commands/utilities/directory-deep-dive.md",
-        "./commands/utilities/explain-code.md",
-        "./commands/utilities/fix-issue.md",
-        "./commands/utilities/generate-linear-worklog.md",
-        "./commands/utilities/git-status.md",
-        "./commands/utilities/initref.md",
-        "./commands/utilities/prime.md",
-        "./commands/utilities/refactor-code.md",
-        "./commands/utilities/ultra-think.md",
-        "./commands/utilities/update-claude.md",
-        "./commands/utilities/make-it-pretty.md",
-        "./commands/utilities/remove-comments.md",
-        "./commands/utilities/refactor.md",
-        "./commands/utilities/mermaid.md"
-      ]
-    },
-    {
-      "name": "hooks-automation",
-      "source": "./cli-tool/components",
-      "description": "Automation 自动化钩子包 - 16个钩子",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "hooks",
-        "automation"
-      ],
-      "strict": false,
-      "hooks": [
-        "./hooks/automation/agents-md-loader.json",
-        "./hooks/automation/build-on-change.json",
-        "./hooks/automation/dependency-checker.json",
-        "./hooks/automation/deployment-health-monitor.json",
-        "./hooks/automation/discord-detailed-notifications.json",
-        "./hooks/automation/discord-error-notifications.json",
-        "./hooks/automation/discord-notifications.json",
-        "./hooks/automation/simple-notifications.json",
-        "./hooks/automation/slack-detailed-notifications.json",
-        "./hooks/automation/slack-error-notifications.json",
-        "./hooks/automation/slack-notifications.json",
-        "./hooks/automation/telegram-detailed-notifications.json",
-        "./hooks/automation/telegram-error-notifications.json",
-        "./hooks/automation/telegram-notifications.json",
-        "./hooks/automation/vercel-auto-deploy.json",
-        "./hooks/automation/vercel-environment-sync.json"
-      ]
-    },
-    {
-      "name": "hooks-development-tools",
-      "source": "./cli-tool/components",
-      "description": "Development Tools 自动化钩子包 - 6个钩子",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "hooks",
-        "development-tools"
-      ],
-      "strict": false,
-      "hooks": [
-        "./hooks/development-tools/change-tracker.json",
-        "./hooks/development-tools/command-logger.json",
-        "./hooks/development-tools/file-backup.json",
-        "./hooks/development-tools/lint-on-save.json",
-        "./hooks/development-tools/nextjs-code-quality-enforcer.json",
-        "./hooks/development-tools/smart-formatting.json"
-      ]
-    },
-    {
-      "name": "hooks-git",
-      "source": "./cli-tool/components",
-      "description": "Git 自动化钩子包 - 3个钩子",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "hooks",
-        "git"
-      ],
-      "strict": false,
-      "hooks": [
-        "./hooks/git/conventional-commits.json",
-        "./hooks/git/prevent-direct-push.json",
-        "./hooks/git/validate-branch-name.json"
-      ]
-    },
-    {
-      "name": "hooks-git-workflow",
-      "source": "./cli-tool/components",
-      "description": "Git Workflow 自动化钩子包 - 2个钩子",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "hooks",
-        "git-workflow"
-      ],
-      "strict": false,
-      "hooks": [
-        "./hooks/git-workflow/auto-git-add.json",
-        "./hooks/git-workflow/smart-commit.json"
-      ]
-    },
-    {
-      "name": "hooks-performance",
-      "source": "./cli-tool/components",
-      "description": "Performance 自动化钩子包 - 2个钩子",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "hooks",
-        "performance"
-      ],
-      "strict": false,
-      "hooks": [
-        "./hooks/performance/performance-budget-guard.json",
-        "./hooks/performance/performance-monitor.json"
-      ]
-    },
-    {
-      "name": "hooks-post-tool",
-      "source": "./cli-tool/components",
-      "description": "Post Tool 自动化钩子包 - 4个钩子",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "hooks",
-        "post-tool"
-      ],
-      "strict": false,
-      "hooks": [
-        "./hooks/post-tool/format-javascript-files.json",
-        "./hooks/post-tool/format-python-files.json",
-        "./hooks/post-tool/git-add-changes.json",
-        "./hooks/post-tool/run-tests-after-changes.json"
-      ]
-    },
-    {
-      "name": "hooks-pre-tool",
-      "source": "./cli-tool/components",
-      "description": "Pre Tool 自动化钩子包 - 3个钩子",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "hooks",
-        "pre-tool"
-      ],
-      "strict": false,
-      "hooks": [
-        "./hooks/pre-tool/backup-before-edit.json",
-        "./hooks/pre-tool/notify-before-bash.json",
-        "./hooks/pre-tool/update-search-year.json"
-      ]
-    },
-    {
-      "name": "hooks-security",
-      "source": "./cli-tool/components",
-      "description": "Security 自动化钩子包 - 2个钩子",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "hooks",
-        "security"
-      ],
-      "strict": false,
-      "hooks": [
-        "./hooks/security/file-protection.json",
-        "./hooks/security/security-scanner.json"
-      ]
-    },
-    {
-      "name": "hooks-testing",
-      "source": "./cli-tool/components",
-      "description": "Testing 自动化钩子包 - 1个钩子",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "hooks",
-        "testing"
-      ],
-      "strict": false,
-      "hooks": [
-        "./hooks/testing/test-runner.json"
-      ]
-    },
-    {
-      "name": "mcps-browser_automation",
-      "source": "./cli-tool/components",
-      "description": "Browser Automation MCP服务器包 - 6个MCP服务器",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "mcps",
-        "browser_automation"
-      ],
-      "strict": false,
-      "mcps": [
-        "./mcps/browser_automation/browser-use-mcp-server.json",
-        "./mcps/browser_automation/browsermcp.json",
-        "./mcps/browser_automation/mcp-server-browserbase.json",
-        "./mcps/browser_automation/mcp-server-playwright.json",
-        "./mcps/browser_automation/playwright-mcp-server.json",
-        "./mcps/browser_automation/playwright-mcp.json"
-      ],
-      "mcpServers": [
-        "./mcps/browser_automation/browser-use-mcp-server.json",
-        "./mcps/browser_automation/browsermcp.json",
-        "./mcps/browser_automation/mcp-server-browserbase.json",
-        "./mcps/browser_automation/mcp-server-playwright.json",
-        "./mcps/browser_automation/playwright-mcp-server.json",
-        "./mcps/browser_automation/playwright-mcp.json"
-      ]
-    },
-    {
-      "name": "mcps-database",
-      "source": "./cli-tool/components",
-      "description": "Database MCP服务器包 - 4个MCP服务器",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "mcps",
-        "database"
-      ],
-      "strict": false,
-      "mcps": [
-        "./mcps/database/mysql-integration.json",
-        "./mcps/database/neon.json",
-        "./mcps/database/postgresql-integration.json",
-        "./mcps/database/supabase.json"
-      ],
-      "mcpServers": [
-        "./mcps/database/mysql-integration.json",
-        "./mcps/database/neon.json",
-        "./mcps/database/postgresql-integration.json",
-        "./mcps/database/supabase.json"
-      ]
-    },
-    {
-      "name": "mcps-deepgraph",
-      "source": "./cli-tool/components",
-      "description": "Deepgraph MCP服务器包 - 4个MCP服务器",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "mcps",
-        "deepgraph"
-      ],
-      "strict": false,
-      "mcps": [
-        "./mcps/deepgraph/deepgraph-nextjs.json",
-        "./mcps/deepgraph/deepgraph-react.json",
-        "./mcps/deepgraph/deepgraph-typescript.json",
-        "./mcps/deepgraph/deepgraph-vue.json"
-      ],
-      "mcpServers": [
-        "./mcps/deepgraph/deepgraph-nextjs.json",
-        "./mcps/deepgraph/deepgraph-react.json",
-        "./mcps/deepgraph/deepgraph-typescript.json",
-        "./mcps/deepgraph/deepgraph-vue.json"
-      ]
-    },
-    {
-      "name": "mcps-devtools",
-      "source": "./cli-tool/components",
-      "description": "Devtools MCP服务器包 - 33个MCP服务器",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "mcps",
-        "devtools"
-      ],
-      "strict": false,
-      "mcps": [
-        "./mcps/devtools/azure-kubernetes-service.json",
-        "./mcps/devtools/box.json",
-        "./mcps/devtools/chrome-devtools.json",
-        "./mcps/devtools/circleci.json",
-        "./mcps/devtools/codacy.json",
-        "./mcps/devtools/context7.json",
-        "./mcps/devtools/dynatrace.json",
-        "./mcps/devtools/elasticsearch.json",
-        "./mcps/devtools/figma-dev-mode.json",
-        "./mcps/devtools/firecrawl.json",
-        "./mcps/devtools/firefly-mcp.json",
-        "./mcps/devtools/grafana.json",
-        "./mcps/devtools/huggingface.json",
-        "./mcps/devtools/imagesorcery.json",
-        "./mcps/devtools/ios-simulator-mcp.json",
-        "./mcps/devtools/jfrog.json",
-        "./mcps/devtools/just-mcp.json",
-        "./mcps/devtools/launchdarkly.json",
-        "./mcps/devtools/leetcode.json",
-        "./mcps/devtools/logfire.json",
-        "./mcps/devtools/markitdown.json",
-        "./mcps/devtools/mcp-server-atlassian-bitbucket.json",
-        "./mcps/devtools/mcp-server-trello.json",
-        "./mcps/devtools/microsoft-clarity.json",
-        "./mcps/devtools/microsoft-dev-box.json",
-        "./mcps/devtools/mongodb.json",
-        "./mcps/devtools/postman.json",
-        "./mcps/devtools/pulumi.json",
-        "./mcps/devtools/sentry.json",
-        "./mcps/devtools/serena.json",
-        "./mcps/devtools/stripe.json",
-        "./mcps/devtools/terraform.json",
-        "./mcps/devtools/webflow.json"
-      ],
-      "mcpServers": [
-        "./mcps/devtools/azure-kubernetes-service.json",
-        "./mcps/devtools/box.json",
-        "./mcps/devtools/chrome-devtools.json",
-        "./mcps/devtools/circleci.json",
-        "./mcps/devtools/codacy.json",
-        "./mcps/devtools/context7.json",
-        "./mcps/devtools/dynatrace.json",
-        "./mcps/devtools/elasticsearch.json",
-        "./mcps/devtools/figma-dev-mode.json",
-        "./mcps/devtools/firecrawl.json",
-        "./mcps/devtools/firefly-mcp.json",
-        "./mcps/devtools/grafana.json",
-        "./mcps/devtools/huggingface.json",
-        "./mcps/devtools/imagesorcery.json",
-        "./mcps/devtools/ios-simulator-mcp.json",
-        "./mcps/devtools/jfrog.json",
-        "./mcps/devtools/just-mcp.json",
-        "./mcps/devtools/launchdarkly.json",
-        "./mcps/devtools/leetcode.json",
-        "./mcps/devtools/logfire.json",
-        "./mcps/devtools/markitdown.json",
-        "./mcps/devtools/mcp-server-atlassian-bitbucket.json",
-        "./mcps/devtools/mcp-server-trello.json",
-        "./mcps/devtools/microsoft-clarity.json",
-        "./mcps/devtools/microsoft-dev-box.json",
-        "./mcps/devtools/mongodb.json",
-        "./mcps/devtools/postman.json",
-        "./mcps/devtools/pulumi.json",
-        "./mcps/devtools/sentry.json",
-        "./mcps/devtools/serena.json",
-        "./mcps/devtools/stripe.json",
-        "./mcps/devtools/terraform.json",
-        "./mcps/devtools/webflow.json"
-      ]
-    },
-    {
-      "name": "mcps-filesystem",
-      "source": "./cli-tool/components",
-      "description": "Filesystem MCP服务器包 - 1个MCP服务器",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "mcps",
-        "filesystem"
-      ],
-      "strict": false,
-      "mcps": [
-        "./mcps/filesystem/filesystem-access.json"
-      ],
-      "mcpServers": [
-        "./mcps/filesystem/filesystem-access.json"
-      ]
-    },
-    {
-      "name": "mcps-integration",
-      "source": "./cli-tool/components",
-      "description": "Integration MCP服务器包 - 2个MCP服务器",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "mcps",
-        "integration"
-      ],
-      "strict": false,
-      "mcps": [
-        "./mcps/integration/github-integration.json",
-        "./mcps/integration/memory-integration.json"
-      ],
-      "mcpServers": [
-        "./mcps/integration/github-integration.json",
-        "./mcps/integration/memory-integration.json"
-      ]
-    },
-    {
-      "name": "mcps-knowledge",
-      "source": "./cli-tool/components",
-      "description": "Knowledge MCP服务器包 - 1个MCP服务器",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "mcps",
-        "knowledge"
-      ],
-      "strict": false,
-      "mcps": [
-        "./mcps/knowledge/wikipedia-mcp.json"
-      ],
-      "mcpServers": [
-        "./mcps/knowledge/wikipedia-mcp.json"
-      ]
-    },
-    {
-      "name": "mcps-marketing",
-      "source": "./cli-tool/components",
-      "description": "Marketing MCP服务器包 - 2个MCP服务器",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "mcps",
-        "marketing"
-      ],
-      "strict": false,
-      "mcps": [
-        "./mcps/marketing/facebook-ads-mcp-server.json",
-        "./mcps/marketing/google-ads-mcp-server.json"
-      ],
-      "mcpServers": [
-        "./mcps/marketing/facebook-ads-mcp-server.json",
-        "./mcps/marketing/google-ads-mcp-server.json"
-      ]
-    },
-    {
-      "name": "mcps-productivity",
-      "source": "./cli-tool/components",
-      "description": "Productivity MCP服务器包 - 2个MCP服务器",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "mcps",
-        "productivity"
-      ],
-      "strict": false,
-      "mcps": [
-        "./mcps/productivity/monday.json",
-        "./mcps/productivity/notion.json"
-      ],
-      "mcpServers": [
-        "./mcps/productivity/monday.json",
-        "./mcps/productivity/notion.json"
-      ]
-    },
-    {
-      "name": "mcps-web",
-      "source": "./cli-tool/components",
-      "description": "Web MCP服务器包 - 1个MCP服务器",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "mcps",
-        "web"
-      ],
-      "strict": false,
-      "mcps": [
-        "./mcps/web/web-fetch.json"
-      ],
-      "mcpServers": [
-        "./mcps/web/web-fetch.json"
-      ]
-    },
-    {
-      "name": "sandbox-e2b",
-      "source": "./cli-tool/components",
-      "description": "E2B 沙盒环境 - 2个配置",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "sandbox",
-        "e2b"
-      ],
-      "strict": false,
-      "sandbox": [
-        "./sandbox/e2b/SANDBOX_DEBUGGING.md",
-        "./sandbox/e2b/claude-code-sandbox.md"
-      ]
-    },
-    {
-      "name": "claude-code-official",
-      "source": "./cli-tool/components",
-      "description": "Claude Code 官方插件包 - Agent SDK开发、PR审查工具包、Git工作流、安全防护和特性开发工具",
-      "version": "1.1.0",
-      "author": {
-        "name": "Anthropic",
-        "email": "support@anthropic.com",
-        "url": "https://github.com/anthropics/claude-code"
-      },
-      "license": "MIT",
-      "keywords": [
-        "official",
-        "agents",
-        "commands",
-        "hooks",
-        "sdk",
-        "pr-review",
-        "git",
-        "security"
-      ],
-      "strict": false,
-      "agents": [
-        "./official/agents/agent-sdk-verifier-py.md",
-        "./official/agents/agent-sdk-verifier-ts.md",
-        "./official/agents/code-architect.md",
-        "./official/agents/code-explorer.md",
-        "./official/agents/code-reviewer-claude.md",
-        "./official/agents/code-simplifier.md",
-        "./official/agents/comment-analyzer.md",
-        "./official/agents/pr-test-analyzer.md",
-        "./official/agents/silent-failure-hunter.md",
-        "./official/agents/type-design-analyzer.md"
+        "agents/documentation/api-documenter.md",
+        "agents/documentation/changelog-generator.md",
+        "agents/documentation/docs-architect.md",
+        "agents/documentation/documentation-writer.md",
+        "agents/documentation/docusaurus-expert.md",
+        "agents/documentation/reference-builder.md",
+        "agents/documentation/technical-writer.md",
+        "agents/documentation/tutorial-engineer.md"
       ],
       "commands": [
-        "./official/commands/clean_gone.md",
-        "./official/commands/commit-push-pr.md",
-        "./official/commands/commit-claude.md",
-        "./official/commands/feature-dev.md",
-        "./official/commands/new-sdk-app.md",
-        "./official/commands/review-pr.md"
+        "commands/documentation/create-architecture-documentation.md",
+        "commands/documentation/create-docs.md",
+        "commands/documentation/create-onboarding-guide.md",
+        "commands/documentation/discuss.md",
+        "commands/documentation/doc-api.md",
+        "commands/documentation/docs-maintenance.md",
+        "commands/documentation/docs.md",
+        "commands/documentation/documentation-generator.md",
+        "commands/documentation/explore.md",
+        "commands/documentation/generate-api-documentation.md",
+        "commands/documentation/interactive-documentation.md",
+        "commands/documentation/load-llms-txt.md",
+        "commands/documentation/migration-guide.md",
+        "commands/documentation/troubleshooting-guide.md",
+        "commands/documentation/update-docs.md"
       ],
-      "hooks": [
-        "./official/hooks/security-guidance.json"
-      ]
-    },
-    {
-      "name": "output-styles-collection",
-      "source": "./cli-tool/components",
-      "description": "Output Styles 输出样式集合 - 18个专业样式",
-      "version": "1.1.0",
-      "author": {
-        "name": "Fonda",
-        "url": "https://github.com/lifangda"
-      },
-      "license": "MIT",
-      "keywords": [
-        "output-styles",
-        "styles"
-      ],
-      "strict": false,
       "outputStyles": [
-        "./output-styles/accessibility-champion.md",
-        "./output-styles/api-designer.md",
-        "./output-styles/concise-engineer.md",
-        "./output-styles/critical-code-reviewer.md",
-        "./output-styles/data-engineer.md",
-        "./output-styles/defensive-programmer.md",
-        "./output-styles/devil-advocate.md",
-        "./output-styles/devops-automator.md",
-        "./output-styles/distributed-systems-architect.md",
-        "./output-styles/documentation-writer.md",
-        "./output-styles/evan-king-system-design-reviewer.md",
-        "./output-styles/functional-purist.md",
-        "./output-styles/legacy-system-maintainer.md",
-        "./output-styles/performance-optimizer.md",
-        "./output-styles/refactoring-expert.md",
-        "./output-styles/security-auditor.md",
-        "./output-styles/startup-pragmatist.md",
-        "./output-styles/test-driven-developer.md"
+        "output-styles/documentation-writer.md"
       ]
     },
     {
-      "name": "agents-emerging-technologies",
-      "source": "claude-plugins/v1.4",
-      "description": "Emerging technology specialists: quantum computing, edge computing, Bun, and Deno runtime experts",
-      "version": "1.4.0",
-      "agents": [
-        "agents/emerging-technologies/quantum-computing-developer.md",
-        "agents/emerging-technologies/edge-computing-specialist.md",
-        "agents/emerging-technologies/bun-runtime-expert.md",
-        "agents/emerging-technologies/deno-runtime-developer.md"
+      "name": "ecommerce-suite",
+      "source": "cli-tool/components",
+      "description": "电商套件：支付与 Shopify 场景整合，支持业务流程化与高可用交易",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
       ],
-      "commands": [],
-      "workflows": [],
-      "hooks": [],
-      "mcps": []
-    },
-    {
-      "name": "agents-vertical-domains",
-      "source": "claude-plugins/v1.4",
-      "description": "Vertical domain experts: fintech, game development, AR/VR, embedded systems, and Web3",
-      "version": "1.4.0",
+      "strict": false,
       "agents": [
-        "agents/vertical-domains/fintech-solutions-engineer.md",
-        "agents/vertical-domains/game-development-designer.md",
-        "agents/vertical-domains/ar-vr-immersive-developer.md",
-        "agents/vertical-domains/embedded-systems-engineer.md",
-        "agents/vertical-domains/web3-blockchain-builder.md"
-      ],
-      "commands": [],
-      "workflows": [],
-      "hooks": [],
-      "mcps": []
-    },
-    {
-      "name": "agents-ecommerce",
-      "source": "claude-plugins/v1.4",
-      "description": "E-commerce specialists: Shopify and Stripe payment integration experts",
-      "version": "1.4.0",
-      "agents": [
+        "agents/ecommerce/braintree-expert.md",
         "agents/ecommerce/shopify-ecommerce-expert.md",
+        "agents/ecommerce/stripe-expert.md",
         "agents/ecommerce/stripe-payment-specialist.md"
       ],
-      "commands": [],
-      "workflows": [],
-      "hooks": [],
-      "mcps": []
+      "commands": [
+        "commands/product-management/plan.md"
+      ]
+    },
+    {
+      "name": "emerging-technologies-suite",
+      "source": "cli-tool/components",
+      "description": "新兴技术套件：量子/边缘/Bun/Deno 等探索型能力组合，面向新栈验证与技术前瞻",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/emerging-technologies/bun-expert.md",
+        "agents/emerging-technologies/bun-runtime-expert.md",
+        "agents/emerging-technologies/deno-expert.md",
+        "agents/emerging-technologies/deno-runtime-developer.md",
+        "agents/emerging-technologies/edge-computing-specialist.md",
+        "agents/emerging-technologies/knowledge-synthesizer.md",
+        "agents/emerging-technologies/quantum-computing-developer.md"
+      ]
+    },
+    {
+      "name": "enterprise-suite",
+      "source": "cli-tool/components",
+      "description": "企业集成套件：企业级治理与集成实践，强调合规、架构演进与规模化协作",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/enterprise/compliance-automation-specialist.md",
+        "agents/enterprise/data-privacy-engineer.md",
+        "agents/enterprise/enterprise-integrator-architect.md",
+        "agents/enterprise/enterprise-onboarding-specialist.md",
+        "agents/enterprise/enterprise-security-reviewer.md",
+        "agents/enterprise/legal-compliance-checker.md"
+      ]
+    },
+    {
+      "name": "expert-advisors-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：expert-advisors；一次安装获得端到端能力（5个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/expert-advisors/agent-expert.md",
+        "agents/expert-advisors/architect-review.md",
+        "agents/expert-advisors/dependency-manager.md",
+        "agents/expert-advisors/documentation-expert.md",
+        "agents/expert-advisors/error-coordinator.md"
+      ]
+    },
+    {
+      "name": "feature-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：feature；一次安装获得端到端能力（1个工作流）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "workflows": [
+        "workflows/feature-development.md"
+      ]
+    },
+    {
+      "name": "ffmpeg-media-suite",
+      "source": "cli-tool/components",
+      "description": "媒体处理套件：FFmpeg 能力与多媒体工作流，聚焦内容生成与媒介优化",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/ffmpeg-clip-team/audio-mixer.md",
+        "agents/ffmpeg-clip-team/audio-quality-controller.md",
+        "agents/ffmpeg-clip-team/podcast-content-analyzer.md",
+        "agents/ffmpeg-clip-team/podcast-metadata-specialist.md",
+        "agents/ffmpeg-clip-team/podcast-transcriber.md",
+        "agents/ffmpeg-clip-team/social-media-clip-creator.md",
+        "agents/ffmpeg-clip-team/timestamp-precision-specialist.md",
+        "agents/ffmpeg-clip-team/video-editor.md"
+      ]
+    },
+    {
+      "name": "frontend-frameworks-suite",
+      "source": "cli-tool/components",
+      "description": "前端框架套件：框架与部署工具整合，覆盖脚手架、性能优化与上线流程",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/frameworks/actix-expert.md",
+        "agents/frameworks/angular-architect.md",
+        "agents/frameworks/angular-expert.md",
+        "agents/frameworks/angularjs-expert.md",
+        "agents/frameworks/aspnet-core-expert.md",
+        "agents/frameworks/astro-expert.md",
+        "agents/frameworks/build-engineer.md",
+        "agents/frameworks/c-expert.md",
+        "agents/frameworks/chaos-engineer.md",
+        "agents/frameworks/clojure-expert.md",
+        "agents/frameworks/cpp-expert.md",
+        "agents/frameworks/csharp-developer.md",
+        "agents/frameworks/csharp-expert.md",
+        "agents/frameworks/dart-expert.md",
+        "agents/frameworks/django-developer.md",
+        "agents/frameworks/django-expert.md",
+        "agents/frameworks/django-pro.md",
+        "agents/frameworks/documentation-engineer.md",
+        "agents/frameworks/dotnet-core-expert.md",
+        "agents/frameworks/dotnet-framework-4.8-expert.md",
+        "agents/frameworks/electron-expert.md",
+        "agents/frameworks/electron-pro.md",
+        "agents/frameworks/elixir-expert.md",
+        "agents/frameworks/erlang-expert.md",
+        "agents/frameworks/express-expert.md",
+        "agents/frameworks/fastapi-expert.md",
+        "agents/frameworks/fastapi-pro.md",
+        "agents/frameworks/fastify-expert.md",
+        "agents/frameworks/fiber-expert.md",
+        "agents/frameworks/fintech-engineer.md",
+        "agents/frameworks/flask-expert.md",
+        "agents/frameworks/flutter-expert.md",
+        "agents/frameworks/gin-expert.md",
+        "agents/frameworks/go-expert.md",
+        "agents/frameworks/haskell-expert.md",
+        "agents/frameworks/iot-engineer.md",
+        "agents/frameworks/java-expert.md",
+        "agents/frameworks/javascript-expert.md",
+        "agents/frameworks/kotlin-expert.md",
+        "agents/frameworks/kotlin-specialist.md",
+        "agents/frameworks/laravel-expert.md",
+        "agents/frameworks/laravel-specialist.md",
+        "agents/frameworks/lua-expert.md",
+        "agents/frameworks/machine-learning-engineer.md",
+        "agents/frameworks/nestjs-expert.md",
+        "agents/frameworks/nextjs-developer.md",
+        "agents/frameworks/nextjs-expert.md",
+        "agents/frameworks/nodejs-expert.md",
+        "agents/frameworks/ocaml-expert.md",
+        "agents/frameworks/perl-expert.md",
+        "agents/frameworks/phoenix-expert.md",
+        "agents/frameworks/php-expert.md",
+        "agents/frameworks/platform-engineer.md",
+        "agents/frameworks/rails-expert.md",
+        "agents/frameworks/react-expert.md",
+        "agents/frameworks/react-native-expert.md",
+        "agents/frameworks/react-specialist.md",
+        "agents/frameworks/remix-expert.md",
+        "agents/frameworks/rollup-expert.md",
+        "agents/frameworks/ruby-expert.md",
+        "agents/frameworks/rust-engineer.md",
+        "agents/frameworks/rust-expert.md",
+        "agents/frameworks/sales-engineer.md",
+        "agents/frameworks/scala-expert.md",
+        "agents/frameworks/solidjs-expert.md",
+        "agents/frameworks/spring-boot-engineer.md",
+        "agents/frameworks/spring-boot-expert.md",
+        "agents/frameworks/sre-engineer.md",
+        "agents/frameworks/svelte-expert.md",
+        "agents/frameworks/tauri-expert.md",
+        "agents/frameworks/tooling-engineer.md",
+        "agents/frameworks/trpc-expert.md",
+        "agents/frameworks/typescript-expert.md",
+        "agents/frameworks/vue-expert.md",
+        "agents/frameworks/webpack-expert.md",
+        "agents/frameworks/websocket-engineer.md"
+      ],
+      "commands": [
+        "commands/nextjs-vercel/nextjs-api-tester.md",
+        "commands/nextjs-vercel/nextjs-bundle-analyzer.md",
+        "commands/nextjs-vercel/nextjs-component-generator.md",
+        "commands/nextjs-vercel/nextjs-middleware-creator.md",
+        "commands/nextjs-vercel/nextjs-migration-helper.md",
+        "commands/nextjs-vercel/nextjs-performance-audit.md",
+        "commands/nextjs-vercel/nextjs-scaffold.md",
+        "commands/nextjs-vercel/vercel-deploy-optimize.md",
+        "commands/nextjs-vercel/vercel-edge-function.md",
+        "commands/nextjs-vercel/vercel-env-sync.md",
+        "commands/svelte/svelte:a11y.md",
+        "commands/svelte/svelte:component.md",
+        "commands/svelte/svelte:debug.md",
+        "commands/svelte/svelte:migrate.md",
+        "commands/svelte/svelte:optimize.md",
+        "commands/svelte/svelte:scaffold.md",
+        "commands/svelte/svelte:storybook-migrate.md",
+        "commands/svelte/svelte:storybook-mock.md",
+        "commands/svelte/svelte:storybook-setup.md",
+        "commands/svelte/svelte:storybook-story.md",
+        "commands/svelte/svelte:storybook-troubleshoot.md",
+        "commands/svelte/svelte:storybook.md",
+        "commands/svelte/svelte:test-coverage.md",
+        "commands/svelte/svelte:test-fix.md",
+        "commands/svelte/svelte:test-setup.md",
+        "commands/svelte/svelte:test.md"
+      ]
+    },
+    {
+      "name": "full-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：full；一次安装获得端到端能力（1个工作流）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "workflows": [
+        "workflows/full-stack-feature.md"
+      ]
+    },
+    {
+      "name": "game-development-suite",
+      "source": "cli-tool/components",
+      "description": "游戏开发套件：开发工具与代理整合，覆盖性能剖析、资产流程与测试体系",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/game-development/3d-artist.md",
+        "agents/game-development/game-designer.md",
+        "agents/game-development/game-developer.md",
+        "agents/game-development/minecraft-bukkit-pro.md",
+        "agents/game-development/unity-developer.md",
+        "agents/game-development/unity-game-developer.md",
+        "agents/game-development/unreal-engine-developer.md"
+      ],
+      "commands": [
+        "commands/game-development/game-analytics-integration.md",
+        "commands/game-development/game-asset-pipeline.md",
+        "commands/game-development/game-performance-profiler.md",
+        "commands/game-development/game-testing-framework.md",
+        "commands/game-development/unity-project-setup.md"
+      ]
+    },
+    {
+      "name": "git-workflow-suite",
+      "source": "cli-tool/components",
+      "description": "Git工作流套件：标准化 feature/release/状态管控与自动化操作，降低分支管理与发布成本",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/git/circleci-expert.md",
+        "agents/git/git-flow-manager.md",
+        "agents/git/git-workflow-manager.md",
+        "agents/git/github-actions-expert.md",
+        "agents/git/gitlab-ci-expert.md",
+        "agents/git/jenkins-expert.md"
+      ],
+      "commands": [
+        "commands/git-workflow/branch-cleanup.md",
+        "commands/git-workflow/code-review-assistant.md",
+        "commands/git-workflow/commit-with-emoji.md",
+        "commands/git-workflow/commit.md",
+        "commands/git-workflow/create-pr.md",
+        "commands/git-workflow/create-pull-request.md",
+        "commands/git-workflow/create-worktrees.md",
+        "commands/git-workflow/fix-github-issue.md",
+        "commands/git-workflow/fix-issue.md",
+        "commands/git-workflow/fix-pr.md",
+        "commands/git-workflow/gemini-review.md",
+        "commands/git-workflow/git-bisect-helper.md",
+        "commands/git-workflow/github-issue-fix.md",
+        "commands/git-workflow/pr-review.md",
+        "commands/git-workflow/undo.md",
+        "commands/git-workflow/update-branch-name.md",
+        "commands/git/feature.md",
+        "commands/git/finish.md",
+        "commands/git/flow-status.md",
+        "commands/git/hotfix.md",
+        "commands/git/release.md"
+      ],
+      "workflows": [
+        "workflows/git-workflow.md"
+      ]
+    },
+    {
+      "name": "improve-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：improve；一次安装获得端到端能力（1个工作流）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "workflows": [
+        "workflows/improve-agent.md"
+      ]
+    },
+    {
+      "name": "integrated-tools-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：integrated-tools；一次安装获得端到端能力（42个命令）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "commands": [
+        "commands/integrated-tools/accessibility-audit.md",
+        "commands/integrated-tools/ai-assistant.md",
+        "commands/integrated-tools/ai-review.md",
+        "commands/integrated-tools/api-mock.md",
+        "commands/integrated-tools/api-scaffold.md",
+        "commands/integrated-tools/code-explain.md",
+        "commands/integrated-tools/code-migrate.md",
+        "commands/integrated-tools/compliance-check.md",
+        "commands/integrated-tools/config-validate.md",
+        "commands/integrated-tools/context-restore.md",
+        "commands/integrated-tools/context-save.md",
+        "commands/integrated-tools/cost-optimize.md",
+        "commands/integrated-tools/data-pipeline.md",
+        "commands/integrated-tools/data-validation.md",
+        "commands/integrated-tools/db-migrate.md",
+        "commands/integrated-tools/debug-trace.md",
+        "commands/integrated-tools/deploy-checklist.md",
+        "commands/integrated-tools/deps-audit.md",
+        "commands/integrated-tools/deps-upgrade.md",
+        "commands/integrated-tools/doc-generate.md",
+        "commands/integrated-tools/docker-optimize.md",
+        "commands/integrated-tools/error-analysis.md",
+        "commands/integrated-tools/error-trace.md",
+        "commands/integrated-tools/issue.md",
+        "commands/integrated-tools/k8s-manifest.md",
+        "commands/integrated-tools/langchain-agent.md",
+        "commands/integrated-tools/monitor-setup.md",
+        "commands/integrated-tools/multi-agent-optimize.md",
+        "commands/integrated-tools/multi-agent-review.md",
+        "commands/integrated-tools/onboard.md",
+        "commands/integrated-tools/pr-enhance.md",
+        "commands/integrated-tools/prompt-optimize.md",
+        "commands/integrated-tools/refactor-clean.md",
+        "commands/integrated-tools/security-scan.md",
+        "commands/integrated-tools/slo-implement.md",
+        "commands/integrated-tools/smart-debug.md",
+        "commands/integrated-tools/standup-notes.md",
+        "commands/integrated-tools/tdd-green.md",
+        "commands/integrated-tools/tdd-red.md",
+        "commands/integrated-tools/tdd-refactor.md",
+        "commands/integrated-tools/tech-debt.md",
+        "commands/integrated-tools/test-harness.md"
+      ]
+    },
+    {
+      "name": "integration-api-suite",
+      "source": "cli-tool/components",
+      "description": "API集成套件：统一连接器与编排，支持 MCP 生态接入，助力快速打通外部服务能力",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/integration-api/api-designer.md",
+        "agents/integration-api/api-integration-specialist.md",
+        "agents/integration-api/context7-docs-fetcher.md",
+        "agents/integration-api/graphql-expert.md",
+        "agents/integration-api/grpc-expert.md",
+        "agents/integration-api/model-context-protocol-mcp-expert.md",
+        "agents/integration-api/n8n-workflow-builder.md",
+        "agents/integration-api/openai-api-expert.md",
+        "agents/integration-api/openapi-expert.md",
+        "agents/integration-api/rest-expert.md",
+        "agents/integration-api/websocket-expert.md"
+      ],
+      "commands": [
+        "commands/integration-api/generate-api-docs.md",
+        "commands/integration-api/openapi-expert.md",
+        "commands/orchestration/archive.md",
+        "commands/orchestration/commit.md",
+        "commands/orchestration/find.md",
+        "commands/orchestration/log.md",
+        "commands/orchestration/move.md",
+        "commands/orchestration/optimize.md",
+        "commands/orchestration/remove.md",
+        "commands/orchestration/report.md",
+        "commands/orchestration/resume.md",
+        "commands/orchestration/session-end.md",
+        "commands/orchestration/session-start.md",
+        "commands/orchestration/start.md",
+        "commands/orchestration/status.md",
+        "commands/orchestration/sync.md",
+        "commands/orchestration/todos-to-issues.md"
+      ]
+    },
+    {
+      "name": "knowledge-suite",
+      "source": "cli-tool/components",
+      "description": "知识工作流：检索、结构化与知识工程实践，让信息转化为可执行洞见",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/knowledge/wikipedia-expert.md"
+      ],
+      "commands": [
+        "commands/knowledge/wikipedia-search.md"
+      ]
+    },
+    {
+      "name": "legacy-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：legacy；一次安装获得端到端能力（1个工作流）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "workflows": [
+        "workflows/legacy-modernize.md"
+      ]
+    },
+    {
+      "name": "marketing-growth-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：marketing-growth；一次安装获得端到端能力（10个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/marketing-growth/brand-guardian.md",
+        "agents/marketing-growth/competitive-analyst.md",
+        "agents/marketing-growth/content-creator.md",
+        "agents/marketing-growth/growth-hacker.md",
+        "agents/marketing-growth/instagram-curator.md",
+        "agents/marketing-growth/market-researcher.md",
+        "agents/marketing-growth/reddit-community-builder.md",
+        "agents/marketing-growth/tiktok-strategist.md",
+        "agents/marketing-growth/trend-analyst.md",
+        "agents/marketing-growth/twitter-engager.md"
+      ]
+    },
+    {
+      "name": "mcp-dev-team-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：mcp-dev-team；一次安装获得端到端能力（8个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/mcp-dev-team/mcp-deployment-orchestrator.md",
+        "agents/mcp-dev-team/mcp-developer.md",
+        "agents/mcp-dev-team/mcp-integration-engineer.md",
+        "agents/mcp-dev-team/mcp-protocol-specialist.md",
+        "agents/mcp-dev-team/mcp-registry-navigator.md",
+        "agents/mcp-dev-team/mcp-security-auditor.md",
+        "agents/mcp-dev-team/mcp-server-architect.md",
+        "agents/mcp-dev-team/mcp-testing-engineer.md"
+      ]
+    },
+    {
+      "name": "mobile-development-suite",
+      "source": "cli-tool/components",
+      "description": "移动开发套件：React Native/Flutter/iOS 能力集合，面向跨平台与快速交付",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/mobile-development/android-expert.md",
+        "agents/mobile-development/desktop-app-dev.md",
+        "agents/mobile-development/expo-expert.md",
+        "agents/mobile-development/flutter-mobile-app-dev.md",
+        "agents/mobile-development/ios-expert.md",
+        "agents/mobile-development/mobile-app-builder.md",
+        "agents/mobile-development/mobile-app-developer.md",
+        "agents/mobile-development/mobile-ux-optimizer.md",
+        "agents/mobile-development/react-native-dev.md",
+        "agents/mobile-development/swift-expert.md",
+        "agents/mobile-development/swiftui-expert.md"
+      ]
+    },
+    {
+      "name": "modernization-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：modernization；一次安装获得端到端能力（3个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/modernization/architecture-modernizer.md",
+        "agents/modernization/cloud-migration-specialist.md",
+        "agents/modernization/legacy-modernizer.md"
+      ]
+    },
+    {
+      "name": "multi-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：multi；一次安装获得端到端能力（1个工作流）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "workflows": [
+        "workflows/multi-platform.md"
+      ]
+    },
+    {
+      "name": "obsidian-knowledge-suite",
+      "source": "cli-tool/components",
+      "description": "知识库套件：Obsidian 工作流与元数据管理，提升知识沉淀与检索效率",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/obsidian-ops-team/connection-agent.md",
+        "agents/obsidian-ops-team/content-curator.md",
+        "agents/obsidian-ops-team/metadata-agent.md",
+        "agents/obsidian-ops-team/moc-agent.md",
+        "agents/obsidian-ops-team/review-agent.md",
+        "agents/obsidian-ops-team/tag-agent.md",
+        "agents/obsidian-ops-team/vault-optimizer.md"
+      ]
+    },
+    {
+      "name": "ocr-extraction-team-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：ocr-extraction-team；一次安装获得端到端能力（7个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/ocr-extraction-team/document-structure-analyzer.md",
+        "agents/ocr-extraction-team/markdown-syntax-formatter.md",
+        "agents/ocr-extraction-team/ocr-grammar-fixer.md",
+        "agents/ocr-extraction-team/ocr-preprocessing-optimizer.md",
+        "agents/ocr-extraction-team/ocr-quality-assurance.md",
+        "agents/ocr-extraction-team/text-comparison-validator.md",
+        "agents/ocr-extraction-team/visual-analysis-ocr.md"
+      ]
+    },
+    {
+      "name": "output-styles-suite",
+      "source": "cli-tool/components",
+      "description": "专业输出风格：审查者/架构师/TDD 等话术模板，统一团队沟通与评审标准",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "outputStyles": [
+        "output-styles/accessibility-champion.md",
+        "output-styles/api-designer.md",
+        "output-styles/concise-engineer.md",
+        "output-styles/critical-code-reviewer.md",
+        "output-styles/data-engineer.md",
+        "output-styles/defensive-programmer.md",
+        "output-styles/devil-advocate.md",
+        "output-styles/devops-automator.md",
+        "output-styles/distributed-systems-architect.md",
+        "output-styles/documentation-writer.md",
+        "output-styles/evan-king-system-design-reviewer.md",
+        "output-styles/functional-purist.md",
+        "output-styles/legacy-system-maintainer.md",
+        "output-styles/performance-optimizer.md",
+        "output-styles/refactoring-expert.md",
+        "output-styles/security-auditor.md",
+        "output-styles/startup-pragmatist.md",
+        "output-styles/test-driven-developer.md"
+      ]
+    },
+    {
+      "name": "podcast-creator-team-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：podcast-creator-team；一次安装获得端到端能力（11个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/podcast-creator-team/academic-research-synthesizer.md",
+        "agents/podcast-creator-team/comprehensive-researcher.md",
+        "agents/podcast-creator-team/episode-orchestrator.md",
+        "agents/podcast-creator-team/guest-outreach-coordinator.md",
+        "agents/podcast-creator-team/market-research-analyst.md",
+        "agents/podcast-creator-team/podcast-editor.md",
+        "agents/podcast-creator-team/podcast-trend-scout.md",
+        "agents/podcast-creator-team/project-supervisor-orchestrator.md",
+        "agents/podcast-creator-team/seo-podcast-optimizer.md",
+        "agents/podcast-creator-team/social-media-copywriter.md",
+        "agents/podcast-creator-team/twitter-ai-influencer-manager.md"
+      ]
+    },
+    {
+      "name": "product-project-suite",
+      "source": "cli-tool/components",
+      "description": "产品与项目套件：需求到交付的协同工作流，提升节奏稳定性与透明度",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/product-management/planning-prd-agent.md",
+        "agents/product-management/prd-specialist.md",
+        "agents/product-management/pricing-packaging-specialist.md",
+        "agents/product-management/product-manager.md",
+        "agents/product-management/product-sales-specialist.md",
+        "agents/product-management/project-manager.md",
+        "agents/product-management/scrum-master.md",
+        "agents/product-management/sprint-prioritizer.md"
+      ],
+      "commands": [
+        "commands/product-management/plan.md",
+        "commands/project-management/add-package.md",
+        "commands/project-management/add-to-changelog.md",
+        "commands/project-management/create-feature.md",
+        "commands/project-management/create-jtbd.md",
+        "commands/project-management/create-prd.md",
+        "commands/project-management/create-prp.md",
+        "commands/project-management/init-project.md",
+        "commands/project-management/milestone-tracker.md",
+        "commands/project-management/pac-configure.md",
+        "commands/project-management/pac-create-epic.md",
+        "commands/project-management/pac-create-ticket.md",
+        "commands/project-management/pac-update-status.md",
+        "commands/project-management/pac-validate.md",
+        "commands/project-management/project-health-check.md",
+        "commands/project-management/project-timeline-simulator.md",
+        "commands/project-management/project-to-linear.md",
+        "commands/project-management/release.md",
+        "commands/project-management/todo.md"
+      ]
+    },
+    {
+      "name": "programming-languages-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：programming-languages；一次安装获得端到端能力（16个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/programming-languages/c-pro.md",
+        "agents/programming-languages/c-sharp-pro.md",
+        "agents/programming-languages/cpp-pro.md",
+        "agents/programming-languages/csharp-pro.md",
+        "agents/programming-languages/elixir-pro.md",
+        "agents/programming-languages/golang-pro.md",
+        "agents/programming-languages/java-pro.md",
+        "agents/programming-languages/javascript-pro.md",
+        "agents/programming-languages/php-pro.md",
+        "agents/programming-languages/python-pro.md",
+        "agents/programming-languages/ruby-pro.md",
+        "agents/programming-languages/rust-pro.md",
+        "agents/programming-languages/scala-pro.md",
+        "agents/programming-languages/shell-scripting-pro.md",
+        "agents/programming-languages/sql-pro.md",
+        "agents/programming-languages/typescript-pro.md"
+      ]
+    },
+    {
+      "name": "project-management-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：project-management；一次安装获得端到端能力（3个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/project-management/project-curator.md",
+        "agents/project-management/project-shipper.md",
+        "agents/project-management/rapid-prototyper.md"
+      ]
+    },
+    {
+      "name": "realtime-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：realtime；一次安装获得端到端能力（1个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/realtime/supabase-realtime-optimizer.md"
+      ]
+    },
+    {
+      "name": "sandbox-suite",
+      "source": "cli-tool/components",
+      "description": "沙盒与调试：隔离式运行与调试指南，支持安全演练与故障回放",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "sandbox": [
+        "sandbox/e2b/claude-code-sandbox.md"
+      ]
+    },
+    {
+      "name": "security-suite",
+      "source": "cli-tool/components",
+      "description": "安全加固套件：覆盖安全审计、合规检查与风险治理工作流，专注于持续防护与问题前置",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/devops-infrastructure/security-engineer.md",
+        "agents/security/api-security-audit.md",
+        "agents/security/auth0-expert.md",
+        "agents/security/backend-security-coder.md",
+        "agents/security/compliance-auditor.md",
+        "agents/security/compliance-specialist.md",
+        "agents/security/frontend-security-coder.md",
+        "agents/security/incident-responder.md",
+        "agents/security/jwt-expert.md",
+        "agents/security/keycloak-expert.md",
+        "agents/security/mobile-security-coder.md",
+        "agents/security/oauth-oidc-expert.md",
+        "agents/security/owasp-top10-expert.md",
+        "agents/security/penetration-tester.md",
+        "agents/security/security-auditor-wshobson.md",
+        "agents/security/security-auditor.md",
+        "agents/security/security-specialist.md"
+      ],
+      "commands": [
+        "commands/security/add-authentication-system.md",
+        "commands/security/dependency-audit.md",
+        "commands/security/penetration-test.md",
+        "commands/security/secrets-scanner.md",
+        "commands/security/security-audit.md",
+        "commands/security/security-hardening.md",
+        "commands/security/security-scan.md"
+      ],
+      "workflows": [
+        "workflows/security-hardening.md"
+      ]
+    },
+    {
+      "name": "seo-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：seo；一次安装获得端到端能力（12个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/seo/search-specialist.md",
+        "agents/seo/seo-authority-builder.md",
+        "agents/seo/seo-cannibalization-detector.md",
+        "agents/seo/seo-content-auditor.md",
+        "agents/seo/seo-content-planner.md",
+        "agents/seo/seo-content-refresher.md",
+        "agents/seo/seo-content-writer.md",
+        "agents/seo/seo-keyword-strategist.md",
+        "agents/seo/seo-meta-optimizer.md",
+        "agents/seo/seo-snippet-hunter.md",
+        "agents/seo/seo-specialist.md",
+        "agents/seo/seo-structure-architect.md"
+      ]
+    },
+    {
+      "name": "setup-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：setup；一次安装获得端到端能力（14个命令）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "commands": [
+        "commands/setup/create-database-migrations.md",
+        "commands/setup/design-database-schema.md",
+        "commands/setup/design-rest-api.md",
+        "commands/setup/implement-graphql-api.md",
+        "commands/setup/migrate-to-typescript.md",
+        "commands/setup/setup-ci-cd-pipeline.md",
+        "commands/setup/setup-development-environment.md",
+        "commands/setup/setup-docker-containers.md",
+        "commands/setup/setup-formatting.md",
+        "commands/setup/setup-linting.md",
+        "commands/setup/setup-monitoring-observability.md",
+        "commands/setup/setup-monorepo.md",
+        "commands/setup/setup-rate-limiting.md",
+        "commands/setup/update-dependencies.md"
+      ]
+    },
+    {
+      "name": "simulation-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：simulation；一次安装获得端到端能力（10个命令）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "commands": [
+        "commands/simulation/business-scenario-explorer.md",
+        "commands/simulation/constraint-modeler.md",
+        "commands/simulation/decision-tree-explorer.md",
+        "commands/simulation/digital-twin-creator.md",
+        "commands/simulation/future-scenario-generator.md",
+        "commands/simulation/market-response-modeler.md",
+        "commands/simulation/monte-carlo-simulator.md",
+        "commands/simulation/simulation-calibrator.md",
+        "commands/simulation/system-dynamics-modeler.md",
+        "commands/simulation/timeline-compressor.md"
+      ]
+    },
+    {
+      "name": "smart-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：smart；一次安装获得端到端能力（1个工作流）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "workflows": [
+        "workflows/smart-fix.md"
+      ]
+    },
+    {
+      "name": "special-purpose-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：special-purpose；一次安装获得端到端能力（2个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/special-purpose/angelos-symbo.md",
+        "agents/special-purpose/onomastophes.md"
+      ]
+    },
+    {
+      "name": "sync-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：sync；一次安装获得端到端能力（14个命令）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "commands": [
+        "commands/sync/bidirectional-sync.md",
+        "commands/sync/bulk-import-issues.md",
+        "commands/sync/cross-reference-manager.md",
+        "commands/sync/issue-to-linear-task.md",
+        "commands/sync/linear-task-to-issue.md",
+        "commands/sync/sync-automation-setup.md",
+        "commands/sync/sync-conflict-resolver.md",
+        "commands/sync/sync-health-monitor.md",
+        "commands/sync/sync-issues-to-linear.md",
+        "commands/sync/sync-linear-to-issues.md",
+        "commands/sync/sync-migration-assistant.md",
+        "commands/sync/sync-pr-to-task.md",
+        "commands/sync/sync-status.md",
+        "commands/sync/task-from-pr.md"
+      ]
+    },
+    {
+      "name": "team-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：team；一次安装获得端到端能力（14个命令）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "commands": [
+        "commands/team/architecture-review.md",
+        "commands/team/decision-quality-analyzer.md",
+        "commands/team/dependency-mapper.md",
+        "commands/team/estimate-assistant.md",
+        "commands/team/issue-triage.md",
+        "commands/team/memory-spring-cleaning.md",
+        "commands/team/migration-assistant.md",
+        "commands/team/retrospective-analyzer.md",
+        "commands/team/session-learning-capture.md",
+        "commands/team/sprint-planning.md",
+        "commands/team/standup-report.md",
+        "commands/team/team-knowledge-mapper.md",
+        "commands/team/team-velocity-tracker.md",
+        "commands/team/team-workload-balancer.md"
+      ]
+    },
+    {
+      "name": "testing-quality-suite",
+      "source": "cli-tool/components",
+      "description": "测试与质量套件：单元/集成/性能场景全覆盖，提供可审计的质量门槛与工程化保障",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/performance-testing/load-testing-specialist.md",
+        "agents/performance-testing/performance-engineer.md",
+        "agents/performance-testing/performance-monitor.md",
+        "agents/performance-testing/react-performance-optimization.md",
+        "agents/performance-testing/test-automator.md",
+        "agents/performance-testing/web-vitals-optimizer.md",
+        "agents/testing-quality/accessibility-compliance-guardian.md",
+        "agents/testing-quality/api-tester.md",
+        "agents/testing-quality/ava-expert.md",
+        "agents/testing-quality/ceo-quality-controller-agent.md",
+        "agents/testing-quality/code-quality-reviewer.md",
+        "agents/testing-quality/jasmine-expert.md",
+        "agents/testing-quality/mocha-expert.md",
+        "agents/testing-quality/playwright-expert.md",
+        "agents/testing-quality/problem-solver-specialist.md",
+        "agents/testing-quality/puppeteer-expert.md",
+        "agents/testing-quality/qa-expert.md",
+        "agents/testing-quality/selenium-expert.md",
+        "agents/testing-quality/test-results-analyzer.md",
+        "agents/testing-quality/test-writer-fixer.md",
+        "agents/testing-quality/testcafe-expert.md",
+        "agents/testing-quality/testing-specialist.md",
+        "agents/testing-quality/unit-test-generator.md",
+        "agents/testing-quality/vitest-testing-expert.md"
+      ],
+      "commands": [
+        "commands/testing-quality/bug-detective.md",
+        "commands/testing-quality/bug-fix.md",
+        "commands/testing-quality/create-todos.md",
+        "commands/testing-quality/debug-session.md",
+        "commands/testing-quality/find-todos.md",
+        "commands/testing-quality/fix-imports.md",
+        "commands/testing-quality/fix-todos.md",
+        "commands/testing-quality/predict-issues.md",
+        "commands/testing-quality/review.md",
+        "commands/testing-quality/tdd-implement.md",
+        "commands/testing-quality/tdd.md",
+        "commands/testing-quality/test-file.md",
+        "commands/testing-quality/test.md",
+        "commands/testing/add-mutation-testing.md",
+        "commands/testing/add-property-based-testing.md",
+        "commands/testing/e2e-setup.md",
+        "commands/testing/fix-flakey-test.md",
+        "commands/testing/generate-test-cases.md",
+        "commands/testing/generate-tests.md",
+        "commands/testing/repro-issue.md",
+        "commands/testing/setup-comprehensive-testing.md",
+        "commands/testing/setup-load-testing.md",
+        "commands/testing/setup-visual-testing.md",
+        "commands/testing/tdd-workflow.md",
+        "commands/testing/test-automation-orchestrator.md",
+        "commands/testing/test-changelog-automation.md",
+        "commands/testing/test-coverage.md",
+        "commands/testing/test-quality-analyzer.md",
+        "commands/testing/testing_plan_integration.md",
+        "commands/testing/write-tests.md"
+      ],
+      "workflows": [
+        "workflows/tdd-cycle.md"
+      ]
+    },
+    {
+      "name": "utilities-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：utilities；一次安装获得端到端能力（24个命令）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "commands": [
+        "commands/utilities/all-tools.md",
+        "commands/utilities/architecture-scenario-explorer.md",
+        "commands/utilities/check-file.md",
+        "commands/utilities/clean-branches.md",
+        "commands/utilities/clean.md",
+        "commands/utilities/code-permutation-tester.md",
+        "commands/utilities/code-review.md",
+        "commands/utilities/code-to-task.md",
+        "commands/utilities/context-prime.md",
+        "commands/utilities/debug-error.md",
+        "commands/utilities/directory-deep-dive.md",
+        "commands/utilities/explain-code.md",
+        "commands/utilities/fix-issue.md",
+        "commands/utilities/generate-linear-worklog.md",
+        "commands/utilities/git-status.md",
+        "commands/utilities/initref.md",
+        "commands/utilities/make-it-pretty.md",
+        "commands/utilities/mermaid.md",
+        "commands/utilities/prime.md",
+        "commands/utilities/refactor-code.md",
+        "commands/utilities/refactor.md",
+        "commands/utilities/remove-comments.md",
+        "commands/utilities/ultra-think.md",
+        "commands/utilities/update-claude.md"
+      ]
+    },
+    {
+      "name": "vertical-domains-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：vertical-domains；一次安装获得端到端能力（6个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/vertical-domains/ar-vr-immersive-developer.md",
+        "agents/vertical-domains/embedded-systems-engineer.md",
+        "agents/vertical-domains/embedded-systems.md",
+        "agents/vertical-domains/fintech-solutions-engineer.md",
+        "agents/vertical-domains/game-development-designer.md",
+        "agents/vertical-domains/web3-blockchain-builder.md"
+      ]
+    },
+    {
+      "name": "web-tools-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：web-tools；一次安装获得端到端能力（11个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/web-tools/css-expert.md",
+        "agents/web-tools/html-expert.md",
+        "agents/web-tools/jquery-expert.md",
+        "agents/web-tools/nextjs-architecture-expert.md",
+        "agents/web-tools/react-performance-optimizer.md",
+        "agents/web-tools/seo-analyzer.md",
+        "agents/web-tools/tailwind-expert.md",
+        "agents/web-tools/url-context-validator.md",
+        "agents/web-tools/url-link-extractor.md",
+        "agents/web-tools/web-accessibility-checker.md",
+        "agents/web-tools/wordpress-master.md"
+      ]
+    },
+    {
+      "name": "workflow-optimization-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：workflow-optimization；一次安装获得端到端能力（4个代理）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "agents": [
+        "agents/workflow-optimization/task-distributor.md",
+        "agents/workflow-optimization/tool-evaluator.md",
+        "agents/workflow-optimization/workflow-optimizer.md",
+        "agents/workflow-optimization/workflow-orchestrator.md"
+      ]
+    },
+    {
+      "name": "workflow-suite",
+      "source": "cli-tool/components",
+      "description": "专业化套件：workflow；一次安装获得端到端能力（1个工作流）",
+      "version": "1.2.0",
+      "license": "MIT",
+      "keywords": [
+        "bundle"
+      ],
+      "strict": false,
+      "workflows": [
+        "workflows/workflow-automate.md"
+      ]
     }
   ]
 }

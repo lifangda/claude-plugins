@@ -1,0 +1,27 @@
+{
+  "name": "development-team-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：development-team；一次安装获得端到端能力（10个代理）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/development-team/backend-architect.md",
+    "agents/development-team/backend-developer.md",
+    "agents/development-team/cli-ui-designer.md",
+    "agents/development-team/devops-engineer.md",
+    "agents/development-team/frontend-developer.md",
+    "agents/development-team/fullstack-developer.md",
+    "agents/development-team/ios-developer.md",
+    "agents/development-team/mobile-developer.md",
+    "agents/development-team/ui-ux-designer.md",
+    "agents/development-team/ui-visual-validator.md"
+  ]
+}

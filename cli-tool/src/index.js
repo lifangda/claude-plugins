@@ -1,3 +1,27 @@
+/**
+ * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ * Claude Plugins - 插件系统核心模块
+ * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ *
+ * 本文件管理Claude Code插件系统的6种组件:
+ *   - Agents (专业代理)
+ *   - Commands (实用命令)
+ *   - Workflows (工作流)
+ *   - Hooks (钩子)
+ *   - MCPs (MCP服务器)
+ *   - Output Styles (输出样式)
+ *
+ * ⚠️ 注意: Skills系统独立管理,不在本文件范围!
+ *
+ * 如需管理Skills,请使用:
+ *   - 模块: cli-tool/src/skills-manager.js
+ *   - 命令: node cli-tool/src/skills-manager.js install <skill-name>
+ *   - 位置: cli-tool/skills-library/
+ *
+ * 详见skills-manager.js文件顶部的详细系统对比说明
+ * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ */
+
 const inquirer = require('inquirer');
 const chalk = require('chalk');
 const fs = require('fs-extra');

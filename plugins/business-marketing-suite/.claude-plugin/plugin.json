@@ -1,0 +1,28 @@
+{
+  "name": "business-marketing-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：business-marketing；一次安装获得端到端能力（11个代理）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/business-marketing/business-analyst.md",
+    "agents/business-marketing/content-marketer.md",
+    "agents/business-marketing/customer-support.md",
+    "agents/business-marketing/hr-pro.md",
+    "agents/business-marketing/legal-advisor.md",
+    "agents/business-marketing/marketing-attribution-analyst.md",
+    "agents/business-marketing/payment-integration.md",
+    "agents/business-marketing/product-strategist.md",
+    "agents/business-marketing/quant-analyst.md",
+    "agents/business-marketing/risk-manager.md",
+    "agents/business-marketing/sales-automator.md"
+  ]
+}

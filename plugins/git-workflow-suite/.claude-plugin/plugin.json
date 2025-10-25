@@ -1,0 +1,49 @@
+{
+  "name": "git-workflow-suite",
+  "source": "../../cli-tool/components",
+  "description": "Git工作流套件：标准化 feature/release/状态管控与自动化操作，降低分支管理与发布成本",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/git/circleci-expert.md",
+    "agents/git/git-flow-manager.md",
+    "agents/git/git-workflow-manager.md",
+    "agents/git/github-actions-expert.md",
+    "agents/git/gitlab-ci-expert.md",
+    "agents/git/jenkins-expert.md"
+  ],
+  "commands": [
+    "commands/git-workflow/branch-cleanup.md",
+    "commands/git-workflow/code-review-assistant.md",
+    "commands/git-workflow/commit-with-emoji.md",
+    "commands/git-workflow/commit.md",
+    "commands/git-workflow/create-pr.md",
+    "commands/git-workflow/create-pull-request.md",
+    "commands/git-workflow/create-worktrees.md",
+    "commands/git-workflow/fix-github-issue.md",
+    "commands/git-workflow/fix-issue.md",
+    "commands/git-workflow/fix-pr.md",
+    "commands/git-workflow/gemini-review.md",
+    "commands/git-workflow/git-bisect-helper.md",
+    "commands/git-workflow/github-issue-fix.md",
+    "commands/git-workflow/pr-review.md",
+    "commands/git-workflow/undo.md",
+    "commands/git-workflow/update-branch-name.md",
+    "commands/git/feature.md",
+    "commands/git/finish.md",
+    "commands/git/flow-status.md",
+    "commands/git/hotfix.md",
+    "commands/git/release.md"
+  ],
+  "workflows": [
+    "workflows/git-workflow.md"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "documentation-suite",
+  "source": "../../cli-tool/components",
+  "description": "文档与知识套件：技术写作、变更日志与知识结构化，提升协作透明度与团队记忆力",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/documentation/api-documenter.md",
+    "agents/documentation/changelog-generator.md",
+    "agents/documentation/docs-architect.md",
+    "agents/documentation/documentation-writer.md",
+    "agents/documentation/docusaurus-expert.md",
+    "agents/documentation/reference-builder.md",
+    "agents/documentation/technical-writer.md",
+    "agents/documentation/tutorial-engineer.md"
+  ],
+  "commands": [
+    "commands/documentation/create-architecture-documentation.md",
+    "commands/documentation/create-docs.md",
+    "commands/documentation/create-onboarding-guide.md",
+    "commands/documentation/discuss.md",
+    "commands/documentation/doc-api.md",
+    "commands/documentation/docs-maintenance.md",
+    "commands/documentation/docs.md",
+    "commands/documentation/documentation-generator.md",
+    "commands/documentation/explore.md",
+    "commands/documentation/generate-api-documentation.md",
+    "commands/documentation/interactive-documentation.md",
+    "commands/documentation/load-llms-txt.md",
+    "commands/documentation/migration-guide.md",
+    "commands/documentation/troubleshooting-guide.md",
+    "commands/documentation/update-docs.md"
+  ],
+  "outputStyles": [
+    "output-styles/documentation-writer.md"
+  ]
+}

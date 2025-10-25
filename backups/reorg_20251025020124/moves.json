@@ -1,0 +1,340 @@
+{
+  "moves": [
+    {
+      "from": "cli-tool/components/agents/android-expert.md",
+      "to": "cli-tool/components/agents/mobile-development/android-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/angular-architect.md",
+      "to": "cli-tool/components/agents/frameworks/angular-architect.md"
+    },
+    {
+      "from": "cli-tool/components/agents/angular-expert.md",
+      "to": "cli-tool/components/agents/frameworks/angular-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/angularjs-expert.md",
+      "to": "cli-tool/components/agents/frameworks/angularjs-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/api-designer.md",
+      "to": "cli-tool/components/agents/integration-api/api-designer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/architect-reviewer.md",
+      "to": "cli-tool/components/agents/code-analysis/architect-reviewer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/auth0-expert.md",
+      "to": "cli-tool/components/agents/security/auth0-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/braintree-expert.md",
+      "to": "cli-tool/components/agents/ecommerce/braintree-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/build-engineer.md",
+      "to": "cli-tool/components/agents/frameworks/build-engineer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/bun-expert.md",
+      "to": "cli-tool/components/agents/emerging-technologies/bun-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/cassandra-expert.md",
+      "to": "cli-tool/components/agents/database/cassandra-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/chaos-engineer.md",
+      "to": "cli-tool/components/agents/frameworks/chaos-engineer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/circleci-expert.md",
+      "to": "cli-tool/components/agents/git/circleci-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/cli-developer.md",
+      "to": "cli-tool/components/agents/development-tools/cli-developer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/cockroachdb-expert.md",
+      "to": "cli-tool/components/agents/database/cockroachdb-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/compliance-auditor.md",
+      "to": "cli-tool/components/agents/security/compliance-auditor.md"
+    },
+    {
+      "from": "cli-tool/components/agents/cypress-expert.md",
+      "to": "cli-tool/components/agents/development-tools/cypress-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/database-administrator.md",
+      "to": "cli-tool/components/agents/database/database-administrator.md"
+    },
+    {
+      "from": "cli-tool/components/agents/deno-expert.md",
+      "to": "cli-tool/components/agents/emerging-technologies/deno-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/devops-incident-responder.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/devops-incident-responder.md"
+    },
+    {
+      "from": "cli-tool/components/agents/django-developer.md",
+      "to": "cli-tool/components/agents/frameworks/django-developer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/django-expert.md",
+      "to": "cli-tool/components/agents/frameworks/django-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/docker-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/docker-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/documentation-engineer.md",
+      "to": "cli-tool/components/agents/frameworks/documentation-engineer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/dynamodb-expert.md",
+      "to": "cli-tool/components/agents/database/dynamodb-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/electron-expert.md",
+      "to": "cli-tool/components/agents/frameworks/electron-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/electron-pro.md",
+      "to": "cli-tool/components/agents/frameworks/electron-pro.md"
+    },
+    {
+      "from": "cli-tool/components/agents/express-expert.md",
+      "to": "cli-tool/components/agents/frameworks/express-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/fastapi-expert.md",
+      "to": "cli-tool/components/agents/frameworks/fastapi-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/fiber-expert.md",
+      "to": "cli-tool/components/agents/frameworks/fiber-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/fintech-engineer.md",
+      "to": "cli-tool/components/agents/frameworks/fintech-engineer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/flask-expert.md",
+      "to": "cli-tool/components/agents/frameworks/flask-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/gin-expert.md",
+      "to": "cli-tool/components/agents/frameworks/gin-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/git-workflow-manager.md",
+      "to": "cli-tool/components/agents/git/git-workflow-manager.md"
+    },
+    {
+      "from": "cli-tool/components/agents/github-actions-expert.md",
+      "to": "cli-tool/components/agents/git/github-actions-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/gitlab-ci-expert.md",
+      "to": "cli-tool/components/agents/git/gitlab-ci-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/grafana-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/grafana-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/graphql-expert.md",
+      "to": "cli-tool/components/agents/integration-api/graphql-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/grpc-expert.md",
+      "to": "cli-tool/components/agents/integration-api/grpc-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/ios-expert.md",
+      "to": "cli-tool/components/agents/mobile-development/ios-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/iot-engineer.md",
+      "to": "cli-tool/components/agents/frameworks/iot-engineer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/java-architect.md",
+      "to": "cli-tool/components/agents/code-analysis/java-architect.md"
+    },
+    {
+      "from": "cli-tool/components/agents/jenkins-expert.md",
+      "to": "cli-tool/components/agents/git/jenkins-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/jest-expert.md",
+      "to": "cli-tool/components/agents/development-tools/jest-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/jwt-expert.md",
+      "to": "cli-tool/components/agents/security/jwt-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/keycloak-expert.md",
+      "to": "cli-tool/components/agents/security/keycloak-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/knowledge-synthesizer.md",
+      "to": "cli-tool/components/agents/emerging-technologies/knowledge-synthesizer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/kubernetes-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/kubernetes-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/kubernetes-specialist.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/kubernetes-specialist.md"
+    },
+    {
+      "from": "cli-tool/components/agents/llm-architect.md",
+      "to": "cli-tool/components/agents/code-analysis/llm-architect.md"
+    },
+    {
+      "from": "cli-tool/components/agents/machine-learning-engineer.md",
+      "to": "cli-tool/components/agents/frameworks/machine-learning-engineer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/microservices-architect.md",
+      "to": "cli-tool/components/agents/code-analysis/microservices-architect.md"
+    },
+    {
+      "from": "cli-tool/components/agents/mssql-expert.md",
+      "to": "cli-tool/components/agents/database/mssql-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/mysql-expert.md",
+      "to": "cli-tool/components/agents/database/mysql-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/nextjs-developer.md",
+      "to": "cli-tool/components/agents/frameworks/nextjs-developer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/nextjs-expert.md",
+      "to": "cli-tool/components/agents/frameworks/nextjs-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/oauth-oidc-expert.md",
+      "to": "cli-tool/components/agents/security/oauth-oidc-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/openai-api-expert.md",
+      "to": "cli-tool/components/agents/integration-api/openai-api-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/openapi-expert.md",
+      "to": "cli-tool/components/agents/integration-api/openapi-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/performance-monitor.md",
+      "to": "cli-tool/components/agents/performance-testing/performance-monitor.md"
+    },
+    {
+      "from": "cli-tool/components/agents/platform-engineer.md",
+      "to": "cli-tool/components/agents/frameworks/platform-engineer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/postgres-expert.md",
+      "to": "cli-tool/components/agents/database/postgres-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/postgres-pro.md",
+      "to": "cli-tool/components/agents/database/postgres-pro.md"
+    },
+    {
+      "from": "cli-tool/components/agents/prometheus-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/prometheus-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/rails-expert.md",
+      "to": "cli-tool/components/agents/frameworks/rails-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/react-expert.md",
+      "to": "cli-tool/components/agents/frameworks/react-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/react-native-expert.md",
+      "to": "cli-tool/components/agents/frameworks/react-native-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/react-specialist.md",
+      "to": "cli-tool/components/agents/frameworks/react-specialist.md"
+    },
+    {
+      "from": "cli-tool/components/agents/rest-expert.md",
+      "to": "cli-tool/components/agents/integration-api/rest-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/rust-engineer.md",
+      "to": "cli-tool/components/agents/frameworks/rust-engineer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/sales-engineer.md",
+      "to": "cli-tool/components/agents/frameworks/sales-engineer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/spring-boot-engineer.md",
+      "to": "cli-tool/components/agents/frameworks/spring-boot-engineer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/spring-boot-expert.md",
+      "to": "cli-tool/components/agents/frameworks/spring-boot-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/sql-expert.md",
+      "to": "cli-tool/components/agents/database/sql-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/sqlite-expert.md",
+      "to": "cli-tool/components/agents/database/sqlite-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/sre-engineer.md",
+      "to": "cli-tool/components/agents/frameworks/sre-engineer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/stripe-expert.md",
+      "to": "cli-tool/components/agents/ecommerce/stripe-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/svelte-expert.md",
+      "to": "cli-tool/components/agents/frameworks/svelte-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/terraform-engineer.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/terraform-engineer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/terraform-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/terraform-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/tooling-engineer.md",
+      "to": "cli-tool/components/agents/frameworks/tooling-engineer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/vitest-expert.md",
+      "to": "cli-tool/components/agents/development-tools/vitest-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/vue-expert.md",
+      "to": "cli-tool/components/agents/frameworks/vue-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/websocket-engineer.md",
+      "to": "cli-tool/components/agents/frameworks/websocket-engineer.md"
+    }
+  ]
+}

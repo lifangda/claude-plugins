@@ -1,0 +1,18 @@
+{
+  "name": "sandbox-suite",
+  "source": "../../cli-tool/components",
+  "description": "沙盒与调试：隔离式运行与调试指南，支持安全演练与故障回放",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "sandbox": [
+    "sandbox/e2b/claude-code-sandbox.md"
+  ]
+}

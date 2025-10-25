@@ -1,0 +1,31 @@
+{
+  "name": "setup-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：setup；一次安装获得端到端能力（14个命令）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "commands": [
+    "commands/setup/create-database-migrations.md",
+    "commands/setup/design-database-schema.md",
+    "commands/setup/design-rest-api.md",
+    "commands/setup/implement-graphql-api.md",
+    "commands/setup/migrate-to-typescript.md",
+    "commands/setup/setup-ci-cd-pipeline.md",
+    "commands/setup/setup-development-environment.md",
+    "commands/setup/setup-docker-containers.md",
+    "commands/setup/setup-formatting.md",
+    "commands/setup/setup-linting.md",
+    "commands/setup/setup-monitoring-observability.md",
+    "commands/setup/setup-monorepo.md",
+    "commands/setup/setup-rate-limiting.md",
+    "commands/setup/update-dependencies.md"
+  ]
+}

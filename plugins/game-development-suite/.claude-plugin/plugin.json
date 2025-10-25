@@ -1,0 +1,31 @@
+{
+  "name": "game-development-suite",
+  "source": "../../cli-tool/components",
+  "description": "游戏开发套件：开发工具与代理整合，覆盖性能剖析、资产流程与测试体系",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/game-development/3d-artist.md",
+    "agents/game-development/game-designer.md",
+    "agents/game-development/game-developer.md",
+    "agents/game-development/minecraft-bukkit-pro.md",
+    "agents/game-development/unity-developer.md",
+    "agents/game-development/unity-game-developer.md",
+    "agents/game-development/unreal-engine-developer.md"
+  ],
+  "commands": [
+    "commands/game-development/game-analytics-integration.md",
+    "commands/game-development/game-asset-pipeline.md",
+    "commands/game-development/game-performance-profiler.md",
+    "commands/game-development/game-testing-framework.md",
+    "commands/game-development/unity-project-setup.md"
+  ]
+}

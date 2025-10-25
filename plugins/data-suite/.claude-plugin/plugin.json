@@ -1,0 +1,18 @@
+{
+  "name": "data-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：data；一次安装获得端到端能力（1个工作流）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "workflows": [
+    "workflows/data-driven-feature.md"
+  ]
+}

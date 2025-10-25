@@ -1,0 +1,18 @@
+{
+  "name": "app-store-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：app-store；一次安装获得端到端能力（1个代理）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/app-store/app-store-optimizer.md"
+  ]
+}

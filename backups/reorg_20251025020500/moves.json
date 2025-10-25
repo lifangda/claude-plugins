@@ -1,0 +1,216 @@
+{
+  "moves": [
+    {
+      "from": "cli-tool/components/agents/actix-expert.md",
+      "to": "cli-tool/components/agents/frameworks/actix-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/agent-organizer.md",
+      "to": "cli-tool/components/agents/ai-specialists/agent-organizer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/aspnet-core-expert.md",
+      "to": "cli-tool/components/agents/frameworks/aspnet-core-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/astro-expert.md",
+      "to": "cli-tool/components/agents/frameworks/astro-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/backend-developer.md",
+      "to": "cli-tool/components/agents/development-team/backend-developer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/bash-expert.md",
+      "to": "cli-tool/components/agents/development-tools/bash-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/bullmq-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/bullmq-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/c-expert.md",
+      "to": "cli-tool/components/agents/frameworks/c-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/clojure-expert.md",
+      "to": "cli-tool/components/agents/frameworks/clojure-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/cpp-expert.md",
+      "to": "cli-tool/components/agents/frameworks/cpp-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/csharp-developer.md",
+      "to": "cli-tool/components/agents/frameworks/csharp-developer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/csharp-expert.md",
+      "to": "cli-tool/components/agents/frameworks/csharp-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/css-expert.md",
+      "to": "cli-tool/components/agents/web-tools/css-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/dart-expert.md",
+      "to": "cli-tool/components/agents/frameworks/dart-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/data-researcher.md",
+      "to": "cli-tool/components/agents/deep-research-team/data-researcher.md"
+    },
+    {
+      "from": "cli-tool/components/agents/dotnet-core-expert.md",
+      "to": "cli-tool/components/agents/frameworks/dotnet-core-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/dotnet-framework-4.8-expert.md",
+      "to": "cli-tool/components/agents/frameworks/dotnet-framework-4.8-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/elasticsearch-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/elasticsearch-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/elixir-expert.md",
+      "to": "cli-tool/components/agents/frameworks/elixir-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/elk-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/elk-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/embedded-systems.md",
+      "to": "cli-tool/components/agents/vertical-domains/embedded-systems.md"
+    },
+    {
+      "from": "cli-tool/components/agents/erlang-expert.md",
+      "to": "cli-tool/components/agents/frameworks/erlang-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/error-coordinator.md",
+      "to": "cli-tool/components/agents/expert-advisors/error-coordinator.md"
+    },
+    {
+      "from": "cli-tool/components/agents/fastify-expert.md",
+      "to": "cli-tool/components/agents/frameworks/fastify-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/flyway-expert.md",
+      "to": "cli-tool/components/agents/database/flyway-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/go-expert.md",
+      "to": "cli-tool/components/agents/frameworks/go-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/haskell-expert.md",
+      "to": "cli-tool/components/agents/frameworks/haskell-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/html-expert.md",
+      "to": "cli-tool/components/agents/web-tools/html-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/jasmine-expert.md",
+      "to": "cli-tool/components/agents/testing-quality/jasmine-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/java-expert.md",
+      "to": "cli-tool/components/agents/frameworks/java-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/javascript-expert.md",
+      "to": "cli-tool/components/agents/frameworks/javascript-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/jquery-expert.md",
+      "to": "cli-tool/components/agents/web-tools/jquery-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/kafka-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/kafka-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/knex-expert.md",
+      "to": "cli-tool/components/agents/database/knex-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/kotlin-expert.md",
+      "to": "cli-tool/components/agents/frameworks/kotlin-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/kotlin-specialist.md",
+      "to": "cli-tool/components/agents/frameworks/kotlin-specialist.md"
+    },
+    {
+      "from": "cli-tool/components/agents/langchain-expert.md",
+      "to": "cli-tool/components/agents/ai-specialists/langchain-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/liquibase-expert.md",
+      "to": "cli-tool/components/agents/database/liquibase-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/loki-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/loki-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/lua-expert.md",
+      "to": "cli-tool/components/agents/frameworks/lua-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/mariadb-expert.md",
+      "to": "cli-tool/components/agents/database/mariadb-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/market-researcher.md",
+      "to": "cli-tool/components/agents/marketing-growth/market-researcher.md"
+    },
+    {
+      "from": "cli-tool/components/agents/mcp-developer.md",
+      "to": "cli-tool/components/agents/mcp-dev-team/mcp-developer.md"
+    },
+    {
+      "from": "cli-tool/components/agents/mocha-expert.md",
+      "to": "cli-tool/components/agents/testing-quality/mocha-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/mongodb-expert.md",
+      "to": "cli-tool/components/agents/database/mongodb-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/mongoose-expert.md",
+      "to": "cli-tool/components/agents/database/mongoose-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/mqtt-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/mqtt-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/multi-agent-coordinator.md",
+      "to": "cli-tool/components/agents/ai-specialists/multi-agent-coordinator.md"
+    },
+    {
+      "from": "cli-tool/components/agents/nats-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/nats-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/qa-expert.md",
+      "to": "cli-tool/components/agents/testing-quality/qa-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/ruby-expert.md",
+      "to": "cli-tool/components/agents/frameworks/ruby-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/rust-expert.md",
+      "to": "cli-tool/components/agents/frameworks/rust-expert.md"
+    },
+    {
+      "from": "cli-tool/components/agents/typescript-expert.md",
+      "to": "cli-tool/components/agents/frameworks/typescript-expert.md"
+    }
+  ]
+}

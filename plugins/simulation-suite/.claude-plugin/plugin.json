@@ -1,0 +1,27 @@
+{
+  "name": "simulation-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：simulation；一次安装获得端到端能力（10个命令）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "commands": [
+    "commands/simulation/business-scenario-explorer.md",
+    "commands/simulation/constraint-modeler.md",
+    "commands/simulation/decision-tree-explorer.md",
+    "commands/simulation/digital-twin-creator.md",
+    "commands/simulation/future-scenario-generator.md",
+    "commands/simulation/market-response-modeler.md",
+    "commands/simulation/monte-carlo-simulator.md",
+    "commands/simulation/simulation-calibrator.md",
+    "commands/simulation/system-dynamics-modeler.md",
+    "commands/simulation/timeline-compressor.md"
+  ]
+}

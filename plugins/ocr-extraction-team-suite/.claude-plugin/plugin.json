@@ -1,0 +1,24 @@
+{
+  "name": "ocr-extraction-team-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：ocr-extraction-team；一次安装获得端到端能力（7个代理）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/ocr-extraction-team/document-structure-analyzer.md",
+    "agents/ocr-extraction-team/markdown-syntax-formatter.md",
+    "agents/ocr-extraction-team/ocr-grammar-fixer.md",
+    "agents/ocr-extraction-team/ocr-preprocessing-optimizer.md",
+    "agents/ocr-extraction-team/ocr-quality-assurance.md",
+    "agents/ocr-extraction-team/text-comparison-validator.md",
+    "agents/ocr-extraction-team/visual-analysis-ocr.md"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "name": "claude-plugins",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "description": "一条命令就能安装精心打磨的工作流、命令、代理、MCP服务器和钩子。包含独立的Agent Skills知识库系统。",
   "main": "cli-tool/src/index.js",
   "bin": {

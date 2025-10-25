@@ -1,0 +1,29 @@
+{
+  "name": "seo-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：seo；一次安装获得端到端能力（12个代理）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/seo/search-specialist.md",
+    "agents/seo/seo-authority-builder.md",
+    "agents/seo/seo-cannibalization-detector.md",
+    "agents/seo/seo-content-auditor.md",
+    "agents/seo/seo-content-planner.md",
+    "agents/seo/seo-content-refresher.md",
+    "agents/seo/seo-content-writer.md",
+    "agents/seo/seo-keyword-strategist.md",
+    "agents/seo/seo-meta-optimizer.md",
+    "agents/seo/seo-snippet-hunter.md",
+    "agents/seo/seo-specialist.md",
+    "agents/seo/seo-structure-architect.md"
+  ]
+}

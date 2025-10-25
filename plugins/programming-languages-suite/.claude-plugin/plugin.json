@@ -1,0 +1,33 @@
+{
+  "name": "programming-languages-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：programming-languages；一次安装获得端到端能力（16个代理）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/programming-languages/c-pro.md",
+    "agents/programming-languages/c-sharp-pro.md",
+    "agents/programming-languages/cpp-pro.md",
+    "agents/programming-languages/csharp-pro.md",
+    "agents/programming-languages/elixir-pro.md",
+    "agents/programming-languages/golang-pro.md",
+    "agents/programming-languages/java-pro.md",
+    "agents/programming-languages/javascript-pro.md",
+    "agents/programming-languages/php-pro.md",
+    "agents/programming-languages/python-pro.md",
+    "agents/programming-languages/ruby-pro.md",
+    "agents/programming-languages/rust-pro.md",
+    "agents/programming-languages/scala-pro.md",
+    "agents/programming-languages/shell-scripting-pro.md",
+    "agents/programming-languages/sql-pro.md",
+    "agents/programming-languages/typescript-pro.md"
+  ]
+}

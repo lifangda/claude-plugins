@@ -1,0 +1,62 @@
+{
+  "name": "development-tools-suite",
+  "source": "../../cli-tool/components",
+  "description": "开发者效率套件：常用生产力工具与自动化脚本整合，强调工程产能提升与重复劳动消除",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/development-tools/api-integration-archaeologist.md",
+    "agents/development-tools/backend-architect.md",
+    "agents/development-tools/bash-expert.md",
+    "agents/development-tools/cli-developer.md",
+    "agents/development-tools/code-reviewer.md",
+    "agents/development-tools/command-expert.md",
+    "agents/development-tools/context-manager.md",
+    "agents/development-tools/cypress-expert.md",
+    "agents/development-tools/debugger.md",
+    "agents/development-tools/dx-optimizer.md",
+    "agents/development-tools/error-detective.md",
+    "agents/development-tools/jest-expert.md",
+    "agents/development-tools/legacy-modernizer.md",
+    "agents/development-tools/mcp-expert.md",
+    "agents/development-tools/mermaid-expert.md",
+    "agents/development-tools/openai-api-integrator.md",
+    "agents/development-tools/performance-engineer.md",
+    "agents/development-tools/performance-profiler.md",
+    "agents/development-tools/python-expert.md",
+    "agents/development-tools/storybook-component-designer.md",
+    "agents/development-tools/tdd-orchestrator.md",
+    "agents/development-tools/tech-lead.md",
+    "agents/development-tools/test-automator.md",
+    "agents/development-tools/test-engineer.md",
+    "agents/development-tools/unused-code-cleaner.md",
+    "agents/development-tools/vitest-expert.md",
+    "agents/development-tools/web-dev.md",
+    "agents/development-tools/workflow-automation-specialist.md"
+  ],
+  "commands": [
+    "commands/automation/act.md",
+    "commands/automation/ci-pipeline.md",
+    "commands/automation/create-command.md",
+    "commands/automation/husky.md",
+    "commands/automation/workflow-orchestrator.md",
+    "commands/development-tools/2-commit-fast.md",
+    "commands/development-tools/audit.md",
+    "commands/development-tools/claude-desktop-extension.md",
+    "commands/development-tools/cleanproject.md",
+    "commands/development-tools/create-hook.md",
+    "commands/development-tools/fix-pr.md",
+    "commands/development-tools/format.md",
+    "commands/development-tools/implement.md",
+    "commands/development-tools/pr-issue-resolve.md",
+    "commands/development-tools/refractor.md"
+  ]
+}

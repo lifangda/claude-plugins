@@ -1,0 +1,23 @@
+{
+  "name": "ai-optimization-suite",
+  "source": "../../cli-tool/components",
+  "description": "AI优化套件：提示工程与智能助手整合，助力稳态高质输出与决策增强",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/ai-optimization/ai-ethics-governance-specialist.md"
+  ],
+  "commands": [
+    "commands/ai-optimization/double-check.md",
+    "commands/ai-optimization/lyra.md",
+    "commands/ai-optimization/ultrathink.md"
+  ]
+}

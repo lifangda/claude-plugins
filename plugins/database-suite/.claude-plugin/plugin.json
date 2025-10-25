@@ -1,0 +1,60 @@
+{
+  "name": "database-suite",
+  "source": "../../cli-tool/components",
+  "description": "数据库工程套件：涵盖 DBA 日常、模式设计、迁移与备份策略，提供稳健的数据生命周期管理",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/database/cassandra-expert.md",
+    "agents/database/cockroachdb-expert.md",
+    "agents/database/database-admin.md",
+    "agents/database/database-administrator.md",
+    "agents/database/database-architect.md",
+    "agents/database/database-optimization.md",
+    "agents/database/database-optimizer.md",
+    "agents/database/database-performance-optimizer.md",
+    "agents/database/dynamodb-expert.md",
+    "agents/database/flyway-expert.md",
+    "agents/database/knex-expert.md",
+    "agents/database/liquibase-expert.md",
+    "agents/database/mariadb-expert.md",
+    "agents/database/mongodb-expert.md",
+    "agents/database/mongoose-expert.md",
+    "agents/database/mssql-expert.md",
+    "agents/database/mysql-expert.md",
+    "agents/database/neo4j-expert.md",
+    "agents/database/neon-auth-specialist.md",
+    "agents/database/neon-database-architect.md",
+    "agents/database/neon-expert.md",
+    "agents/database/nosql-specialist.md",
+    "agents/database/postgres-expert.md",
+    "agents/database/postgres-pro.md",
+    "agents/database/prisma-expert.md",
+    "agents/database/redis-expert.md",
+    "agents/database/sequelize-expert.md",
+    "agents/database/sql-expert.md",
+    "agents/database/sql-pro.md",
+    "agents/database/sqlite-expert.md",
+    "agents/database/supabase-schema-architect.md",
+    "agents/database/typeorm-expert.md",
+    "agents/database/vector-db-expert.md"
+  ],
+  "commands": [
+    "commands/database/supabase-backup-manager.md",
+    "commands/database/supabase-data-explorer.md",
+    "commands/database/supabase-migration-assistant.md",
+    "commands/database/supabase-performance-optimizer.md",
+    "commands/database/supabase-realtime-monitor.md",
+    "commands/database/supabase-schema-sync.md",
+    "commands/database/supabase-security-audit.md",
+    "commands/database/supabase-type-generator.md"
+  ]
+}

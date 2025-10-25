@@ -1,0 +1,34 @@
+{
+  "name": "deep-research-suite",
+  "source": "../../cli-tool/components",
+  "description": "深度研究套件：研究型代理与信息工作流整合，面向事实核验与结构化洞察",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/deep-research-team/academic-researcher.md",
+    "agents/deep-research-team/agent-overview.md",
+    "agents/deep-research-team/competitive-intelligence-analyst.md",
+    "agents/deep-research-team/data-analyst.md",
+    "agents/deep-research-team/data-researcher.md",
+    "agents/deep-research-team/fact-checker.md",
+    "agents/deep-research-team/query-clarifier.md",
+    "agents/deep-research-team/report-generator.md",
+    "agents/deep-research-team/research-analyst.md",
+    "agents/deep-research-team/research-brief-generator.md",
+    "agents/deep-research-team/research-coordinator.md",
+    "agents/deep-research-team/research-orchestrator.md",
+    "agents/deep-research-team/research-synthesizer.md",
+    "agents/deep-research-team/technical-researcher.md"
+  ],
+  "workflows": [
+    "workflows/wikipedia-research.md"
+  ]
+}

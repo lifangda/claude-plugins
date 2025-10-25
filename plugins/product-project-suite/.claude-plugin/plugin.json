@@ -1,0 +1,46 @@
+{
+  "name": "product-project-suite",
+  "source": "../../cli-tool/components",
+  "description": "产品与项目套件：需求到交付的协同工作流，提升节奏稳定性与透明度",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/product-management/planning-prd-agent.md",
+    "agents/product-management/prd-specialist.md",
+    "agents/product-management/pricing-packaging-specialist.md",
+    "agents/product-management/product-manager.md",
+    "agents/product-management/product-sales-specialist.md",
+    "agents/product-management/project-manager.md",
+    "agents/product-management/scrum-master.md",
+    "agents/product-management/sprint-prioritizer.md"
+  ],
+  "commands": [
+    "commands/product-management/plan.md",
+    "commands/project-management/add-package.md",
+    "commands/project-management/add-to-changelog.md",
+    "commands/project-management/create-feature.md",
+    "commands/project-management/create-jtbd.md",
+    "commands/project-management/create-prd.md",
+    "commands/project-management/create-prp.md",
+    "commands/project-management/init-project.md",
+    "commands/project-management/milestone-tracker.md",
+    "commands/project-management/pac-configure.md",
+    "commands/project-management/pac-create-epic.md",
+    "commands/project-management/pac-create-ticket.md",
+    "commands/project-management/pac-update-status.md",
+    "commands/project-management/pac-validate.md",
+    "commands/project-management/project-health-check.md",
+    "commands/project-management/project-timeline-simulator.md",
+    "commands/project-management/project-to-linear.md",
+    "commands/project-management/release.md",
+    "commands/project-management/todo.md"
+  ]
+}

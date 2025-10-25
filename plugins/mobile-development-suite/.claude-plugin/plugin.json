@@ -1,0 +1,28 @@
+{
+  "name": "mobile-development-suite",
+  "source": "../../cli-tool/components",
+  "description": "移动开发套件：React Native/Flutter/iOS 能力集合，面向跨平台与快速交付",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/mobile-development/android-expert.md",
+    "agents/mobile-development/desktop-app-dev.md",
+    "agents/mobile-development/expo-expert.md",
+    "agents/mobile-development/flutter-mobile-app-dev.md",
+    "agents/mobile-development/ios-expert.md",
+    "agents/mobile-development/mobile-app-builder.md",
+    "agents/mobile-development/mobile-app-developer.md",
+    "agents/mobile-development/mobile-ux-optimizer.md",
+    "agents/mobile-development/react-native-dev.md",
+    "agents/mobile-development/swift-expert.md",
+    "agents/mobile-development/swiftui-expert.md"
+  ]
+}

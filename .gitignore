@@ -125,3 +125,7 @@ generate_*.py
 
 # Spec workflow (MCP generated)
 .spec-workflow/
+
+# Integration memo (local reference only)
+/INTEGRATION_MEMO.md
+/INTEGRATION_QUICK_GUIDE.md

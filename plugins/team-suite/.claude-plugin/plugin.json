@@ -1,0 +1,31 @@
+{
+  "name": "team-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：team；一次安装获得端到端能力（14个命令）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "commands": [
+    "commands/team/architecture-review.md",
+    "commands/team/decision-quality-analyzer.md",
+    "commands/team/dependency-mapper.md",
+    "commands/team/estimate-assistant.md",
+    "commands/team/issue-triage.md",
+    "commands/team/memory-spring-cleaning.md",
+    "commands/team/migration-assistant.md",
+    "commands/team/retrospective-analyzer.md",
+    "commands/team/session-learning-capture.md",
+    "commands/team/sprint-planning.md",
+    "commands/team/standup-report.md",
+    "commands/team/team-knowledge-mapper.md",
+    "commands/team/team-velocity-tracker.md",
+    "commands/team/team-workload-balancer.md"
+  ]
+}

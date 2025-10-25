@@ -1,0 +1,23 @@
+{
+  "name": "vertical-domains-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：vertical-domains；一次安装获得端到端能力（6个代理）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/vertical-domains/ar-vr-immersive-developer.md",
+    "agents/vertical-domains/embedded-systems-engineer.md",
+    "agents/vertical-domains/embedded-systems.md",
+    "agents/vertical-domains/fintech-solutions-engineer.md",
+    "agents/vertical-domains/game-development-designer.md",
+    "agents/vertical-domains/web3-blockchain-builder.md"
+  ]
+}

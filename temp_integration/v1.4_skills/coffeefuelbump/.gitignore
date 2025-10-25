@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Project specific
+*.png
+*.jpg
+*.jpeg
+chart.png
+correlation_heatmap.png
+time_series_analysis.png
+distributions.png
+categorical_distributions.png
+
+# Allow the skill zip file to be committed
+!csv-data-summarizer.zip
+
+# OS
+.DS_Store
+Thumbs.db
+

@@ -1,0 +1,31 @@
+{
+  "name": "sync-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：sync；一次安装获得端到端能力（14个命令）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "commands": [
+    "commands/sync/bidirectional-sync.md",
+    "commands/sync/bulk-import-issues.md",
+    "commands/sync/cross-reference-manager.md",
+    "commands/sync/issue-to-linear-task.md",
+    "commands/sync/linear-task-to-issue.md",
+    "commands/sync/sync-automation-setup.md",
+    "commands/sync/sync-conflict-resolver.md",
+    "commands/sync/sync-health-monitor.md",
+    "commands/sync/sync-issues-to-linear.md",
+    "commands/sync/sync-linear-to-issues.md",
+    "commands/sync/sync-migration-assistant.md",
+    "commands/sync/sync-pr-to-task.md",
+    "commands/sync/sync-status.md",
+    "commands/sync/task-from-pr.md"
+  ]
+}

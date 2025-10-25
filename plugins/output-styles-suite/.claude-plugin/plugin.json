@@ -1,0 +1,35 @@
+{
+  "name": "output-styles-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业输出风格：审查者/架构师/TDD 等话术模板，统一团队沟通与评审标准",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "outputStyles": [
+    "output-styles/accessibility-champion.md",
+    "output-styles/api-designer.md",
+    "output-styles/concise-engineer.md",
+    "output-styles/critical-code-reviewer.md",
+    "output-styles/data-engineer.md",
+    "output-styles/defensive-programmer.md",
+    "output-styles/devil-advocate.md",
+    "output-styles/devops-automator.md",
+    "output-styles/distributed-systems-architect.md",
+    "output-styles/documentation-writer.md",
+    "output-styles/evan-king-system-design-reviewer.md",
+    "output-styles/functional-purist.md",
+    "output-styles/legacy-system-maintainer.md",
+    "output-styles/performance-optimizer.md",
+    "output-styles/refactoring-expert.md",
+    "output-styles/security-auditor.md",
+    "output-styles/startup-pragmatist.md",
+    "output-styles/test-driven-developer.md"
+  ]
+}

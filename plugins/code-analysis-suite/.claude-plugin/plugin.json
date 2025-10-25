@@ -1,0 +1,36 @@
+{
+  "name": "code-analysis-suite",
+  "source": "../../cli-tool/components",
+  "description": "代码分析套件：静态/动态审查与全量评估，聚焦真实问题而非表面修饰",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/code-analysis/architect-reviewer.md",
+    "agents/code-analysis/code-architect.md",
+    "agents/code-analysis/codebase-documenter.md",
+    "agents/code-analysis/java-architect.md",
+    "agents/code-analysis/llm-architect.md",
+    "agents/code-analysis/microservices-architect.md",
+    "agents/code-analysis/refactoring-specialist.md"
+  ],
+  "commands": [
+    "commands/code-analysis/analyze-codebase.md",
+    "commands/code-analysis/analyze-issue.md",
+    "commands/code-analysis/contributing.md",
+    "commands/code-analysis/explain-like-senior.md",
+    "commands/code-analysis/scaffold.md",
+    "commands/code-analysis/understand.md",
+    "commands/code-analysis/update-claudemd.md"
+  ],
+  "workflows": [
+    "workflows/full-review.md"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "customer-relations-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：customer-relations；一次安装获得端到端能力（3个代理）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/customer-relations/customer-success-manager.md",
+    "agents/customer-relations/feedback-synthesizer.md",
+    "agents/customer-relations/support-responder.md"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "podcast-creator-team-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：podcast-creator-team；一次安装获得端到端能力（11个代理）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/podcast-creator-team/academic-research-synthesizer.md",
+    "agents/podcast-creator-team/comprehensive-researcher.md",
+    "agents/podcast-creator-team/episode-orchestrator.md",
+    "agents/podcast-creator-team/guest-outreach-coordinator.md",
+    "agents/podcast-creator-team/market-research-analyst.md",
+    "agents/podcast-creator-team/podcast-editor.md",
+    "agents/podcast-creator-team/podcast-trend-scout.md",
+    "agents/podcast-creator-team/project-supervisor-orchestrator.md",
+    "agents/podcast-creator-team/seo-podcast-optimizer.md",
+    "agents/podcast-creator-team/social-media-copywriter.md",
+    "agents/podcast-creator-team/twitter-ai-influencer-manager.md"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "security-suite",
+  "source": "../../cli-tool/components",
+  "description": "安全加固套件：覆盖安全审计、合规检查与风险治理工作流，专注于持续防护与问题前置",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/devops-infrastructure/security-engineer.md",
+    "agents/security/api-security-audit.md",
+    "agents/security/auth0-expert.md",
+    "agents/security/backend-security-coder.md",
+    "agents/security/compliance-auditor.md",
+    "agents/security/compliance-specialist.md",
+    "agents/security/frontend-security-coder.md",
+    "agents/security/incident-responder.md",
+    "agents/security/jwt-expert.md",
+    "agents/security/keycloak-expert.md",
+    "agents/security/mobile-security-coder.md",
+    "agents/security/oauth-oidc-expert.md",
+    "agents/security/owasp-top10-expert.md",
+    "agents/security/penetration-tester.md",
+    "agents/security/security-auditor-wshobson.md",
+    "agents/security/security-auditor.md",
+    "agents/security/security-specialist.md"
+  ],
+  "commands": [
+    "commands/security/add-authentication-system.md",
+    "commands/security/dependency-audit.md",
+    "commands/security/penetration-test.md",
+    "commands/security/secrets-scanner.md",
+    "commands/security/security-audit.md",
+    "commands/security/security-hardening.md",
+    "commands/security/security-scan.md"
+  ],
+  "workflows": [
+    "workflows/security-hardening.md"
+  ]
+}

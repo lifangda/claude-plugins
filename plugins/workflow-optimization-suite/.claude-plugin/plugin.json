@@ -1,0 +1,21 @@
+{
+  "name": "workflow-optimization-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：workflow-optimization；一次安装获得端到端能力（4个代理）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/workflow-optimization/task-distributor.md",
+    "agents/workflow-optimization/tool-evaluator.md",
+    "agents/workflow-optimization/workflow-optimizer.md",
+    "agents/workflow-optimization/workflow-orchestrator.md"
+  ]
+}

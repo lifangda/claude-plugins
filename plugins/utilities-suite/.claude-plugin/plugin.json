@@ -1,0 +1,41 @@
+{
+  "name": "utilities-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：utilities；一次安装获得端到端能力（24个命令）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "commands": [
+    "commands/utilities/all-tools.md",
+    "commands/utilities/architecture-scenario-explorer.md",
+    "commands/utilities/check-file.md",
+    "commands/utilities/clean-branches.md",
+    "commands/utilities/clean.md",
+    "commands/utilities/code-permutation-tester.md",
+    "commands/utilities/code-review.md",
+    "commands/utilities/code-to-task.md",
+    "commands/utilities/context-prime.md",
+    "commands/utilities/debug-error.md",
+    "commands/utilities/directory-deep-dive.md",
+    "commands/utilities/explain-code.md",
+    "commands/utilities/fix-issue.md",
+    "commands/utilities/generate-linear-worklog.md",
+    "commands/utilities/git-status.md",
+    "commands/utilities/initref.md",
+    "commands/utilities/make-it-pretty.md",
+    "commands/utilities/mermaid.md",
+    "commands/utilities/prime.md",
+    "commands/utilities/refactor-code.md",
+    "commands/utilities/refactor.md",
+    "commands/utilities/remove-comments.md",
+    "commands/utilities/ultra-think.md",
+    "commands/utilities/update-claude.md"
+  ]
+}

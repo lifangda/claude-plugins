@@ -1,0 +1,28 @@
+{
+  "name": "web-tools-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：web-tools；一次安装获得端到端能力（11个代理）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/web-tools/css-expert.md",
+    "agents/web-tools/html-expert.md",
+    "agents/web-tools/jquery-expert.md",
+    "agents/web-tools/nextjs-architecture-expert.md",
+    "agents/web-tools/react-performance-optimizer.md",
+    "agents/web-tools/seo-analyzer.md",
+    "agents/web-tools/tailwind-expert.md",
+    "agents/web-tools/url-context-validator.md",
+    "agents/web-tools/url-link-extractor.md",
+    "agents/web-tools/web-accessibility-checker.md",
+    "agents/web-tools/wordpress-master.md"
+  ]
+}

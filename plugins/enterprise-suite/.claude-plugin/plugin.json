@@ -1,0 +1,23 @@
+{
+  "name": "enterprise-suite",
+  "source": "../../cli-tool/components",
+  "description": "企业集成套件：企业级治理与集成实践，强调合规、架构演进与规模化协作",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/enterprise/compliance-automation-specialist.md",
+    "agents/enterprise/data-privacy-engineer.md",
+    "agents/enterprise/enterprise-integrator-architect.md",
+    "agents/enterprise/enterprise-onboarding-specialist.md",
+    "agents/enterprise/enterprise-security-reviewer.md",
+    "agents/enterprise/legal-compliance-checker.md"
+  ]
+}

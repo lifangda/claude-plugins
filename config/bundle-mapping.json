@@ -1,0 +1,240 @@
+{
+  "bundles": [
+    {
+      "name": "data-ai-suite",
+      "description": "数据与AI开发套件：面向生产的建模、特征工程、分析管线与部署运维，一次安装即可拥有端到端能力",
+      "include": [
+        "agents/data-ai/**",
+        "agents/data-analytics/**",
+        "commands/database/**",
+        "workflows/ml-pipeline.md"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "database-suite",
+      "description": "数据库工程套件：涵盖 DBA 日常、模式设计、迁移与备份策略，提供稳健的数据生命周期管理",
+      "include": [
+        "agents/database/**",
+        "commands/database/**"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "devops-infrastructure-suite",
+      "description": "DevOps与基础设施套件：部署编排、监控观测与可靠性工程，聚焦上线质量与可持续运维",
+      "include": [
+        "agents/devops-infrastructure/**",
+        "commands/deployment/**",
+        "commands/performance/**",
+        "workflows/performance-optimization.md",
+        "workflows/incident-response.md"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "security-suite",
+      "description": "安全加固套件：覆盖安全审计、合规检查与风险治理工作流，专注于持续防护与问题前置",
+      "include": [
+        "commands/security/**",
+        "workflows/security-hardening.md",
+        "agents/devops-infrastructure/*security*"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "testing-quality-suite",
+      "description": "测试与质量套件：单元/集成/性能场景全覆盖，提供可审计的质量门槛与工程化保障",
+      "include": [
+        "agents/performance-testing/**",
+        "commands/testing/**",
+        "commands/testing-quality/**",
+        "workflows/tdd-cycle.md"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "documentation-suite",
+      "description": "文档与知识套件：技术写作、变更日志与知识结构化，提升协作透明度与团队记忆力",
+      "include": [
+        "agents/documentation/**",
+        "commands/documentation/**",
+        "output-styles/documentation-writer.md"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "git-workflow-suite",
+      "description": "Git工作流套件：标准化 feature/release/状态管控与自动化操作，降低分支管理与发布成本",
+      "include": [
+        "agents/git/**",
+        "commands/git/**",
+        "commands/git-workflow/**",
+        "workflows/git-workflow.md"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "integration-api-suite",
+      "description": "API集成套件：统一连接器与编排，支持 MCP 生态接入，助力快速打通外部服务能力",
+      "include": [
+        "agents/integration-api/**",
+        "commands/integration-api/**",
+        "commands/orchestration/**"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "development-tools-suite",
+      "description": "开发者效率套件：常用生产力工具与自动化脚本整合，强调工程产能提升与重复劳动消除",
+      "include": [
+        "agents/development-tools/**",
+        "commands/development-tools/**",
+        "commands/automation/**"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "frontend-frameworks-suite",
+      "description": "前端框架套件：框架与部署工具整合，覆盖脚手架、性能优化与上线流程",
+      "include": [
+        "agents/frameworks/**",
+        "commands/nextjs-vercel/**",
+        "commands/svelte/**"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "mobile-development-suite",
+      "description": "移动开发套件：React Native/Flutter/iOS 能力集合，面向跨平台与快速交付",
+      "include": [
+        "agents/mobile-development/**"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "ecommerce-suite",
+      "description": "电商套件：支付与 Shopify 场景整合，支持业务流程化与高可用交易",
+      "include": [
+        "agents/ecommerce/**",
+        "commands/product-management/**"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "emerging-technologies-suite",
+      "description": "新兴技术套件：量子/边缘/Bun/Deno 等探索型能力组合，面向新栈验证与技术前瞻",
+      "include": [
+        "agents/emerging-technologies/**"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "enterprise-suite",
+      "description": "企业集成套件：企业级治理与集成实践，强调合规、架构演进与规模化协作",
+      "include": [
+        "agents/enterprise/**"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "deep-research-suite",
+      "description": "深度研究套件：研究型代理与信息工作流整合，面向事实核验与结构化洞察",
+      "include": [
+        "agents/deep-research-team/**",
+        "workflows/wikipedia-research.md"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "ffmpeg-media-suite",
+      "description": "媒体处理套件：FFmpeg 能力与多媒体工作流，聚焦内容生成与媒介优化",
+      "include": [
+        "agents/ffmpeg-clip-team/**"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "obsidian-knowledge-suite",
+      "description": "知识库套件：Obsidian 工作流与元数据管理，提升知识沉淀与检索效率",
+      "include": [
+        "agents/obsidian-ops-team/**"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "game-development-suite",
+      "description": "游戏开发套件：开发工具与代理整合，覆盖性能剖析、资产流程与测试体系",
+      "include": [
+        "agents/game-development/**",
+        "commands/game-development/**"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "output-styles-suite",
+      "description": "专业输出风格：审查者/架构师/TDD 等话术模板，统一团队沟通与评审标准",
+      "include": [
+        "output-styles/**"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "sandbox-suite",
+      "description": "沙盒与调试：隔离式运行与调试指南，支持安全演练与故障回放",
+      "include": [
+        "sandbox/e2b/claude-code-sandbox.md"
+      ],
+      "exclude": [
+        "sandbox/**/SANDBOX_DEBUGGING.md",
+        "sandbox/**/README.md"
+      ]
+    },
+    {
+      "name": "knowledge-suite",
+      "description": "知识工作流：检索、结构化与知识工程实践，让信息转化为可执行洞见",
+      "include": [
+        "agents/knowledge/**",
+        "commands/knowledge/**"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "ai-optimization-suite",
+      "description": "AI优化套件：提示工程与智能助手整合，助力稳态高质输出与决策增强",
+      "include": [
+        "commands/ai-optimization/**",
+        "agents/ai-optimization/**"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "architecture-suite",
+      "description": "架构与系统设计：策略评审与演进路径，强化可维护性与扩展弹性",
+      "include": [
+        "agents/architecture/**"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "code-analysis-suite",
+      "description": "代码分析套件：静态/动态审查与全量评估，聚焦真实问题而非表面修饰",
+      "include": [
+        "agents/code-analysis/**",
+        "commands/code-analysis/**",
+        "workflows/full-review.md"
+      ],
+      "exclude": []
+    },
+    {
+      "name": "product-project-suite",
+      "description": "产品与项目套件：需求到交付的协同工作流，提升节奏稳定性与透明度",
+      "include": [
+        "agents/product-management/**",
+        "commands/product-management/**",
+        "commands/project-management/**"
+      ],
+      "exclude": []
+    }
+  ]
+}

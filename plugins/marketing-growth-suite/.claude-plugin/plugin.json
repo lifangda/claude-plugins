@@ -1,0 +1,27 @@
+{
+  "name": "marketing-growth-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：marketing-growth；一次安装获得端到端能力（10个代理）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/marketing-growth/brand-guardian.md",
+    "agents/marketing-growth/competitive-analyst.md",
+    "agents/marketing-growth/content-creator.md",
+    "agents/marketing-growth/growth-hacker.md",
+    "agents/marketing-growth/instagram-curator.md",
+    "agents/marketing-growth/market-researcher.md",
+    "agents/marketing-growth/reddit-community-builder.md",
+    "agents/marketing-growth/tiktok-strategist.md",
+    "agents/marketing-growth/trend-analyst.md",
+    "agents/marketing-growth/twitter-engager.md"
+  ]
+}

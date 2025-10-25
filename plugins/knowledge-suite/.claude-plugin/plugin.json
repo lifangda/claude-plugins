@@ -1,0 +1,21 @@
+{
+  "name": "knowledge-suite",
+  "source": "../../cli-tool/components",
+  "description": "知识工作流：检索、结构化与知识工程实践，让信息转化为可执行洞见",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/knowledge/wikipedia-expert.md"
+  ],
+  "commands": [
+    "commands/knowledge/wikipedia-search.md"
+  ]
+}

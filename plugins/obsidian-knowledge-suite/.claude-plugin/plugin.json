@@ -1,0 +1,24 @@
+{
+  "name": "obsidian-knowledge-suite",
+  "source": "../../cli-tool/components",
+  "description": "知识库套件：Obsidian 工作流与元数据管理，提升知识沉淀与检索效率",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/obsidian-ops-team/connection-agent.md",
+    "agents/obsidian-ops-team/content-curator.md",
+    "agents/obsidian-ops-team/metadata-agent.md",
+    "agents/obsidian-ops-team/moc-agent.md",
+    "agents/obsidian-ops-team/review-agent.md",
+    "agents/obsidian-ops-team/tag-agent.md",
+    "agents/obsidian-ops-team/vault-optimizer.md"
+  ]
+}

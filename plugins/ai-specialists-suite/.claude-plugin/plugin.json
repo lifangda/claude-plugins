@@ -1,0 +1,27 @@
+{
+  "name": "ai-specialists-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：ai-specialists；一次安装获得端到端能力（10个代理）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/ai-specialists/agent-organizer.md",
+    "agents/ai-specialists/ai-ethics-advisor.md",
+    "agents/ai-specialists/hackathon-ai-strategist.md",
+    "agents/ai-specialists/langchain-expert.md",
+    "agents/ai-specialists/llms-maintainer.md",
+    "agents/ai-specialists/model-evaluator.md",
+    "agents/ai-specialists/multi-agent-coordinator.md",
+    "agents/ai-specialists/prompt-engineer.md",
+    "agents/ai-specialists/search-specialist.md",
+    "agents/ai-specialists/task-decomposition-expert.md"
+  ]
+}

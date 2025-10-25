@@ -1,0 +1,24 @@
+{
+  "name": "ecommerce-suite",
+  "source": "../../cli-tool/components",
+  "description": "电商套件：支付与 Shopify 场景整合，支持业务流程化与高可用交易",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/ecommerce/braintree-expert.md",
+    "agents/ecommerce/shopify-ecommerce-expert.md",
+    "agents/ecommerce/stripe-expert.md",
+    "agents/ecommerce/stripe-payment-specialist.md"
+  ],
+  "commands": [
+    "commands/product-management/plan.md"
+  ]
+}

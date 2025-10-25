@@ -1,0 +1,24 @@
+{
+  "name": "emerging-technologies-suite",
+  "source": "../../cli-tool/components",
+  "description": "新兴技术套件：量子/边缘/Bun/Deno 等探索型能力组合，面向新栈验证与技术前瞻",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/emerging-technologies/bun-expert.md",
+    "agents/emerging-technologies/bun-runtime-expert.md",
+    "agents/emerging-technologies/deno-expert.md",
+    "agents/emerging-technologies/deno-runtime-developer.md",
+    "agents/emerging-technologies/edge-computing-specialist.md",
+    "agents/emerging-technologies/knowledge-synthesizer.md",
+    "agents/emerging-technologies/quantum-computing-developer.md"
+  ]
+}

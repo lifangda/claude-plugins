@@ -1,0 +1,26 @@
+{
+  "name": "design-creative-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：design-creative；一次安装获得端到端能力（9个代理）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/design-creative/joker.md",
+    "agents/design-creative/studio-coach.md",
+    "agents/design-creative/studio-producer.md",
+    "agents/design-creative/ui-designer.md",
+    "agents/design-creative/ux-researcher.md",
+    "agents/design-creative/ux-ui-designer.md",
+    "agents/design-creative/vision-specialist.md",
+    "agents/design-creative/visual-storyteller.md",
+    "agents/design-creative/whimsy-injector.md"
+  ]
+}

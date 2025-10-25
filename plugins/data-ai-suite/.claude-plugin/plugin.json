@@ -1,0 +1,50 @@
+{
+  "name": "data-ai-suite",
+  "source": "../../cli-tool/components",
+  "description": "数据与AI开发套件：面向生产的建模、特征工程、分析管线与部署运维，一次安装即可拥有端到端能力",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/data-ai/ai-engineer.md",
+    "agents/data-ai/computer-vision-engineer.md",
+    "agents/data-ai/data-engineer.md",
+    "agents/data-ai/data-scientist.md",
+    "agents/data-ai/ml-engineer.md",
+    "agents/data-ai/mlops-engineer.md",
+    "agents/data-ai/nlp-engineer.md",
+    "agents/data-ai/numpy-expert.md",
+    "agents/data-ai/pandas-expert.md",
+    "agents/data-ai/prompt-engineer.md",
+    "agents/data-ai/python-pro.md",
+    "agents/data-ai/pytorch-expert.md",
+    "agents/data-ai/quant-analyst.md",
+    "agents/data-ai/scikit-learn-expert.md",
+    "agents/data-ai/tensorflow-expert.md",
+    "agents/data-ai/typescript-pro.md",
+    "agents/data-analytics/analytics-reporter.md",
+    "agents/data-analytics/experiment-tracker.md",
+    "agents/data-analytics/finance-tracker.md",
+    "agents/data-analytics/trend-researcher.md"
+  ],
+  "commands": [
+    "commands/database/supabase-backup-manager.md",
+    "commands/database/supabase-data-explorer.md",
+    "commands/database/supabase-migration-assistant.md",
+    "commands/database/supabase-performance-optimizer.md",
+    "commands/database/supabase-realtime-monitor.md",
+    "commands/database/supabase-schema-sync.md",
+    "commands/database/supabase-security-audit.md",
+    "commands/database/supabase-type-generator.md"
+  ],
+  "workflows": [
+    "workflows/ml-pipeline.md"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "business-sales-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：business-sales；一次安装获得端到端能力（2个代理）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/business-sales/b2b-project-shipper.md",
+    "agents/business-sales/technical-sales-engineer.md"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "accessibility-suite",
+  "source": "../../cli-tool/components",
+  "description": "无障碍体验：提升产品易用性的审查与改进能力；一次安装获得端到端能力（2个代理）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/accessibility/accessibility-expert.md",
+    "agents/accessibility/accessibility-tester.md"
+  ]
+}

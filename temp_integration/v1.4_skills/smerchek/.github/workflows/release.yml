@@ -1,0 +1,109 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to release (e.g., 1.0.0)'
+        required: true
+        type: string
+      prerelease:
+        description: 'Mark as pre-release'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate version format
+        run: |
+          if ! echo "${{ inputs.version }}" | grep -E '^[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9.]+)?$'; then
+            echo "❌ Error: Version must be in semver format (e.g., 1.0.0 or 1.0.0-beta.1)"
+            exit 1
+          fi
+
+      - name: Check if version exists in CHANGELOG
+        run: |
+          if ! grep -q "## \[${{ inputs.version }}\]" CHANGELOG.md; then
+            echo "❌ Error: Version ${{ inputs.version }} not found in CHANGELOG.md"
+            echo "Please add a changelog entry for this version before releasing."
+            exit 1
+          fi
+          echo "✅ Version found in CHANGELOG.md"
+
+      - name: Extract changelog for this version
+        id: changelog
+        run: |
+          # Extract the section for this version from CHANGELOG.md
+          VERSION="${{ inputs.version }}"
+
+          # Use awk to extract changelog between this version and the next version marker
+          awk "/## \[$VERSION\]/,/## \[/{
+            if(/## \[/ && !/## \[$VERSION\]/) exit;
+            if(!/## \[$VERSION\]/) print
+          }" CHANGELOG.md > release-notes.md
+
+          # Add a separator and link to full changelog
+          echo "" >> release-notes.md
+          echo "---" >> release-notes.md
+          echo "" >> release-notes.md
+
+          # Get previous version for comparison link (if exists)
+          PREV_VERSION=$(grep -oP '## \[\K[0-9]+\.[0-9]+\.[0-9]+(?=\])' CHANGELOG.md | grep -A1 "$VERSION" | tail -1)
+
+          if [ -n "$PREV_VERSION" ] && [ "$PREV_VERSION" != "$VERSION" ]; then
+            echo "**Full Changelog**: https://github.com/${{ github.repository }}/compare/v${PREV_VERSION}...v${VERSION}" >> release-notes.md
+          else
+            echo "**Full Changelog**: https://github.com/${{ github.repository }}/commits/v${VERSION}" >> release-notes.md
+          fi
+
+          # Output for verification
+          echo "📝 Release notes:"
+          cat release-notes.md
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install -r markdown-to-epub/requirements.txt
+
+      - name: Run tests
+        run: |
+          python test_epub_skill.py
+
+      - name: Validate skill structure
+        run: |
+          bash publish.sh
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ inputs.version }}
+          name: v${{ inputs.version }}
+          body_path: release-notes.md
+          draft: false
+          prerelease: ${{ inputs.prerelease }}
+          files: |
+            dist/markdown-to-epub-skill.zip
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Release summary
+        run: |
+          echo "🎉 Release v${{ inputs.version }} created successfully!"
+          echo "📦 Artifact: markdown-to-epub-skill.zip"
+          echo "🔗 Release URL: ${{ steps.create_release.outputs.url }}"

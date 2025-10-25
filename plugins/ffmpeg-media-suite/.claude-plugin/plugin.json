@@ -1,0 +1,25 @@
+{
+  "name": "ffmpeg-media-suite",
+  "source": "../../cli-tool/components",
+  "description": "媒体处理套件：FFmpeg 能力与多媒体工作流，聚焦内容生成与媒介优化",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/ffmpeg-clip-team/audio-mixer.md",
+    "agents/ffmpeg-clip-team/audio-quality-controller.md",
+    "agents/ffmpeg-clip-team/podcast-content-analyzer.md",
+    "agents/ffmpeg-clip-team/podcast-metadata-specialist.md",
+    "agents/ffmpeg-clip-team/podcast-transcriber.md",
+    "agents/ffmpeg-clip-team/social-media-clip-creator.md",
+    "agents/ffmpeg-clip-team/timestamp-precision-specialist.md",
+    "agents/ffmpeg-clip-team/video-editor.md"
+  ]
+}

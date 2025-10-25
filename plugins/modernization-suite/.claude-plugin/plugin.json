@@ -1,0 +1,20 @@
+{
+  "name": "modernization-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：modernization；一次安装获得端到端能力（3个代理）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/modernization/architecture-modernizer.md",
+    "agents/modernization/cloud-migration-specialist.md",
+    "agents/modernization/legacy-modernizer.md"
+  ]
+}

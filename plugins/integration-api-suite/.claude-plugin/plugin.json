@@ -1,0 +1,50 @@
+{
+  "name": "integration-api-suite",
+  "source": "../../cli-tool/components",
+  "description": "API集成套件：统一连接器与编排，支持 MCP 生态接入，助力快速打通外部服务能力",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "mcps": [
+    "mcps/example-echo-mcp/README.md"
+  ],
+  "agents": [
+    "agents/integration-api/api-designer.md",
+    "agents/integration-api/api-integration-specialist.md",
+    "agents/integration-api/context7-docs-fetcher.md",
+    "agents/integration-api/graphql-expert.md",
+    "agents/integration-api/grpc-expert.md",
+    "agents/integration-api/model-context-protocol-mcp-expert.md",
+    "agents/integration-api/n8n-workflow-builder.md",
+    "agents/integration-api/openai-api-expert.md",
+    "agents/integration-api/openapi-expert.md",
+    "agents/integration-api/rest-expert.md",
+    "agents/integration-api/websocket-expert.md"
+  ],
+  "commands": [
+    "commands/integration-api/generate-api-docs.md",
+    "commands/integration-api/openapi-expert.md",
+    "commands/orchestration/archive.md",
+    "commands/orchestration/commit.md",
+    "commands/orchestration/find.md",
+    "commands/orchestration/log.md",
+    "commands/orchestration/move.md",
+    "commands/orchestration/optimize.md",
+    "commands/orchestration/remove.md",
+    "commands/orchestration/report.md",
+    "commands/orchestration/resume.md",
+    "commands/orchestration/session-end.md",
+    "commands/orchestration/session-start.md",
+    "commands/orchestration/start.md",
+    "commands/orchestration/status.md",
+    "commands/orchestration/sync.md",
+    "commands/orchestration/todos-to-issues.md"
+  ]
+}

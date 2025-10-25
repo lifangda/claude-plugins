@@ -1,0 +1,22 @@
+{
+  "name": "expert-advisors-suite",
+  "source": "../../cli-tool/components",
+  "description": "专业化套件：expert-advisors；一次安装获得端到端能力（5个代理）",
+  "version": "1.2.0",
+  "author": {
+    "name": "Fonda",
+    "url": "https://github.com/lifangda"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bundle"
+  ],
+  "strict": false,
+  "agents": [
+    "agents/expert-advisors/agent-expert.md",
+    "agents/expert-advisors/architect-review.md",
+    "agents/expert-advisors/dependency-manager.md",
+    "agents/expert-advisors/documentation-expert.md",
+    "agents/expert-advisors/error-coordinator.md"
+  ]
+}

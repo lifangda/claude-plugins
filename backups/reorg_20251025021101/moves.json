@@ -1,0 +1,304 @@
+{
+  "moves": [
+    {
+      "from": "cli-tool/components/agents/accessibility-tester.md",
+      "to": "cli-tool/components/agents/accessibility/accessibility-tester.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/ansible-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/ansible-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/ava-expert.md",
+      "to": "cli-tool/components/agents/testing-quality/ava-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/celery-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/celery-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/competitive-analyst.md",
+      "to": "cli-tool/components/agents/marketing-growth/competitive-analyst.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/expo-expert.md",
+      "to": "cli-tool/components/agents/mobile-development/expo-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/game-developer.md",
+      "to": "cli-tool/components/agents/game-development/game-developer.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/laravel-expert.md",
+      "to": "cli-tool/components/agents/frameworks/laravel-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/laravel-specialist.md",
+      "to": "cli-tool/components/agents/frameworks/laravel-specialist.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/mobile-app-developer.md",
+      "to": "cli-tool/components/agents/mobile-development/mobile-app-developer.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/neo4j-expert.md",
+      "to": "cli-tool/components/agents/database/neo4j-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/nestjs-expert.md",
+      "to": "cli-tool/components/agents/frameworks/nestjs-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/nodejs-expert.md",
+      "to": "cli-tool/components/agents/frameworks/nodejs-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/numpy-expert.md",
+      "to": "cli-tool/components/agents/data-ai/numpy-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/ocaml-expert.md",
+      "to": "cli-tool/components/agents/frameworks/ocaml-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/opensearch-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/opensearch-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/opentelemetry-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/opentelemetry-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/owasp-top10-expert.md",
+      "to": "cli-tool/components/agents/security/owasp-top10-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/pandas-expert.md",
+      "to": "cli-tool/components/agents/data-ai/pandas-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/perl-expert.md",
+      "to": "cli-tool/components/agents/frameworks/perl-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/phoenix-expert.md",
+      "to": "cli-tool/components/agents/frameworks/phoenix-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/php-expert.md",
+      "to": "cli-tool/components/agents/frameworks/php-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/playwright-expert.md",
+      "to": "cli-tool/components/agents/testing-quality/playwright-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/prisma-expert.md",
+      "to": "cli-tool/components/agents/database/prisma-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/product-manager.md",
+      "to": "cli-tool/components/agents/product-management/product-manager.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/project-manager.md",
+      "to": "cli-tool/components/agents/product-management/project-manager.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/pulumi-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/pulumi-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/puppeteer-expert.md",
+      "to": "cli-tool/components/agents/testing-quality/puppeteer-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/pytorch-expert.md",
+      "to": "cli-tool/components/agents/data-ai/pytorch-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/rabbitmq-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/rabbitmq-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/redis-expert.md",
+      "to": "cli-tool/components/agents/database/redis-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/refactoring-specialist.md",
+      "to": "cli-tool/components/agents/code-analysis/refactoring-specialist.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/remix-expert.md",
+      "to": "cli-tool/components/agents/frameworks/remix-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/research-analyst.md",
+      "to": "cli-tool/components/agents/deep-research-team/research-analyst.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/rollup-expert.md",
+      "to": "cli-tool/components/agents/frameworks/rollup-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/scala-expert.md",
+      "to": "cli-tool/components/agents/frameworks/scala-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/scikit-learn-expert.md",
+      "to": "cli-tool/components/agents/data-ai/scikit-learn-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/scrum-master.md",
+      "to": "cli-tool/components/agents/product-management/scrum-master.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/selenium-expert.md",
+      "to": "cli-tool/components/agents/testing-quality/selenium-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/seo-specialist.md",
+      "to": "cli-tool/components/agents/seo/seo-specialist.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/sequelize-expert.md",
+      "to": "cli-tool/components/agents/database/sequelize-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/sidekiq-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/sidekiq-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/sns-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/sns-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/solidjs-expert.md",
+      "to": "cli-tool/components/agents/frameworks/solidjs-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/sqs-expert.md",
+      "to": "cli-tool/components/agents/devops-infrastructure/sqs-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/swift-expert.md",
+      "to": "cli-tool/components/agents/mobile-development/swift-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/swiftui-expert.md",
+      "to": "cli-tool/components/agents/mobile-development/swiftui-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/tailwind-expert.md",
+      "to": "cli-tool/components/agents/web-tools/tailwind-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/task-distributor.md",
+      "to": "cli-tool/components/agents/workflow-optimization/task-distributor.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/tauri-expert.md",
+      "to": "cli-tool/components/agents/frameworks/tauri-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/tensorflow-expert.md",
+      "to": "cli-tool/components/agents/data-ai/tensorflow-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/testcafe-expert.md",
+      "to": "cli-tool/components/agents/testing-quality/testcafe-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/trend-analyst.md",
+      "to": "cli-tool/components/agents/marketing-growth/trend-analyst.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/trpc-expert.md",
+      "to": "cli-tool/components/agents/frameworks/trpc-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/typeorm-expert.md",
+      "to": "cli-tool/components/agents/database/typeorm-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/vector-db-expert.md",
+      "to": "cli-tool/components/agents/database/vector-db-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/webpack-expert.md",
+      "to": "cli-tool/components/agents/frameworks/webpack-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/websocket-expert.md",
+      "to": "cli-tool/components/agents/integration-api/websocket-expert.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/wordpress-master.md",
+      "to": "cli-tool/components/agents/web-tools/wordpress-master.md",
+      "via": "map"
+    },
+    {
+      "from": "cli-tool/components/agents/workflow-orchestrator.md",
+      "to": "cli-tool/components/agents/workflow-optimization/workflow-orchestrator.md",
+      "via": "map"
+    }
+  ]
+}

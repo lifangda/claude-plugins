@@ -70,7 +70,7 @@ All notable changes to this project will be documented in this file.
 
 **组件统计** (v1.3 → v1.4):
 - **Agents**: 484 → 504 (+20, +4.1%)
-- **Skills**: 53 → 68 (+15, +28%)
+- **Skills**: 53 → 61 (+8, +15%)
 - **Commands**: 313个 (保持不变)
 - **Workflows**: 16个 (保持不变)
 - **Hooks**: 39个 (保持不变)
@@ -99,7 +99,7 @@ All notable changes to this project will be documented in this file.
   - 垂直领域: 5个 ⭐ NEW
   - 电商专家: 2个 ⭐ NEW
 - **Commands**: 313个 (28个分类)
-- **Skills**: 68个 (28个分类) ⭐ +28%
+- **Skills**: 61个 (28个分类) ⭐ +15%
 - **Workflows**: 16个
 - **Hooks**: 39个 (10个分类)
 - **MCPs**: 56个 (10个分类)
