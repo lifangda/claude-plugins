@@ -8,12 +8,11 @@
 
 ## 📋 项目概述
 
-Claude Plugins 是一个完整的AI开发工具集,包含 **1200+个文件**,涵盖:
+Claude Plugins 是一个完整的AI开发工具集,包含 **1600+个文件**,涵盖:
 
-- **504个专业代理** (50个分类) - AI专家团队,覆盖各种开发领域 ⭐ +3.3%
+- **504个专业代理** (50个分类) - AI专家团队,覆盖各种开发领域
   - 包含10个Anthropic官方代理
-  - 新增20个专家 (量子计算、边缘计算、金融科技、游戏开发、AR/VR等)
-  - 新增分类: 新兴技术、垂直领域、电商专家
+  - 覆盖新兴技术、垂直领域、电商等50个专业领域
 - **313个实用命令** (28个分类) - 自动化工具和开发命令
   - 包含6个Anthropic官方命令
 - **16个工作流** - 完整的开发流程自动化
@@ -23,14 +22,14 @@ Claude Plugins 是一个完整的AI开发工具集,包含 **1200+个文件**,涵
 - **18个输出样式** - 专业化Claude输出格式
 - **2个沙盒环境** - 安全的代码执行环境
 
-**总计: 1038个组件,99个精细化插件包** ⭐ +3个新分类包
+**总计: 948个插件组件,99个精细化插件包**
 
-**Agent Skills知识库** (独立管理,28个技术领域): ⭐ +28%
-- **61个Skills** - 模块化领域知识包 ✨
+**Agent Skills知识库** (独立管理,32个技术领域): ⭐⭐⭐ +148% (生态大爆发)
+- **151个Skills** - 模块化领域知识包 ✨✨✨
 - 位于 `cli-tool/skills-library/` 目录
 - 采用官方三级渐进式架构 (Tier 1/2/3)
-- 280+文件 (SKILL.md + references + scripts + assets)
-- 覆盖知识管理、思维方法论、Web模糊测试、EPUB阅读等新领域
+- 500+文件 (SKILL.md + references + scripts + assets)
+- 覆盖开发工作流、问题解决思维、科学计算(43个)、多代理协作、代码审查、数据处理、媒体创作、业务沟通等完整领域
 
 ### 🌟 特色：包含 Anthropic 官方插件
 - **claude-code-official** - Anthropic官方插件包，包含10个官方代理、6个官方命令和1个安全钩子
@@ -156,39 +155,25 @@ Claude Plugins 是一个完整的AI开发工具集,包含 **1200+个文件**,涵
 /supabase-toolkit  # 使用Supabase工具
 ```
 
-## 🆕 最新特性 (v1.4)
+## 🆕 最新特性 (v1.5)
 
-### 🎉 v1.4.0 - 中规模生态扩展 (Skills+Agents)
+### 🎉 v1.5.0 - Skills生态大爆发 (思维方法论与科学计算)
 
-#### 🌟 Skills知识库扩展 (+15个Skills)
-- **新增领域分类**: 知识管理、问题解决、媒体处理、数据分析、实用自动化、协作工具
-- **Skills总数**: 53 → 61 (+15%)
-- **技术领域**: 11 → 28个分类
-- **文件数量**: 174+ → 280+个文件
+#### 🌟 Skills知识库大爆发 (+90个Skills)
+- **新增核心领域**: 开发工作流、问题解决思维、科学数据库(25个)、科学计算、计划文档、研究方法
+- **Skills总数**: 61 → 151 (+148%) ⭐⭐⭐
+- **技术领域**: 28 → 32个分类
+- **文件数量**: 280+ → 500+个文件
 
 **新增Skills示例**:
-- **知识管理**: tapestry (知识图谱), article-extractor (文章提取), youtube-transcript (视频转录)
-- **问题解决**: brainstorming (头脑风暴), root-cause-tracing (根因分析), systematic-debugging (系统化调试)
-- **媒体处理**: epub-reader (电子书阅读), ffuf-fuzzing (Web模糊测试)
-- **数据分析**: csv-summarizer (CSV数据汇总)
-- **实用自动化**: content-research-writer (内容研究), file-organizer (文件组织), invoice-organizer (发票管理)
-
-#### 🤖 专业代理扩展 (+20个Agents)
-- **Agents总数**: 484 → 504 (+3.3%)
-- **插件包**: 96 → 99个 (+3个新分类)
-
-**新增专业代理**:
-- **新兴技术** (4个): quantum-computing-developer, edge-computing-specialist, bun-runtime-expert, deno-runtime-developer
-- **垂直领域** (5个): fintech-solutions-engineer, game-development-designer, ar-vr-immersive-developer, embedded-systems-engineer, web3-blockchain-builder
-- **电商专家** (2个): shopify-ecommerce-expert, stripe-payment-specialist
-- **测试质量** (2个): vitest-testing-expert, accessibility-compliance-guardian
-- **开发工具** (4个): storybook-component-designer, openai-api-integrator, api-integration-archaeologist, workflow-automation-specialist
-- **DevOps基础设施** (3个): chaos-engineering-specialist, istio-service-mesh-expert, prometheus-monitoring-expert
-
-#### 📦 新增插件包
-- `agents-emerging-technologies` - 新兴技术专家 (4个agents)
-- `agents-vertical-domains` - 垂直领域专家 (5个agents)
-- `agents-ecommerce` - 电商集成专家 (2个agents)
+- **开发工作流** (6个): executing-plans, finishing-development-branch, subagent-driven-development, test-driven-development, using-git-worktrees, git-commit-helper
+- **问题解决思维** (9个): brainstorming, collision-zone-thinking, inversion-exercise, meta-pattern-recognition, root-cause-tracing, scale-game, simplification-cascades, systematic-debugging, when-stuck
+- **科学数据库** (25个): chembl, csd, drugbank, ena, ensembl, geofabrik, gnomad, human-cell-atlas, idc, imgt, ncbi-datasets, ncbi-geo, ncbi-pubmed, osm, pdb, pfam, prosite, reactome, refseq, rfam, string, tcga, ukbiobank, uniprot, zenodo
+- **科学计算** (18个): 科学辅助(2个)、科学集成(7个)、科学思维(9个)
+- **多代理协作** (6个): dispatching-parallel-agents, receiving-code-review, requesting-code-review, sharing-skills, remembering-conversations, meeting-insights-analyzer
+- **媒体处理** (5个): epub-reader, image-enhancer, video-downloader, markdown-to-epub-enhanced, youtube-transcript
+- **数据分析** (3个): csv-summarizer, excel-analysis, csv-data-summarizer
+- **测试质量** (5个): condition-based-waiting, defense-in-depth, testing-anti-patterns, testing-skills-with-subagents, verification-before-completion
 
 ### 📋 v1.2 特性回顾
 - **Skills架构重构**: Skills迁移到独立的 `cli-tool/skills-library/` 目录
@@ -411,10 +396,10 @@ node cli-tool/src/skills-manager.js install nodejs-backend-patterns --global
 ### Sandbox (2个)
 安全的代码执行环境
 
-### Agent Skills (61个,28个分类) - 独立管理 ✨ +15%
+### Agent Skills (151个,32个分类) - 独立管理 ✨✨✨ +148%
 模块化领域知识包,采用三级渐进式架构 (Tier 1/2/3):
 
-**原有领域 (11个,53个Skills)**:
+**核心领域 (32个,151个Skills)**:
 - **backend-development** - 后端开发 (4个): api-design-principles, architecture-patterns, microservices-patterns, mcp-builder
 - **blockchain-web3** - 区块链Web3 (4个): defi-protocol-templates, nft-standards, solidity-security, web3-testing
 - **cicd-automation** - CI/CD自动化 (5个): deployment-pipeline-design, github-actions-templates, gitlab-ci-patterns, secrets-management, **changelog-generator** ⭐
@@ -425,15 +410,49 @@ node cli-tool/src/skills-manager.js install nodejs-backend-patterns --global
 - **llm-application-dev** - LLM应用开发 (4个): langchain-architecture, llm-evaluation, prompt-engineering-patterns, rag-implementation
 - **payment-processing** - 支付处理 (4个): billing-automation, paypal-integration, pci-compliance, stripe-integration
 - **python-development** - Python开发 (4个): async-python-patterns, python-packaging, python-testing-patterns, uv-package-manager ⭐
-- **security** - 安全 (1个): security-best-practices
-
-**新增领域 (17个,15个Skills)** ⭐ NEW:
-- **知识管理** (2个): tapestry (知识图谱), article-extractor (文章提取)
-- **协作工具** (1个): meeting-insights-analyzer (会议洞察分析)
-- **问题解决** (3个): brainstorming (头脑风暴), root-cause-tracing (根因分析), systematic-debugging (系统化调试)
-- **媒体处理** (3个): youtube-transcript (视频转录), epub-reader (电子书阅读), ffuf-fuzzing (Web模糊测试)
-- **数据分析** (1个): csv-summarizer (CSV数据汇总)
-- **实用自动化** (5个): content-research-writer, file-organizer, invoice-organizer, ship-learn-next, ...
+- **security** - 安全 (1个): security-best-practices, ffuf-fuzzing
+- **development-workflows** - 开发工作流 (6个): ⭐ NEW
+  - executing-plans, finishing-development-branch, subagent-driven-development
+  - test-driven-development, using-git-worktrees, git-commit-helper
+- **problem-solving** - 问题解决思维 (9个): ⭐ NEW
+  - brainstorming, collision-zone-thinking, inversion-exercise
+  - meta-pattern-recognition, root-cause-tracing, scale-game
+  - simplification-cascades, systematic-debugging, when-stuck
+- **collaboration** - 协作 (6个): ⭐ 扩充
+  - dispatching-parallel-agents, receiving-code-review, requesting-code-review
+  - sharing-skills, remembering-conversations, meeting-insights-analyzer
+- **testing-quality** - 测试质量 (5个): ⭐ NEW
+  - condition-based-waiting, defense-in-depth, testing-anti-patterns
+  - testing-skills-with-subagents, verification-before-completion
+- **scientific-databases** - 科学数据库 (25个): ⭐ NEW
+  - chembl, csd, drugbank, ena, ensembl, geofabrik, gnomad, human-cell-atlas
+  - idc, imgt, ncbi-datasets, ncbi-geo, ncbi-pubmed, osm, pdb, pfam
+  - prosite, reactome, refseq, rfam, string, tcga, ukbiobank, uniprot, zenodo
+- **scientific-helpers** - 科学辅助 (2个): ⭐ NEW
+  - markdown-citations, scientific-notation
+- **scientific-integrations** - 科学集成 (7个): ⭐ NEW
+  - github-scientific, latex-document-helper, mcp-elsevier, pypi-helper
+  - r-package-helper, rdocumentation, scientific-dataset-finder
+- **scientific-thinking** - 科学思维 (9个): ⭐ NEW
+  - experimental-design, literature-review-helper, null-hypothesis-testing
+  - p-value-interpreter, power-analysis, reproducibility-checklist
+  - sample-size-calculator, study-design-validator, systematic-review-protocol
+- **planning-documentation** - 计划文档 (2个): ⭐ NEW
+  - writing-plans, writing-skills
+- **research** - 研究方法 (1个): ⭐ NEW
+  - tracing-knowledge-lineages
+- **media-processing** - 媒体处理 (5个): ⭐ 扩充
+  - epub-reader, image-enhancer, video-downloader
+  - markdown-to-epub-enhanced, youtube-transcript
+- **data-analysis** - 数据分析 (3个): ⭐ 扩充
+  - csv-summarizer, excel-analysis, csv-data-summarizer
+- **business-communication** - 业务沟通 (1个): ⭐ NEW
+  - email-composer
+- **meta-learning** - 元学习 (3个): ⭐ NEW
+  - using-superpowers, gardening-skills-wiki, pulling-updates-from-skills-repository
+- **utility-automation** - 实用自动化 (5个): ⭐ 扩充
+  - content-research-writer, file-organizer, invoice-organizer
+  - raffle-winner-picker, ship-learn-next
 
 **位置**: `cli-tool/skills-library/` (独立管理,不在marketplace.json)
 **管理**: 通过 `cli-tool/src/skills-manager.js` 模块

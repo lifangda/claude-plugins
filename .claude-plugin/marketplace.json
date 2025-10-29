@@ -6,8 +6,8 @@
     "url": "https://github.com/lifangda"
   },
   "metadata": {
-    "description": "完整的Claude插件生态系统:280个专业代理、313个开发命令、16个工作流、39个钩子、56个MCP服务器、18个输出样式，专业化分类，即装即用",
-    "version": "1.4.0"
+    "description": "完整的Claude插件生态系统:504个专业代理、313个开发命令、16个工作流、39个钩子、56个MCP服务器、18个输出样式，专业化分类，即装即用。额外提供151个Agent Skills知识库(独立管理)",
+    "version": "1.5.0"
   },
   "plugins": [
     {

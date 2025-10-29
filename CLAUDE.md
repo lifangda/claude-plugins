@@ -6,13 +6,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Claude Plugins 是一个 Node.js CLI 工具,用于管理和安装 Claude Code 配置组件。
 
-**当前版本**: v1.4
+**当前版本**: v1.5
 
-**组件统计** (1038个组件,1200+文件):
-- 504个专业代理 (50个分类) ⭐ +3.3%
+**组件统计** (1099个组件,1600+文件):
+- 504个专业代理 (50个分类)
   - 包含10个Anthropic官方代理
-  - 新增20个专家 (量子计算、边缘计算、金融科技、游戏开发、AR/VR等)
-  - 新增分类: 新兴技术、垂直领域、电商专家
+  - 覆盖新兴技术、垂直领域、电商等50个专业领域
 - 313个实用命令 (28个分类)
   - 包含6个Anthropic官方命令
 - 16个工作流
@@ -21,22 +20,24 @@ Claude Plugins 是一个 Node.js CLI 工具,用于管理和安装 Claude Code �
 - 56个MCP服务器 (10个分类)
 - 18个输出样式
 - 2个沙盒环境
+- **插件系统组件总计**: 948个
 
-**Agent Skills知识库** (独立管理,61个技能包): ⭐ +15%
+**Agent Skills知识库** (独立管理,151个技能包): ⭐⭐⭐ +148% (生态大爆发)
 - 位于 `cli-tool/skills-library/` 目录
 - 采用官方三级渐进式架构 (Tier 1: Metadata ~100 tokens, Tier 2: SKILL.md <5K tokens, Tier 3: Resources unlimited)
-- 28个技术领域分类 (新增知识管理、问题解决、媒体处理、数据分析、实用自动化、协作工具等)
-- 280+文件 (SKILL.md + references + scripts + assets)
-- 覆盖知识图谱、思维方法论、Web模糊测试、EPUB阅读等新领域
+- 32个技术领域分类
+- 500+文件 (SKILL.md + references + scripts + assets)
+- 覆盖开发工作流(6个)、问题解决思维(9个)、科学数据库(25个)、科学计算(18个)、多代理协作、代码审查、数据处理、媒体创作等完整领域
 
 **核心功能:**
 - 组件安装系统 (agents, commands, mcps, workflows, hooks, output-styles)
-- **Agent Skills管理系统** (list, search, install) ✨独立系统
-- Claude Code 插件市场配置 (99个精细化插件包) ⭐ +3个新分类包
+- **Agent Skills管理系统** (list, search, install) ✨独立系统 - 151个Skills
+- Claude Code 插件市场配置 (99个精细化插件包)
 - 实时分析仪表板
 - E2B 沙盒执行环境
 - **Anthropic官方插件集成** (18个官方文件)
 - **Output Styles系统** (18个专业输出样式)
+- **科学计算整合** (43个科学Skills)
 
 ## 常用命令
 
@@ -431,15 +432,15 @@ node --check cli-tool/src/index.js
 
 详见 [CHANGELOG.md](CHANGELOG.md) 获取完整版本历史和更新日志。
 
-**当前版本**: v1.3
-- **大规模生态扩展**: 整合4个高质量GitHub仓库
-- **Agents翻倍增长**: 从287个增至488个 (+201, +70%)
-- **Skills官方加持**: 新增8个Anthropic官方Skills (document-skills等)
-- **多代理编排**: 新增Meta Orchestration系统 (agent-organizer等6个)
-- **现代框架覆盖**: Remix, Astro, SolidJS等现代框架专家
-- **完整工具链**: ORM (Prisma, TypeORM), 消息队列 (Kafka, RabbitMQ), 认证 (Auth0, Keycloak)
-- **技术栈扩展**: 新增30+种语言/工具/框架支持
-- 总组件达983个,完整生态系统
+**当前版本**: v1.5
+- **Skills生态大爆发**: 整合7个高质量Skills仓库
+- **Skills大幅增长**: 从61个增至151个 (+90, +148%)
+- **科学计算整合**: 新增43个科学计算Skills (数据库25个+计算18个)
+- **开发工作流完善**: 新增6个完整开发循环Skills
+- **思维方法论**: 新增9个问题解决思维框架
+- **多代理协作**: 新增6个协作与代码审查Skills
+- **插件系统稳定**: 948个组件保持高质量
+- 总组件达1099个,完整生态系统
 
 **v1.2** (前版本)
 - **Skills架构重构**: Skills迁移到独立的 `skills-library/` 目录
